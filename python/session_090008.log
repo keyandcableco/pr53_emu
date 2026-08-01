@@ -1,0 +1,14 @@
+t_wall=1785589208.056 # NOTE [recorder] connected /dev/ttyACM0
+t_wall=1785589208.215 # ALIVE us=3640323742 ring_depth=0 drops=0
+t_wall=1785589210.214 # ALIVE us=3642323790 ring_depth=0 drops=0
+t_wall=1785589212.214 # ALIVE us=3644323837 ring_depth=0 drops=0
+t_wall=1785589214.214 # ALIVE us=3646323883 ring_depth=0 drops=0
+t_wall=1785589216.214 # ALIVE us=3648323929 ring_depth=0 drops=0
+t_wall=1785589218.215 # ALIVE us=3650323975 ring_depth=0 drops=0
+t_wall=1785589220.214 # ALIVE us=3652324021 ring_depth=0 drops=0
+t_wall=1785589222.214 # ALIVE us=3654324067 ring_depth=0 drops=0
+t_wall=1785589224.216 # ALIVE us=3656324113 ring_depth=0 drops=0
+t_wall=1785589226.219 # ALIVE us=3658324160 ring_depth=0 drops=0
+t_wall=1785589228.228 # ALIVE us=3660324206 ring_depth=0 drops=0
+t_wall=1785589230.219 # ALIVE us=3662324252 ring_depth=0 drops=0
+t_wall=1785589232.220 # ALIVE us=3664324298 ring_depth=0 drops=0

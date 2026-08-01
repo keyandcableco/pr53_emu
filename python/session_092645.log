@@ -1,0 +1,24 @@
+t_wall=1785590805.448 # NOTE [recorder] connected /dev/ttyACM0
+t_wall=1785590806.165 # ALIVE us=943382257 ring_depth=0 drops=0
+t_wall=1785590808.165 # ALIVE us=945382307 ring_depth=0 drops=0
+t_wall=1785590810.165 # ALIVE us=947382354 ring_depth=0 drops=0
+t_wall=1785590812.165 # ALIVE us=949382400 ring_depth=0 drops=0
+t_wall=1785590814.165 # ALIVE us=951382446 ring_depth=0 drops=0
+t_wall=1785590816.165 # ALIVE us=953382492 ring_depth=0 drops=0
+t_wall=1785590818.165 # ALIVE us=955382537 ring_depth=0 drops=0
+t_wall=1785590820.165 # ALIVE us=957382585 ring_depth=0 drops=0
+t_wall=1785590822.165 # ALIVE us=959382631 ring_depth=0 drops=0
+t_wall=1785590824.165 # ALIVE us=961382676 ring_depth=0 drops=0
+t_wall=1785590826.165 # ALIVE us=963382722 ring_depth=0 drops=0
+t_wall=1785590828.165 # ALIVE us=965382767 ring_depth=0 drops=0
+t_wall=1785590830.165 # ALIVE us=967382812 ring_depth=0 drops=0
+t_wall=1785590832.165 # ALIVE us=969382858 ring_depth=0 drops=0
+t_wall=1785590834.165 # ALIVE us=971382904 ring_depth=0 drops=0
+t_wall=1785590836.165 # ALIVE us=973382949 ring_depth=0 drops=0
+t_wall=1785590838.165 # ALIVE us=975382995 ring_depth=0 drops=0
+t_wall=1785590840.165 # ALIVE us=977383041 ring_depth=0 drops=0
+t_wall=1785590842.165 # ALIVE us=979383086 ring_depth=0 drops=0
+t_wall=1785590844.164 # ALIVE us=981383132 ring_depth=0 drops=0
+t_wall=1785590846.164 # ALIVE us=983383178 ring_depth=0 drops=0
+t_wall=1785590847.426 # NOTE p1118 p2113 p3113 p4113 p5118 p6113 p7100 p8127118 113 113 113 118 113 100 127
+t_wall=1785590848.164 # ALIVE us=985383223 ring_depth=0 drops=0

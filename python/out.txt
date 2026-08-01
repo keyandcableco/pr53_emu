@@ -1,0 +1,826 @@
+Parsed 212 committed states, 194 notes. Span 378.9s.
+
+
+[  -30.41s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -28.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -26.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -24.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -22.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -20.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -18.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -16.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -14.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -12.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  -10.42s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   -8.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   -6.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   -4.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   -2.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   -0.43s] NOTE: [recorder] connected /dev/ttyACM0
+
+[    1.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[    3.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[    5.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[    7.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[    9.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   11.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   13.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   15.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   17.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   19.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   21.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   23.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   25.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   27.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   29.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   31.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   33.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   35.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   37.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   39.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   41.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   43.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   45.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   47.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   48.08s] NOTE: pressing Memory & Control and scrolling through menu options
+
+[   49.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   51.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   53.57s] NOTE: [recorder] connected /dev/ttyACM0
+[   55.26s] diff   4 bits  L1="            " L2="          p "
+            ON : C0:r7:c2 C7:r0:c1 C7:r7:c1 C7:r7:c3
+[   55.28s] diff  17 bits [BULK]  L1="            " L2="          p "
+[   55.28s] diff   2 bits  L1="            " L2="          p "
+            ON : C2:r6:c1 C2:r6:c4
+[   55.31s] diff  24 bits [BULK]  L1="            " L2="          p "
+
+[   56.34s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   57.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   59.57s] NOTE: [recorder] connected /dev/ttyACM0
+[   61.85s] diff   7 bits  L1="MEM&CONTROL " L2="   M dley   "
+            ON : C1:r0:c4 C1:r3:c4 C1:r6:c4 C3:r6:c1 C6:r7:c4
+            OFF: C7:r7:c1 C7:r7:c3
+[   62.86s] diff   3 bits  L1="MEM&CONTROL " L2="  FD Format "
+            ON : C1:r2:c4
+            OFF: C1:r0:c4 C1:r6:c4
+
+[   63.87s] NOTE: [recorder] connected /dev/ttyACM0
+[   64.97s] diff   3 bits  L1="MEM&CONTROL " L2="  Contrast  "
+            ON : C1:r0:c4
+            OFF: C1:r3:c4 C2:r6:c1
+[   67.21s] diff   7 bits  L1="MEM&CONTROL " L2="Load    Save"
+            ON : C2:r6:c1 C7:r7:c1 C7:r7:c3
+            OFF: C1:r0:c4 C1:r2:c4 C3:r6:c1 C6:r7:c4
+
+[   68.21s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   69.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   71.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   73.57s] NOTE: [recorder] connected /dev/ttyACM0
+[   75.10s] diff   6 bits  L1="MEM&CONTROL " L2="  FD Format "
+            ON : C1:r2:c4 C1:r3:c4 C3:r6:c1 C6:r7:c4
+            OFF: C7:r7:c1 C7:r7:c3
+[   76.84s] diff   3 bits  L1="MEM&CONTROL " L2="   Medley   "
+            ON : C1:r0:c4 C1:r6:c4
+            OFF: C1:r2:c4
+[   77.24s] diff   7 bits  L1="MEM&CONTROL " L2="Load    Save"
+            ON : C7:r7:c1 C7:r7:c3
+            OFF: C1:r0:c4 C1:r3:c4 C1:r6:c4 C3:r6:c1 C6:r7:c4
+
+[   81.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   83.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   85.57s] NOTE: [recorder] connected /dev/ttyACM0
+[   86.57s] diff  14 bits [BULK]  L1="MEM&CONTROL " L2="   Initial  "
+[   86.81s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[   87.03s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[   87.25s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[   87.25s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r3:c3
+            OFF: C6:r4:c3 C6:r5:c3 C6:r6:c3
+[   87.45s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[   87.69s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[   87.91s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[   88.14s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3
+[   88.37s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r7:c3
+[   88.37s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[   89.04s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[   89.04s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r7:c3
+[   89.26s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+
+[   90.26s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   91.57s] NOTE: [recorder] connected /dev/ttyACM0
+[   93.12s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r0:c2 C1:r2:c2 C1:r5:c2 C1:r7:c2
+[   93.52s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r0:c2 C1:r2:c2 C1:r5:c2 C1:r7:c2
+[   93.86s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r0:c2 C1:r2:c2 C1:r5:c2 C1:r7:c2
+[   94.00s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3 C6:r1:c3 C6:r2:c3 C6:r3:c3
+
+[   95.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   97.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[   99.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  101.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  103.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  105.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  107.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  109.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  111.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  113.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  115.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  117.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  119.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  121.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  123.21s] NOTE: playing single-note major chords for chord names (G seemed wrong)
+
+[  123.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  125.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  127.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  129.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  130.56s] diff   7 bits  L1="MODE        " L2="   Basic    "
+            ON : C1:r1:c4
+            OFF: C1:r0:c4 C1:r2:c4 C1:r3:c4 C1:r6:c4 C2:r6:c4 C3:r6:c1
+[  130.88s] diff   5 bits  L1="MODE        " L2="   Basic    "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  131.08s] diff   5 bits  L1="MODE        " L2="   Basic    "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+
+[  132.08s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  133.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  135.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  136.86s] diff   7 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r0:c4 C1:r2:c4 C1:r3:c4 C1:r6:c4 C2:r6:c4 C3:r6:c1
+            OFF: C1:r1:c4
+[  137.15s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  137.36s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  137.57s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  137.87s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  137.99s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  138.28s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  138.49s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  138.70s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  138.91s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0
+[  139.22s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0
+[  139.34s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  139.62s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  139.82s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  140.13s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  140.24s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  140.54s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+
+[  141.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  143.22s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  143.51s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  143.62s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  143.91s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  144.12s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  144.33s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  144.54s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0
+[  144.75s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0
+[  144.94s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  145.14s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  145.38s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  145.66s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  145.87s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  146.08s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  146.27s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  146.48s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  146.68s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  146.88s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  147.10s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  147.31s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  147.53s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0
+[  147.91s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0
+[  149.30s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0
+[  149.50s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0
+[  149.72s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0 C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  150.01s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  150.04s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  150.14s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  150.46s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  150.59s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0 C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  150.94s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  150.96s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  151.07s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  151.28s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  151.49s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  151.79s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  152.01s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r6:c0 C1:r7:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  152.20s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r6:c0 C1:r7:c0
+[  152.22s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  152.42s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  152.62s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r3:c0 C5:r5:c0 C5:r6:c0
+[  152.81s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  152.83s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  153.12s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  153.15s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  153.25s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  153.55s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  153.74s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  153.78s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  153.95s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  153.98s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  154.16s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  154.39s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  154.58s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0
+[  154.78s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0
+[  154.98s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  155.01s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  155.29s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  155.32s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  155.43s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  155.71s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  155.91s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  155.93s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  156.12s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  156.14s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  156.33s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  156.64s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  156.76s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  157.05s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  157.28s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r6:c0 C1:r7:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  157.50s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r6:c0 C1:r7:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+
+[  158.50s] NOTE: [recorder] connected /dev/ttyACM0
+[  158.96s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  158.99s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r6:c0 C1:r7:c0
+[  159.16s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r6:c0 C1:r7:c0
+[  159.19s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  159.39s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  159.42s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  159.62s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0 C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  159.90s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  159.93s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  160.13s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0 C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  160.42s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  160.46s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  160.73s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  160.77s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r6:c0
+[  160.94s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  160.97s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  161.25s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  161.28s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r1:c0 C5:r2:c0 C5:r3:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  161.59s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r6:c0 C1:r7:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  161.81s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r6:c0 C1:r7:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  162.11s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  162.13s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0
+[  162.50s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C5:r0:c0 C5:r1:c0 C5:r2:c0 C5:r3:c0
+[  162.52s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0
+[  162.82s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C1:r7:c0 C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+[  163.25s] diff   6 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r7:c0 C5:r0:c0 C5:r2:c0 C5:r4:c0 C5:r5:c0 C5:r6:c0
+
+[  164.25s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  165.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  167.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  169.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  171.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  173.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  175.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  177.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  179.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  181.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  183.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  185.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  187.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  189.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  191.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  193.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  195.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  197.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  199.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  201.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  203.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  205.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  207.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  209.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  211.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  213.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  215.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  217.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  219.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  219.98s] NOTE: pressing transpose up to max then down to min. Transpose should be OFF when cmajor or zero
+
+[  221.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  223.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  225.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  227.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  229.37s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3 C6:r1:c3 C6:r2:c3 C6:r3:c3
+[  229.93s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3
+[  230.41s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  230.42s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r7:c3
+
+[  231.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  233.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  235.06s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  235.06s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r1:c3 C6:r2:c3 C6:r3:c3 C6:r7:c3
+
+[  236.06s] NOTE: [recorder] connected /dev/ttyACM0
+[  236.73s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r2:c3 C6:r3:c3 C6:r7:c3
+[  236.74s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  237.26s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r7:c3
+[  237.27s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  237.89s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+[  238.38s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  238.91s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  238.91s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r4:c3 C6:r5:c3 C6:r6:c3
+            OFF: C6:r1:c3 C6:r3:c3
+[  239.34s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  239.74s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r4:c3 C6:r5:c3 C6:r6:c3
+[  239.75s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  239.81s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r3:c3 C6:r4:c3 C6:r6:c3
+[  240.16s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  240.58s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r5:c3
+            OFF: C6:r0:c3
+[  240.58s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  241.06s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  241.46s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  241.50s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+            OFF: C6:r1:c3 C6:r4:c3
+
+[  242.50s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  243.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  243.61s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r4:c3
+            OFF: C6:r0:c3
+[  243.62s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  244.09s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  244.55s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  244.56s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+            OFF: C6:r5:c3
+[  245.09s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  245.56s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r1:c3 C6:r3:c3 C6:r4:c3 C6:r6:c3
+[  246.05s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r4:c3 C6:r5:c3 C6:r6:c3
+[  246.06s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  246.51s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  247.00s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r3:c3
+            OFF: C6:r4:c3 C6:r5:c3 C6:r6:c3
+[  247.01s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  247.45s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  247.96s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3
+[  248.44s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r7:c3
+[  248.45s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+
+[  249.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  249.93s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  249.94s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r7:c3
+[  250.39s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+[  250.81s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  250.87s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  250.87s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r4:c3 C6:r5:c3 C6:r6:c3
+            OFF: C6:r1:c3 C6:r3:c3
+[  251.29s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  251.77s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r4:c3 C6:r5:c3 C6:r6:c3
+[  251.80s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  252.19s] diff   4 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r1:c3 C6:r3:c3 C6:r4:c3 C6:r6:c3
+[  252.62s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  253.06s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r5:c3
+            OFF: C6:r0:c3
+[  253.07s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  253.47s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C2:r6:c3
+[  253.93s] diff   1 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c3
+[  253.94s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3
+            OFF: C6:r1:c3 C6:r4:c3
+
+[  255.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  257.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  258.61s] diff   5 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3 C6:r2:c3 C6:r3:c3 C6:r5:c3 C6:r6:c3
+
+[  259.61s] NOTE: [recorder] connected /dev/ttyACM0
+[  260.97s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            ON : C6:r0:c3 C6:r2:c3
+
+[  261.97s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  263.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  265.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  265.61s] diff   3 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C6:r0:c3 C6:r2:c3 C7:r0:c1
+
+[  267.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  269.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  271.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  273.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  275.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  277.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  279.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  281.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  283.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  285.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  287.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  288.76s] NOTE: taking all bar level meters to min and then to max
+
+[  289.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  291.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  293.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  295.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  297.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  299.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  301.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  303.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  305.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  307.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  309.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  311.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  313.57s] NOTE: [recorder] connected /dev/ttyACM0
+[  314.47s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C3:r6:c0 C3:r6:c1
+[  314.51s] diff  10 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C1:r0:c3 C1:r0:c4 C1:r1:c3 C1:r2:c3 C1:r2:c4 C1:r3:c3 C1:r3:c4 C1:r4:c4 C1:r5:c3 C1:r6:c4
+[  314.51s] diff   2 bits  L1="MEM&CONTROL " L2="   Initial  "
+            OFF: C2:r6:c1 C2:r6:c4
+
+[  315.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  317.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  319.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  321.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  323.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  325.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  327.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  329.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  331.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  333.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  335.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  337.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  339.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  341.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  343.57s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  345.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  347.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  349.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  351.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  353.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  355.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  357.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  359.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  361.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  363.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  365.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  367.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  369.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  371.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  373.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  375.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  377.56s] NOTE: [recorder] connected /dev/ttyACM0
+[  378.92s] diff  12 bits  L1="INITIAL     " L2="   Total    "
+            ON : C1:r0:c3 C1:r0:c4 C1:r1:c3 C1:r2:c3 C1:r2:c4 C1:r3:c3 C1:r3:c4 C1:r4:c4 C1:r5:c3 C1:r6:c4 C2:r6:c1 C2:r6:c4
+[  378.95s] diff   2 bits  L1="INITIAL     " L2="   Total    "
+            ON : C3:r6:c0 C3:r6:c1
+
+[  379.97s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  381.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  383.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  385.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  387.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  389.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  391.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  393.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  395.56s] NOTE: [recorder] connected /dev/ttyACM0
+
+[  397.56s] NOTE: [recorder] connected /dev/ttyACM0
