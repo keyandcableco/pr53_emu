@@ -137,4 +137,6 @@ Substantial pair-programming with [Claude Opus 4.7](https://www.anthropic.com/cl
 
 ## License
 
-MIT. See LICENSE.
+MIT. See [LICENSE](LICENSE).
+
+`pico_sdk_import.cmake` is from the Raspberry Pi Pico SDK and keeps its BSD-3-Clause licence (see the file header).
