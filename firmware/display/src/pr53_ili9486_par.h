@@ -59,4 +59,9 @@ void ili9488_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
 void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
                   const uint16_t *pixels);
 
+#if !PICO_ON_DEVICE
+// Host builds draw into a framebuffer; this saves it as a PPM image.
+int ili9488_host_save_ppm(const char *path);
+#endif
+
 #endif // PR53_ILI9486_PAR_H

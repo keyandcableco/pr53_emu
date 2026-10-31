@@ -62,10 +62,29 @@ bool bus_get_byte(uint8_t *out_byte, bool *out_is_data) {
     }
 }
 
+// Like bus_get_byte(), but gives up and returns false if no access starts
+// within timeout_us (the value byte always follows its tag straight away).
+bool bus_get_byte_timeout(uint8_t *out_byte, bool *out_is_data, uint32_t timeout_us) {
+    ensure_init();
+    for (;;) {
+        if (!uart_is_readable_within_us(TAP_UART, timeout_us)) return false;
+        uint8_t tag = uart_getc(TAP_UART);
+        if (tag != 0x00 && tag != 0x01) continue;   // out of sync — skip, retry
+        *out_byte = uart_getc(TAP_UART);
+        *out_is_data = (tag == 0x01);
+        return true;
+    }
+}
+
 #else  // host build stub
 
 bool bus_get_byte(uint8_t *out_byte, bool *out_is_data) {
     (void)out_byte; (void)out_is_data;
+    return false;
+}
+
+bool bus_get_byte_timeout(uint8_t *out_byte, bool *out_is_data, uint32_t timeout_us) {
+    (void)out_byte; (void)out_is_data; (void)timeout_us;
     return false;
 }
 

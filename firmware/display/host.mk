@@ -3,7 +3,13 @@
 #
 #   make -f host.mk test      # run the pipeline test against a log
 #   make -f host.mk check     # compile every module
+#   make -f host.mk preview   # draw the screen for a capture moment as an image
 #   make -f host.mk clean
+#
+# preview options: LOG=<capture> (default: the campaign log) and
+# NOTE="text" to show the moment of the last "# NOTE" line containing it, e.g.
+#   make -f host.mk preview NOTE="capture step 4: chord_root_D#"
+# Writes build-host/preview.ppm, plus preview.png if ImageMagick is installed.
 #
 # Output goes in build-host/, apart from the Pico build in build/.
 
@@ -33,10 +39,21 @@ $(OUT)/render_check: src/pr53_render.c src/pr53_font.c src/pr53_ili9486_par.c \
 
 check: $(OUT)/render_check
 
+LOG  ?= ../../captures/campaign_2026-10-31.log
+NOTE ?=
+
+$(OUT)/preview: src/preview.c src/pr53_render.c src/pr53_font.c \
+                src/pr53_ili9486_par.c src/pr53_decode.c | $(OUT)
+	$(CC) $(CFLAGS) $^ -o $@
+
+preview: $(OUT)/preview
+	./$(OUT)/preview $(LOG) $(OUT)/preview.ppm "$(NOTE)"
+	@if command -v convert >/dev/null; then convert $(OUT)/preview.ppm $(OUT)/preview.png && echo "wrote $(OUT)/preview.png"; fi
+
 $(OUT):
 	mkdir -p $(OUT)
 
 clean:
 	rm -rf $(OUT)
 
-.PHONY: test check clean
+.PHONY: test check preview clean

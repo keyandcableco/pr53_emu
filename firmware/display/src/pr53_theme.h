@@ -24,12 +24,12 @@
 // 2. COLOR ORDER  — fixes the "green looks blue/grey" swap.
 // ===========================================================================
 // If colors look wrong (red<->blue swapped), flip this. Panels vary: some
-// want RGB, some BGR. Your symptom (green -> blue-grey) means the default
-// was wrong, so this is set to the corrected value. If colors STILL look
-// swapped after flashing, change 0 <-> 1.
+// want RGB, some BGR. On the carrier's HiLetgo panel (2026-10-31) the
+// yellow-green field showed as cyan with 0, i.e. red and blue swapped, so
+// this is 1. If colors STILL look swapped after flashing, change 0 <-> 1.
 //   0 = RGB order
 //   1 = BGR order
-#define THEME_BGR        0
+#define THEME_BGR        1
 
 // ---- Pixel byte order ----
 // Some parallel ILI9486 boards latch the 16-bit pixel high-byte/low-byte

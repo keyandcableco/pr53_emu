@@ -18,20 +18,30 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       pr53_theme.h            Rotation, colour order and the whole palette
       main.c                  Core 0 decodes, core 1 renders
       test_pipeline.c         Host test: feeds a real capture through the decoder
+      test_chords.c           Host test: replays the chord-root campaign
+      preview.c               Host tool: draws a capture moment as an image
     CMakeLists.txt            Pico SDK build -> pr53_fw.uf2
-    host.mk                   Build and test the decoder on a PC
+    host.mk                   Build, test and preview on a PC
 
 ## Architecture
 
-    tap UART --> core0: bus_get_byte() -> hd44780_feed()
-                        on DISP_CTRL 0x0C -> pr53_decode_all() -> state
+    tap UART --> core0: bus_get_byte_timeout() -> hd44780_feed()
+                        on DISP_CTRL 0x0C, or 30 ms of quiet after writes
+                        -> pr53_decode_all() -> state
                                                                    |
                                                        seqlock (lock-free)
                                                                    v
                  core1: state_read() -> render_frame() -> parallel bus
 
-- **Commit gating:** a frame is published only on the piano's own DISP_CTRL
-  (0x0C) command, so the screen shows settled frames, never half-written ones.
+- **Commit gating:** a frame is published on the piano's own DISP_CTRL (0x0C)
+  command, so the screen shows settled frames, never half-written ones. Menus
+  are written without a DISP_CTRL afterwards, so writes followed by 30 ms of
+  quiet (`SETTLE_US` in `main.c`) are published too; the piano's own updates
+  have ~4 ms gaps, so that only fires once a burst is over.
+- **Layout:** follows the printed frame of the original glass: TEMPO, CHORD and
+  PAGE/TRANSPOSE boxes on top, the two text lines in a big box, the part meters
+  between two dotted rules. Numbers are 7-segment digits with faint ghost
+  segments.
 - **Dirty tracking:** `render_frame()` repaints only the fields that changed.
 - **Panel set-up happens once, at boot** (`ili9488_init()` on core 1, then
   `render_static()` paints the fixed layout). Power the panel together with the
@@ -76,9 +86,18 @@ Hold BOOTSEL on the Pico 2 while plugging in USB, then copy
 
 ## Changing the look
 
-Everything visual lives in `src/pr53_theme.h`: rotation, RGB/BGR order, pixel
-byte order (`THEME_SWAP_BYTES`) and the palette, with a few ready-made themes
-in the comments. Edit, rebuild, reflash.
+Colours and orientation live in `src/pr53_theme.h`: rotation, RGB/BGR order,
+pixel byte order (`THEME_SWAP_BYTES`) and the palette, with a few ready-made
+themes in the comments. The layout is `src/pr53_render.c`.
+
+Check a change on the PC before flashing: `make -f host.mk preview` draws what
+the firmware would show for a capture moment, using the real render code, into
+`build-host/preview.png`. Pick the moment with `NOTE="..."` (the last `# NOTE`
+line containing that text) and the capture with `LOG=...`:
+
+    make -f host.mk preview NOTE="capture step 5: menus_sound_setting"
+
+The preview shows true colours; RGB/BGR order is a panel setting it can't show.
 
 ## Not decoded yet
 

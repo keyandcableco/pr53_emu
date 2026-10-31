@@ -102,11 +102,44 @@ void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
     for (uint32_t i = 0; i < n; i++) { set_bus(pixels[i]); pulse_wr(); }
 }
 
-#else  // host build stubs (unit tests / decode-only builds)
+#else  // host build: draw into a framebuffer so layouts can be previewed on a PC
+
+#include <stdio.h>
+
+static uint16_t fb[ILI_H][ILI_W];
 
 void ili9488_init(void) {}
 void ili9488_set_window(uint16_t a,uint16_t b,uint16_t c,uint16_t d){(void)a;(void)b;(void)c;(void)d;}
-void ili9488_fill_rect(uint16_t x,uint16_t y,uint16_t w,uint16_t h,uint16_t col){(void)x;(void)y;(void)w;(void)h;(void)col;}
-void ili9488_blit(uint16_t x,uint16_t y,uint16_t w,uint16_t h,const uint16_t*p){(void)x;(void)y;(void)w;(void)h;(void)p;}
+
+void ili9488_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t col) {
+    for (int yy = y; yy < y + h && yy < ILI_H; yy++)
+        for (int xx = x; xx < x + w && xx < ILI_W; xx++)
+            fb[yy][xx] = col;
+}
+
+void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t *p) {
+    for (int yy = 0; yy < h; yy++)
+        for (int xx = 0; xx < w; xx++)
+            if (y + yy < ILI_H && x + xx < ILI_W) fb[y + yy][x + xx] = p[yy * w + xx];
+}
+
+// Write the framebuffer as a binary PPM, in true colours (undoing the theme's
+// byte swap; the panel's RGB/BGR order is a hardware setting, not shown here).
+int ili9488_host_save_ppm(const char *path) {
+    FILE *f = fopen(path, "wb");
+    if (!f) return -1;
+    fprintf(f, "P6\n%d %d\n255\n", ILI_W, ILI_H);
+    for (int y = 0; y < ILI_H; y++)
+        for (int x = 0; x < ILI_W; x++) {
+            uint16_t v = fb[y][x];
+#if THEME_SWAP_BYTES
+            v = (uint16_t)((v >> 8) | (v << 8));
+#endif
+            uint8_t rgb[3] = { (uint8_t)((v >> 11) << 3), (uint8_t)(((v >> 5) & 0x3F) << 2),
+                               (uint8_t)((v & 0x1F) << 3) };
+            fwrite(rgb, 1, 3, f);
+        }
+    return fclose(f);
+}
 
 #endif
