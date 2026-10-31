@@ -1,17 +1,14 @@
-// pr53_emu.c v15 — Raw bus dumper, writes only, bigger ring
+// pr53_emu.c v16 — HD44780 bus tap for the SX-PR53, with display link
 //
-// v14 dropped events during bursts. Symptom: display starts coherent
-// ("Concert...") then goes garbled once a critical command byte (SET_CGRAM
-// or SET_DDRAM) gets dropped, because state machine loses track of
-// where writes are landing.
+// PIO0 captures every write (reads are skipped at the PIO) into a 2048-slot
+// ring. PIO1 answers every read with busy=0 and the address counter, so the
+// piano's CPU never stalls. Each write is logged over USB and forwarded to
+// the display Pico over a one-way UART (uart1 TX on GP8, 1 Mbaud).
 //
-// Two fixes:
-//   1. PIO0 skips reads (jmp pin, 0) same as v13 did. Reads are noise for
-//      the display state machine and doubled the event rate.
-//   2. Ring buffer 4x larger (2048 slots).
-//
-// Together that's ~8x more headroom against bursts. Output format is
-// unchanged from v14 so pr53_display.py works as-is.
+// History: v14 dropped events during bursts and the decoded display went
+// garbled once a SET_CGRAM/SET_DDRAM byte was lost. v15 fixed that by
+// skipping reads at the PIO and quadrupling the ring. v16 adds the display
+// link. The USB log format is unchanged since v14.
 
 #include <stdio.h>
 #include <string.h>
@@ -42,7 +39,6 @@
 // uart1 TX pin (uart0's TX pins would land on GP0/GP12, both of which we're
 // avoiding), hence DISP_UART = uart1. Capture uses GP0-5+GP7; GP6/GP9 unused.
 #define DISP_TX_PIN 8
-#define DISP_BAUD   1000000
 #define DISP_BAUD   1000000
 
 static void disp_uart_init(void) {
@@ -269,7 +265,7 @@ int main(void) {
     for (int i = 0; i < 30 && !stdio_usb_connected(); i++)
         sleep_ms(100);
 
-    printf("\n# SX-PR53 bus dumper v16 (v15 + UART display link on GP0)\n");
+    printf("\n# SX-PR53 bus dumper v16 (v15 + UART display link on GP8)\n");
     printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
     printf("# ready — power-cycle piano now\n\n");
 

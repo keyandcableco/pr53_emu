@@ -1,11 +1,8 @@
 // main.c — RP2350 dual-core: core0 decodes the HD44780 bus, core1 renders.
 //
-//   core0: bus-tap PIO -> reassemble nibbles -> hd44780_feed() -> on 0x0C
+//   core0: tap UART (bus_get_byte) -> hd44780_feed() -> on 0x0C
 //          commit, pr53_decode_all() into g_state (seqlock write).
 //   core1: state_read() -> render_frame() (dirty-tracked) to the ILI9488.
-//
-// The bus-tap front-end is STUBBED here (bus_get_byte) — drop in your working
-// v15 PIO capture. Everything downstream is complete and host-tested.
 
 #include "pr53_state.h"
 #include "pr53_decode.h"
@@ -16,13 +13,10 @@
 #include "pico/stdlib.h"
 #include "pico/multicore.h"
 
-// ---- Bus-tap front-end (STUB) --------------------------------------------
-// Replace this with your v15 PIO capture. It must return the next captured
-// HD44780 access: the reassembled 8-bit value, and whether RS=1 (data) or
-// RS=0 (command). Block until one is available.
-//
-// Your v15 firmware already does the nibble reassembly and RS classification;
-// wire its ring-buffer pop here.
+// ---- Bus-tap front-end ----------------------------------------------------
+// bus_tap.c receives each HD44780 access from the tap over the UART link and
+// returns it here: the 8-bit value, and whether RS=1 (data) or RS=0
+// (command). Blocks until one is available.
 extern bool bus_get_byte(uint8_t *out_byte, bool *out_is_data);
 
 // ---- core1: render loop ----
