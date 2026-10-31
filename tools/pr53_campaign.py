@@ -402,7 +402,117 @@ CAMPAIGNS = {
              'label': 'mode_RIGHT_back_clean'},
         ],
     },
+
+    'chord_roots_all12': {
+        'description': 'Chord root letters AND sharps: all 12 roots, major',
+        'setup': 'Enable AUTO PLAY CHORD. Play screen. Play each chord in the left-hand zone.',
+        'steps': [
+            {'action': f'Play {name} major ({notes})', 'label': f'chord_root_{name}'}
+            for name, notes in [
+                ('C', 'C-E-G'), ('C#', 'C#-F-G#'), ('D', 'D-F#-A'), ('D#', 'D#-G-A#'),
+                ('E', 'E-G#-B'), ('F', 'F-A-C'), ('F#', 'F#-A#-C#'), ('G', 'G-B-D'),
+                ('G#', 'G#-C-D#'), ('A', 'A-C#-E'), ('A#', 'A#-D-F'), ('B', 'B-D#-F#'),
+            ]
+        ] + [{'action': 'Release all keys', 'label': 'chord_root_none'}],
+    },
 }
+
+
+# ============================================================
+# FRONT-PANEL CAMPAIGNS
+# ============================================================
+# One campaign per panel section, built from the control list below (taken
+# from photos of the SX-PR53's panel, left to right). docs/front-panel.md
+# lists the same controls. Each control gets a "press" step; toggles also get
+# a "press again" step so both states are captured.
+#
+# Left out on purpose: SET (panel memory) and RECORD / EASY REC, which
+# overwrite the owner's stored data.
+
+# section key -> (setup text, [(control, is_toggle), ...])
+PANEL_SECTIONS = {
+    'play_style': ('Play screen, rhythm stopped.', [
+        ('SPLIT POINT', False), ('AUTO PLAY CHORD', True), ('KEYBOARD SPLIT', True),
+        ('PIANO MODE', True), ('PIANO STYLIST', True), ('ONE TOUCH PLAY', True),
+        ('METRONOME', True),
+    ]),
+    'composer': ('Play screen. Press EXIT if a step leaves a menu open.', [
+        ('CHORD MAP', True), ('MEMORY (COMPOSER LOAD)', True),
+    ]),
+    'rhythm_groups': ('Play screen, rhythm stopped.', [
+        (name, False) for name in (
+            '8 & 16 BEAT', 'ROCK', 'SOUL & DISCO', 'BIG BAND & SWING',
+            'COUNTRY & WESTERN', 'SHOW TIME', 'LATIN', 'BALLAD', 'FUNK & FUSION',
+            'GOSPEL & BLUES', 'JAZZ COMBO', 'BALLROOM', 'MARCH & WALTZ', 'WORLD')
+    ] + [('RHYTHM SELECT up', False), ('RHYTHM SELECT up', False),
+         ('RHYTHM SELECT down', False), ('RHYTHM SELECT down', False)]),
+    'rhythm_controls': ('Play screen. Steps start and stop the rhythm.', [
+        ('MUSIC STYLE ARRANGER', True), ('VARIATION & MSA 1', False),
+        ('VARIATION & MSA 2', False), ('VARIATION & MSA 3', False),
+        ('VARIATION & MSA 4', False), ('SYNCHRO START', True),
+        ('START/STOP (start the rhythm)', False), ('FILL IN 1', False),
+        ('FILL IN 2', False), ('TAP TEMPO', False),
+        ('START/STOP (stop the rhythm)', False), ('INTRO & ENDING 1', False),
+        ('START/STOP (stop again if it started)', False), ('INTRO & ENDING 2', False),
+        ('START/STOP (stop again if it started)', False),
+    ]),
+    'sound_groups': ('Play screen.', [
+        (name, False) for name in (
+            'PIANO & E PIANO', 'GUITAR', 'STRINGS', 'VOCAL', 'BRASS', 'FLUTE', 'BASS',
+            'DRUM KITS', 'MALLET & ORCH PERC', 'WORLD PERC', 'ORGAN & ACCORDION', 'SAX',
+            'REED', 'SYNTH LEAD', 'SYNTH PAD', 'PERC & EFFECT')
+    ] + [('SOUND SELECT up', False), ('SOUND SELECT up', False),
+         ('SOUND SELECT down', False), ('SOUND SELECT down', False),
+         ('PIANO GRAND', False), ('PIANO UPRIGHT', False), ('PIANO ELECTRIC', False),
+         ('PIANO MODERN', False), ('MIXTURES', True), ('TECHNI-CHORD', True)]),
+    'conductor': ('Play screen.', [
+        ('LEFT SELECT', True), ('CONDUCTOR RIGHT 2', True), ('CONDUCTOR RIGHT 1', False),
+    ]),
+    'parts': ('Play screen. "Mute" means pressing a part\'s up and down buttons '
+              'together (the MUTE bracket); if that does something else, note it.', [
+        (f'{part} {action}', False)
+        for part in ('DRUMS', 'ACCOMP 3', 'ACCOMP 2', 'ACCOMP 1', 'BASS', 'LEFT',
+                     'RIGHT 2', 'RIGHT 1')
+        for action in ('up', 'down', 'mute (up + down together)',
+                       'unmute (up + down together again)')
+    ]),
+    'display_controls': ('Play screen.', [
+        ('TEMPO up', False), ('TEMPO down', False), ('PAGE up', False),
+        ('PAGE down', False), ('BALANCE', False), ('EXIT', False),
+        ('DISPLAY HOLD', True), ('OTHER PARTS/TRACKS', False), ('EXIT', False),
+    ]),
+    'effects': ('Play screen.', [
+        ('SUSTAIN PEDAL', True), ('DIGITAL EFFECT', True), ('CHORUS', True),
+        ('DIGITAL REVERB', True),
+    ]),
+    'menus': ('Play screen. Each menu is opened, then closed with EXIT.', [
+        step for name in ('SEQUENCER MENU', 'SEQUENCER PLAY', 'SOUND SETTING', 'MIDI',
+                          'MEMORY & CONTROL')
+        for step in ((name, False), ('EXIT', False))
+    ]),
+    'memory': ('Play screen. Recall only: never press SET.', [
+        (f'PANEL MEMORY {n}', False) for n in range(1, 6)
+    ]),
+}
+
+
+def _slug(text):
+    return re.sub(r'[^a-z0-9]+', '_', text.lower()).strip('_')
+
+
+def _panel_campaign(key, setup, controls):
+    steps = []
+    for control, is_toggle in controls:
+        steps.append({'action': f'Press {control}', 'label': f'{key}_{_slug(control)}'})
+        if is_toggle:
+            steps.append({'action': f'Press {control} again (back to how it was)',
+                          'label': f'{key}_{_slug(control)}_again'})
+    return {'description': f'Front panel: {key.replace("_", " ")}',
+            'setup': setup, 'steps': steps}
+
+
+for _key, (_setup, _controls) in PANEL_SECTIONS.items():
+    CAMPAIGNS[f'panel_{_key}'] = _panel_campaign(_key, _setup, _controls)
 
 
 # ============================================================

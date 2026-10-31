@@ -21,6 +21,10 @@ windowed ones also need tkinter.
 | `pr53_tempo.py` | Learns the tempo digits empirically from `mapping.csv`. | v13 CSV |
 | `pr53_analyze.py` | Offline analyzer for v13 CSV captures (`--states`, `--diff`, `--raw`). | v13 CSV |
 
+The `panel_*` campaigns in `pr53_campaign.py` cover every front-panel control,
+section by section (see `docs/front-panel.md`); `chord_roots_all12` and
+`chord_types_recognizer` cover the chord symbols.
+
 "Live stream" is the event log the tap prints over USB (format in
 `firmware/tap/README.md`); the current v16 tap firmware produces it. The
 **v13 CSV** tools expect the older multiplex-snapshot format (sample in

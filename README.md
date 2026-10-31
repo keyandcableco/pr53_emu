@@ -43,6 +43,7 @@ piano CPU ── HD44780 bus (CN1) ──► carrier J1 ─ level shifters ─�
 | [`hardware/carrier/`](hardware/carrier/) | The PR53 carrier v2 board: KiCad, generator scripts, Gerbers, bring-up notes (`rev1/` is the first fab) |
 | [`hardware/archive/`](hardware/archive/) | Earlier perfboard maps and board plans |
 | [`docs/piano-interface.md`](docs/piano-interface.md) | The piano side: CN1 pinout, the bus, busy flag, power |
+| [`docs/front-panel.md`](docs/front-panel.md) | Every panel control and display field, decode status, service test modes |
 
 ## Build
 
