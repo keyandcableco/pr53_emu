@@ -43,6 +43,25 @@ static inline void wr_data16(uint16_t d) {
 }
 static inline void wr_param(uint8_t p) { wr_data16(p); }  // params are 8-bit-in-16
 
+// Power, VCOM and gamma set-up: MCUFRIEND_kbv's ILI9486 table (github.com/
+// prenticedavid/MCUFRIEND_kbv, case 0x9486, GAMMA9486 4). The chip's own
+// defaults ("default GAMMA terrible" there) give a response that isn't even
+// monotonic: on this panel a value of 1 lit brighter than 16 (test screen,
+// 2026-10-31), which is what made every colour look wrong. Each entry is
+// command, parameter count, parameters.
+static const uint8_t PANEL_SETUP[] = {
+    0xC0, 2, 0x0d, 0x0d,                 // power control 1
+    0xC1, 2, 0x43, 0x00,                 // power control 2
+    0xC2, 1, 0x00,                       // power control 3
+    0xC5, 4, 0x00, 0x48, 0x00, 0x48,     // VCOM control
+    0xB4, 1, 0x00,                       // inversion control
+    0xB6, 3, 0x02, 0x02, 0x3B,           // display function control
+    0xE0, 15,
+        0x0F, 0x21, 0x1C, 0x0B, 0x0E, 0x08, 0x49, 0x98, 0x38, 0x09, 0x11, 0x03, 0x14, 0x10, 0x00,  // positive gamma
+    0xE1, 15,
+        0x0F, 0x2F, 0x2B, 0x0C, 0x0E, 0x06, 0x47, 0x76, 0x37, 0x07, 0x11, 0x04, 0x23, 0x1E, 0x00,  // negative gamma
+};
+
 void ili9488_init(void) {
     // Configure DB0-15 + control lines as outputs.
     for (int i = 0; i < 16; i++) {
@@ -64,14 +83,19 @@ void ili9488_init(void) {
     gpio_put(PAR_PIN_RST, 0); sleep_ms(20);
     gpio_put(PAR_PIN_RST, 1); sleep_ms(150);
 
-    wr_cmd(0x01); sleep_ms(120);        // software reset
-    wr_cmd(0x11); sleep_ms(120);        // sleep out
-
+    wr_cmd(0x01); sleep_ms(150);        // software reset
+    wr_cmd(0x28);                       // display off while it's set up
     wr_cmd(0x3A); wr_param(0x55);       // COLMOD = 16-bit RGB565
-
+    for (size_t i = 0; i < sizeof(PANEL_SETUP); ) {
+        wr_cmd(PANEL_SETUP[i]);
+        uint8_t n = PANEL_SETUP[i + 1];
+        for (uint8_t k = 0; k < n; k++) wr_param(PANEL_SETUP[i + 2 + k]);
+        i += 2u + n;
+    }
+    wr_cmd(0x11); sleep_ms(150);        // sleep out
+    wr_cmd(0x29);                       // display on
     wr_cmd(0x36); wr_param(theme_madctl());  // rotation + color order from pr53_theme.h
-
-    wr_cmd(0x29); sleep_ms(20);         // display on
+    wr_cmd(0x20);                       // inversion off
 }
 
 void ili9488_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {

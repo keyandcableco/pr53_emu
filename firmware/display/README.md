@@ -49,7 +49,9 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
   right end of the CHORD box and "TRANSPOSE" in the lower right box.
 - **Dirty tracking:** `render_frame()` repaints only the fields that changed.
 - **Panel set-up happens once, at boot** (`ili9488_init()` on core 1, then
-  `render_static()` paints the fixed layout). Power the panel together with the
+  `render_static()` paints the fixed layout). It includes the power, VCOM and
+  gamma settings from MCUFRIEND_kbv's ILI9486 table; without them the panel's
+  brightness isn't even monotonic and no colour comes out right. Power the panel together with the
   Pico; a panel connected later stays blank until the Pico restarts.
 
 ## Wiring: Pico 2 to the HiLetgo 36-pin header
@@ -102,8 +104,11 @@ line containing that text) and the capture with `LOG=...`:
 
     make -f host.mk preview NOTE="capture step 5: menus_sound_setting"
 
-The preview shows true colours. This panel swaps red and blue and ignores its
-own BGR setting, so `THEME_SWAP_RB` does the swap in software.
+The preview shows true colours. This panel lights bus bits 0-4 as red, so
+`THEME_SWAP_RB` swaps red and blue in software. If colours ever look wrong
+on a panel, flash `pr53_colour_test.uf2` (built alongside `pr53_fw.uf2`) and
+photograph it: one bar per data line, raw R/G/B/W, and the palette encoded
+eight ways (see `src/colour_test.c`).
 
 ## Not decoded yet
 

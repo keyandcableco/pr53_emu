@@ -21,26 +21,20 @@
 #define THEME_ROTATION   1
 
 // ===========================================================================
-// 2. COLOR ORDER  — fixes the "green looks blue/grey" swap.
+// 2. COLOR ORDER
 // ===========================================================================
-// The carrier's HiLetgo panel swaps red and blue AND ignores the BGR bit
-// below: a yellow-green field came out cyan with the bit clear and with it set
-// (2026-10-31, three flashes). So the swap is done in software instead.
-//   THEME_SWAP_RB  1 = swap red and blue before sending (this panel)
-//   THEME_BGR      the panel's own RGB/BGR bit (MADCTL), for panels that
-//                  honour it: 0 = RGB, 1 = BGR
-// If red and blue still look swapped, set THEME_SWAP_RB to 0.
+// Measured on the carrier's HiLetgo panel with the colour test screen
+// (src/colour_test.c, 2026-10-31): bus bits 0-4 light red, 5-10 green,
+// 11-15 blue. So bytes go out as they are, and red and blue trade places.
+// (Earlier colour trouble came from the panel's missing power and gamma
+// set-up, now in the driver, not from these settings.)
+//   THEME_SWAP_RB    1 = swap red and blue in software (this panel)
+//   THEME_BGR        the panel's own RGB/BGR bit (MADCTL), untested on this
+//                    panel: 0 = RGB, 1 = BGR
+//   THEME_SWAP_BYTES 1 = send each pixel's bytes swapped (not this panel)
 #define THEME_SWAP_RB    1
 #define THEME_BGR        0
-
-// ---- Pixel byte order ----
-// Some parallel ILI9486 boards latch the 16-bit pixel high-byte/low-byte
-// opposite to what the SDK emits. That shuffles the color in a way BGR alone
-// can't fix — the classic symptom is green coming out RED (or blue). If BGR
-// flipping doesn't get you green, set this to 1.
-//   0 = normal (hi byte, lo byte)
-//   1 = swapped (lo byte, hi byte)
-#define THEME_SWAP_BYTES 1
+#define THEME_SWAP_BYTES 0
 
 // ===========================================================================
 // 3. PALETTE  — the actual colors, as R,G,B (0-255 each), like hex web colors.

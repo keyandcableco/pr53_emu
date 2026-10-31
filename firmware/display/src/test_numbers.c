@@ -11,7 +11,9 @@
 //    redraws the screen (after a menu or the RHYTHM screen) it writes the
 //    custom characters over several refreshes, so a frame may show a value
 //    with its leading digits not drawn yet (18 or 8 for 118), as the glass
-//    does. Those stretches last 3-6 frames; any other value, or a stretch long
+//    does. Only the campaigns are checked (up to the last "# NOTE" line): the
+//    log keeps recording free play afterwards, where volumes move. Those
+//    stretches last 3-6 frames; any other value, or a stretch long
 //    enough to be a steady screen (over 8 frames), fails. Complete frames must
 //    also show the meters for those values: 5 bars at 118 and 127, 4 at 113
 //    and 100 (a bar per ~23), or none where a meter isn't redrawn yet.
@@ -33,15 +35,22 @@ static int parse_event(const char *ln, int *is_data, unsigned *byte) {
     return 1;
 }
 
-// Calls fn on every frame the piano commits (DISP_CTRL with the display on).
-static int replay(const char *path, void (*fn)(const DisplayState *, void *), void *ctx) {
+// Calls fn on every frame the piano commits (DISP_CTRL with the display on),
+// up to the last "# NOTE" line if notes_only is set.
+static int replay(const char *path, int notes_only,
+                  void (*fn)(const DisplayState *, void *), void *ctx) {
     FILE *f = fopen(path, "r");
     if (!f) { printf("cannot open %s\n", path); return -1; }
+    char ln[512];
+    long last_note = -1, line = 0;
+    while (notes_only && fgets(ln, sizeof(ln), f))
+        if (line++, strstr(ln, "# NOTE ")) last_note = line;
+    rewind(f);
     HD44780 hw; hd44780_init(&hw);
     DisplayState frame; memset(&frame, 0, sizeof(frame));
-    char ln[512];
     int n = 0;
-    while (fgets(ln, sizeof(ln), f)) {
+    line = 0;
+    while (fgets(ln, sizeof(ln), f) && (!notes_only || ++line <= last_note)) {
         int isd = 0; unsigned b = 0;
         if (!parse_event(ln, &isd, &b)) continue;
         if (hd44780_feed(&hw, (uint8_t)b, isd != 0) && hw.display_on) {
@@ -106,7 +115,7 @@ int main(int argc, char **argv) {
     int fails = 0;
 
     static Sweep w;
-    if (replay(argv[1], on_sweep, &w) < 0) return 1;
+    if (replay(argv[1], 0, on_sweep, &w) < 0) return 1;
     // values each sweep passed through, either side of 100 (part, value).
     // P7's hundreds digit (C2) isn't written until late in that capture, so
     // its 114 and 118 read 14 and 18; with tens and ones swapped they'd read
@@ -129,7 +138,7 @@ int main(int argc, char **argv) {
     fails += !ok;
 
     Campaign c = {0, 0, 0, 0, 0, 0, 0};
-    if (replay(argv[2], on_campaign, &c) < 0) return 1;
+    if (replay(argv[2], 1, on_campaign, &c) < 0) return 1;
     ok = c.match > 0 && !c.wrong && c.longest <= 8;
     printf("CHECK campaign reads 118 113 113 113 118 113/--- 100 127 (%d of %d play frames, the rest "
            "mid-redraw, longest %d; %d wrong): %s\n", c.match, c.play, c.longest, c.wrong, ok ? "PASS" : "FAIL");
