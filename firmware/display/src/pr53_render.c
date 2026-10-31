@@ -45,7 +45,7 @@
 #define BARS_Y   201                  // top of the widest (top) bar
 #define BAR_H    4
 #define BAR_GAP  3
-#define RULE2_Y  (BARS_Y + 3 * (BAR_H + BAR_GAP) + BAR_H + 1)
+#define RULE2_Y  (BARS_Y + 4 * (BAR_H + BAR_GAP) + BAR_H + 1)   // just below the fifth bar
 #define NUM_Y    248
 #define PTR_Y    282
 #define COL_W    ((ILI_W - 2*M) / PR53_NUM_PARTS)
@@ -231,9 +231,6 @@ static void draw_meter(int part, int level) {
         ili9488_fill_rect(cx - 22, y, 44, BAR_H, COL_FIELD);
         if (lit) ili9488_fill_rect(cx - bw/2, y, bw, BAR_H, COL_SEG);
     }
-    // the dotted rule runs through the bars; repaint it where it was covered
-    for (int x = cx - 22; x < cx + 22; x++)
-        if (((x - M) % 5) < 2 && x >= M) ili9488_fill_rect(x, RULE2_Y, 1, 2, COL_RULE);
 }
 
 static void draw_number(int part, int value, bool pointer_on) {
