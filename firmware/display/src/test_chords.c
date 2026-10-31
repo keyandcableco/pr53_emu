@@ -22,6 +22,9 @@ static const struct { const char *label, *chord; } EXPECT[] = {
     {"chord_root_A", "Bb"},  {"chord_root_A#", "Bb"}, {"chord_root_B", "B"},
 };
 
+// A complete run saves all 12 roots; fewer means the run was cut short.
+#define NSTEPS ((int)(sizeof(EXPECT) / sizeof(EXPECT[0])))
+
 static int parse_event(const char *ln, int *is_data, unsigned *byte) {
     if (!strstr(ln, " W ")) return 0;
     const char *cmd = strstr(ln, " CMD "), *dat = strstr(ln, " DAT "), *hx;
@@ -77,6 +80,6 @@ int main(int argc, char **argv) {
 
     for (int i = 0; i < checks; i++) printf("%s\n", lines[i]);
     printf("\nCHECK chord roots and tempo (%d steps): %s\n", checks,
-           (checks && !fails) ? "PASS" : "FAIL");
-    return (checks && !fails) ? 0 : 1;
+           (checks == NSTEPS && !fails) ? "PASS" : "FAIL");
+    return (checks == NSTEPS && !fails) ? 0 : 1;
 }

@@ -134,16 +134,17 @@ def decode_tempo(cgram):
     """Decode the 3 tempo digits from CGRAM. Return int or None."""
     chars = []
     for ch, col in TEMPO_DIGITS:
-        segs = set()
-        for row, seg in ROW_TO_SEG.items():
-            # Rows 6-7 of the hundreds column are the chord's flat/sharp
-            # (CHORD_ACCIDENTAL), not tempo segments; the hundreds digit is
-            # only ever 1 or 2, which fit in the rows above.
-            if (ch, col) == TEMPO_DIGITS[0] and row >= 6:
-                continue
-            if (cgram[ch * 8 + row] >> (4 - col)) & 1:
-                segs.add(seg)
-        chars.append(DIGIT_TABLE.get(frozenset(segs), '?'))
+        segs = {seg for row, seg in ROW_TO_SEG.items()
+                if (cgram[ch * 8 + row] >> (4 - col)) & 1}
+        digit = DIGIT_TABLE.get(frozenset(segs), '?')
+        # Rows 6-7 of the hundreds column also carry the chord's flat/sharp
+        # (CHORD_ACCIDENTAL). If the column doesn't read as a digit, try again
+        # without them; no flat/sharp combination looks like a digit.
+        if digit == '?' and (ch, col) == TEMPO_DIGITS[0]:
+            segs = {seg for row, seg in ROW_TO_SEG.items() if row < 6
+                    and (cgram[ch * 8 + row] >> (4 - col)) & 1}
+            digit = DIGIT_TABLE.get(frozenset(segs), '?')
+        chars.append(digit)
     text = ''.join(chars).lstrip()
     try:
         return int(text)

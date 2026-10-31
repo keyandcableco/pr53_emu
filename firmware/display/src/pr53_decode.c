@@ -55,10 +55,8 @@ static char segs_to_letter(uint8_t s) {
         case (SB|SF|SG):                       return 'F';
         case (SA|SD|SE|SF|SG):                return 'G';  // measured 2026-10-31
         case (SA|SC|SD|SE|SF|SG):             return 'G';  // earlier guess, kept
-        case (SA|SB|SC|SD|SE|SF|SG):          return 'A';  // note: Python 'A' = b,c,d,e,f,g
-        case (SB|SC|SD|SE|SF|SG):             return 'A';
-        case (SA|SB|SC|SD|SE|SF):             return 'B';  // placeholder; see note
-        case (SA|SB|SC|SD|SF|SG):             return 'B';
+        case (SB|SC|SD|SE|SF|SG):             return 'A';  // measured 2026-10-31
+        case (SA|SB|SC|SD|SF|SG):             return 'B';  // measured 2026-10-31
         default:                               return 0;    // unknown letter
     }
 }
@@ -119,10 +117,11 @@ int pr53_decode_tempo(const uint8_t *cgram) {
     int val = 0, seen = 0;
     for (int col = 0; col < 3; col++) {
         uint8_t s = gather_segs(cgram, 1, col, TEMPO_ROW_SEG);
-        // Rows 6-7 of the hundreds column are the chord's flat/sharp, not
-        // tempo segments (row 7 maps to SD); hundreds is only ever 1 or 2.
-        if (col == 0) s &= (uint8_t)~SD;
         char c = segs_to_digit(s);
+        // Rows 6-7 of the hundreds column also carry the chord's flat/sharp
+        // (row 7 maps to SD). If the column doesn't read as a digit, try again
+        // without that row; no flat/sharp combination looks like a digit.
+        if (col == 0 && c == '?') c = segs_to_digit(s & (uint8_t)~SD);
         if (c == ' ') continue;          // leading blank
         if (c < '0' || c > '9') return -1;
         val = val * 10 + (c - '0');
@@ -253,7 +252,7 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
 
     out->tempo = pr53_decode_tempo(cg);
 
-    char chord[4]; pr53_decode_chord(cg, chord);
+    char chord[4] = {0}; pr53_decode_chord(cg, chord);
     memcpy(out->chord, chord, sizeof(out->chord));
 
     // Transpose: reuse chord-letter font at C6 c3 + sharp bit C2:r6:c3.
