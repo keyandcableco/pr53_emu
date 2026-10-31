@@ -47,26 +47,27 @@
 // three numbers per line to recolor everything. A few ready-made themes are
 // below — copy one into the ACTIVE block, or roll your own.
 
-// ---- ACTIVE THEME (edit these) : "Technics green" (the original glass) ----
-#define THEME_FIELD_R   0xc7   // backlight field (the lit background)
-#define THEME_FIELD_G   0xd4
-#define THEME_FIELD_B   0x3f
+// ---- ACTIVE THEME (edit these) : "Technics green", sampled from a photo of a
+//      working SX-PR53 (segments a little darker than the photo, for contrast) ----
+#define THEME_FIELD_R   0xc4   // backlight field (the lit background)
+#define THEME_FIELD_G   0xcf
+#define THEME_FIELD_B   0x50
 
-#define THEME_SEG_R     0x2b   // lit segments (digits, meters, text)
-#define THEME_SEG_G     0x3a
-#define THEME_SEG_B     0x12
+#define THEME_SEG_R     0x38   // lit segments (digits, meters, text)
+#define THEME_SEG_G     0x54
+#define THEME_SEG_B     0x3c
 
-#define THEME_SEGOFF_R  0xb3   // unlit segment "ghost" (faint on the field)
-#define THEME_SEGOFF_G  0xc0
-#define THEME_SEGOFF_B  0x4a
+#define THEME_SEGOFF_R  0xb6   // unlit segment "ghost" (faint on the field)
+#define THEME_SEGOFF_G  0xc2
+#define THEME_SEGOFF_B  0x50
 
-#define THEME_PRINT_R   0x5a   // printed labels (part names under the meters)
-#define THEME_PRINT_G   0x6a
-#define THEME_PRINT_B   0x34
+#define THEME_PRINT_R   0x38   // printed labels (part names under the meters)
+#define THEME_PRINT_G   0x54
+#define THEME_PRINT_B   0x3c
 
-#define THEME_RULE_R    0x2f   // divider lines / box outlines
-#define THEME_RULE_G    0x3d
-#define THEME_RULE_B    0x17
+#define THEME_RULE_R    0x48   // divider lines / box outlines
+#define THEME_RULE_G    0x64
+#define THEME_RULE_B    0x4a
 
 // ---------------------------------------------------------------------------
 // READY-MADE THEMES — to use one, copy its 15 numbers over the ACTIVE block.

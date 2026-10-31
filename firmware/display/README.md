@@ -39,10 +39,13 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
   quiet (`SETTLE_US` in `main.c`) are published too. Gaps inside one update
   reach 30 ms and the piano refreshes every ~105 ms, so that fires once an
   update is over and before the next tick.
-- **Layout:** follows the printed frame of the original glass: TEMPO, CHORD and
-  PAGE/TRANSPOSE boxes on top, the two text lines in a big box, the part meters
-  between two dotted rules. Numbers are 7-segment digits with faint ghost
-  segments.
+- **Layout:** follows the original glass (owner's manual pp. 19-21 and 32,
+  and a photo of a working unit): TEMPO, CHORD and PAGE/TRANSPOSE boxes on
+  top; RIGHT 1 / RHYTHM with their icons beside the two dot-matrix text lines;
+  wedge-shaped part meters between two dotted rules, slanted 7-segment numbers
+  and a pointer under each part. The labels, pointers and meters show on the
+  normal display only, as on the glass. Transpose puts the actual key at the
+  right end of the CHORD box and "TRANSPOSE" in the lower right box.
 - **Dirty tracking:** `render_frame()` repaints only the fields that changed.
 - **Panel set-up happens once, at boot** (`ili9488_init()` on core 1, then
   `render_static()` paints the fixed layout). Power the panel together with the

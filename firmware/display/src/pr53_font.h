@@ -12,6 +12,8 @@
 
 // Draw NUL-terminated text at (x,y) top-left, integer scale, color.
 void font_text(int x, int y, const char *s, int scale, uint16_t color);
+// Same, but drawn as separate dots, like the original LCD's characters.
+void font_text_dots(int x, int y, const char *s, int scale, uint16_t color);
 // Same, horizontally centered on cx.
 void font_text_centered(int cx, int y, const char *s, int scale, uint16_t color);
 

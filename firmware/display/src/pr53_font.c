@@ -114,6 +114,20 @@ void font_text(int x, int y, const char *s, int scale, uint16_t color) {
     }
 }
 
+// Same layout as font_text, but each pixel is a separate dot with a 1 px gap,
+// like the original LCD's dot-matrix characters. scale must be 2 or more.
+void font_text_dots(int x, int y, const char *s, int scale, uint16_t color) {
+    int cx = x;
+    for (; *s; s++) {
+        const Glyph *g = find_glyph(*s);
+        for (int col = 0; col < 5; col++)
+            for (int ry = 0; ry < 7; ry++)
+                if (g->col[col] & (1 << ry))
+                    ili9488_fill_rect(cx + col*scale, y + ry*scale, scale - 1, scale - 1, color);
+        cx += glyph_w(scale);
+    }
+}
+
 static int text_px_w(const char *s, int scale) {
     return (int)strlen(s) * glyph_w(scale);
 }
@@ -141,13 +155,21 @@ void font_box(int x, int y, int w, int h, uint16_t color) {
 }
 
 void font_kbd_icon(int x, int y, uint16_t color) {
+    // a keyboard: outline, white-key dividers, short black keys
     font_box(x, y, 30, 18, color);
     for (int i = 1; i < 5; i++)
         ili9488_fill_rect(x + i*6, y, 1, 18, color);
+    for (int i = 0; i < 5; i++)
+        if (i != 2) ili9488_fill_rect(x + 4 + i*6, y + 1, 3, 9, color);
 }
 
 void font_drum_icon(int x, int y, uint16_t color) {
-    // simple circle-ish: a filled square with a dot (placeholder)
-    font_box(x, y, 20, 18, color);
-    ili9488_fill_rect(x + 8, y + 7, 4, 4, color);
+    // a drum kit: bass drum, two cymbals on stands, a snare
+    font_box(x + 6, y + 8, 14, 10, color);              // bass drum
+    ili9488_fill_rect(x + 11, y + 11, 4, 4, color);
+    ili9488_fill_rect(x, y + 3, 8, 1, color);            // left cymbal + stand
+    ili9488_fill_rect(x + 3, y + 3, 1, 15, color);
+    ili9488_fill_rect(x + 19, y + 1, 8, 1, color);       // right cymbal + stand
+    ili9488_fill_rect(x + 23, y + 1, 1, 17, color);
+    font_box(x + 1, y + 10, 5, 4, color);                // snare
 }
