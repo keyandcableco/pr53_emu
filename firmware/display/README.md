@@ -19,6 +19,7 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       main.c                  Core 0 decodes, core 1 renders
       test_pipeline.c         Host test: feeds a real capture through the decoder
       test_chords.c           Host test: replays the chord-root campaign
+      test_numbers.c          Host test: part numbers and meters, from volume sweeps
       preview.c               Host tool: draws a capture moment as an image
     CMakeLists.txt            Pico SDK build -> pr53_fw.uf2
     host.mk                   Build, test and preview on a PC
@@ -77,7 +78,7 @@ whenever it has 5 V.
 ## Build, test, flash
 
     # On a PC, no hardware needed:
-    make -f host.mk test       # expect: CHECK P8 value == 127: PASS
+    make -f host.mk test       # expect every CHECK line to end in PASS
     make -f host.mk check      # compile every module
 
     # For the Pico 2:
@@ -101,12 +102,15 @@ line containing that text) and the capture with `LOG=...`:
 
     make -f host.mk preview NOTE="capture step 5: menus_sound_setting"
 
-The preview shows true colours; RGB/BGR order is a panel setting it can't show.
+The preview shows true colours. This panel swaps red and blue and ignores its
+own BGR setting, so `THEME_SWAP_RB` does the swap in software.
 
 ## Not decoded yet
 
-- Hundreds digits for Parts 1-7 (numbers show tens and ones). When they're
-  mapped in Python, mirror the change in `NUMBER_MAP[]` in `pr53_decode.c`.
 - The two small 2-digit displays (`small_top`/`small_bot` in
   `pr53_decode_all`) show "--".
-- Part 6's meter, and many of the shaped labels on the glass.
+- Chord types, the PAGE/MENU PAGE arrows, the MIDI icon and most of the
+  shaped labels on the glass. `docs/front-panel.md` lists what's known.
+
+When a field is mapped in Python (`tools/pr53_display.py`), mirror it in
+`pr53_decode.c`; `make -f host.mk test` replays real captures through both.

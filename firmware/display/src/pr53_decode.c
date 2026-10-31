@@ -61,20 +61,27 @@ static char segs_to_letter(uint8_t s) {
     }
 }
 
-// ---- Bargraph number map: [hundreds, tens, ones] as (char,col); -1 = none ----
-// Ported from BARGRAPH_NUMBER_MAP. Each entry: {h_char,h_col, t_char,t_col,
-// o_char,o_col}. A char of -1 means that digit isn't mapped (blank).
-typedef struct { int8_t ch, col; } CellRef;
-static const CellRef NUMBER_MAP[PR53_NUM_PARTS][3] = {
-    // {hundreds},           {tens},    {ones}
-    { {-1,-1}, {4,0}, {5,2} },  // P1 DRUMS
-    { {-1,-1}, {4,1}, {5,1} },  // P2 AC3
-    { {-1,-1}, {4,2}, {7,4} },  // P3 AC2
-    { {-1,-1}, {4,3}, {7,3} },  // P4 AC1
-    { {-1,-1}, {4,4}, {7,2} },  // P5 BASS
-    { {-1,-1}, {-1,-1}, {3,2} },// P6 LEFT  (tens unknown)
-    { {-1,-1}, {2,4}, {3,0} },  // P7 R2
-    { {2,2},  {2,3}, {2,1} },   // P8 R1  (fully solved vs photo=127)
+// ---- Part numbers ----
+// P1-P5 digits use the bargraph row order, and their hundreds place is a lone
+// "1": one bit, kept away from the digits in row 6 of C1 and C3. P6-P8 sit in
+// C2/C3, whose digits put d on row 7 like the tempo, and have a full hundreds
+// digit, so a part that's switched off shows "---". Worked out from the volume
+// sweeps in captures/session_071830.log and the campaign log.
+typedef struct {
+    int8_t h_ch, h_row, h_col;   // h_row >= 0: a lone "1" at that bit; -1: a digit
+    int8_t t_ch, t_col, o_ch, o_col;
+    const uint8_t *rows;         // row -> segment order of the digits
+} NumberDef;
+static const NumberDef NUMBERS[PR53_NUM_PARTS] = {
+    // hundreds     tens   ones
+    { 1, 6, 2,      4, 0,  5, 2,  BAR_ROW_SEG   },  // P1 DRUMS
+    { 1, 6, 1,      4, 1,  5, 1,  BAR_ROW_SEG   },  // P2 AC3
+    { 3, 6, 4,      4, 2,  7, 4,  BAR_ROW_SEG   },  // P3 AC2
+    { 3, 6, 3,      4, 3,  7, 3,  BAR_ROW_SEG   },  // P4 AC1
+    { 3, 6, 2,      4, 4,  7, 2,  BAR_ROW_SEG   },  // P5 BASS
+    { 3, -1, 4,     3, 3,  3, 2,  TEMPO_ROW_SEG },  // P6 LEFT
+    { 2, -1, 4,     3, 0,  3, 1,  TEMPO_ROW_SEG },  // P7 R2
+    { 2, -1, 2,     2, 3,  2, 1,  TEMPO_ROW_SEG },  // P8 R1
 };
 
 // (Bargraph meter levels are defined below as LEVELS[] with explicit rows.)
@@ -96,17 +103,8 @@ static uint8_t gather_segs(const uint8_t *cgram, int ch, int col,
     return s;
 }
 
-// Decode a single bargraph digit column, retrying with segment 'd' added if
-// the first lookup fails (mirrors _decode_digit_segs(): Part 6/7 ones omit
-// the bottom bar).
-static char decode_digit_col(const uint8_t *cgram, int ch, int col) {
-    uint8_t s = gather_segs(cgram, ch, col, BAR_ROW_SEG);
-    char c = segs_to_digit(s);
-    if (c == '?') {
-        char c2 = segs_to_digit(s | SD);
-        if (c2 != '?') return c2;
-    }
-    return c;
+static char digit_at(const uint8_t *cgram, int ch, int col, const uint8_t *rows) {
+    return segs_to_digit(gather_segs(cgram, ch, col, rows));
 }
 
 // ---------------------------------------------------------------------------
@@ -146,17 +144,17 @@ bool pr53_decode_chord(const uint8_t *cgram, char out[4]) {
 
 int pr53_decode_bargraph_number(const uint8_t *cgram, int part) {
     if (part < 0 || part >= PR53_NUM_PARTS) return -1;
-    const CellRef *m = NUMBER_MAP[part];
+    const NumberDef *n = &NUMBERS[part];
+    char d[3];
+    d[0] = (n->h_row >= 0) ? (cell_bit(cgram, n->h_ch, n->h_row, n->h_col) ? '1' : ' ')
+                           : digit_at(cgram, n->h_ch, n->h_col, n->rows);
+    d[1] = digit_at(cgram, n->t_ch, n->t_col, n->rows);
+    d[2] = digit_at(cgram, n->o_ch, n->o_col, n->rows);
     int val = 0, any = 0;
-    for (int d = 0; d < 3; d++) {  // hundreds, tens, ones
-        if (m[d].ch < 0) continue; // unmapped digit -> skip (acts as blank/0)
-        char c = decode_digit_col(cgram, m[d].ch, m[d].col);
-        if (c == ' ') continue;    // blank leading digit
-        if (c < '0' || c > '9') return -1;   // undecodable -> whole number invalid
-        // place value: fold in by shifting existing value. Because unmapped
-        // higher digits are skipped, we accumulate left-to-right over the
-        // digits that ARE present.
-        val = val * 10 + (c - '0');
+    for (int i = 0; i < 3; i++) {
+        if (d[i] == ' ' && !any) continue;          // leading blank
+        if (d[i] < '0' || d[i] > '9') return -1;    // "---", a gap, or not a digit
+        val = val * 10 + (d[i] - '0');
         any = 1;
     }
     return any ? val : -1;
@@ -165,12 +163,13 @@ int pr53_decode_bargraph_number(const uint8_t *cgram, int part) {
 // Bargraph meter level. In Python's BARGRAPH_LEVEL_MAP each part fills ONE
 // CGRAM column bottom-up; level = count of lit rows. The structure: P1-5 use
 // char C0 cols 0..4 (rows 5,4,3,2,1); P6 uses C6 col4; P7/P8 use C7 col0/col1
-// (rows 7,6,5,4,3). Expressed cleanly as (char,col,rows[5]).
+// (rows 6,5,4,3,2; row 7 of those columns stays lit whatever the level, even at
+// 0, so it isn't a bar). Expressed cleanly as (char,col,rows[5]).
 typedef struct { uint8_t ch, col; uint8_t rows[5]; } LevelDef;
 static const LevelDef LEVELS[PR53_NUM_PARTS] = {
     {0,0,{5,4,3,2,1}}, {0,1,{5,4,3,2,1}}, {0,2,{5,4,3,2,1}},
     {0,3,{5,4,3,2,1}}, {0,4,{5,4,3,2,1}},
-    {6,4,{7,6,5,4,3}}, {7,0,{7,6,5,4,3}}, {7,1,{7,6,5,4,3}},
+    {6,4,{6,5,4,3,2}}, {7,0,{6,5,4,3,2}}, {7,1,{6,5,4,3,2}},
 };
 
 static int level_count(const uint8_t *cgram, int part) {

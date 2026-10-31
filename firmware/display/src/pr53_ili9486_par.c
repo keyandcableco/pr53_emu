@@ -124,7 +124,7 @@ void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h, const uint16_t
 }
 
 // Write the framebuffer as a binary PPM, in true colours (undoing the theme's
-// byte swap; the panel's RGB/BGR order is a hardware setting, not shown here).
+// byte and red/blue swaps; the panel's own BGR bit isn't shown here).
 int ili9488_host_save_ppm(const char *path) {
     FILE *f = fopen(path, "wb");
     if (!f) return -1;
@@ -137,6 +137,9 @@ int ili9488_host_save_ppm(const char *path) {
 #endif
             uint8_t rgb[3] = { (uint8_t)((v >> 11) << 3), (uint8_t)(((v >> 5) & 0x3F) << 2),
                                (uint8_t)((v & 0x1F) << 3) };
+#if THEME_SWAP_RB
+            uint8_t t = rgb[0]; rgb[0] = rgb[2]; rgb[2] = t;
+#endif
             fwrite(rgb, 1, 3, f);
         }
     return fclose(f);

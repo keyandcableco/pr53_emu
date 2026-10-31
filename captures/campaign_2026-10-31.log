@@ -9569,3 +9569,2679 @@ t_wall=1793481663.421 # ALIVE us=2464187046 ring_depth=0 drops=0
 t_wall=1793481665.421 # ALIVE us=2466187101 ring_depth=0 drops=0
 t_wall=1793481667.421 # ALIVE us=2468187155 ring_depth=0 drops=0
 t_wall=1793481669.420 # ALIVE us=2470187210 ring_depth=0 drops=0
+t_wall=1793481671.421 # ALIVE us=2472187265 ring_depth=0 drops=0
+t_wall=1793481673.421 # ALIVE us=2474187318 ring_depth=0 drops=0
+t_wall=1793481675.421 # ALIVE us=2476187370 ring_depth=0 drops=0
+t_wall=1793481677.421 # ALIVE us=2478187422 ring_depth=0 drops=0
+t_wall=1793481679.421 # ALIVE us=2480187477 ring_depth=0 drops=0
+t_wall=1793481681.421 # ALIVE us=2482187529 ring_depth=0 drops=0
+t_wall=1793481683.420 # ALIVE us=2484187581 ring_depth=0 drops=0
+t_wall=1793481685.420 # ALIVE us=2486187635 ring_depth=0 drops=0
+t_wall=1793481687.420 # ALIVE us=2488187691 ring_depth=0 drops=0
+t_wall=1793481689.421 # ALIVE us=2490187743 ring_depth=0 drops=0
+t_wall=1793481691.420 # ALIVE us=2492187795 ring_depth=0 drops=0
+t_wall=1793481693.421 # ALIVE us=2494187847 ring_depth=0 drops=0
+t_wall=1793481695.420 # ALIVE us=2496187902 ring_depth=0 drops=0
+t_wall=1793481697.420 # ALIVE us=2498187956 ring_depth=0 drops=0
+t_wall=1793481699.420 # ALIVE us=2500188011 ring_depth=0 drops=0
+t_wall=1793481701.420 # ALIVE us=2502188065 ring_depth=0 drops=0
+t_wall=1793481703.420 # ALIVE us=2504188120 ring_depth=0 drops=0
+t_wall=1793481705.420 # ALIVE us=2506188174 ring_depth=0 drops=0
+t_wall=1793481707.420 # ALIVE us=2508188227 ring_depth=0 drops=0
+t_wall=1793481709.421 # ALIVE us=2510188279 ring_depth=0 drops=0
+t_wall=1793481711.420 # ALIVE us=2512188335 ring_depth=0 drops=0
+t_wall=1793481713.420 # ALIVE us=2514188389 ring_depth=0 drops=0
+t_wall=1793481715.420 # ALIVE us=2516188443 ring_depth=0 drops=0
+t_wall=1793481717.420 # ALIVE us=2518188498 ring_depth=0 drops=0
+t_wall=1793481719.419 # ALIVE us=2520188554 ring_depth=0 drops=0
+t_wall=1793481721.420 # ALIVE us=2522188609 ring_depth=0 drops=0
+t_wall=1793481723.420 # ALIVE us=2524188663 ring_depth=0 drops=0
+t_wall=1793481725.419 # ALIVE us=2526188715 ring_depth=0 drops=0
+t_wall=1793481727.420 # ALIVE us=2528188772 ring_depth=0 drops=0
+t_wall=1793481729.419 # ALIVE us=2530188824 ring_depth=0 drops=0
+t_wall=1793481731.419 # ALIVE us=2532188877 ring_depth=0 drops=0
+t_wall=1793481733.420 # ALIVE us=2534188932 ring_depth=0 drops=0
+t_wall=1793481735.419 # ALIVE us=2536188986 ring_depth=0 drops=0
+t_wall=1793481737.419 # ALIVE us=2538189041 ring_depth=0 drops=0
+t_wall=1793481739.419 # ALIVE us=2540189094 ring_depth=0 drops=0
+t_wall=1793481741.419 # ALIVE us=2542189145 ring_depth=0 drops=0
+t_wall=1793481743.420 # ALIVE us=2544189198 ring_depth=0 drops=0
+t_wall=1793481745.419 # ALIVE us=2546189253 ring_depth=0 drops=0
+t_wall=1793481747.419 # ALIVE us=2548189306 ring_depth=0 drops=0
+t_wall=1793481749.419 # ALIVE us=2550189360 ring_depth=0 drops=0
+t_wall=1793481751.419 # ALIVE us=2552189413 ring_depth=0 drops=0
+t_wall=1793481753.419 # ALIVE us=2554189468 ring_depth=0 drops=0
+t_wall=1793481755.419 # ALIVE us=2556189525 ring_depth=0 drops=0
+t_wall=1793481757.419 # ALIVE us=2558189582 ring_depth=0 drops=0
+t_wall=1793481759.419 # ALIVE us=2560189634 ring_depth=0 drops=0
+t_wall=1793481761.420 # ALIVE us=2562189690 ring_depth=0 drops=0
+t_wall=1793481763.419 # ALIVE us=2564189743 ring_depth=0 drops=0
+t_wall=1793481765.419 # ALIVE us=2566189798 ring_depth=0 drops=0
+t_wall=1793481767.419 # ALIVE us=2568189852 ring_depth=0 drops=0
+t_wall=1793481769.419 # ALIVE us=2570189905 ring_depth=0 drops=0
+t_wall=1793481771.419 # ALIVE us=2572189957 ring_depth=0 drops=0
+t_wall=1793481773.419 # ALIVE us=2574190011 ring_depth=0 drops=0
+t_wall=1793481775.419 # ALIVE us=2576190065 ring_depth=0 drops=0
+t_wall=1793481777.419 # ALIVE us=2578190119 ring_depth=0 drops=0
+t_wall=1793481779.419 # ALIVE us=2580190174 ring_depth=0 drops=0
+t_wall=1793481781.419 # ALIVE us=2582190229 ring_depth=0 drops=0
+t_wall=1793481783.419 # ALIVE us=2584190283 ring_depth=0 drops=0
+t_wall=1793481785.419 # ALIVE us=2586190337 ring_depth=0 drops=0
+t_wall=1793481787.418 # ALIVE us=2588190391 ring_depth=0 drops=0
+t_wall=1793481789.418 # ALIVE us=2590190446 ring_depth=0 drops=0
+t_wall=1793481791.418 # ALIVE us=2592190498 ring_depth=0 drops=0
+t_wall=1793481793.419 # ALIVE us=2594190554 ring_depth=0 drops=0
+t_wall=1793481795.418 # ALIVE us=2596190608 ring_depth=0 drops=0
+t_wall=1793481797.418 # ALIVE us=2598190658 ring_depth=0 drops=0
+t_wall=1793481799.418 # ALIVE us=2600190711 ring_depth=0 drops=0
+t_wall=1793481801.418 # ALIVE us=2602190767 ring_depth=0 drops=0
+t_wall=1793481803.418 # ALIVE us=2604190820 ring_depth=0 drops=0
+t_wall=1793481805.418 # ALIVE us=2606190874 ring_depth=0 drops=0
+t_wall=1793481807.418 # ALIVE us=2608190927 ring_depth=0 drops=0
+t_wall=1793481809.418 # ALIVE us=2610190983 ring_depth=0 drops=0
+t_wall=1793481811.418 # ALIVE us=2612191036 ring_depth=0 drops=0
+t_wall=1793481813.418 # ALIVE us=2614191089 ring_depth=0 drops=0
+t_wall=1793481815.418 # ALIVE us=2616191143 ring_depth=0 drops=0
+t_wall=1793481817.418 # ALIVE us=2618191196 ring_depth=0 drops=0
+t_wall=1793481819.418 # ALIVE us=2620191250 ring_depth=0 drops=0
+t_wall=1793481821.418 # ALIVE us=2622191305 ring_depth=0 drops=0
+t_wall=1793481823.418 # ALIVE us=2624191359 ring_depth=0 drops=0
+t_wall=1793481825.418 # ALIVE us=2626191412 ring_depth=0 drops=0
+t_wall=1793481827.418 # ALIVE us=2628191467 ring_depth=0 drops=0
+t_wall=1793481829.418 # ALIVE us=2630191522 ring_depth=0 drops=0
+t_wall=1793481831.418 # ALIVE us=2632191575 ring_depth=0 drops=0
+t_wall=1793481833.418 # ALIVE us=2634191627 ring_depth=0 drops=0
+t_wall=1793481835.418 # ALIVE us=2636191680 ring_depth=0 drops=0
+t_wall=1793481837.418 # ALIVE us=2638191734 ring_depth=0 drops=0
+t_wall=1793481839.418 # ALIVE us=2640191789 ring_depth=0 drops=0
+t_wall=1793481841.417 # ALIVE us=2642191842 ring_depth=0 drops=0
+t_wall=1793481843.418 # ALIVE us=2644191896 ring_depth=0 drops=0
+t_wall=1793481845.418 # ALIVE us=2646191948 ring_depth=0 drops=0
+t_wall=1793481847.418 # ALIVE us=2648192003 ring_depth=0 drops=0
+t_wall=1793481849.418 # ALIVE us=2650192056 ring_depth=0 drops=0
+t_wall=1793481851.417 # ALIVE us=2652192110 ring_depth=0 drops=0
+t_wall=1793481853.417 # ALIVE us=2654192164 ring_depth=0 drops=0
+t_wall=1793481855.417 # ALIVE us=2656192216 ring_depth=0 drops=0
+t_wall=1793481857.417 # ALIVE us=2658192269 ring_depth=0 drops=0
+t_wall=1793481859.418 # ALIVE us=2660192325 ring_depth=0 drops=0
+t_wall=1793481861.418 # ALIVE us=2662192379 ring_depth=0 drops=0
+t_wall=1793481863.418 # ALIVE us=2664192434 ring_depth=0 drops=0
+t_wall=1793481865.417 # ALIVE us=2666192488 ring_depth=0 drops=0
+t_wall=1793481867.417 # ALIVE us=2668192541 ring_depth=0 drops=0
+t_wall=1793481869.417 # ALIVE us=2670192597 ring_depth=0 drops=0
+t_wall=1793481871.417 # ALIVE us=2672192651 ring_depth=0 drops=0
+t_wall=1793481873.417 # ALIVE us=2674192705 ring_depth=0 drops=0
+t_wall=1793481875.417 # ALIVE us=2676192759 ring_depth=0 drops=0
+t_wall=1793481877.417 # ALIVE us=2678192814 ring_depth=0 drops=0
+t_wall=1793481879.417 # ALIVE us=2680192870 ring_depth=0 drops=0
+t_wall=1793481881.417 # ALIVE us=2682192923 ring_depth=0 drops=0
+t_wall=1793481883.417 # ALIVE us=2684192979 ring_depth=0 drops=0
+t_wall=1793481885.417 # ALIVE us=2686193033 ring_depth=0 drops=0
+t_wall=1793481887.417 # ALIVE us=2688193086 ring_depth=0 drops=0
+t_wall=1793481889.417 # ALIVE us=2690193140 ring_depth=0 drops=0
+t_wall=1793481891.417 # ALIVE us=2692193192 ring_depth=0 drops=0
+t_wall=1793481893.417 # ALIVE us=2694193245 ring_depth=0 drops=0
+t_wall=1793481895.417 # ALIVE us=2696193300 ring_depth=0 drops=0
+t_wall=1793481897.417 # ALIVE us=2698193354 ring_depth=0 drops=0
+t_wall=1793481899.417 # ALIVE us=2700193409 ring_depth=0 drops=0
+t_wall=1793481901.417 # ALIVE us=2702193464 ring_depth=0 drops=0
+t_wall=1793481903.417 # ALIVE us=2704193520 ring_depth=0 drops=0
+t_wall=1793481905.417 # ALIVE us=2706193572 ring_depth=0 drops=0
+t_wall=1793481907.417 # ALIVE us=2708193626 ring_depth=0 drops=0
+t_wall=1793481909.417 # ALIVE us=2710193680 ring_depth=0 drops=0
+t_wall=1793481911.417 # ALIVE us=2712193734 ring_depth=0 drops=0
+t_wall=1793481913.417 # ALIVE us=2714193787 ring_depth=0 drops=0
+t_wall=1793481915.416 # ALIVE us=2716193841 ring_depth=0 drops=0
+t_wall=1793481917.417 # ALIVE us=2718193893 ring_depth=0 drops=0
+t_wall=1793481919.416 # ALIVE us=2720193946 ring_depth=0 drops=0
+t_wall=1793481921.416 # ALIVE us=2722193999 ring_depth=0 drops=0
+t_wall=1793481923.417 # ALIVE us=2724194051 ring_depth=0 drops=0
+t_wall=1793481925.417 # ALIVE us=2726194106 ring_depth=0 drops=0
+t_wall=1793481927.416 # ALIVE us=2728194160 ring_depth=0 drops=0
+t_wall=1793481929.416 # ALIVE us=2730194216 ring_depth=0 drops=0
+t_wall=1793481931.416 # ALIVE us=2732194270 ring_depth=0 drops=0
+t_wall=1793481933.416 # ALIVE us=2734194323 ring_depth=0 drops=0
+t_wall=1793481935.416 # ALIVE us=2736194376 ring_depth=0 drops=0
+t_wall=1793481937.416 # ALIVE us=2738194431 ring_depth=0 drops=0
+t_wall=1793481939.416 # ALIVE us=2740194484 ring_depth=0 drops=0
+t_wall=1793481941.416 # ALIVE us=2742194537 ring_depth=0 drops=0
+t_wall=1793481943.416 # ALIVE us=2744194590 ring_depth=0 drops=0
+t_wall=1793481945.416 # ALIVE us=2746194645 ring_depth=0 drops=0
+t_wall=1793481947.416 # ALIVE us=2748194699 ring_depth=0 drops=0
+t_wall=1793481949.416 # ALIVE us=2750194754 ring_depth=0 drops=0
+t_wall=1793481951.416 # ALIVE us=2752194809 ring_depth=0 drops=0
+t_wall=1793481953.416 # ALIVE us=2754194863 ring_depth=0 drops=0
+t_wall=1793481955.416 # ALIVE us=2756194916 ring_depth=0 drops=0
+t_wall=1793481957.416 # ALIVE us=2758194968 ring_depth=0 drops=0
+t_wall=1793481959.416 # ALIVE us=2760195018 ring_depth=0 drops=0
+t_wall=1793481961.416 # ALIVE us=2762195072 ring_depth=0 drops=0
+t_wall=1793481963.416 # ALIVE us=2764195125 ring_depth=0 drops=0
+t_wall=1793481965.416 # ALIVE us=2766195177 ring_depth=0 drops=0
+t_wall=1793481967.416 # ALIVE us=2768195232 ring_depth=0 drops=0
+t_wall=1793481969.416 # ALIVE us=2770195286 ring_depth=0 drops=0
+t_wall=1793481971.416 # ALIVE us=2772195339 ring_depth=0 drops=0
+t_wall=1793481973.415 # ALIVE us=2774195393 ring_depth=0 drops=0
+t_wall=1793481975.415 # ALIVE us=2776195446 ring_depth=0 drops=0
+t_wall=1793481977.415 # ALIVE us=2778195498 ring_depth=0 drops=0
+t_wall=1793481979.416 # ALIVE us=2780195551 ring_depth=0 drops=0
+t_wall=1793481981.415 # ALIVE us=2782195606 ring_depth=0 drops=0
+t_wall=1793481983.416 # ALIVE us=2784195658 ring_depth=0 drops=0
+t_wall=1793481985.415 # ALIVE us=2786195709 ring_depth=0 drops=0
+t_wall=1793481987.415 # ALIVE us=2788195761 ring_depth=0 drops=0
+t_wall=1793481989.415 # ALIVE us=2790195814 ring_depth=0 drops=0
+t_wall=1793481991.415 # ALIVE us=2792195869 ring_depth=0 drops=0
+t_wall=1793481993.416 # ALIVE us=2794195925 ring_depth=0 drops=0
+t_wall=1793481995.415 # ALIVE us=2796195979 ring_depth=0 drops=0
+t_wall=1793481997.415 # ALIVE us=2798196033 ring_depth=0 drops=0
+t_wall=1793481999.415 # ALIVE us=2800196088 ring_depth=0 drops=0
+t_wall=1793482001.415 # ALIVE us=2802196143 ring_depth=0 drops=0
+t_wall=1793482003.415 # ALIVE us=2804196196 ring_depth=0 drops=0
+t_wall=1793482005.415 # ALIVE us=2806196248 ring_depth=0 drops=0
+t_wall=1793482007.415 # ALIVE us=2808196303 ring_depth=0 drops=0
+t_wall=1793482009.415 # ALIVE us=2810196355 ring_depth=0 drops=0
+t_wall=1793482011.415 # ALIVE us=2812196408 ring_depth=0 drops=0
+t_wall=1793482013.415 # ALIVE us=2814196461 ring_depth=0 drops=0
+t_wall=1793482015.415 # ALIVE us=2816196514 ring_depth=0 drops=0
+t_wall=1793482017.415 # ALIVE us=2818196568 ring_depth=0 drops=0
+t_wall=1793482019.415 # ALIVE us=2820196621 ring_depth=0 drops=0
+t_wall=1793482021.415 # ALIVE us=2822196673 ring_depth=0 drops=0
+t_wall=1793482023.415 # ALIVE us=2824196727 ring_depth=0 drops=0
+t_wall=1793482025.415 # ALIVE us=2826196780 ring_depth=0 drops=0
+t_wall=1793482027.415 # ALIVE us=2828196834 ring_depth=0 drops=0
+t_wall=1793482029.415 # ALIVE us=2830196889 ring_depth=0 drops=0
+t_wall=1793482031.415 # ALIVE us=2832196942 ring_depth=0 drops=0
+t_wall=1793482033.414 # ALIVE us=2834196994 ring_depth=0 drops=0
+t_wall=1793482035.415 # ALIVE us=2836197046 ring_depth=0 drops=0
+t_wall=1793482037.414 # ALIVE us=2838197100 ring_depth=0 drops=0
+t_wall=1793482039.414 # ALIVE us=2840197155 ring_depth=0 drops=0
+t_wall=1793482041.415 # ALIVE us=2842197209 ring_depth=0 drops=0
+t_wall=1793482043.414 # ALIVE us=2844197262 ring_depth=0 drops=0
+t_wall=1793482045.414 # ALIVE us=2846197314 ring_depth=0 drops=0
+t_wall=1793482047.415 # ALIVE us=2848197366 ring_depth=0 drops=0
+t_wall=1793482049.414 # ALIVE us=2850197420 ring_depth=0 drops=0
+t_wall=1793482051.414 # ALIVE us=2852197476 ring_depth=0 drops=0
+t_wall=1793482053.415 # ALIVE us=2854197531 ring_depth=0 drops=0
+t_wall=1793482055.415 # ALIVE us=2856197586 ring_depth=0 drops=0
+t_wall=1793482057.415 # ALIVE us=2858197639 ring_depth=0 drops=0
+t_wall=1793482059.414 # ALIVE us=2860197692 ring_depth=0 drops=0
+t_wall=1793482061.414 # ALIVE us=2862197745 ring_depth=0 drops=0
+t_wall=1793482063.414 # ALIVE us=2864197798 ring_depth=0 drops=0
+t_wall=1793482065.414 # ALIVE us=2866197851 ring_depth=0 drops=0
+t_wall=1793482067.414 # ALIVE us=2868197903 ring_depth=0 drops=0
+t_wall=1793482069.415 # ALIVE us=2870197959 ring_depth=0 drops=0
+t_wall=1793482071.414 # ALIVE us=2872198014 ring_depth=0 drops=0
+t_wall=1793482073.414 # ALIVE us=2874198066 ring_depth=0 drops=0
+t_wall=1793482075.414 # ALIVE us=2876198121 ring_depth=0 drops=0
+t_wall=1793482077.414 # ALIVE us=2878198174 ring_depth=0 drops=0
+t_wall=1793482079.414 # ALIVE us=2880198227 ring_depth=0 drops=0
+t_wall=1793482081.414 # ALIVE us=2882198279 ring_depth=0 drops=0
+t_wall=1793482083.414 # ALIVE us=2884198332 ring_depth=0 drops=0
+t_wall=1793482085.414 # ALIVE us=2886198384 ring_depth=0 drops=0
+t_wall=1793482087.414 # ALIVE us=2888198436 ring_depth=0 drops=0
+t_wall=1793482089.414 # ALIVE us=2890198493 ring_depth=0 drops=0
+t_wall=1793482091.414 # ALIVE us=2892198546 ring_depth=0 drops=0
+t_wall=1793482093.414 # ALIVE us=2894198598 ring_depth=0 drops=0
+t_wall=1793482095.413 # ALIVE us=2896198650 ring_depth=0 drops=0
+t_wall=1793482097.414 # ALIVE us=2898198702 ring_depth=0 drops=0
+t_wall=1793482099.413 # ALIVE us=2900198756 ring_depth=0 drops=0
+t_wall=1793482101.413 # ALIVE us=2902198808 ring_depth=0 drops=0
+t_wall=1793482103.413 # ALIVE us=2904198860 ring_depth=0 drops=0
+t_wall=1793482105.413 # ALIVE us=2906198912 ring_depth=0 drops=0
+t_wall=1793482107.413 # ALIVE us=2908198966 ring_depth=0 drops=0
+t_wall=1793482109.413 # ALIVE us=2910199020 ring_depth=0 drops=0
+t_wall=1793482111.414 # ALIVE us=2912199074 ring_depth=0 drops=0
+t_wall=1793482113.414 # ALIVE us=2914199127 ring_depth=0 drops=0
+t_wall=1793482115.413 # ALIVE us=2916199180 ring_depth=0 drops=0
+t_wall=1793482117.413 # ALIVE us=2918199230 ring_depth=0 drops=0
+t_wall=1793482119.413 # ALIVE us=2920199283 ring_depth=0 drops=0
+t_wall=1793482121.413 # ALIVE us=2922199338 ring_depth=0 drops=0
+t_wall=1793482123.413 # ALIVE us=2924199392 ring_depth=0 drops=0
+t_wall=1793482125.414 # ALIVE us=2926199446 ring_depth=0 drops=0
+t_wall=1793482127.413 # ALIVE us=2928199498 ring_depth=0 drops=0
+t_wall=1793482129.413 # ALIVE us=2930199553 ring_depth=0 drops=0
+t_wall=1793482131.413 # ALIVE us=2932199608 ring_depth=0 drops=0
+t_wall=1793482133.413 # ALIVE us=2934199660 ring_depth=0 drops=0
+t_wall=1793482135.413 # ALIVE us=2936199713 ring_depth=0 drops=0
+t_wall=1793482137.413 # ALIVE us=2938199765 ring_depth=0 drops=0
+t_wall=1793482139.413 # ALIVE us=2940199818 ring_depth=0 drops=0
+t_wall=1793482141.413 # ALIVE us=2942199872 ring_depth=0 drops=0
+t_wall=1793482143.413 # ALIVE us=2944199925 ring_depth=0 drops=0
+t_wall=1793482145.413 # ALIVE us=2946199981 ring_depth=0 drops=0
+t_wall=1793482147.413 # ALIVE us=2948200036 ring_depth=0 drops=0
+t_wall=1793482149.413 # ALIVE us=2950200090 ring_depth=0 drops=0
+t_wall=1793482151.412 # ALIVE us=2952200143 ring_depth=0 drops=0
+t_wall=1793482153.413 # ALIVE us=2954200195 ring_depth=0 drops=0
+t_wall=1793482155.412 # ALIVE us=2956200248 ring_depth=0 drops=0
+t_wall=1793482157.413 # ALIVE us=2958200301 ring_depth=0 drops=0
+t_wall=1793482159.412 # ALIVE us=2960200356 ring_depth=0 drops=0
+t_wall=1793482161.413 # ALIVE us=2962200411 ring_depth=0 drops=0
+t_wall=1793482163.413 # ALIVE us=2964200466 ring_depth=0 drops=0
+t_wall=1793482165.412 # ALIVE us=2966200521 ring_depth=0 drops=0
+t_wall=1793482167.412 # ALIVE us=2968200576 ring_depth=0 drops=0
+t_wall=1793482169.413 # ALIVE us=2970200628 ring_depth=0 drops=0
+t_wall=1793482171.413 # ALIVE us=2972200684 ring_depth=0 drops=0
+t_wall=1793482173.412 # ALIVE us=2974200737 ring_depth=0 drops=0
+t_wall=1793482175.412 # ALIVE us=2976200791 ring_depth=0 drops=0
+t_wall=1793482177.413 # ALIVE us=2978200844 ring_depth=0 drops=0
+t_wall=1793482179.412 # ALIVE us=2980200896 ring_depth=0 drops=0
+t_wall=1793482181.412 # ALIVE us=2982200952 ring_depth=0 drops=0
+t_wall=1793482183.412 # ALIVE us=2984201007 ring_depth=0 drops=0
+t_wall=1793482185.412 # ALIVE us=2986201062 ring_depth=0 drops=0
+t_wall=1793482187.412 # ALIVE us=2988201119 ring_depth=0 drops=0
+t_wall=1793482189.412 # ALIVE us=2990201174 ring_depth=0 drops=0
+t_wall=1793482191.412 # ALIVE us=2992201229 ring_depth=0 drops=0
+t_wall=1793482193.412 # ALIVE us=2994201281 ring_depth=0 drops=0
+t_wall=1793482195.412 # ALIVE us=2996201336 ring_depth=0 drops=0
+t_wall=1793482197.412 # ALIVE us=2998201389 ring_depth=0 drops=0
+t_wall=1793482199.412 # ALIVE us=3000201443 ring_depth=0 drops=0
+t_wall=1793482201.412 # ALIVE us=3002201496 ring_depth=0 drops=0
+t_wall=1793482203.412 # ALIVE us=3004201548 ring_depth=0 drops=0
+t_wall=1793482205.412 # ALIVE us=3006201600 ring_depth=0 drops=0
+t_wall=1793482207.412 # ALIVE us=3008201654 ring_depth=0 drops=0
+t_wall=1793482209.412 # ALIVE us=3010201709 ring_depth=0 drops=0
+t_wall=1793482211.412 # ALIVE us=3012201762 ring_depth=0 drops=0
+t_wall=1793482213.412 # ALIVE us=3014201816 ring_depth=0 drops=0
+t_wall=1793482215.412 # ALIVE us=3016201869 ring_depth=0 drops=0
+t_wall=1793482217.411 # ALIVE us=3018201922 ring_depth=0 drops=0
+t_wall=1793482219.411 # ALIVE us=3020201974 ring_depth=0 drops=0
+t_wall=1793482221.412 # ALIVE us=3022202027 ring_depth=0 drops=0
+t_wall=1793482223.411 # ALIVE us=3024202080 ring_depth=0 drops=0
+t_wall=1793482225.412 # ALIVE us=3026202133 ring_depth=0 drops=0
+t_wall=1793482227.411 # ALIVE us=3028202186 ring_depth=0 drops=0
+t_wall=1793482229.411 # ALIVE us=3030202241 ring_depth=0 drops=0
+t_wall=1793482231.412 # ALIVE us=3032202295 ring_depth=0 drops=0
+t_wall=1793482233.411 # ALIVE us=3034202347 ring_depth=0 drops=0
+t_wall=1793482235.411 # ALIVE us=3036202402 ring_depth=0 drops=0
+t_wall=1793482237.411 # ALIVE us=3038202457 ring_depth=0 drops=0
+t_wall=1793482239.411 # ALIVE us=3040202512 ring_depth=0 drops=0
+t_wall=1793482241.411 # ALIVE us=3042202565 ring_depth=0 drops=0
+t_wall=1793482243.411 # ALIVE us=3044202618 ring_depth=0 drops=0
+t_wall=1793482245.411 # ALIVE us=3046202673 ring_depth=0 drops=0
+t_wall=1793482247.411 # ALIVE us=3048202726 ring_depth=0 drops=0
+t_wall=1793482249.411 # ALIVE us=3050202781 ring_depth=0 drops=0
+t_wall=1793482251.411 # ALIVE us=3052202836 ring_depth=0 drops=0
+t_wall=1793482253.412 # ALIVE us=3054202893 ring_depth=0 drops=0
+t_wall=1793482255.411 # ALIVE us=3056202949 ring_depth=0 drops=0
+t_wall=1793482257.411 # ALIVE us=3058203003 ring_depth=0 drops=0
+t_wall=1793482259.411 # ALIVE us=3060203054 ring_depth=0 drops=0
+t_wall=1793482261.411 # ALIVE us=3062203109 ring_depth=0 drops=0
+t_wall=1793482263.411 # ALIVE us=3064203164 ring_depth=0 drops=0
+t_wall=1793482265.411 # ALIVE us=3066203218 ring_depth=0 drops=0
+t_wall=1793482267.411 # ALIVE us=3068203270 ring_depth=0 drops=0
+t_wall=1793482269.411 # ALIVE us=3070203321 ring_depth=0 drops=0
+t_wall=1793482271.411 # ALIVE us=3072203375 ring_depth=0 drops=0
+t_wall=1793482273.411 # ALIVE us=3074203428 ring_depth=0 drops=0
+t_wall=1793482275.411 # ALIVE us=3076203484 ring_depth=0 drops=0
+t_wall=1793482277.411 # ALIVE us=3078203534 ring_depth=0 drops=0
+t_wall=1793482279.411 # ALIVE us=3080203587 ring_depth=0 drops=0
+t_wall=1793482281.410 # ALIVE us=3082203643 ring_depth=0 drops=0
+t_wall=1793482283.411 # ALIVE us=3084203697 ring_depth=0 drops=0
+t_wall=1793482285.411 # ALIVE us=3086203752 ring_depth=0 drops=0
+t_wall=1793482287.410 # ALIVE us=3088203807 ring_depth=0 drops=0
+t_wall=1793482289.410 # ALIVE us=3090203860 ring_depth=0 drops=0
+t_wall=1793482291.410 # ALIVE us=3092203912 ring_depth=0 drops=0
+t_wall=1793482293.410 # ALIVE us=3094203968 ring_depth=0 drops=0
+t_wall=1793482295.410 # ALIVE us=3096204020 ring_depth=0 drops=0
+t_wall=1793482297.410 # ALIVE us=3098204072 ring_depth=0 drops=0
+t_wall=1793482299.410 # ALIVE us=3100204127 ring_depth=0 drops=0
+t_wall=1793482301.410 # ALIVE us=3102204181 ring_depth=0 drops=0
+t_wall=1793482303.410 # ALIVE us=3104204234 ring_depth=0 drops=0
+t_wall=1793482305.410 # ALIVE us=3106204288 ring_depth=0 drops=0
+t_wall=1793482307.410 # ALIVE us=3108204342 ring_depth=0 drops=0
+t_wall=1793482309.410 # ALIVE us=3110204394 ring_depth=0 drops=0
+t_wall=1793482311.410 # ALIVE us=3112204449 ring_depth=0 drops=0
+t_wall=1793482313.410 # ALIVE us=3114204504 ring_depth=0 drops=0
+t_wall=1793482315.410 # ALIVE us=3116204559 ring_depth=0 drops=0
+t_wall=1793482317.410 # ALIVE us=3118204611 ring_depth=0 drops=0
+t_wall=1793482319.410 # ALIVE us=3120204667 ring_depth=0 drops=0
+t_wall=1793482321.410 # ALIVE us=3122204723 ring_depth=0 drops=0
+t_wall=1793482323.410 # ALIVE us=3124204777 ring_depth=0 drops=0
+t_wall=1793482325.410 # ALIVE us=3126204829 ring_depth=0 drops=0
+t_wall=1793482327.410 # ALIVE us=3128204882 ring_depth=0 drops=0
+t_wall=1793482329.410 # ALIVE us=3130204935 ring_depth=0 drops=0
+t_wall=1793482331.410 # ALIVE us=3132204989 ring_depth=0 drops=0
+t_wall=1793482333.410 # ALIVE us=3134205043 ring_depth=0 drops=0
+t_wall=1793482335.409 # ALIVE us=3136205096 ring_depth=0 drops=0
+t_wall=1793482337.410 # ALIVE us=3138205149 ring_depth=0 drops=0
+t_wall=1793482339.410 # ALIVE us=3140205203 ring_depth=0 drops=0
+t_wall=1793482341.410 # ALIVE us=3142205256 ring_depth=0 drops=0
+t_wall=1793482343.410 # ALIVE us=3144205309 ring_depth=0 drops=0
+t_wall=1793482345.409 # ALIVE us=3146205363 ring_depth=0 drops=0
+t_wall=1793482347.409 # ALIVE us=3148205417 ring_depth=0 drops=0
+t_wall=1793482349.409 # ALIVE us=3150205467 ring_depth=0 drops=0
+t_wall=1793482351.409 # ALIVE us=3152205521 ring_depth=0 drops=0
+t_wall=1793482353.409 # ALIVE us=3154205575 ring_depth=0 drops=0
+t_wall=1793482355.409 # ALIVE us=3156205628 ring_depth=0 drops=0
+t_wall=1793482357.409 # ALIVE us=3158205680 ring_depth=0 drops=0
+t_wall=1793482359.409 # ALIVE us=3160205733 ring_depth=0 drops=0
+t_wall=1793482361.409 # ALIVE us=3162205788 ring_depth=0 drops=0
+t_wall=1793482363.409 # ALIVE us=3164205843 ring_depth=0 drops=0
+t_wall=1793482365.409 # ALIVE us=3166205894 ring_depth=0 drops=0
+t_wall=1793482367.409 # ALIVE us=3168205947 ring_depth=0 drops=0
+t_wall=1793482369.410 # ALIVE us=3170206001 ring_depth=0 drops=0
+t_wall=1793482371.409 # ALIVE us=3172206056 ring_depth=0 drops=0
+t_wall=1793482373.409 # ALIVE us=3174206109 ring_depth=0 drops=0
+t_wall=1793482375.409 # ALIVE us=3176206162 ring_depth=0 drops=0
+t_wall=1793482377.409 # ALIVE us=3178206218 ring_depth=0 drops=0
+t_wall=1793482379.409 # ALIVE us=3180206271 ring_depth=0 drops=0
+t_wall=1793482381.409 # ALIVE us=3182206325 ring_depth=0 drops=0
+t_wall=1793482383.409 # ALIVE us=3184206379 ring_depth=0 drops=0
+t_wall=1793482385.409 # ALIVE us=3186206433 ring_depth=0 drops=0
+t_wall=1793482387.409 # ALIVE us=3188206486 ring_depth=0 drops=0
+t_wall=1793482389.409 # ALIVE us=3190206541 ring_depth=0 drops=0
+t_wall=1793482391.409 # ALIVE us=3192206594 ring_depth=0 drops=0
+t_wall=1793482393.409 # ALIVE us=3194206647 ring_depth=0 drops=0
+t_wall=1793482395.409 # ALIVE us=3196206702 ring_depth=0 drops=0
+t_wall=1793482397.409 # ALIVE us=3198206757 ring_depth=0 drops=0
+t_wall=1793482399.409 # ALIVE us=3200206811 ring_depth=0 drops=0
+t_wall=1793482401.408 # ALIVE us=3202206865 ring_depth=0 drops=0
+t_wall=1793482403.408 # ALIVE us=3204206917 ring_depth=0 drops=0
+t_wall=1793482405.409 # ALIVE us=3206206968 ring_depth=0 drops=0
+t_wall=1793482407.408 # ALIVE us=3208207024 ring_depth=0 drops=0
+t_wall=1793482409.409 # ALIVE us=3210207077 ring_depth=0 drops=0
+t_wall=1793482411.408 # ALIVE us=3212207132 ring_depth=0 drops=0
+t_wall=1793482413.408 # ALIVE us=3214207184 ring_depth=0 drops=0
+t_wall=1793482415.409 # ALIVE us=3216207237 ring_depth=0 drops=0
+t_wall=1793482417.409 # ALIVE us=3218207291 ring_depth=0 drops=0
+t_wall=1793482419.408 # ALIVE us=3220207345 ring_depth=0 drops=0
+t_wall=1793482421.409 # ALIVE us=3222207400 ring_depth=0 drops=0
+t_wall=1793482423.409 # ALIVE us=3224207455 ring_depth=0 drops=0
+t_wall=1793482425.408 # ALIVE us=3226207507 ring_depth=0 drops=0
+t_wall=1793482427.408 # ALIVE us=3228207559 ring_depth=0 drops=0
+t_wall=1793482429.408 # ALIVE us=3230207614 ring_depth=0 drops=0
+t_wall=1793482431.408 # ALIVE us=3232207668 ring_depth=0 drops=0
+t_wall=1793482433.408 # ALIVE us=3234207721 ring_depth=0 drops=0
+t_wall=1793482435.408 # ALIVE us=3236207776 ring_depth=0 drops=0
+t_wall=1793482437.408 # ALIVE us=3238207830 ring_depth=0 drops=0
+t_wall=1793482439.408 # ALIVE us=3240207885 ring_depth=0 drops=0
+t_wall=1793482441.408 # ALIVE us=3242207938 ring_depth=0 drops=0
+t_wall=1793482443.408 # ALIVE us=3244207990 ring_depth=0 drops=0
+t_wall=1793482445.408 # ALIVE us=3246208044 ring_depth=0 drops=0
+t_wall=1793482447.408 # ALIVE us=3248208099 ring_depth=0 drops=0
+t_wall=1793482449.408 # ALIVE us=3250208153 ring_depth=0 drops=0
+t_wall=1793482451.408 # ALIVE us=3252208206 ring_depth=0 drops=0
+t_wall=1793482453.408 # ALIVE us=3254208261 ring_depth=0 drops=0
+t_wall=1793482455.408 # ALIVE us=3256208315 ring_depth=0 drops=0
+t_wall=1793482457.408 # ALIVE us=3258208369 ring_depth=0 drops=0
+t_wall=1793482459.408 # ALIVE us=3260208422 ring_depth=0 drops=0
+t_wall=1793482461.408 # ALIVE us=3262208473 ring_depth=0 drops=0
+t_wall=1793482463.408 # ALIVE us=3264208525 ring_depth=0 drops=0
+t_wall=1793482465.407 # ALIVE us=3266208578 ring_depth=0 drops=0
+t_wall=1793482467.408 # ALIVE us=3268208631 ring_depth=0 drops=0
+t_wall=1793482469.407 # ALIVE us=3270208684 ring_depth=0 drops=0
+t_wall=1793482471.408 # ALIVE us=3272208738 ring_depth=0 drops=0
+t_wall=1793482473.408 # ALIVE us=3274208791 ring_depth=0 drops=0
+t_wall=1793482475.407 # ALIVE us=3276208847 ring_depth=0 drops=0
+t_wall=1793482477.408 # ALIVE us=3278208899 ring_depth=0 drops=0
+t_wall=1793482479.407 # ALIVE us=3280208954 ring_depth=0 drops=0
+t_wall=1793482481.407 # ALIVE us=3282209009 ring_depth=0 drops=0
+t_wall=1793482483.407 # ALIVE us=3284209065 ring_depth=0 drops=0
+t_wall=1793482485.407 # ALIVE us=3286209116 ring_depth=0 drops=0
+t_wall=1793482487.407 # ALIVE us=3288209169 ring_depth=0 drops=0
+t_wall=1793482489.407 # ALIVE us=3290209220 ring_depth=0 drops=0
+t_wall=1793482491.407 # ALIVE us=3292209275 ring_depth=0 drops=0
+t_wall=1793482493.407 # ALIVE us=3294209330 ring_depth=0 drops=0
+t_wall=1793482495.407 # ALIVE us=3296209384 ring_depth=0 drops=0
+t_wall=1793482497.407 # ALIVE us=3298209435 ring_depth=0 drops=0
+t_wall=1793482499.407 # ALIVE us=3300209487 ring_depth=0 drops=0
+t_wall=1793482501.407 # ALIVE us=3302209541 ring_depth=0 drops=0
+t_wall=1793482503.407 # ALIVE us=3304209596 ring_depth=0 drops=0
+t_wall=1793482505.407 # ALIVE us=3306209649 ring_depth=0 drops=0
+t_wall=1793482507.407 # ALIVE us=3308209701 ring_depth=0 drops=0
+t_wall=1793482509.407 # ALIVE us=3310209754 ring_depth=0 drops=0
+t_wall=1793482511.407 # ALIVE us=3312209808 ring_depth=0 drops=0
+t_wall=1793482513.407 # ALIVE us=3314209862 ring_depth=0 drops=0
+t_wall=1793482515.407 # ALIVE us=3316209914 ring_depth=0 drops=0
+t_wall=1793482517.407 # ALIVE us=3318209968 ring_depth=0 drops=0
+t_wall=1793482519.407 # ALIVE us=3320210022 ring_depth=0 drops=0
+t_wall=1793482521.407 # ALIVE us=3322210073 ring_depth=0 drops=0
+t_wall=1793482523.407 # ALIVE us=3324210129 ring_depth=0 drops=0
+t_wall=1793482525.407 # ALIVE us=3326210185 ring_depth=0 drops=0
+t_wall=1793482527.407 # ALIVE us=3328210240 ring_depth=0 drops=0
+t_wall=1793482529.406 # ALIVE us=3330210296 ring_depth=0 drops=0
+t_wall=1793482531.406 # ALIVE us=3332210351 ring_depth=0 drops=0
+t_wall=1793482533.406 # ALIVE us=3334210404 ring_depth=0 drops=0
+t_wall=1793482535.406 # ALIVE us=3336210458 ring_depth=0 drops=0
+t_wall=1793482537.407 # ALIVE us=3338210512 ring_depth=0 drops=0
+t_wall=1793482539.406 # ALIVE us=3340210566 ring_depth=0 drops=0
+t_wall=1793482541.406 # ALIVE us=3342210619 ring_depth=0 drops=0
+t_wall=1793482543.406 # ALIVE us=3344210675 ring_depth=0 drops=0
+t_wall=1793482545.406 # ALIVE us=3346210730 ring_depth=0 drops=0
+t_wall=1793482547.407 # ALIVE us=3348210782 ring_depth=0 drops=0
+t_wall=1793482549.406 # ALIVE us=3350210834 ring_depth=0 drops=0
+t_wall=1793482551.406 # ALIVE us=3352210889 ring_depth=0 drops=0
+t_wall=1793482553.407 # ALIVE us=3354210943 ring_depth=0 drops=0
+t_wall=1793482555.406 # ALIVE us=3356210997 ring_depth=0 drops=0
+t_wall=1793482557.406 # ALIVE us=3358211051 ring_depth=0 drops=0
+t_wall=1793482559.406 # ALIVE us=3360211104 ring_depth=0 drops=0
+t_wall=1793482561.406 # ALIVE us=3362211159 ring_depth=0 drops=0
+t_wall=1793482563.406 # ALIVE us=3364211214 ring_depth=0 drops=0
+t_wall=1793482565.406 # ALIVE us=3366211267 ring_depth=0 drops=0
+t_wall=1793482567.406 # ALIVE us=3368211321 ring_depth=0 drops=0
+t_wall=1793482569.406 # ALIVE us=3370211377 ring_depth=0 drops=0
+t_wall=1793482571.406 # ALIVE us=3372211429 ring_depth=0 drops=0
+t_wall=1793482573.406 # ALIVE us=3374211482 ring_depth=0 drops=0
+t_wall=1793482575.406 # ALIVE us=3376211537 ring_depth=0 drops=0
+t_wall=1793482577.406 # ALIVE us=3378211592 ring_depth=0 drops=0
+t_wall=1793482579.406 # ALIVE us=3380211647 ring_depth=0 drops=0
+t_wall=1793482581.406 # ALIVE us=3382211701 ring_depth=0 drops=0
+t_wall=1793482583.406 # ALIVE us=3384211756 ring_depth=0 drops=0
+t_wall=1793482585.406 # ALIVE us=3386211810 ring_depth=0 drops=0
+t_wall=1793482587.405 # ALIVE us=3388211866 ring_depth=0 drops=0
+t_wall=1793482589.406 # ALIVE us=3390211922 ring_depth=0 drops=0
+t_wall=1793482591.405 # ALIVE us=3392211976 ring_depth=0 drops=0
+t_wall=1793482593.405 # ALIVE us=3394212029 ring_depth=0 drops=0
+t_wall=1793482595.406 # ALIVE us=3396212084 ring_depth=0 drops=0
+t_wall=1793482597.406 # ALIVE us=3398212139 ring_depth=0 drops=0
+t_wall=1793482599.405 # ALIVE us=3400212195 ring_depth=0 drops=0
+t_wall=1793482601.405 # ALIVE us=3402212251 ring_depth=0 drops=0
+t_wall=1793482603.406 # ALIVE us=3404212305 ring_depth=0 drops=0
+t_wall=1793482605.405 # ALIVE us=3406212358 ring_depth=0 drops=0
+t_wall=1793482607.405 # ALIVE us=3408212413 ring_depth=0 drops=0
+t_wall=1793482609.406 # ALIVE us=3410212467 ring_depth=0 drops=0
+t_wall=1793482611.405 # ALIVE us=3412212523 ring_depth=0 drops=0
+t_wall=1793482613.405 # ALIVE us=3414212576 ring_depth=0 drops=0
+t_wall=1793482615.405 # ALIVE us=3416212630 ring_depth=0 drops=0
+t_wall=1793482617.405 # ALIVE us=3418212683 ring_depth=0 drops=0
+t_wall=1793482619.405 # ALIVE us=3420212737 ring_depth=0 drops=0
+t_wall=1793482621.405 # ALIVE us=3422212791 ring_depth=0 drops=0
+t_wall=1793482623.405 # ALIVE us=3424212845 ring_depth=0 drops=0
+t_wall=1793482625.405 # ALIVE us=3426212898 ring_depth=0 drops=0
+t_wall=1793482627.405 # ALIVE us=3428212952 ring_depth=0 drops=0
+t_wall=1793482629.405 # ALIVE us=3430213004 ring_depth=0 drops=0
+t_wall=1793482631.405 # ALIVE us=3432213056 ring_depth=0 drops=0
+t_wall=1793482633.405 # ALIVE us=3434213110 ring_depth=0 drops=0
+t_wall=1793482635.405 # ALIVE us=3436213165 ring_depth=0 drops=0
+t_wall=1793482637.405 # ALIVE us=3438213220 ring_depth=0 drops=0
+t_wall=1793482639.405 # ALIVE us=3440213272 ring_depth=0 drops=0
+t_wall=1793482641.405 # ALIVE us=3442213323 ring_depth=0 drops=0
+t_wall=1793482643.405 # ALIVE us=3444213377 ring_depth=0 drops=0
+t_wall=1793482645.405 # ALIVE us=3446213430 ring_depth=0 drops=0
+t_wall=1793482647.405 # ALIVE us=3448213486 ring_depth=0 drops=0
+t_wall=1793482649.405 # ALIVE us=3450213540 ring_depth=0 drops=0
+t_wall=1793482651.405 # ALIVE us=3452213594 ring_depth=0 drops=0
+t_wall=1793482653.405 # ALIVE us=3454213651 ring_depth=0 drops=0
+t_wall=1793482655.404 # ALIVE us=3456213706 ring_depth=0 drops=0
+t_wall=1793482657.405 # ALIVE us=3458213760 ring_depth=0 drops=0
+t_wall=1793482659.405 # ALIVE us=3460213814 ring_depth=0 drops=0
+t_wall=1793482661.405 # ALIVE us=3462213867 ring_depth=0 drops=0
+t_wall=1793482663.404 # ALIVE us=3464213920 ring_depth=0 drops=0
+t_wall=1793482665.404 # ALIVE us=3466213974 ring_depth=0 drops=0
+t_wall=1793482667.404 # ALIVE us=3468214027 ring_depth=0 drops=0
+t_wall=1793482669.404 # ALIVE us=3470214082 ring_depth=0 drops=0
+t_wall=1793482671.405 # ALIVE us=3472214136 ring_depth=0 drops=0
+t_wall=1793482673.404 # ALIVE us=3474214190 ring_depth=0 drops=0
+t_wall=1793482675.404 # ALIVE us=3476214242 ring_depth=0 drops=0
+t_wall=1793482677.404 # ALIVE us=3478214296 ring_depth=0 drops=0
+t_wall=1793482679.404 # ALIVE us=3480214351 ring_depth=0 drops=0
+t_wall=1793482681.405 # ALIVE us=3482214408 ring_depth=0 drops=0
+t_wall=1793482683.404 # ALIVE us=3484214460 ring_depth=0 drops=0
+t_wall=1793482685.404 # ALIVE us=3486214515 ring_depth=0 drops=0
+t_wall=1793482687.404 # ALIVE us=3488214567 ring_depth=0 drops=0
+t_wall=1793482689.404 # ALIVE us=3490214621 ring_depth=0 drops=0
+t_wall=1793482691.404 # ALIVE us=3492214673 ring_depth=0 drops=0
+t_wall=1793482693.404 # ALIVE us=3494214725 ring_depth=0 drops=0
+t_wall=1793482695.404 # ALIVE us=3496214777 ring_depth=0 drops=0
+t_wall=1793482697.404 # ALIVE us=3498214830 ring_depth=0 drops=0
+t_wall=1793482699.404 # ALIVE us=3500214882 ring_depth=0 drops=0
+t_wall=1793482701.404 # ALIVE us=3502214937 ring_depth=0 drops=0
+t_wall=1793482703.404 # ALIVE us=3504214991 ring_depth=0 drops=0
+t_wall=1793482705.404 # ALIVE us=3506215046 ring_depth=0 drops=0
+t_wall=1793482707.404 # ALIVE us=3508215101 ring_depth=0 drops=0
+t_wall=1793482709.403 # ALIVE us=3510215156 ring_depth=0 drops=0
+t_wall=1793482711.403 # ALIVE us=3512215209 ring_depth=0 drops=0
+t_wall=1793482713.403 # ALIVE us=3514215263 ring_depth=0 drops=0
+t_wall=1793482715.403 # ALIVE us=3516215317 ring_depth=0 drops=0
+t_wall=1793482717.403 # ALIVE us=3518215371 ring_depth=0 drops=0
+t_wall=1793482719.403 # ALIVE us=3520215425 ring_depth=0 drops=0
+t_wall=1793482721.403 # ALIVE us=3522215479 ring_depth=0 drops=0
+t_wall=1793482723.404 # ALIVE us=3524215534 ring_depth=0 drops=0
+t_wall=1793482725.403 # ALIVE us=3526215588 ring_depth=0 drops=0
+t_wall=1793482727.403 # ALIVE us=3528215642 ring_depth=0 drops=0
+t_wall=1793482729.403 # ALIVE us=3530215694 ring_depth=0 drops=0
+t_wall=1793482731.404 # ALIVE us=3532215745 ring_depth=0 drops=0
+t_wall=1793482733.403 # ALIVE us=3534215795 ring_depth=0 drops=0
+t_wall=1793482735.403 # ALIVE us=3536215847 ring_depth=0 drops=0
+t_wall=1793482737.403 # ALIVE us=3538215901 ring_depth=0 drops=0
+t_wall=1793482739.403 # ALIVE us=3540215954 ring_depth=0 drops=0
+t_wall=1793482741.403 # ALIVE us=3542216009 ring_depth=0 drops=0
+t_wall=1793482743.403 # ALIVE us=3544216064 ring_depth=0 drops=0
+t_wall=1793482745.403 # ALIVE us=3546216118 ring_depth=0 drops=0
+t_wall=1793482747.403 # ALIVE us=3548216176 ring_depth=0 drops=0
+t_wall=1793482749.403 # ALIVE us=3550216231 ring_depth=0 drops=0
+t_wall=1793482751.403 # ALIVE us=3552216285 ring_depth=0 drops=0
+t_wall=1793482753.403 # ALIVE us=3554216341 ring_depth=0 drops=0
+t_wall=1793482755.403 # ALIVE us=3556216396 ring_depth=0 drops=0
+t_wall=1793482757.403 # ALIVE us=3558216449 ring_depth=0 drops=0
+t_wall=1793482759.403 # ALIVE us=3560216503 ring_depth=0 drops=0
+t_wall=1793482761.403 # ALIVE us=3562216557 ring_depth=0 drops=0
+t_wall=1793482763.403 # ALIVE us=3564216611 ring_depth=0 drops=0
+t_wall=1793482765.403 # ALIVE us=3566216663 ring_depth=0 drops=0
+t_wall=1793482767.402 # ALIVE us=3568216717 ring_depth=0 drops=0
+t_wall=1793482769.402 # ALIVE us=3570216769 ring_depth=0 drops=0
+t_wall=1793482771.403 # ALIVE us=3572216822 ring_depth=0 drops=0
+t_wall=1793482773.402 # ALIVE us=3574216875 ring_depth=0 drops=0
+t_wall=1793482775.402 # ALIVE us=3576216929 ring_depth=0 drops=0
+t_wall=1793482777.403 # ALIVE us=3578216982 ring_depth=0 drops=0
+t_wall=1793482779.402 # ALIVE us=3580217037 ring_depth=0 drops=0
+t_wall=1793482781.403 # ALIVE us=3582217091 ring_depth=0 drops=0
+t_wall=1793482783.402 # ALIVE us=3584217144 ring_depth=0 drops=0
+t_wall=1793482785.402 # ALIVE us=3586217198 ring_depth=0 drops=0
+t_wall=1793482787.402 # ALIVE us=3588217250 ring_depth=0 drops=0
+t_wall=1793482789.403 # ALIVE us=3590217302 ring_depth=0 drops=0
+t_wall=1793482791.402 # ALIVE us=3592217356 ring_depth=0 drops=0
+t_wall=1793482793.403 # ALIVE us=3594217411 ring_depth=0 drops=0
+t_wall=1793482795.402 # ALIVE us=3596217465 ring_depth=0 drops=0
+t_wall=1793482797.402 # ALIVE us=3598217517 ring_depth=0 drops=0
+t_wall=1793482799.402 # ALIVE us=3600217570 ring_depth=0 drops=0
+t_wall=1793482801.402 # ALIVE us=3602217622 ring_depth=0 drops=0
+t_wall=1793482803.402 # ALIVE us=3604217674 ring_depth=0 drops=0
+t_wall=1793482805.402 # ALIVE us=3606217726 ring_depth=0 drops=0
+t_wall=1793482807.402 # ALIVE us=3608217778 ring_depth=0 drops=0
+t_wall=1793482809.402 # ALIVE us=3610217831 ring_depth=0 drops=0
+t_wall=1793482811.402 # ALIVE us=3612217884 ring_depth=0 drops=0
+t_wall=1793482813.402 # ALIVE us=3614217940 ring_depth=0 drops=0
+t_wall=1793482815.402 # ALIVE us=3616217992 ring_depth=0 drops=0
+t_wall=1793482817.402 # ALIVE us=3618218046 ring_depth=0 drops=0
+t_wall=1793482819.402 # ALIVE us=3620218099 ring_depth=0 drops=0
+t_wall=1793482821.402 # ALIVE us=3622218154 ring_depth=0 drops=0
+t_wall=1793482823.402 # ALIVE us=3624218209 ring_depth=0 drops=0
+t_wall=1793482825.402 # ALIVE us=3626218264 ring_depth=0 drops=0
+t_wall=1793482827.402 # ALIVE us=3628218319 ring_depth=0 drops=0
+t_wall=1793482829.402 # ALIVE us=3630218373 ring_depth=0 drops=0
+t_wall=1793482831.402 # ALIVE us=3632218428 ring_depth=0 drops=0
+t_wall=1793482833.401 # ALIVE us=3634218480 ring_depth=0 drops=0
+t_wall=1793482835.401 # ALIVE us=3636218536 ring_depth=0 drops=0
+t_wall=1793482837.401 # ALIVE us=3638218591 ring_depth=0 drops=0
+t_wall=1793482839.401 # ALIVE us=3640218643 ring_depth=0 drops=0
+t_wall=1793482841.401 # ALIVE us=3642218697 ring_depth=0 drops=0
+t_wall=1793482843.401 # ALIVE us=3644218749 ring_depth=0 drops=0
+t_wall=1793482845.401 # ALIVE us=3646218803 ring_depth=0 drops=0
+t_wall=1793482847.401 # ALIVE us=3648218855 ring_depth=0 drops=0
+t_wall=1793482849.402 # ALIVE us=3650218911 ring_depth=0 drops=0
+t_wall=1793482851.401 # ALIVE us=3652218964 ring_depth=0 drops=0
+t_wall=1793482853.401 # ALIVE us=3654219015 ring_depth=0 drops=0
+t_wall=1793482855.401 # ALIVE us=3656219071 ring_depth=0 drops=0
+t_wall=1793482857.401 # ALIVE us=3658219123 ring_depth=0 drops=0
+t_wall=1793482859.401 # ALIVE us=3660219177 ring_depth=0 drops=0
+t_wall=1793482861.401 # ALIVE us=3662219233 ring_depth=0 drops=0
+t_wall=1793482863.401 # ALIVE us=3664219288 ring_depth=0 drops=0
+t_wall=1793482865.401 # ALIVE us=3666219340 ring_depth=0 drops=0
+t_wall=1793482867.401 # ALIVE us=3668219393 ring_depth=0 drops=0
+t_wall=1793482869.401 # ALIVE us=3670219447 ring_depth=0 drops=0
+t_wall=1793482871.401 # ALIVE us=3672219500 ring_depth=0 drops=0
+t_wall=1793482873.401 # ALIVE us=3674219555 ring_depth=0 drops=0
+t_wall=1793482875.401 # ALIVE us=3676219607 ring_depth=0 drops=0
+t_wall=1793482877.401 # ALIVE us=3678219658 ring_depth=0 drops=0
+t_wall=1793482879.401 # ALIVE us=3680219712 ring_depth=0 drops=0
+t_wall=1793482881.401 # ALIVE us=3682219766 ring_depth=0 drops=0
+t_wall=1793482883.401 # ALIVE us=3684219818 ring_depth=0 drops=0
+t_wall=1793482885.401 # ALIVE us=3686219872 ring_depth=0 drops=0
+t_wall=1793482887.401 # ALIVE us=3688219927 ring_depth=0 drops=0
+t_wall=1793482889.401 # ALIVE us=3690219979 ring_depth=0 drops=0
+t_wall=1793482891.400 # ALIVE us=3692220035 ring_depth=0 drops=0
+t_wall=1793482893.401 # ALIVE us=3694220089 ring_depth=0 drops=0
+t_wall=1793482895.400 # ALIVE us=3696220142 ring_depth=0 drops=0
+t_wall=1793482897.400 # ALIVE us=3698220196 ring_depth=0 drops=0
+t_wall=1793482899.400 # ALIVE us=3700220249 ring_depth=0 drops=0
+t_wall=1793482901.400 # ALIVE us=3702220303 ring_depth=0 drops=0
+t_wall=1793482903.401 # ALIVE us=3704220358 ring_depth=0 drops=0
+t_wall=1793482905.400 # ALIVE us=3706220409 ring_depth=0 drops=0
+t_wall=1793482907.400 # ALIVE us=3708220462 ring_depth=0 drops=0
+t_wall=1793482909.400 # ALIVE us=3710220517 ring_depth=0 drops=0
+t_wall=1793482911.400 # ALIVE us=3712220571 ring_depth=0 drops=0
+t_wall=1793482913.401 # ALIVE us=3714220622 ring_depth=0 drops=0
+t_wall=1793482915.400 # ALIVE us=3716220677 ring_depth=0 drops=0
+t_wall=1793482917.400 # ALIVE us=3718220730 ring_depth=0 drops=0
+t_wall=1793482919.400 # ALIVE us=3720220783 ring_depth=0 drops=0
+t_wall=1793482921.401 # ALIVE us=3722220837 ring_depth=0 drops=0
+t_wall=1793482923.400 # ALIVE us=3724220890 ring_depth=0 drops=0
+t_wall=1793482925.400 # ALIVE us=3726220945 ring_depth=0 drops=0
+t_wall=1793482927.401 # ALIVE us=3728220999 ring_depth=0 drops=0
+t_wall=1793482929.400 # ALIVE us=3730221052 ring_depth=0 drops=0
+t_wall=1793482931.400 # ALIVE us=3732221105 ring_depth=0 drops=0
+t_wall=1793482933.400 # ALIVE us=3734221160 ring_depth=0 drops=0
+t_wall=1793482935.400 # ALIVE us=3736221215 ring_depth=0 drops=0
+t_wall=1793482937.400 # ALIVE us=3738221266 ring_depth=0 drops=0
+t_wall=1793482939.400 # ALIVE us=3740221320 ring_depth=0 drops=0
+t_wall=1793482941.400 # ALIVE us=3742221372 ring_depth=0 drops=0
+t_wall=1793482943.400 # ALIVE us=3744221425 ring_depth=0 drops=0
+t_wall=1793482945.400 # ALIVE us=3746221479 ring_depth=0 drops=0
+t_wall=1793482947.400 # ALIVE us=3748221533 ring_depth=0 drops=0
+t_wall=1793482949.400 # ALIVE us=3750221588 ring_depth=0 drops=0
+t_wall=1793482951.399 # ALIVE us=3752221640 ring_depth=0 drops=0
+t_wall=1793482953.400 # ALIVE us=3754221696 ring_depth=0 drops=0
+t_wall=1793482955.399 # ALIVE us=3756221749 ring_depth=0 drops=0
+t_wall=1793482957.399 # ALIVE us=3758221803 ring_depth=0 drops=0
+t_wall=1793482959.400 # ALIVE us=3760221857 ring_depth=0 drops=0
+t_wall=1793482961.399 # ALIVE us=3762221913 ring_depth=0 drops=0
+t_wall=1793482963.399 # ALIVE us=3764221968 ring_depth=0 drops=0
+t_wall=1793482965.399 # ALIVE us=3766222021 ring_depth=0 drops=0
+t_wall=1793482967.399 # ALIVE us=3768222074 ring_depth=0 drops=0
+t_wall=1793482969.399 # ALIVE us=3770222128 ring_depth=0 drops=0
+t_wall=1793482971.400 # ALIVE us=3772222181 ring_depth=0 drops=0
+t_wall=1793482973.399 # ALIVE us=3774222236 ring_depth=0 drops=0
+t_wall=1793482975.399 # ALIVE us=3776222290 ring_depth=0 drops=0
+t_wall=1793482977.399 # ALIVE us=3778222345 ring_depth=0 drops=0
+t_wall=1793482979.399 # ALIVE us=3780222400 ring_depth=0 drops=0
+t_wall=1793482981.400 # ALIVE us=3782222454 ring_depth=0 drops=0
+t_wall=1793482983.399 # ALIVE us=3784222507 ring_depth=0 drops=0
+t_wall=1793482985.399 # ALIVE us=3786222559 ring_depth=0 drops=0
+t_wall=1793482987.399 # ALIVE us=3788222615 ring_depth=0 drops=0
+t_wall=1793482989.400 # ALIVE us=3790222668 ring_depth=0 drops=0
+t_wall=1793482991.399 # ALIVE us=3792222720 ring_depth=0 drops=0
+t_wall=1793482993.399 # ALIVE us=3794222773 ring_depth=0 drops=0
+t_wall=1793482995.400 # ALIVE us=3796222825 ring_depth=0 drops=0
+t_wall=1793482997.399 # ALIVE us=3798222878 ring_depth=0 drops=0
+t_wall=1793482999.399 # ALIVE us=3800222931 ring_depth=0 drops=0
+t_wall=1793483001.399 # ALIVE us=3802222984 ring_depth=0 drops=0
+t_wall=1793483003.399 # ALIVE us=3804223038 ring_depth=0 drops=0
+t_wall=1793483005.399 # ALIVE us=3806223091 ring_depth=0 drops=0
+t_wall=1793483007.399 # ALIVE us=3808223144 ring_depth=0 drops=0
+t_wall=1793483009.399 # ALIVE us=3810223198 ring_depth=0 drops=0
+t_wall=1793483011.399 # ALIVE us=3812223254 ring_depth=0 drops=0
+t_wall=1793483013.399 # ALIVE us=3814223308 ring_depth=0 drops=0
+t_wall=1793483015.399 # ALIVE us=3816223363 ring_depth=0 drops=0
+t_wall=1793483017.399 # ALIVE us=3818223418 ring_depth=0 drops=0
+t_wall=1793483019.398 # ALIVE us=3820223473 ring_depth=0 drops=0
+t_wall=1793483021.398 # ALIVE us=3822223525 ring_depth=0 drops=0
+t_wall=1793483023.399 # ALIVE us=3824223578 ring_depth=0 drops=0
+t_wall=1793483025.399 # ALIVE us=3826223630 ring_depth=0 drops=0
+t_wall=1793483027.398 # ALIVE us=3828223682 ring_depth=0 drops=0
+t_wall=1793483029.398 # ALIVE us=3830223736 ring_depth=0 drops=0
+t_wall=1793483031.398 # ALIVE us=3832223790 ring_depth=0 drops=0
+t_wall=1793483033.398 # ALIVE us=3834223841 ring_depth=0 drops=0
+t_wall=1793483035.398 # ALIVE us=3836223896 ring_depth=0 drops=0
+t_wall=1793483037.398 # ALIVE us=3838223950 ring_depth=0 drops=0
+t_wall=1793483039.399 # ALIVE us=3840224002 ring_depth=0 drops=0
+t_wall=1793483041.398 # ALIVE us=3842224056 ring_depth=0 drops=0
+t_wall=1793483043.398 # ALIVE us=3844224112 ring_depth=0 drops=0
+t_wall=1793483045.398 # ALIVE us=3846224166 ring_depth=0 drops=0
+t_wall=1793483047.398 # ALIVE us=3848224219 ring_depth=0 drops=0
+t_wall=1793483049.398 # ALIVE us=3850224274 ring_depth=0 drops=0
+t_wall=1793483051.398 # ALIVE us=3852224328 ring_depth=0 drops=0
+t_wall=1793483053.398 # ALIVE us=3854224383 ring_depth=0 drops=0
+t_wall=1793483055.398 # ALIVE us=3856224436 ring_depth=0 drops=0
+t_wall=1793483057.398 # ALIVE us=3858224488 ring_depth=0 drops=0
+t_wall=1793483059.398 # ALIVE us=3860224540 ring_depth=0 drops=0
+t_wall=1793483061.398 # ALIVE us=3862224592 ring_depth=0 drops=0
+t_wall=1793483063.398 # ALIVE us=3864224645 ring_depth=0 drops=0
+t_wall=1793483065.398 # ALIVE us=3866224699 ring_depth=0 drops=0
+t_wall=1793483067.398 # ALIVE us=3868224755 ring_depth=0 drops=0
+t_wall=1793483069.398 # ALIVE us=3870224807 ring_depth=0 drops=0
+t_wall=1793483071.397 # ALIVE us=3872224860 ring_depth=0 drops=0
+t_wall=1793483073.398 # ALIVE us=3874224916 ring_depth=0 drops=0
+t_wall=1793483075.398 # ALIVE us=3876224969 ring_depth=0 drops=0
+t_wall=1793483077.398 # ALIVE us=3878225021 ring_depth=0 drops=0
+t_wall=1793483079.398 # ALIVE us=3880225074 ring_depth=0 drops=0
+t_wall=1793483081.398 # ALIVE us=3882225127 ring_depth=0 drops=0
+t_wall=1793483083.397 # ALIVE us=3884225181 ring_depth=0 drops=0
+t_wall=1793483085.397 # ALIVE us=3886225236 ring_depth=0 drops=0
+t_wall=1793483087.397 # ALIVE us=3888225291 ring_depth=0 drops=0
+t_wall=1793483089.397 # ALIVE us=3890225345 ring_depth=0 drops=0
+t_wall=1793483091.397 # ALIVE us=3892225398 ring_depth=0 drops=0
+t_wall=1793483093.397 # ALIVE us=3894225453 ring_depth=0 drops=0
+t_wall=1793483095.397 # ALIVE us=3896225507 ring_depth=0 drops=0
+t_wall=1793483097.397 # ALIVE us=3898225563 ring_depth=0 drops=0
+t_wall=1793483099.397 # ALIVE us=3900225618 ring_depth=0 drops=0
+t_wall=1793483101.397 # ALIVE us=3902225672 ring_depth=0 drops=0
+t_wall=1793483103.397 # ALIVE us=3904225724 ring_depth=0 drops=0
+t_wall=1793483105.397 # ALIVE us=3906225777 ring_depth=0 drops=0
+t_wall=1793483107.397 # ALIVE us=3908225831 ring_depth=0 drops=0
+t_wall=1793483109.397 # ALIVE us=3910225888 ring_depth=0 drops=0
+t_wall=1793483111.397 # ALIVE us=3912225942 ring_depth=0 drops=0
+t_wall=1793483113.397 # ALIVE us=3914225994 ring_depth=0 drops=0
+t_wall=1793483115.397 # ALIVE us=3916226048 ring_depth=0 drops=0
+t_wall=1793483117.397 # ALIVE us=3918226099 ring_depth=0 drops=0
+t_wall=1793483119.398 # ALIVE us=3920226154 ring_depth=0 drops=0
+t_wall=1793483121.397 # ALIVE us=3922226206 ring_depth=0 drops=0
+t_wall=1793483123.397 # ALIVE us=3924226258 ring_depth=0 drops=0
+t_wall=1793483125.397 # ALIVE us=3926226310 ring_depth=0 drops=0
+t_wall=1793483127.397 # ALIVE us=3928226364 ring_depth=0 drops=0
+t_wall=1793483129.397 # ALIVE us=3930226417 ring_depth=0 drops=0
+t_wall=1793483131.397 # ALIVE us=3932226471 ring_depth=0 drops=0
+t_wall=1793483133.397 # ALIVE us=3934226525 ring_depth=0 drops=0
+t_wall=1793483135.397 # ALIVE us=3936226577 ring_depth=0 drops=0
+t_wall=1793483137.397 # ALIVE us=3938226633 ring_depth=0 drops=0
+t_wall=1793483139.397 # ALIVE us=3940226688 ring_depth=0 drops=0
+t_wall=1793483141.396 # ALIVE us=3942226739 ring_depth=0 drops=0
+t_wall=1793483143.396 # ALIVE us=3944226791 ring_depth=0 drops=0
+t_wall=1793483145.396 # ALIVE us=3946226842 ring_depth=0 drops=0
+t_wall=1793483147.396 # ALIVE us=3948226895 ring_depth=0 drops=0
+t_wall=1793483149.396 # ALIVE us=3950226948 ring_depth=0 drops=0
+t_wall=1793483151.396 # ALIVE us=3952227003 ring_depth=0 drops=0
+t_wall=1793483153.396 # ALIVE us=3954227058 ring_depth=0 drops=0
+t_wall=1793483155.396 # ALIVE us=3956227111 ring_depth=0 drops=0
+t_wall=1793483157.396 # ALIVE us=3958227165 ring_depth=0 drops=0
+t_wall=1793483159.396 # ALIVE us=3960227218 ring_depth=0 drops=0
+t_wall=1793483161.396 # ALIVE us=3962227272 ring_depth=0 drops=0
+t_wall=1793483163.396 # ALIVE us=3964227325 ring_depth=0 drops=0
+t_wall=1793483165.396 # ALIVE us=3966227378 ring_depth=0 drops=0
+t_wall=1793483167.396 # ALIVE us=3968227432 ring_depth=0 drops=0
+t_wall=1793483169.396 # ALIVE us=3970227486 ring_depth=0 drops=0
+t_wall=1793483171.396 # ALIVE us=3972227541 ring_depth=0 drops=0
+t_wall=1793483173.397 # ALIVE us=3974227594 ring_depth=0 drops=0
+t_wall=1793483175.396 # ALIVE us=3976227647 ring_depth=0 drops=0
+t_wall=1793483177.396 # ALIVE us=3978227701 ring_depth=0 drops=0
+t_wall=1793483179.396 # ALIVE us=3980227757 ring_depth=0 drops=0
+t_wall=1793483181.396 # ALIVE us=3982227809 ring_depth=0 drops=0
+t_wall=1793483183.396 # ALIVE us=3984227862 ring_depth=0 drops=0
+t_wall=1793483185.396 # ALIVE us=3986227915 ring_depth=0 drops=0
+t_wall=1793483187.396 # ALIVE us=3988227968 ring_depth=0 drops=0
+t_wall=1793483189.396 # ALIVE us=3990228022 ring_depth=0 drops=0
+t_wall=1793483191.396 # ALIVE us=3992228077 ring_depth=0 drops=0
+t_wall=1793483193.396 # ALIVE us=3994228129 ring_depth=0 drops=0
+t_wall=1793483195.396 # ALIVE us=3996228183 ring_depth=0 drops=0
+t_wall=1793483197.396 # ALIVE us=3998228239 ring_depth=0 drops=0
+t_wall=1793483199.396 # ALIVE us=4000228292 ring_depth=0 drops=0
+t_wall=1793483201.396 # ALIVE us=4002228345 ring_depth=0 drops=0
+t_wall=1793483203.396 # ALIVE us=4004228401 ring_depth=0 drops=0
+t_wall=1793483205.395 # ALIVE us=4006228455 ring_depth=0 drops=0
+t_wall=1793483207.395 # ALIVE us=4008228510 ring_depth=0 drops=0
+t_wall=1793483209.395 # ALIVE us=4010228564 ring_depth=0 drops=0
+t_wall=1793483211.395 # ALIVE us=4012228620 ring_depth=0 drops=0
+t_wall=1793483213.395 # ALIVE us=4014228672 ring_depth=0 drops=0
+t_wall=1793483215.395 # ALIVE us=4016228726 ring_depth=0 drops=0
+t_wall=1793483217.395 # ALIVE us=4018228778 ring_depth=0 drops=0
+t_wall=1793483219.395 # ALIVE us=4020228832 ring_depth=0 drops=0
+t_wall=1793483221.395 # ALIVE us=4022228888 ring_depth=0 drops=0
+t_wall=1793483223.395 # ALIVE us=4024228945 ring_depth=0 drops=0
+t_wall=1793483225.395 # ALIVE us=4026228998 ring_depth=0 drops=0
+t_wall=1793483227.395 # ALIVE us=4028229051 ring_depth=0 drops=0
+t_wall=1793483229.395 # ALIVE us=4030229106 ring_depth=0 drops=0
+t_wall=1793483231.395 # ALIVE us=4032229158 ring_depth=0 drops=0
+t_wall=1793483233.395 # ALIVE us=4034229214 ring_depth=0 drops=0
+t_wall=1793483235.395 # ALIVE us=4036229268 ring_depth=0 drops=0
+t_wall=1793483237.395 # ALIVE us=4038229321 ring_depth=0 drops=0
+t_wall=1793483239.395 # ALIVE us=4040229375 ring_depth=0 drops=0
+t_wall=1793483241.395 # ALIVE us=4042229428 ring_depth=0 drops=0
+t_wall=1793483243.395 # ALIVE us=4044229483 ring_depth=0 drops=0
+t_wall=1793483245.395 # ALIVE us=4046229538 ring_depth=0 drops=0
+t_wall=1793483247.395 # ALIVE us=4048229592 ring_depth=0 drops=0
+t_wall=1793483249.395 # ALIVE us=4050229647 ring_depth=0 drops=0
+t_wall=1793483251.395 # ALIVE us=4052229700 ring_depth=0 drops=0
+t_wall=1793483253.395 # ALIVE us=4054229752 ring_depth=0 drops=0
+t_wall=1793483255.395 # ALIVE us=4056229807 ring_depth=0 drops=0
+t_wall=1793483257.395 # ALIVE us=4058229862 ring_depth=0 drops=0
+t_wall=1793483259.394 # ALIVE us=4060229915 ring_depth=0 drops=0
+t_wall=1793483261.394 # ALIVE us=4062229969 ring_depth=0 drops=0
+t_wall=1793483263.394 # ALIVE us=4064230024 ring_depth=0 drops=0
+t_wall=1793483265.395 # ALIVE us=4066230078 ring_depth=0 drops=0
+t_wall=1793483267.394 # ALIVE us=4068230131 ring_depth=0 drops=0
+t_wall=1793483269.395 # ALIVE us=4070230185 ring_depth=0 drops=0
+t_wall=1793483271.395 # ALIVE us=4072230239 ring_depth=0 drops=0
+t_wall=1793483273.394 # ALIVE us=4074230293 ring_depth=0 drops=0
+t_wall=1793483275.394 # ALIVE us=4076230346 ring_depth=0 drops=0
+t_wall=1793483277.394 # ALIVE us=4078230400 ring_depth=0 drops=0
+t_wall=1793483279.394 # ALIVE us=4080230453 ring_depth=0 drops=0
+t_wall=1793483281.394 # ALIVE us=4082230507 ring_depth=0 drops=0
+t_wall=1793483283.394 # ALIVE us=4084230560 ring_depth=0 drops=0
+t_wall=1793483285.394 # ALIVE us=4086230614 ring_depth=0 drops=0
+t_wall=1793483287.394 # ALIVE us=4088230667 ring_depth=0 drops=0
+t_wall=1793483289.394 # ALIVE us=4090230719 ring_depth=0 drops=0
+t_wall=1793483291.394 # ALIVE us=4092230775 ring_depth=0 drops=0
+t_wall=1793483293.394 # ALIVE us=4094230827 ring_depth=0 drops=0
+t_wall=1793483295.394 # ALIVE us=4096230882 ring_depth=0 drops=0
+t_wall=1793483297.394 # ALIVE us=4098230937 ring_depth=0 drops=0
+t_wall=1793483299.394 # ALIVE us=4100230992 ring_depth=0 drops=0
+t_wall=1793483301.394 # ALIVE us=4102231047 ring_depth=0 drops=0
+t_wall=1793483303.394 # ALIVE us=4104231100 ring_depth=0 drops=0
+t_wall=1793483305.394 # ALIVE us=4106231154 ring_depth=0 drops=0
+t_wall=1793483307.394 # ALIVE us=4108231209 ring_depth=0 drops=0
+t_wall=1793483309.394 # ALIVE us=4110231261 ring_depth=0 drops=0
+t_wall=1793483311.394 # ALIVE us=4112231313 ring_depth=0 drops=0
+t_wall=1793483313.394 # ALIVE us=4114231368 ring_depth=0 drops=0
+t_wall=1793483315.393 # ALIVE us=4116231421 ring_depth=0 drops=0
+t_wall=1793483317.394 # ALIVE us=4118231477 ring_depth=0 drops=0
+t_wall=1793483319.394 # ALIVE us=4120231531 ring_depth=0 drops=0
+t_wall=1793483321.394 # ALIVE us=4122231583 ring_depth=0 drops=0
+t_wall=1793483323.394 # ALIVE us=4124231635 ring_depth=0 drops=0
+t_wall=1793483325.394 # ALIVE us=4126231692 ring_depth=0 drops=0
+t_wall=1793483327.393 # ALIVE us=4128231745 ring_depth=0 drops=0
+t_wall=1793483329.393 # ALIVE us=4130231797 ring_depth=0 drops=0
+t_wall=1793483331.393 # ALIVE us=4132231852 ring_depth=0 drops=0
+t_wall=1793483333.393 # ALIVE us=4134231906 ring_depth=0 drops=0
+t_wall=1793483335.393 # ALIVE us=4136231961 ring_depth=0 drops=0
+t_wall=1793483337.394 # ALIVE us=4138232013 ring_depth=0 drops=0
+t_wall=1793483339.394 # ALIVE us=4140232068 ring_depth=0 drops=0
+t_wall=1793483341.394 # ALIVE us=4142232121 ring_depth=0 drops=0
+t_wall=1793483343.393 # ALIVE us=4144232175 ring_depth=0 drops=0
+t_wall=1793483345.393 # ALIVE us=4146232228 ring_depth=0 drops=0
+t_wall=1793483347.393 # ALIVE us=4148232284 ring_depth=0 drops=0
+t_wall=1793483349.393 # ALIVE us=4150232339 ring_depth=0 drops=0
+t_wall=1793483351.393 # ALIVE us=4152232393 ring_depth=0 drops=0
+t_wall=1793483353.393 # ALIVE us=4154232446 ring_depth=0 drops=0
+t_wall=1793483355.393 # ALIVE us=4156232500 ring_depth=0 drops=0
+t_wall=1793483357.393 # ALIVE us=4158232554 ring_depth=0 drops=0
+t_wall=1793483359.393 # ALIVE us=4160232608 ring_depth=0 drops=0
+t_wall=1793483361.393 # ALIVE us=4162232662 ring_depth=0 drops=0
+t_wall=1793483363.393 # ALIVE us=4164232714 ring_depth=0 drops=0
+t_wall=1793483365.393 # ALIVE us=4166232765 ring_depth=0 drops=0
+t_wall=1793483367.393 # ALIVE us=4168232819 ring_depth=0 drops=0
+t_wall=1793483369.393 # ALIVE us=4170232873 ring_depth=0 drops=0
+t_wall=1793483371.393 # ALIVE us=4172232928 ring_depth=0 drops=0
+t_wall=1793483373.393 # ALIVE us=4174232982 ring_depth=0 drops=0
+t_wall=1793483375.393 # ALIVE us=4176233037 ring_depth=0 drops=0
+t_wall=1793483377.393 # ALIVE us=4178233093 ring_depth=0 drops=0
+t_wall=1793483379.392 # ALIVE us=4180233147 ring_depth=0 drops=0
+t_wall=1793483381.393 # ALIVE us=4182233201 ring_depth=0 drops=0
+t_wall=1793483383.393 # ALIVE us=4184233256 ring_depth=0 drops=0
+t_wall=1793483385.393 # ALIVE us=4186233309 ring_depth=0 drops=0
+t_wall=1793483387.393 # ALIVE us=4188233364 ring_depth=0 drops=0
+t_wall=1793483389.393 # ALIVE us=4190233420 ring_depth=0 drops=0
+t_wall=1793483391.393 # ALIVE us=4192233474 ring_depth=0 drops=0
+t_wall=1793483393.392 # ALIVE us=4194233528 ring_depth=0 drops=0
+t_wall=1793483395.393 # ALIVE us=4196233582 ring_depth=0 drops=0
+t_wall=1793483397.392 # ALIVE us=4198233636 ring_depth=0 drops=0
+t_wall=1793483399.392 # ALIVE us=4200233690 ring_depth=0 drops=0
+t_wall=1793483401.392 # ALIVE us=4202233744 ring_depth=0 drops=0
+t_wall=1793483403.392 # ALIVE us=4204233798 ring_depth=0 drops=0
+t_wall=1793483405.392 # ALIVE us=4206233850 ring_depth=0 drops=0
+t_wall=1793483407.392 # ALIVE us=4208233905 ring_depth=0 drops=0
+t_wall=1793483409.392 # ALIVE us=4210233960 ring_depth=0 drops=0
+t_wall=1793483411.392 # ALIVE us=4212234012 ring_depth=0 drops=0
+t_wall=1793483413.393 # ALIVE us=4214234068 ring_depth=0 drops=0
+t_wall=1793483415.392 # ALIVE us=4216234122 ring_depth=0 drops=0
+t_wall=1793483417.393 # ALIVE us=4218234176 ring_depth=0 drops=0
+t_wall=1793483419.392 # ALIVE us=4220234231 ring_depth=0 drops=0
+t_wall=1793483421.392 # ALIVE us=4222234284 ring_depth=0 drops=0
+t_wall=1793483423.392 # ALIVE us=4224234336 ring_depth=0 drops=0
+t_wall=1793483425.392 # ALIVE us=4226234391 ring_depth=0 drops=0
+t_wall=1793483427.392 # ALIVE us=4228234447 ring_depth=0 drops=0
+t_wall=1793483429.392 # ALIVE us=4230234502 ring_depth=0 drops=0
+t_wall=1793483431.392 # ALIVE us=4232234557 ring_depth=0 drops=0
+t_wall=1793483433.392 # ALIVE us=4234234611 ring_depth=0 drops=0
+t_wall=1793483435.392 # ALIVE us=4236234663 ring_depth=0 drops=0
+t_wall=1793483437.392 # ALIVE us=4238234714 ring_depth=0 drops=0
+t_wall=1793483439.392 # ALIVE us=4240234768 ring_depth=0 drops=0
+t_wall=1793483441.392 # ALIVE us=4242234821 ring_depth=0 drops=0
+t_wall=1793483443.392 # ALIVE us=4244234874 ring_depth=0 drops=0
+t_wall=1793483445.392 # ALIVE us=4246234929 ring_depth=0 drops=0
+t_wall=1793483447.391 # ALIVE us=4248234983 ring_depth=0 drops=0
+t_wall=1793483449.391 # ALIVE us=4250235035 ring_depth=0 drops=0
+t_wall=1793483451.392 # ALIVE us=4252235088 ring_depth=0 drops=0
+t_wall=1793483453.391 # ALIVE us=4254235139 ring_depth=0 drops=0
+t_wall=1793483455.392 # ALIVE us=4256235190 ring_depth=0 drops=0
+t_wall=1793483457.392 # ALIVE us=4258235244 ring_depth=0 drops=0
+t_wall=1793483459.391 # ALIVE us=4260235297 ring_depth=0 drops=0
+t_wall=1793483461.391 # ALIVE us=4262235351 ring_depth=0 drops=0
+t_wall=1793483463.391 # ALIVE us=4264235405 ring_depth=0 drops=0
+t_wall=1793483465.391 # ALIVE us=4266235459 ring_depth=0 drops=0
+t_wall=1793483467.392 # ALIVE us=4268235514 ring_depth=0 drops=0
+t_wall=1793483469.391 # ALIVE us=4270235567 ring_depth=0 drops=0
+t_wall=1793483471.391 # ALIVE us=4272235623 ring_depth=0 drops=0
+t_wall=1793483473.391 # ALIVE us=4274235679 ring_depth=0 drops=0
+t_wall=1793483475.391 # ALIVE us=4276235733 ring_depth=0 drops=0
+t_wall=1793483477.391 # ALIVE us=4278235788 ring_depth=0 drops=0
+t_wall=1793483479.391 # ALIVE us=4280235842 ring_depth=0 drops=0
+t_wall=1793483481.391 # ALIVE us=4282235896 ring_depth=0 drops=0
+t_wall=1793483483.391 # ALIVE us=4284235951 ring_depth=0 drops=0
+t_wall=1793483485.391 # ALIVE us=4286236006 ring_depth=0 drops=0
+t_wall=1793483487.391 # ALIVE us=4288236058 ring_depth=0 drops=0
+t_wall=1793483489.391 # ALIVE us=4290236112 ring_depth=0 drops=0
+t_wall=1793483491.391 # ALIVE us=4292236165 ring_depth=0 drops=0
+t_wall=1793483493.391 # ALIVE us=4294236219 ring_depth=0 drops=0
+t_wall=1793483495.391 # ALIVE us=1268978 ring_depth=0 drops=0
+t_wall=1793483497.391 # ALIVE us=3269029 ring_depth=0 drops=0
+t_wall=1793483499.391 # ALIVE us=5269081 ring_depth=0 drops=0
+t_wall=1793483501.391 # ALIVE us=7269134 ring_depth=0 drops=0
+t_wall=1793483503.391 # ALIVE us=9269187 ring_depth=0 drops=0
+t_wall=1793483505.391 # ALIVE us=11269239 ring_depth=0 drops=0
+t_wall=1793483507.390 # ALIVE us=13269292 ring_depth=0 drops=0
+t_wall=1793483509.390 # ALIVE us=15269346 ring_depth=0 drops=0
+t_wall=1793483511.390 # ALIVE us=17269399 ring_depth=0 drops=0
+t_wall=1793483513.391 # ALIVE us=19269451 ring_depth=0 drops=0
+t_wall=1793483515.391 # ALIVE us=21269501 ring_depth=0 drops=0
+t_wall=1793483517.390 # ALIVE us=23269551 ring_depth=0 drops=0
+t_wall=1793483519.390 # ALIVE us=25269602 ring_depth=0 drops=0
+t_wall=1793483521.391 # ALIVE us=27269654 ring_depth=0 drops=0
+t_wall=1793483523.390 # ALIVE us=29269704 ring_depth=0 drops=0
+t_wall=1793483525.390 # ALIVE us=31269756 ring_depth=0 drops=0
+t_wall=1793483527.390 # ALIVE us=33269810 ring_depth=0 drops=0
+t_wall=1793483529.390 # ALIVE us=35269862 ring_depth=0 drops=0
+t_wall=1793483531.390 # ALIVE us=37269915 ring_depth=0 drops=0
+t_wall=1793483533.390 # ALIVE us=39269968 ring_depth=0 drops=0
+t_wall=1793483535.390 # ALIVE us=41270022 ring_depth=0 drops=0
+t_wall=1793483537.390 # ALIVE us=43270073 ring_depth=0 drops=0
+t_wall=1793483539.390 # ALIVE us=45270124 ring_depth=0 drops=0
+t_wall=1793483541.390 # ALIVE us=47270174 ring_depth=0 drops=0
+t_wall=1793483543.390 # ALIVE us=49270226 ring_depth=0 drops=0
+t_wall=1793483545.390 # ALIVE us=51270276 ring_depth=0 drops=0
+t_wall=1793483547.390 # ALIVE us=53270329 ring_depth=0 drops=0
+t_wall=1793483549.390 # ALIVE us=55270382 ring_depth=0 drops=0
+t_wall=1793483551.390 # ALIVE us=57270435 ring_depth=0 drops=0
+t_wall=1793483553.390 # ALIVE us=59270487 ring_depth=0 drops=0
+t_wall=1793483555.390 # ALIVE us=61270542 ring_depth=0 drops=0
+t_wall=1793483557.390 # ALIVE us=63270593 ring_depth=0 drops=0
+t_wall=1793483559.390 # ALIVE us=65270644 ring_depth=0 drops=0
+t_wall=1793483561.390 # ALIVE us=67270697 ring_depth=0 drops=0
+t_wall=1793483563.390 # ALIVE us=69270750 ring_depth=0 drops=0
+t_wall=1793483565.390 # ALIVE us=71270805 ring_depth=0 drops=0
+t_wall=1793483567.390 # ALIVE us=73270860 ring_depth=0 drops=0
+t_wall=1793483569.389 # ALIVE us=75270912 ring_depth=0 drops=0
+t_wall=1793483571.389 # ALIVE us=77270964 ring_depth=0 drops=0
+t_wall=1793483573.390 # ALIVE us=79271017 ring_depth=0 drops=0
+t_wall=1793483575.389 # ALIVE us=81271068 ring_depth=0 drops=0
+t_wall=1793483577.389 # ALIVE us=83271121 ring_depth=0 drops=0
+t_wall=1793483579.389 # ALIVE us=85271174 ring_depth=0 drops=0
+t_wall=1793483581.389 # ALIVE us=87271227 ring_depth=0 drops=0
+t_wall=1793483583.389 # ALIVE us=89271280 ring_depth=0 drops=0
+t_wall=1793483585.389 # ALIVE us=91271334 ring_depth=0 drops=0
+t_wall=1793483587.389 # ALIVE us=93271388 ring_depth=0 drops=0
+t_wall=1793483589.389 # ALIVE us=95271440 ring_depth=0 drops=0
+t_wall=1793483591.389 # ALIVE us=97271494 ring_depth=0 drops=0
+t_wall=1793483593.389 # ALIVE us=99271544 ring_depth=0 drops=0
+t_wall=1793483595.389 # ALIVE us=101271595 ring_depth=0 drops=0
+t_wall=1793483597.389 # ALIVE us=103271648 ring_depth=0 drops=0
+t_wall=1793483599.389 # ALIVE us=105271700 ring_depth=0 drops=0
+t_wall=1793483601.389 # ALIVE us=107271754 ring_depth=0 drops=0
+t_wall=1793483603.389 # ALIVE us=109271805 ring_depth=0 drops=0
+t_wall=1793483605.389 # ALIVE us=111271858 ring_depth=0 drops=0
+t_wall=1793483607.389 # ALIVE us=113271910 ring_depth=0 drops=0
+t_wall=1793483609.389 # ALIVE us=115271961 ring_depth=0 drops=0
+t_wall=1793483611.389 # ALIVE us=117272015 ring_depth=0 drops=0
+t_wall=1793483613.389 # ALIVE us=119272066 ring_depth=0 drops=0
+t_wall=1793483615.389 # ALIVE us=121272119 ring_depth=0 drops=0
+t_wall=1793483617.389 # ALIVE us=123272172 ring_depth=0 drops=0
+t_wall=1793483619.389 # ALIVE us=125272225 ring_depth=0 drops=0
+t_wall=1793483621.389 # ALIVE us=127272279 ring_depth=0 drops=0
+t_wall=1793483623.389 # ALIVE us=129272331 ring_depth=0 drops=0
+t_wall=1793483625.388 # ALIVE us=131272384 ring_depth=0 drops=0
+t_wall=1793483627.388 # ALIVE us=133272438 ring_depth=0 drops=0
+t_wall=1793483629.389 # ALIVE us=135272491 ring_depth=0 drops=0
+t_wall=1793483631.389 # ALIVE us=137272546 ring_depth=0 drops=0
+t_wall=1793483633.388 # ALIVE us=139272602 ring_depth=0 drops=0
+t_wall=1793483635.388 # ALIVE us=141272655 ring_depth=0 drops=0
+t_wall=1793483637.388 # ALIVE us=143272706 ring_depth=0 drops=0
+t_wall=1793483639.388 # ALIVE us=145272759 ring_depth=0 drops=0
+t_wall=1793483641.388 # ALIVE us=147272812 ring_depth=0 drops=0
+t_wall=1793483643.388 # ALIVE us=149272867 ring_depth=0 drops=0
+t_wall=1793483645.388 # ALIVE us=151272920 ring_depth=0 drops=0
+t_wall=1793483647.388 # ALIVE us=153272973 ring_depth=0 drops=0
+t_wall=1793483649.388 # ALIVE us=155273025 ring_depth=0 drops=0
+t_wall=1793483651.388 # ALIVE us=157273079 ring_depth=0 drops=0
+t_wall=1793483653.388 # ALIVE us=159273130 ring_depth=0 drops=0
+t_wall=1793483655.388 # ALIVE us=161273183 ring_depth=0 drops=0
+t_wall=1793483657.388 # ALIVE us=163273237 ring_depth=0 drops=0
+t_wall=1793483659.388 # ALIVE us=165273291 ring_depth=0 drops=0
+t_wall=1793483661.388 # ALIVE us=167273345 ring_depth=0 drops=0
+t_wall=1793483663.388 # ALIVE us=169273399 ring_depth=0 drops=0
+t_wall=1793483665.388 # ALIVE us=171273452 ring_depth=0 drops=0
+t_wall=1793483667.388 # ALIVE us=173273503 ring_depth=0 drops=0
+t_wall=1793483669.388 # ALIVE us=175273555 ring_depth=0 drops=0
+t_wall=1793483671.388 # ALIVE us=177273606 ring_depth=0 drops=0
+t_wall=1793483673.388 # ALIVE us=179273660 ring_depth=0 drops=0
+t_wall=1793483675.388 # ALIVE us=181273712 ring_depth=0 drops=0
+t_wall=1793483677.388 # ALIVE us=183273766 ring_depth=0 drops=0
+t_wall=1793483679.388 # ALIVE us=185273818 ring_depth=0 drops=0
+t_wall=1793483681.388 # ALIVE us=187273870 ring_depth=0 drops=0
+t_wall=1793483683.388 # ALIVE us=189273922 ring_depth=0 drops=0
+t_wall=1793483685.388 # ALIVE us=191273975 ring_depth=0 drops=0
+t_wall=1793483687.387 # ALIVE us=193274030 ring_depth=0 drops=0
+t_wall=1793483689.388 # ALIVE us=195274081 ring_depth=0 drops=0
+t_wall=1793483691.387 # ALIVE us=197274134 ring_depth=0 drops=0
+t_wall=1793483693.388 # ALIVE us=199274187 ring_depth=0 drops=0
+t_wall=1793483695.387 # ALIVE us=201274238 ring_depth=0 drops=0
+t_wall=1793483697.387 # ALIVE us=203274289 ring_depth=0 drops=0
+t_wall=1793483699.388 # ALIVE us=205274342 ring_depth=0 drops=0
+t_wall=1793483701.388 # ALIVE us=207274395 ring_depth=0 drops=0
+t_wall=1793483703.387 # ALIVE us=209274449 ring_depth=0 drops=0
+t_wall=1793483705.387 # ALIVE us=211274501 ring_depth=0 drops=0
+t_wall=1793483707.387 # ALIVE us=213274553 ring_depth=0 drops=0
+t_wall=1793483709.387 # ALIVE us=215274606 ring_depth=0 drops=0
+t_wall=1793483711.387 # ALIVE us=217274660 ring_depth=0 drops=0
+t_wall=1793483713.387 # ALIVE us=219274711 ring_depth=0 drops=0
+t_wall=1793483715.387 # ALIVE us=221274764 ring_depth=0 drops=0
+t_wall=1793483717.387 # ALIVE us=223274817 ring_depth=0 drops=0
+t_wall=1793483719.387 # ALIVE us=225274871 ring_depth=0 drops=0
+t_wall=1793483721.387 # ALIVE us=227274922 ring_depth=0 drops=0
+t_wall=1793483723.387 # ALIVE us=229274976 ring_depth=0 drops=0
+t_wall=1793483725.388 # ALIVE us=231275032 ring_depth=0 drops=0
+t_wall=1793483727.387 # ALIVE us=233275082 ring_depth=0 drops=0
+t_wall=1793483729.387 # ALIVE us=235275136 ring_depth=0 drops=0
+t_wall=1793483731.387 # ALIVE us=237275190 ring_depth=0 drops=0
+t_wall=1793483733.387 # ALIVE us=239275241 ring_depth=0 drops=0
+t_wall=1793483735.387 # ALIVE us=241275294 ring_depth=0 drops=0
+t_wall=1793483737.387 # ALIVE us=243275347 ring_depth=0 drops=0
+t_wall=1793483739.387 # ALIVE us=245275397 ring_depth=0 drops=0
+t_wall=1793483741.387 # ALIVE us=247275449 ring_depth=0 drops=0
+t_wall=1793483743.387 # ALIVE us=249275502 ring_depth=0 drops=0
+t_wall=1793483745.386 # ALIVE us=251275555 ring_depth=0 drops=0
+t_wall=1793483747.386 # ALIVE us=253275606 ring_depth=0 drops=0
+t_wall=1793483749.386 # ALIVE us=255275658 ring_depth=0 drops=0
+t_wall=1793483751.387 # ALIVE us=257275711 ring_depth=0 drops=0
+t_wall=1793483753.386 # ALIVE us=259275763 ring_depth=0 drops=0
+t_wall=1793483755.386 # ALIVE us=261275814 ring_depth=0 drops=0
+t_wall=1793483757.386 # ALIVE us=263275866 ring_depth=0 drops=0
+t_wall=1793483759.386 # ALIVE us=265275920 ring_depth=0 drops=0
+t_wall=1793483761.386 # ALIVE us=267275973 ring_depth=0 drops=0
+t_wall=1793483763.386 # ALIVE us=269276023 ring_depth=0 drops=0
+t_wall=1793483765.386 # ALIVE us=271276078 ring_depth=0 drops=0
+t_wall=1793483767.386 # ALIVE us=273276131 ring_depth=0 drops=0
+t_wall=1793483769.386 # ALIVE us=275276181 ring_depth=0 drops=0
+t_wall=1793483771.386 # ALIVE us=277276234 ring_depth=0 drops=0
+t_wall=1793483773.386 # ALIVE us=279276287 ring_depth=0 drops=0
+t_wall=1793483775.386 # ALIVE us=281276339 ring_depth=0 drops=0
+t_wall=1793483777.386 # ALIVE us=283276392 ring_depth=0 drops=0
+t_wall=1793483779.386 # ALIVE us=285276446 ring_depth=0 drops=0
+t_wall=1793483781.386 # ALIVE us=287276498 ring_depth=0 drops=0
+t_wall=1793483783.386 # ALIVE us=289276553 ring_depth=0 drops=0
+t_wall=1793483785.386 # ALIVE us=291276605 ring_depth=0 drops=0
+t_wall=1793483787.386 # ALIVE us=293276660 ring_depth=0 drops=0
+t_wall=1793483789.386 # ALIVE us=295276711 ring_depth=0 drops=0
+t_wall=1793483791.386 # ALIVE us=297276766 ring_depth=0 drops=0
+t_wall=1793483793.386 # ALIVE us=299276818 ring_depth=0 drops=0
+t_wall=1793483795.386 # ALIVE us=301276874 ring_depth=0 drops=0
+t_wall=1793483797.386 # ALIVE us=303276926 ring_depth=0 drops=0
+t_wall=1793483799.385 # ALIVE us=305276977 ring_depth=0 drops=0
+t_wall=1793483801.386 # ALIVE us=307277030 ring_depth=0 drops=0
+t_wall=1793483803.386 # ALIVE us=309277081 ring_depth=0 drops=0
+t_wall=1793483805.386 # ALIVE us=311277135 ring_depth=0 drops=0
+t_wall=1793483807.386 # ALIVE us=313277188 ring_depth=0 drops=0
+t_wall=1793483809.385 # ALIVE us=315277241 ring_depth=0 drops=0
+t_wall=1793483811.385 # ALIVE us=317277295 ring_depth=0 drops=0
+t_wall=1793483813.385 # ALIVE us=319277348 ring_depth=0 drops=0
+t_wall=1793483815.385 # ALIVE us=321277402 ring_depth=0 drops=0
+t_wall=1793483817.385 # ALIVE us=323277454 ring_depth=0 drops=0
+t_wall=1793483819.386 # ALIVE us=325277510 ring_depth=0 drops=0
+t_wall=1793483821.385 # ALIVE us=327277563 ring_depth=0 drops=0
+t_wall=1793483823.385 # ALIVE us=329277616 ring_depth=0 drops=0
+t_wall=1793483825.386 # ALIVE us=331277671 ring_depth=0 drops=0
+t_wall=1793483827.385 # ALIVE us=333277724 ring_depth=0 drops=0
+t_wall=1793483829.385 # ALIVE us=335277778 ring_depth=0 drops=0
+t_wall=1793483831.385 # ALIVE us=337277830 ring_depth=0 drops=0
+t_wall=1793483833.385 # ALIVE us=339277882 ring_depth=0 drops=0
+t_wall=1793483835.385 # ALIVE us=341277935 ring_depth=0 drops=0
+t_wall=1793483837.385 # ALIVE us=343277987 ring_depth=0 drops=0
+t_wall=1793483839.385 # ALIVE us=345278038 ring_depth=0 drops=0
+t_wall=1793483841.385 # ALIVE us=347278091 ring_depth=0 drops=0
+t_wall=1793483843.385 # ALIVE us=349278147 ring_depth=0 drops=0
+t_wall=1793483845.385 # ALIVE us=351278200 ring_depth=0 drops=0
+t_wall=1793483847.385 # ALIVE us=353278252 ring_depth=0 drops=0
+t_wall=1793483849.385 # ALIVE us=355278302 ring_depth=0 drops=0
+t_wall=1793483851.385 # ALIVE us=357278355 ring_depth=0 drops=0
+t_wall=1793483853.385 # ALIVE us=359278409 ring_depth=0 drops=0
+t_wall=1793483853.608 t=359501139 W CMD 0x20 [FUNC_SET 8bit=0 2line=0 5x10=0]
+t_wall=1793483853.615 t=359507296 W CMD 0x20 [FUNC_SET 8bit=0 2line=0 5x10=0]
+t_wall=1793483853.718 t=359611988 W CMD 0x20 [FUNC_SET 8bit=0 2line=0 5x10=0]
+t_wall=1793483853.719 t=359612033 W CMD 0x28 [FUNC_SET 8bit=0 2line=1 5x10=0]
+t_wall=1793483853.719 t=359612089 W CMD 0x08 [DISP_CTRL disp=0 cur=0 blink=0]
+t_wall=1793483853.719 t=359612146 W CMD 0x01 [CLEAR]
+t_wall=1793483853.719 t=359612187 W CMD 0x06 [ENTRY_MODE inc=1 shift=0]
+t_wall=1793483853.720 t=359612231 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483853.720 t=359612293 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483853.720 t=359612334 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.720 t=359612378 W CMD 0x41 [SET_CGRAM 0x01]
+t_wall=1793483853.721 t=359612419 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.721 t=359612464 W CMD 0x42 [SET_CGRAM 0x02]
+t_wall=1793483853.722 t=359612505 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.722 t=359612550 W CMD 0x43 [SET_CGRAM 0x03]
+t_wall=1793483853.723 t=359612591 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.723 t=359612636 W CMD 0x44 [SET_CGRAM 0x04]
+t_wall=1793483853.724 t=359612677 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.724 t=359612722 W CMD 0x45 [SET_CGRAM 0x05]
+t_wall=1793483853.725 t=359612763 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.725 t=359612808 W CMD 0x46 [SET_CGRAM 0x06]
+t_wall=1793483853.726 t=359612849 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.726 t=359612894 W CMD 0x47 [SET_CGRAM 0x07]
+t_wall=1793483853.727 t=359612934 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.727 t=359612980 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483853.727 t=359613034 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.727 t=359613081 W CMD 0x49 [SET_CGRAM 0x09]
+t_wall=1793483853.728 t=359616886 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.728 t=359616931 W CMD 0x4A [SET_CGRAM 0x0A]
+t_wall=1793483853.728 t=359620736 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.728 t=359620781 W CMD 0x4B [SET_CGRAM 0x0B]
+t_wall=1793483853.731 t=359624586 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.731 t=359624631 W CMD 0x4C [SET_CGRAM 0x0C]
+t_wall=1793483853.735 t=359628439 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.735 t=359628483 W CMD 0x4D [SET_CGRAM 0x0D]
+t_wall=1793483853.739 t=359632288 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.739 t=359632334 W CMD 0x4E [SET_CGRAM 0x0E]
+t_wall=1793483853.742 t=359636142 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.743 t=359636185 W CMD 0x4F [SET_CGRAM 0x0F]
+t_wall=1793483853.746 t=359639965 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.747 t=359640009 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483853.747 t=359640052 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.748 t=359640096 W CMD 0x51 [SET_CGRAM 0x11]
+t_wall=1793483853.748 t=359640136 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.748 t=359640181 W CMD 0x52 [SET_CGRAM 0x12]
+t_wall=1793483853.749 t=359640222 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.749 t=359640268 W CMD 0x53 [SET_CGRAM 0x13]
+t_wall=1793483853.749 t=359640308 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.749 t=359640353 W CMD 0x54 [SET_CGRAM 0x14]
+t_wall=1793483853.750 t=359640394 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.750 t=359640438 W CMD 0x55 [SET_CGRAM 0x15]
+t_wall=1793483853.750 t=359640479 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.750 t=359640553 W CMD 0x56 [SET_CGRAM 0x16]
+t_wall=1793483853.750 t=359640592 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.751 t=359640637 W CMD 0x57 [SET_CGRAM 0x17]
+t_wall=1793483853.751 t=359640678 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.751 t=359640744 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483853.751 t=359644523 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.752 t=359644567 W CMD 0x59 [SET_CGRAM 0x19]
+t_wall=1793483853.755 t=359648375 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.755 t=359648420 W CMD 0x5A [SET_CGRAM 0x1A]
+t_wall=1793483853.758 t=359652224 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.759 t=359652270 W CMD 0x5B [SET_CGRAM 0x1B]
+t_wall=1793483853.762 t=359656077 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.763 t=359656121 W CMD 0x5C [SET_CGRAM 0x1C]
+t_wall=1793483853.766 t=359659929 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.767 t=359659974 W CMD 0x5D [SET_CGRAM 0x1D]
+t_wall=1793483853.770 t=359663778 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.771 t=359663823 W CMD 0x5E [SET_CGRAM 0x1E]
+t_wall=1793483853.774 t=359667628 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.775 t=359667675 W CMD 0x5F [SET_CGRAM 0x1F]
+t_wall=1793483853.778 t=359671453 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.778 t=359671519 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483853.779 t=359671559 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.779 t=359671605 W CMD 0x61 [SET_CGRAM 0x21]
+t_wall=1793483853.780 t=359671645 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.780 t=359671690 W CMD 0x62 [SET_CGRAM 0x22]
+t_wall=1793483853.781 t=359671731 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.781 t=359671776 W CMD 0x63 [SET_CGRAM 0x23]
+t_wall=1793483853.781 t=359671816 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.782 t=359671889 W CMD 0x64 [SET_CGRAM 0x24]
+t_wall=1793483853.782 t=359671930 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.783 t=359671975 W CMD 0x65 [SET_CGRAM 0x25]
+t_wall=1793483853.783 t=359672017 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.783 t=359672060 W CMD 0x66 [SET_CGRAM 0x26]
+t_wall=1793483853.783 t=359672101 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.784 t=359672146 W CMD 0x67 [SET_CGRAM 0x27]
+t_wall=1793483853.784 t=359672186 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.784 t=359672231 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483853.784 t=359672287 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.784 t=359672332 W CMD 0x69 [SET_CGRAM 0x29]
+t_wall=1793483853.785 t=359676111 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.785 t=359676156 W CMD 0x6A [SET_CGRAM 0x2A]
+t_wall=1793483853.786 t=359679964 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.786 t=359680009 W CMD 0x6B [SET_CGRAM 0x2B]
+t_wall=1793483853.790 t=359683835 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.790 t=359683879 W CMD 0x6C [SET_CGRAM 0x2C]
+t_wall=1793483853.794 t=359687688 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.794 t=359687733 W CMD 0x6D [SET_CGRAM 0x2D]
+t_wall=1793483853.798 t=359691538 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.798 t=359691584 W CMD 0x6E [SET_CGRAM 0x2E]
+t_wall=1793483853.802 t=359695391 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.803 t=359695436 W CMD 0x6F [SET_CGRAM 0x2F]
+t_wall=1793483853.806 t=359699243 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.806 t=359699288 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483853.807 t=359699329 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.807 t=359699375 W CMD 0x71 [SET_CGRAM 0x31]
+t_wall=1793483853.808 t=359699416 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.808 t=359699459 W CMD 0x72 [SET_CGRAM 0x32]
+t_wall=1793483853.809 t=359699501 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.809 t=359699546 W CMD 0x73 [SET_CGRAM 0x33]
+t_wall=1793483853.810 t=359699586 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.810 t=359699631 W CMD 0x74 [SET_CGRAM 0x34]
+t_wall=1793483853.811 t=359699674 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.811 t=359699716 W CMD 0x75 [SET_CGRAM 0x35]
+t_wall=1793483853.811 t=359699757 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.811 t=359699802 W CMD 0x76 [SET_CGRAM 0x36]
+t_wall=1793483853.812 t=359699843 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.812 t=359699889 W CMD 0x77 [SET_CGRAM 0x37]
+t_wall=1793483853.812 t=359699929 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.813 t=359699974 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483853.813 t=359700029 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.813 t=359700074 W CMD 0x79 [SET_CGRAM 0x39]
+t_wall=1793483853.813 t=359703880 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.814 t=359703925 W CMD 0x7A [SET_CGRAM 0x3A]
+t_wall=1793483853.814 t=359707732 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.814 t=359707776 W CMD 0x7B [SET_CGRAM 0x3B]
+t_wall=1793483853.818 t=359711555 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.818 t=359711600 W CMD 0x7C [SET_CGRAM 0x3C]
+t_wall=1793483853.822 t=359715405 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.822 t=359715450 W CMD 0x7D [SET_CGRAM 0x3D]
+t_wall=1793483853.825 t=359719257 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.826 t=359719303 W CMD 0x7E [SET_CGRAM 0x3E]
+t_wall=1793483853.829 t=359723110 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.830 t=359723154 W CMD 0x7F [SET_CGRAM 0x3F]
+t_wall=1793483853.833 t=359726981 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.834 t=359727024 W CMD 0x8C [SET_DDRAM 0x0C]
+t_wall=1793483853.837 t=359730832 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483853.838 t=359730867 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483853.838 t=359730903 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483853.839 t=359730936 W DAT 0x03 (CGRAM ref #3)
+t_wall=1793483853.839 t=359730972 W CMD 0xCC [SET_DDRAM 0x4C]
+t_wall=1793483853.839 t=359731050 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483853.840 t=359731084 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483853.840 t=359731119 W DAT 0x06 (CGRAM ref #6)
+t_wall=1793483853.841 t=359731154 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483855.385 # ALIVE us=361278462 ring_depth=0 drops=0
+t_wall=1793483856.351 t=362244352 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483856.352 t=362244398 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.353 t=362244478 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.354 t=362244516 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.354 t=362244556 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.355 t=362244593 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.355 t=362244631 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.355 t=362244669 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.356 t=362244708 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.356 t=362244786 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.538 t=362431798 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483856.538 t=362431856 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.539 t=362431895 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.539 t=362431932 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.539 t=362431999 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.539 t=362432037 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.539 t=362432078 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.540 t=362432116 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.540 t=362432152 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.540 t=362432228 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.557 t=362450755 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483856.558 t=362450798 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.558 t=362450836 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.559 t=362450897 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.559 t=362450935 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.560 t=362451013 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.560 t=362451052 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.561 t=362451090 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.561 t=362451128 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.561 t=362451204 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.561 t=362453551 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483856.562 t=362453624 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.562 t=362453662 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.562 t=362453701 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.562 t=362453739 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.562 t=362453777 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.563 t=362453815 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.563 t=362453853 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.563 t=362453891 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.563 t=362453969 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.564 t=362458500 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483856.565 t=362458544 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.565 t=362458585 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.565 t=362458621 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.565 t=362458659 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.566 t=362458697 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.566 t=362458736 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.566 t=362458774 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.566 t=362458812 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.566 t=362458888 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.567 t=362460968 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483856.567 t=362461027 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.567 t=362461065 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.568 t=362461103 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.568 t=362461144 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.568 t=362461180 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.568 t=362461241 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.568 t=362461279 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.569 t=362461317 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.569 t=362461393 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.569 t=362462704 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483856.569 t=362462748 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.569 t=362462786 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362462824 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362462863 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362462901 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362462939 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362462977 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.570 t=362463015 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.571 t=362463091 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.571 t=362464374 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483856.571 t=362464433 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.571 t=362464471 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.571 t=362464510 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464548 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464587 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464625 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464664 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464700 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483856.572 t=362464777 W CMD 0x82 [SET_DDRAM 0x02]
+t_wall=1793483856.573 t=362466055 W DAT 0x54 'T'
+t_wall=1793483856.573 t=362467347 W DAT 0x65 'e'
+t_wall=1793483856.575 t=362468653 W DAT 0x63 'c'
+t_wall=1793483856.576 t=362469980 W DAT 0x68 'h'
+t_wall=1793483856.579 t=362473385 W DAT 0x6E 'n'
+t_wall=1793483856.582 t=362476033 W DAT 0x69 'i'
+t_wall=1793483856.585 t=362478776 W DAT 0x63 'c'
+t_wall=1793483856.587 t=362480077 W DAT 0x73 's'
+t_wall=1793483856.588 t=362481414 W CMD 0xC2 [SET_DDRAM 0x42]
+t_wall=1793483856.589 t=362482761 W DAT 0x53 'S'
+t_wall=1793483856.591 t=362484809 W DAT 0x58 'X'
+t_wall=1793483856.594 t=362487422 W DAT 0x2D '-'
+t_wall=1793483856.596 t=362490034 W DAT 0x50 'P'
+t_wall=1793483856.598 t=362491284 W DAT 0x52 'R'
+t_wall=1793483856.599 t=362492555 W DAT 0x35 '5'
+t_wall=1793483856.600 t=362493902 W DAT 0x33 '3'
+t_wall=1793483856.601 t=362495214 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483857.385 # ALIVE us=363278523 ring_depth=0 drops=0
+t_wall=1793483859.274 t=365168324 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483859.275 t=365168367 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483859.275 t=365168405 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.275 t=365168445 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483859.276 t=365168482 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483859.276 t=365168521 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483859.277 t=365168558 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483859.277 t=365168596 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483859.277 t=365168634 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483859.278 t=365168697 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483859.282 t=365175478 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483859.286 t=365179363 W DAT 0x0F
+t_wall=1793483859.289 t=365183246 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483859.290 t=365183284 W DAT 0x0C
+t_wall=1793483859.293 t=365187103 W DAT 0x1F
+t_wall=1793483859.297 t=365190948 W DAT 0x1F
+t_wall=1793483859.301 t=365194826 W DAT 0x1C
+t_wall=1793483859.304 t=365198662 W DAT 0x1F
+t_wall=1793483859.308 t=365202505 W DAT 0x1F
+t_wall=1793483859.311 t=365204824 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483859.311 t=365204868 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.311 t=365204907 W DAT 0x11
+t_wall=1793483859.311 t=365204944 W DAT 0x1F
+t_wall=1793483859.311 t=365204997 W DAT 0x1F
+t_wall=1793483859.311 t=365205050 W DAT 0x1F
+t_wall=1793483859.312 t=365205103 W DAT 0x1F
+t_wall=1793483859.312 t=365205156 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.312 t=365205194 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483859.312 t=365205255 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483859.316 t=365210422 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483859.320 t=365214262 W DAT 0x0C
+t_wall=1793483859.324 t=365218131 W DAT 0x1C
+t_wall=1793483859.328 t=365221977 W DAT 0x14
+t_wall=1793483859.328 t=365222015 W DAT 0x08
+t_wall=1793483859.332 t=365225894 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483859.332 t=365225932 W DAT 0x0C
+t_wall=1793483859.336 t=365229764 W DAT 0x0C
+t_wall=1793483859.339 t=365233610 W DAT 0x0E
+t_wall=1793483859.343 t=365236694 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483859.344 t=365236738 W DAT 0x0A
+t_wall=1793483859.344 t=365236791 W DAT 0x0F
+t_wall=1793483859.345 t=365236843 W DAT 0x08
+t_wall=1793483859.345 t=365236899 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483859.345 t=365236934 W DAT 0x0D
+t_wall=1793483859.346 t=365236987 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483859.347 t=365237025 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.347 t=365237063 W DAT 0x12
+t_wall=1793483859.348 t=365237124 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483859.348 t=365242231 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483859.352 t=365246101 W DAT 0x18
+t_wall=1793483859.356 t=365249917 W DAT 0x18
+t_wall=1793483859.360 t=365253763 W DAT 0x18
+t_wall=1793483859.364 t=365257641 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483859.364 t=365257680 W DAT 0x18
+t_wall=1793483859.367 t=365261539 W DAT 0x18
+t_wall=1793483859.371 t=365265356 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483859.372 t=365265395 W DAT 0x18
+t_wall=1793483859.374 t=365267547 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483859.374 t=365267591 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.374 t=365267629 W DAT 0x1F
+t_wall=1793483859.374 t=365267682 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.374 t=365267721 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.374 t=365267758 W DAT 0x1F
+t_wall=1793483859.375 t=365267812 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.375 t=365267852 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.375 t=365267888 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483859.375 t=365267950 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483859.380 t=365273913 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483859.384 t=365277782 W DAT 0x0C
+t_wall=1793483859.385 # ALIVE us=365278582 ring_depth=0 drops=0
+t_wall=1793483859.388 t=365281597 W DAT 0x0C
+t_wall=1793483859.392 t=365285443 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483859.392 t=365285481 W DAT 0x0C
+t_wall=1793483859.395 t=365289360 W DAT 0x0C
+t_wall=1793483859.399 t=365293222 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483859.399 t=365293260 W DAT 0x0C
+t_wall=1793483859.403 t=365297078 W DAT 0x0D
+t_wall=1793483859.408 t=365301815 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483859.410 t=365304401 W CMD 0x80 [SET_DDRAM 0x00]
+t_wall=1793483859.413 t=365306579 W DAT 0x43 'C'
+t_wall=1793483859.414 t=365307827 W DAT 0x6F 'o'
+t_wall=1793483859.417 t=365310494 W DAT 0x6E 'n'
+t_wall=1793483859.419 t=365313079 W DAT 0x63 'c'
+t_wall=1793483859.420 t=365314357 W DAT 0x65 'e'
+t_wall=1793483859.421 t=365315629 W DAT 0x72 'r'
+t_wall=1793483859.423 t=365316979 W DAT 0x74 't'
+t_wall=1793483859.425 t=365319054 W DAT 0x47 'G'
+t_wall=1793483859.426 t=365320303 W DAT 0x72 'r'
+t_wall=1793483859.428 t=365321651 W DAT 0x61 'a'
+t_wall=1793483859.429 t=365322976 W DAT 0x6E 'n'
+t_wall=1793483861.385 # ALIVE us=367278624 ring_depth=0 drops=0
+t_wall=1793483863.385 # ALIVE us=369278688 ring_depth=0 drops=0
+t_wall=1793483865.385 # ALIVE us=371278747 ring_depth=0 drops=0
+t_wall=1793483867.384 # ALIVE us=373278799 ring_depth=0 drops=0
+t_wall=1793483868.685 t=374578777 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483868.685 t=374578822 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483868.685 t=374578859 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483868.686 t=374578897 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483868.686 t=374578935 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483868.686 t=374578973 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483868.687 t=374579012 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483868.687 t=374579050 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483868.687 t=374579088 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483868.688 t=374579210 W CMD 0x8B [SET_DDRAM 0x0B]
+t_wall=1793483868.690 t=374584286 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483868.694 t=374588167 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483868.694 t=374588205 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483868.694 t=374588243 W DAT 0x0C
+t_wall=1793483868.698 t=374592106 W DAT 0x1F
+t_wall=1793483868.701 t=374595953 W DAT 0x1F
+t_wall=1793483868.705 t=374599770 W DAT 0x1C
+t_wall=1793483868.709 t=374603646 W DAT 0x1F
+t_wall=1793483868.713 t=374607530 W DAT 0x1F
+t_wall=1793483868.719 t=374613268 W CMD 0x8B [SET_DDRAM 0x0B]
+t_wall=1793483868.721 t=374615785 W DAT 0x64 'd'
+t_wall=1793483868.723 t=374617210 W CMD 0xC2 [SET_DDRAM 0x42]
+t_wall=1793483868.724 t=374618481 W DAT 0x48 'H'
+t_wall=1793483868.729 t=374623125 W DAT 0x61 'a'
+t_wall=1793483868.730 t=374624437 W DAT 0x77 'w'
+t_wall=1793483868.731 t=374625695 W DAT 0x61 'a'
+t_wall=1793483868.733 t=374626992 W DAT 0x69 'i'
+t_wall=1793483868.735 t=374629584 W DAT 0x69 'i'
+t_wall=1793483868.739 t=374633037 W DAT 0x61 'a'
+t_wall=1793483868.740 t=374634307 W DAT 0x6E 'n'
+t_wall=1793483869.385 # ALIVE us=375278854 ring_depth=0 drops=0
+t_wall=1793483871.384 # ALIVE us=377278910 ring_depth=0 drops=0
+t_wall=1793483873.384 # ALIVE us=379278970 ring_depth=0 drops=0
+t_wall=1793483875.384 # ALIVE us=381279028 ring_depth=0 drops=0
+t_wall=1793483876.136 t=382030989 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483876.140 t=382034855 W DAT 0x0C
+t_wall=1793483876.144 t=382038674 W DAT 0x1C
+t_wall=1793483876.148 t=382042518 W DAT 0x14
+t_wall=1793483876.148 t=382042579 W DAT 0x08
+t_wall=1793483876.152 t=382046457 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483876.152 t=382046495 W DAT 0x0C
+t_wall=1793483876.156 t=382050357 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.156 t=382050395 W DAT 0x0E
+t_wall=1793483876.159 t=382053848 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483876.159 t=382053892 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.160 t=382053931 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.160 t=382053969 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.161 t=382054006 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.161 t=382054046 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.161 t=382054083 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.161 t=382054121 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.161 t=382054159 W DAT 0x10
+t_wall=1793483876.162 t=382054220 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.166 t=382060290 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483876.169 t=382064159 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.170 t=382064197 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.170 t=382064236 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.170 t=382064274 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.170 t=382064311 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.171 t=382064350 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.171 t=382064388 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.171 t=382064426 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.171 t=382064488 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.172 t=382066153 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483876.172 t=382066196 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.172 t=382066234 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.172 t=382066273 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.173 t=382066313 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.173 t=382066349 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.173 t=382066388 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.173 t=382066427 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.174 t=382066464 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.174 t=382066526 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.177 t=382071628 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483876.181 t=382075504 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.181 t=382075542 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.181 t=382075581 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.182 t=382075619 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.182 t=382075659 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.182 t=382075696 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.182 t=382075734 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.182 t=382075773 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.183 t=382075834 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.184 t=382078325 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483876.184 t=382078369 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.184 t=382078408 W DAT 0x10
+t_wall=1793483876.185 t=382078445 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.185 t=382078485 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.185 t=382078522 W DAT 0x10
+t_wall=1793483876.186 t=382078618 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.186 t=382078659 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.186 t=382078694 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.187 t=382078756 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.189 t=382083817 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483876.193 t=382087669 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.193 t=382087707 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.193 t=382087767 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.194 t=382087805 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.194 t=382087843 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.194 t=382087881 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.194 t=382087919 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.195 t=382087958 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.195 t=382088019 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483876.195 t=382090264 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483876.196 t=382090308 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.196 t=382090347 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.196 t=382090385 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.196 t=382090423 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.197 t=382090534 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.197 t=382090573 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.197 t=382090611 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483876.197 t=382090649 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483876.198 t=382090710 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483877.384 # ALIVE us=383279083 ring_depth=0 drops=0
+t_wall=1793483879.384 # ALIVE us=385279144 ring_depth=0 drops=0
+t_wall=1793483880.097 t=385991903 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483880.101 t=385995724 W DAT 0x0C
+t_wall=1793483880.104 t=385999571 W DAT 0x0C
+t_wall=1793483880.109 t=386003449 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483880.109 t=386003487 W DAT 0x0C
+t_wall=1793483880.112 t=386007320 W DAT 0x0C
+t_wall=1793483880.116 t=386011166 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483880.116 t=386011204 W DAT 0x0C
+t_wall=1793483880.120 t=386015051 W DAT 0x0D
+t_wall=1793483880.126 t=386021353 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483880.126 t=386021397 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.127 t=386021436 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.127 t=386021474 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.127 t=386021511 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483880.127 t=386021550 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483880.127 t=386021588 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483880.128 t=386021627 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483880.128 t=386021724 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483880.128 t=386021783 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483880.132 t=386026933 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483880.136 t=386030786 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483880.136 t=386030824 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483880.136 t=386030862 W DAT 0x0C
+t_wall=1793483880.140 t=386034738 W DAT 0x1F
+t_wall=1793483880.143 t=386038574 W DAT 0x1F
+t_wall=1793483880.147 t=386042420 W DAT 0x1C
+t_wall=1793483880.151 t=386046266 W DAT 0x1F
+t_wall=1793483880.155 t=386050143 W DAT 0x1F
+t_wall=1793483880.158 t=386052486 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483880.158 t=386052530 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.158 t=386052568 W DAT 0x11
+t_wall=1793483880.158 t=386052608 W DAT 0x1F
+t_wall=1793483880.158 t=386052659 W DAT 0x1F
+t_wall=1793483880.159 t=386052712 W DAT 0x1F
+t_wall=1793483880.159 t=386052765 W DAT 0x1F
+t_wall=1793483880.159 t=386052818 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.159 t=386052856 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483880.159 t=386052919 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483880.164 t=386059395 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483880.168 t=386063248 W DAT 0x0C
+t_wall=1793483880.172 t=386067124 W DAT 0x1C
+t_wall=1793483880.176 t=386070985 W DAT 0x14
+t_wall=1793483880.176 t=386071023 W DAT 0x08
+t_wall=1793483880.180 t=386074843 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483880.180 t=386074881 W DAT 0x0C
+t_wall=1793483880.184 t=386078725 W DAT 0x0C
+t_wall=1793483880.187 t=386082604 W DAT 0x0E
+t_wall=1793483880.190 t=386085038 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483880.190 t=386085082 W DAT 0x0A
+t_wall=1793483880.190 t=386085135 W DAT 0x0F
+t_wall=1793483880.190 t=386085188 W DAT 0x08
+t_wall=1793483880.191 t=386085240 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483880.191 t=386085279 W DAT 0x0D
+t_wall=1793483880.191 t=386085332 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483880.191 t=386085370 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.191 t=386085408 W DAT 0x12
+t_wall=1793483880.191 t=386085470 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483880.196 t=386090531 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483880.199 t=386094384 W DAT 0x18
+t_wall=1793483880.203 t=386098260 W DAT 0x18
+t_wall=1793483880.207 t=386102122 W DAT 0x18
+t_wall=1793483880.211 t=386105940 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483880.211 t=386105978 W DAT 0x18
+t_wall=1793483880.215 t=386109822 W DAT 0x18
+t_wall=1793483880.219 t=386113698 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483880.219 t=386113737 W DAT 0x18
+t_wall=1793483880.223 t=386117607 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483880.223 t=386117650 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.223 t=386117688 W DAT 0x1F
+t_wall=1793483880.223 t=386117741 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.223 t=386117780 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.224 t=386117819 W DAT 0x1F
+t_wall=1793483880.224 t=386117870 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.224 t=386117909 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.224 t=386117948 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483880.224 t=386118008 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.215 t=387110180 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483881.215 t=387110224 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.216 t=387110264 W DAT 0x10
+t_wall=1793483881.216 t=387110303 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.216 t=387110412 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.216 t=387110450 W DAT 0x10
+t_wall=1793483881.216 t=387110489 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.216 t=387110527 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.217 t=387110565 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.217 t=387110628 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.221 t=387116557 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483881.225 t=387120409 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.226 t=387120448 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.226 t=387120486 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.226 t=387120524 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.226 t=387120563 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.226 t=387120602 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.227 t=387120639 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.227 t=387120677 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.227 t=387120738 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.228 t=387122891 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483881.228 t=387122934 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.228 t=387122972 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.228 t=387123012 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.229 t=387123049 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.229 t=387123087 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.229 t=387123125 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.229 t=387123187 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.229 t=387123224 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483881.229 t=387123285 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.233 t=387128411 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483881.237 t=387132278 W DAT 0x0C
+t_wall=1793483881.241 t=387136124 W DAT 0x1C
+t_wall=1793483881.245 t=387139944 W DAT 0x14
+t_wall=1793483881.245 t=387139982 W DAT 0x08
+t_wall=1793483881.249 t=387143858 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483881.249 t=387143896 W DAT 0x0C
+t_wall=1793483881.253 t=387147758 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.253 t=387147819 W DAT 0x0E
+t_wall=1793483881.256 t=387150083 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483881.256 t=387150127 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.257 t=387150165 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.257 t=387150203 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.258 t=387150241 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.258 t=387150281 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.259 t=387150319 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.259 t=387150356 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.259 t=387150395 W DAT 0x10
+t_wall=1793483881.260 t=387150456 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.261 t=387155494 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483881.264 t=387159379 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.265 t=387159417 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.265 t=387159455 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.265 t=387159494 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.265 t=387159533 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.266 t=387159570 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.266 t=387159608 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.266 t=387159647 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.266 t=387159707 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.267 t=387161902 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483881.267 t=387161947 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.267 t=387161985 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.268 t=387162024 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.268 t=387162061 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.268 t=387162099 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.268 t=387162138 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.268 t=387162200 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.269 t=387162237 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.269 t=387162298 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.272 t=387167376 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483881.276 t=387171199 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.277 t=387171237 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.277 t=387171277 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.277 t=387171313 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.277 t=387171352 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.278 t=387171390 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.278 t=387171428 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.278 t=387171466 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483881.278 t=387171556 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.279 t=387174390 W CMD 0x80 [SET_DDRAM 0x00]
+t_wall=1793483881.281 t=387175695 W DAT 0x52 'R'
+t_wall=1793483881.283 t=387177849 W DAT 0x49 'I'
+t_wall=1793483881.285 t=387180391 W DAT 0x47 'G'
+t_wall=1793483881.287 t=387181706 W DAT 0x48 'H'
+t_wall=1793483881.289 t=387184238 W DAT 0x54 'T'
+t_wall=1793483881.291 t=387185510 W DAT 0x31 '1'
+t_wall=1793483881.292 t=387186883 W DAT 0x20 ' '
+t_wall=1793483881.294 t=387188971 W DAT 0x20 ' '
+t_wall=1793483881.295 t=387190295 W DAT 0x20 ' '
+t_wall=1793483881.297 t=387191567 W DAT 0x20 ' '
+t_wall=1793483881.298 t=387192885 W DAT 0x20 ' '
+t_wall=1793483881.299 t=387194269 W DAT 0x20 ' '
+t_wall=1793483881.301 t=387195542 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483881.302 t=387196793 W DAT 0x43 'C'
+t_wall=1793483881.303 t=387198137 W DAT 0x6C 'l'
+t_wall=1793483881.307 t=387201577 W DAT 0x61 'a'
+t_wall=1793483881.308 t=387202855 W DAT 0x73 's'
+t_wall=1793483881.309 t=387204128 W DAT 0x73 's'
+t_wall=1793483881.310 t=387205520 W DAT 0x69 'i'
+t_wall=1793483881.313 t=387208021 W DAT 0x63 'c'
+t_wall=1793483881.314 t=387209299 W DAT 0x20 ' '
+t_wall=1793483881.315 t=387210632 W DAT 0x47 'G'
+t_wall=1793483881.317 t=387211958 W DAT 0x74 't'
+t_wall=1793483881.319 t=387214086 W DAT 0x72 'r'
+t_wall=1793483881.320 t=387215336 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483881.384 # ALIVE us=387279199 ring_depth=0 drops=0
+t_wall=1793483883.384 # ALIVE us=389279251 ring_depth=0 drops=0
+t_wall=1793483885.384 # ALIVE us=391279308 ring_depth=0 drops=0
+t_wall=1793483886.848 t=392742819 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483886.852 t=392746645 W DAT 0x18
+t_wall=1793483886.855 t=392750520 W DAT 0x18
+t_wall=1793483886.859 t=392754383 W DAT 0x18
+t_wall=1793483886.863 t=392758230 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483886.863 t=392758268 W DAT 0x18
+t_wall=1793483886.867 t=392762085 W DAT 0x18
+t_wall=1793483886.871 t=392765961 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483886.871 t=392765999 W DAT 0x18
+t_wall=1793483886.874 t=392769243 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483886.874 t=392769287 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.875 t=392769325 W DAT 0x1F
+t_wall=1793483886.875 t=392769378 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.875 t=392769416 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.876 t=392769454 W DAT 0x1F
+t_wall=1793483886.876 t=392769507 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.876 t=392769546 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.877 t=392769583 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.878 t=392769645 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483886.880 t=392775598 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483886.884 t=392779407 W DAT 0x0C
+t_wall=1793483886.888 t=392783255 W DAT 0x0C
+t_wall=1793483886.892 t=392787118 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483886.892 t=392787157 W DAT 0x0C
+t_wall=1793483886.896 t=392791001 W DAT 0x0C
+t_wall=1793483886.900 t=392794848 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483886.900 t=392794886 W DAT 0x0C
+t_wall=1793483886.903 t=392798736 W DAT 0x0D
+t_wall=1793483886.906 t=392801153 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483886.906 t=392801196 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.906 t=392801234 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.907 t=392801273 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.907 t=392801311 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483886.907 t=392801350 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483886.908 t=392801389 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483886.908 t=392801427 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483886.908 t=392801464 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483886.909 t=392801525 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483886.912 t=392806619 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483886.915 t=392810470 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483886.916 t=392810508 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483886.916 t=392810546 W DAT 0x0C
+t_wall=1793483886.919 t=392814396 W DAT 0x1F
+t_wall=1793483886.923 t=392818260 W DAT 0x1F
+t_wall=1793483886.927 t=392822105 W DAT 0x1C
+t_wall=1793483886.931 t=392825950 W DAT 0x1F
+t_wall=1793483886.935 t=392829801 W DAT 0x1F
+t_wall=1793483886.938 t=392833081 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483886.938 t=392833125 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.939 t=392833163 W DAT 0x11
+t_wall=1793483886.939 t=392833201 W DAT 0x1F
+t_wall=1793483886.939 t=392833254 W DAT 0x1F
+t_wall=1793483886.939 t=392833307 W DAT 0x1F
+t_wall=1793483886.940 t=392833359 W DAT 0x1F
+t_wall=1793483886.940 t=392833412 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.940 t=392833450 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483886.941 t=392833512 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483886.944 t=392838630 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483886.947 t=392842481 W DAT 0x0C
+t_wall=1793483886.951 t=392846380 W DAT 0x1C
+t_wall=1793483886.955 t=392850214 W DAT 0x14
+t_wall=1793483886.955 t=392850252 W DAT 0x08
+t_wall=1793483886.959 t=392854099 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483886.959 t=392854137 W DAT 0x0C
+t_wall=1793483886.963 t=392857983 W DAT 0x0C
+t_wall=1793483886.967 t=392861860 W DAT 0x0E
+t_wall=1793483886.970 t=392865113 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483886.970 t=392865156 W DAT 0x0A
+t_wall=1793483886.971 t=392865209 W DAT 0x0F
+t_wall=1793483886.971 t=392865262 W DAT 0x08
+t_wall=1793483886.972 t=392865315 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483886.972 t=392865354 W DAT 0x0D
+t_wall=1793483886.972 t=392865405 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483886.973 t=392865443 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483886.973 t=392865483 W DAT 0x12
+t_wall=1793483886.973 t=392865543 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483887.384 # ALIVE us=393279364 ring_depth=0 drops=0
+t_wall=1793483889.384 # ALIVE us=395279415 ring_depth=0 drops=0
+t_wall=1793483889.600 t=395495389 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483889.601 t=395495434 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.601 t=395495473 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.602 t=395495510 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.602 t=395495548 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.602 t=395495587 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.603 t=395495625 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.603 t=395495666 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.604 t=395495701 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.604 t=395495831 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.605 t=395498716 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483889.606 t=395498774 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.606 t=395498812 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.607 t=395498851 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.607 t=395498889 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.607 t=395498927 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.607 t=395498965 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.608 t=395499003 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.608 t=395499042 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.608 t=395499169 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.608 t=395500481 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483889.609 t=395500549 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.609 t=395500587 W DAT 0x10
+t_wall=1793483889.609 t=395500625 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.609 t=395500664 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.609 t=395500702 W DAT 0x10
+t_wall=1793483889.610 t=395500741 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.610 t=395500778 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.610 t=395500817 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.610 t=395500943 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.610 t=395503412 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483889.611 t=395503485 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.611 t=395503524 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.611 t=395503563 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.611 t=395503600 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.611 t=395503638 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.612 t=395503676 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.612 t=395503714 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.612 t=395503753 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.612 t=395503881 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.612 t=395505134 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483889.612 t=395505178 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.613 t=395505216 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.613 t=395505255 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.613 t=395505293 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.613 t=395505331 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.613 t=395505369 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.614 t=395505407 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.614 t=395505446 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483889.614 t=395505574 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.614 t=395506889 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483889.614 t=395506948 W DAT 0x0C
+t_wall=1793483889.615 t=395510830 W DAT 0x1C
+t_wall=1793483889.619 t=395514677 W DAT 0x14
+t_wall=1793483889.619 t=395514716 W DAT 0x08
+t_wall=1793483889.623 t=395518532 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483889.623 t=395518570 W DAT 0x0C
+t_wall=1793483889.628 t=395522448 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.628 t=395522486 W DAT 0x0E
+t_wall=1793483889.630 t=395525314 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483889.631 t=395525358 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.631 t=395525396 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.632 t=395525435 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.632 t=395525473 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.633 t=395525511 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.634 t=395525549 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.634 t=395525588 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.634 t=395525627 W DAT 0x10
+t_wall=1793483889.635 t=395525754 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.635 t=395527026 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483889.635 t=395527099 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.636 t=395527137 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.636 t=395527177 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.636 t=395527235 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.636 t=395527275 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.637 t=395527311 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.637 t=395527350 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.638 t=395527389 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483889.639 t=395527515 W CMD 0xC0 [SET_DDRAM 0x40]
+t_wall=1793483889.639 t=395528821 W DAT 0x20 ' '
+t_wall=1793483889.639 t=395530123 W DAT 0x50 'P'
+t_wall=1793483889.639 t=395532559 W DAT 0x6F 'o'
+t_wall=1793483889.640 t=395535199 W DAT 0x70 'p'
+t_wall=1793483889.641 t=395536471 W DAT 0x20 ' '
+t_wall=1793483889.642 t=395537749 W DAT 0x47 'G'
+t_wall=1793483889.644 t=395539055 W DAT 0x72 'r'
+t_wall=1793483889.645 t=395540354 W DAT 0x61 'a'
+t_wall=1793483889.646 t=395541690 W DAT 0x6E 'n'
+t_wall=1793483889.650 t=395545500 W DAT 0x64 'd'
+t_wall=1793483889.651 t=395546774 W DAT 0x20 ' '
+t_wall=1793483889.653 t=395548126 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483891.384 # ALIVE us=397279470 ring_depth=0 drops=0
+t_wall=1793483893.385 # ALIVE us=399279537 ring_depth=0 drops=0
+t_wall=1793483893.551 t=399446285 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483893.552 t=399446402 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.553 t=399446441 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.554 t=399446478 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.554 t=399446516 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483893.555 t=399446554 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483893.555 t=399446594 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483893.556 t=399446631 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483893.557 t=399446669 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483893.557 t=399446732 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483893.558 t=399452780 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483893.561 t=399456631 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483893.561 t=399456670 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483893.562 t=399456708 W DAT 0x0C
+t_wall=1793483893.565 t=399460555 W DAT 0x1F
+t_wall=1793483893.569 t=399464402 W DAT 0x1F
+t_wall=1793483893.573 t=399468287 W DAT 0x1C
+t_wall=1793483893.577 t=399472131 W DAT 0x1F
+t_wall=1793483893.580 t=399475949 W DAT 0x1F
+t_wall=1793483893.584 t=399479452 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483893.585 t=399479496 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.585 t=399479534 W DAT 0x11
+t_wall=1793483893.585 t=399479573 W DAT 0x1F
+t_wall=1793483893.585 t=399479625 W DAT 0x1F
+t_wall=1793483893.586 t=399479678 W DAT 0x1F
+t_wall=1793483893.586 t=399479731 W DAT 0x1F
+t_wall=1793483893.586 t=399479785 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.588 t=399479821 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483893.588 t=399479883 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483893.589 t=399484979 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483893.593 t=399488831 W DAT 0x0C
+t_wall=1793483893.597 t=399492678 W DAT 0x1C
+t_wall=1793483893.601 t=399496525 W DAT 0x14
+t_wall=1793483893.601 t=399496564 W DAT 0x08
+t_wall=1793483893.605 t=399500424 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483893.605 t=399500462 W DAT 0x0C
+t_wall=1793483893.609 t=399504310 W DAT 0x0C
+t_wall=1793483893.613 t=399508155 W DAT 0x0E
+t_wall=1793483893.616 t=399511559 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483893.617 t=399511603 W DAT 0x0A
+t_wall=1793483893.617 t=399511679 W DAT 0x0F
+t_wall=1793483893.618 t=399511732 W DAT 0x08
+t_wall=1793483893.619 t=399511785 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483893.620 t=399511823 W DAT 0x0D
+t_wall=1793483893.621 t=399511876 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483893.621 t=399511916 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.622 t=399511953 W DAT 0x12
+t_wall=1793483893.622 t=399512013 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483893.622 t=399517197 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483893.625 t=399521049 W DAT 0x18
+t_wall=1793483893.629 t=399524896 W DAT 0x18
+t_wall=1793483893.633 t=399528772 W DAT 0x18
+t_wall=1793483893.637 t=399532606 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483893.638 t=399532644 W DAT 0x18
+t_wall=1793483893.641 t=399536491 W DAT 0x18
+t_wall=1793483893.645 t=399540335 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483893.645 t=399540395 W DAT 0x18
+t_wall=1793483893.648 t=399542903 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483893.648 t=399542947 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.648 t=399542985 W DAT 0x1F
+t_wall=1793483893.649 t=399543038 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.649 t=399543076 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.649 t=399543116 W DAT 0x1F
+t_wall=1793483893.649 t=399543167 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.649 t=399543206 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.650 t=399543246 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483893.650 t=399543305 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483893.654 t=399549348 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483893.658 t=399553130 W DAT 0x0C
+t_wall=1793483893.661 t=399556975 W DAT 0x0C
+t_wall=1793483893.665 t=399560851 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483893.666 t=399560913 W DAT 0x0C
+t_wall=1793483893.669 t=399564746 W DAT 0x0C
+t_wall=1793483893.673 t=399568593 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483893.674 t=399568631 W DAT 0x0C
+t_wall=1793483893.677 t=399572479 W DAT 0x0D
+t_wall=1793483893.682 t=399577644 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483893.686 t=399581109 W CMD 0x80 [SET_DDRAM 0x00]
+t_wall=1793483893.687 t=399582386 W DAT 0x20 ' '
+t_wall=1793483893.688 t=399583712 W DAT 0x50 'P'
+t_wall=1793483893.690 t=399585063 W DAT 0x6F 'o'
+t_wall=1793483893.692 t=399587587 W DAT 0x70 'p'
+t_wall=1793483893.693 t=399588934 W DAT 0x20 ' '
+t_wall=1793483893.695 t=399590244 W DAT 0x47 'G'
+t_wall=1793483893.697 t=399592669 W DAT 0x72 'r'
+t_wall=1793483893.698 t=399594000 W DAT 0x61 'a'
+t_wall=1793483893.700 t=399595311 W DAT 0x6E 'n'
+t_wall=1793483893.702 t=399597907 W DAT 0x64 'd'
+t_wall=1793483893.704 t=399599174 W CMD 0xC1 [SET_DDRAM 0x41]
+t_wall=1793483893.705 t=399600448 W DAT 0x20 ' '
+t_wall=1793483893.706 t=399601810 W DAT 0x48 'H'
+t_wall=1793483893.710 t=399605274 W DAT 0x61 'a'
+t_wall=1793483893.711 t=399606575 W DAT 0x77 'w'
+t_wall=1793483893.712 t=399607881 W DAT 0x61 'a'
+t_wall=1793483893.714 t=399609265 W DAT 0x69 'i'
+t_wall=1793483893.716 t=399611791 W DAT 0x69 'i'
+t_wall=1793483893.719 t=399614392 W DAT 0x61 'a'
+t_wall=1793483893.721 t=399616714 W DAT 0x6E 'n'
+t_wall=1793483895.384 # ALIVE us=401279595 ring_depth=0 drops=0
+t_wall=1793483897.384 # ALIVE us=403279651 ring_depth=0 drops=0
+t_wall=1793483898.209 t=404104130 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483898.209 t=404104176 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.210 t=404104212 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.210 t=404104251 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.211 t=404104289 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.211 t=404104327 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.211 t=404104366 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.212 t=404104405 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.212 t=404104442 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.213 t=404104507 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.216 t=404111257 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483898.219 t=404115109 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.220 t=404115147 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.220 t=404115185 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.220 t=404115223 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.220 t=404115262 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.221 t=404115299 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.221 t=404115340 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.221 t=404115376 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.221 t=404115437 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.221 t=404116779 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483898.222 t=404116823 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.222 t=404116861 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.222 t=404116900 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.222 t=404116938 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.223 t=404117004 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.223 t=404117043 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.223 t=404117081 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.223 t=404117119 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.223 t=404117181 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.228 t=404123130 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483898.231 t=404126953 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.232 t=404126991 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.232 t=404127031 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.232 t=404127070 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.232 t=404127106 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.233 t=404127144 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.233 t=404127184 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.233 t=404127222 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483898.234 t=404127282 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.234 t=404128986 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483898.234 t=404129031 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.234 t=404129069 W DAT 0x10
+t_wall=1793483898.234 t=404129107 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.235 t=404129145 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.235 t=404129185 W DAT 0x10
+t_wall=1793483898.236 t=404129222 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.236 t=404129260 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.236 t=404129299 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.237 t=404129360 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.239 t=404134526 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483898.243 t=404138393 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.243 t=404138432 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.243 t=404138470 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.243 t=404138508 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.244 t=404138548 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.244 t=404138608 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.244 t=404138647 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.244 t=404138684 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.245 t=404138745 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.245 t=404140917 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483898.246 t=404140961 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.246 t=404141000 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.246 t=404141037 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.247 t=404141076 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.247 t=404141114 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.248 t=404141152 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.248 t=404141191 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.248 t=404141231 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483898.249 t=404141290 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.251 t=404146382 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483898.255 t=404150266 W DAT 0x0C
+t_wall=1793483898.258 t=404154126 W DAT 0x1C
+t_wall=1793483898.262 t=404157944 W DAT 0x14
+t_wall=1793483898.263 t=404157982 W DAT 0x08
+t_wall=1793483898.267 t=404161828 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483898.267 t=404161867 W DAT 0x0C
+t_wall=1793483898.270 t=404165743 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483898.271 t=404165781 W DAT 0x0C
+t_wall=1793483898.274 t=404169423 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483898.277 t=404172772 W CMD 0x80 [SET_DDRAM 0x00]
+t_wall=1793483898.278 t=404174100 W DAT 0x52 'R'
+t_wall=1793483898.280 t=404175431 W DAT 0x48 'H'
+t_wall=1793483898.282 t=404178025 W DAT 0x59 'Y'
+t_wall=1793483898.285 t=404180579 W DAT 0x54 'T'
+t_wall=1793483898.286 t=404181997 W DAT 0x48 'H'
+t_wall=1793483898.290 t=404185400 W DAT 0x4D 'M'
+t_wall=1793483898.292 t=404187988 W DAT 0x20 ' '
+t_wall=1793483898.294 t=404189483 W DAT 0x20 ' '
+t_wall=1793483898.295 t=404190876 W DAT 0x20 ' '
+t_wall=1793483898.297 t=404192261 W DAT 0x20 ' '
+t_wall=1793483898.298 t=404193647 W CMD 0xC2 [SET_DDRAM 0x42]
+t_wall=1793483898.299 t=404194966 W DAT 0x20 ' '
+t_wall=1793483898.302 t=404197148 W DAT 0x38 '8'
+t_wall=1793483898.304 t=404199712 W DAT 0x20 ' '
+t_wall=1793483898.305 t=404201085 W DAT 0x42 'B'
+t_wall=1793483898.307 t=404202374 W DAT 0x65 'e'
+t_wall=1793483898.308 t=404203636 W DAT 0x61 'a'
+t_wall=1793483898.309 t=404204965 W DAT 0x74 't'
+t_wall=1793483898.311 t=404206341 W DAT 0x20 ' '
+t_wall=1793483898.313 t=404208423 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483899.384 # ALIVE us=405279706 ring_depth=0 drops=0
+t_wall=1793483901.384 # ALIVE us=407279763 ring_depth=0 drops=0
+t_wall=1793483902.167 t=408062160 W CMD 0x60 [SET_CGRAM 0x20]
+t_wall=1793483902.167 t=408062204 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.167 t=408062242 W DAT 0x1F
+t_wall=1793483902.168 t=408062297 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.168 t=408062334 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.168 t=408062372 W DAT 0x1F
+t_wall=1793483902.168 t=408062425 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.169 t=408062463 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.169 t=408062501 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.169 t=408062564 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483902.174 t=408069403 W CMD 0x68 [SET_CGRAM 0x28]
+t_wall=1793483902.177 t=408073228 W DAT 0x0C
+t_wall=1793483902.181 t=408077104 W DAT 0x0C
+t_wall=1793483902.185 t=408080965 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483902.186 t=408081003 W DAT 0x0C
+t_wall=1793483902.189 t=408084850 W DAT 0x0C
+t_wall=1793483902.193 t=408088667 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483902.193 t=408088705 W DAT 0x0C
+t_wall=1793483902.197 t=408092509 W DAT 0x0D
+t_wall=1793483902.199 t=408094774 W CMD 0x70 [SET_CGRAM 0x30]
+t_wall=1793483902.199 t=408094818 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.200 t=408094856 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.200 t=408094894 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.201 t=408094961 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483902.201 t=408094999 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483902.201 t=408095039 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483902.202 t=408095076 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483902.202 t=408095114 W DAT 0x01 (CGRAM ref #1)
+t_wall=1793483902.203 t=408095176 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483902.205 t=408100319 W CMD 0x78 [SET_CGRAM 0x38]
+t_wall=1793483902.208 t=408104143 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483902.208 t=408104181 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483902.209 t=408104220 W DAT 0x0C
+t_wall=1793483902.212 t=408108064 W DAT 0x1F
+t_wall=1793483902.216 t=408111942 W DAT 0x1F
+t_wall=1793483902.220 t=408115778 W DAT 0x1C
+t_wall=1793483902.224 t=408119622 W DAT 0x1F
+t_wall=1793483902.227 t=408123468 W DAT 0x1F
+t_wall=1793483902.230 t=408125741 W CMD 0x40 [SET_CGRAM 0x00]
+t_wall=1793483902.230 t=408125785 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.230 t=408125823 W DAT 0x11
+t_wall=1793483902.231 t=408125861 W DAT 0x1F
+t_wall=1793483902.231 t=408125914 W DAT 0x1F
+t_wall=1793483902.231 t=408125967 W DAT 0x1F
+t_wall=1793483902.231 t=408126020 W DAT 0x1F
+t_wall=1793483902.232 t=408126073 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.232 t=408126111 W DAT 0x05 (CGRAM ref #5)
+t_wall=1793483902.232 t=408126173 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483902.233 t=408128324 W CMD 0x48 [SET_CGRAM 0x08]
+t_wall=1793483902.236 t=408132135 W DAT 0x0C
+t_wall=1793483902.240 t=408135953 W DAT 0x1C
+t_wall=1793483902.244 t=408139798 W DAT 0x14
+t_wall=1793483902.244 t=408139836 W DAT 0x08
+t_wall=1793483902.248 t=408143714 W DAT 0x04 (CGRAM ref #4)
+t_wall=1793483902.249 t=408143752 W DAT 0x0C
+t_wall=1793483902.252 t=408147616 W DAT 0x0C
+t_wall=1793483902.256 t=408151454 W DAT 0x0E
+t_wall=1793483902.258 t=408153808 W CMD 0x50 [SET_CGRAM 0x10]
+t_wall=1793483902.258 t=408153852 W DAT 0x0A
+t_wall=1793483902.259 t=408153905 W DAT 0x0F
+t_wall=1793483902.259 t=408153957 W DAT 0x08
+t_wall=1793483902.259 t=408154011 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483902.260 t=408154048 W DAT 0x0D
+t_wall=1793483902.260 t=408154101 W DAT 0x02 (CGRAM ref #2)
+t_wall=1793483902.261 t=408154139 W DAT 0x00 (CGRAM ref #0)
+t_wall=1793483902.261 t=408154177 W DAT 0x12
+t_wall=1793483902.262 t=408154238 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483902.263 t=408159327 W CMD 0x58 [SET_CGRAM 0x18]
+t_wall=1793483902.267 t=408163195 W DAT 0x18
+t_wall=1793483902.271 t=408167011 W DAT 0x18
+t_wall=1793483902.275 t=408170857 W DAT 0x18
+t_wall=1793483902.279 t=408174736 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483902.279 t=408174775 W DAT 0x18
+t_wall=1793483902.283 t=408178635 W DAT 0x18
+t_wall=1793483902.287 t=408182452 W DAT 0x07 (CGRAM ref #7)
+t_wall=1793483902.287 t=408182490 W DAT 0x18
+t_wall=1793483902.291 t=408186892 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483902.294 t=408189582 W CMD 0x80 [SET_DDRAM 0x00]
+t_wall=1793483902.295 t=408190873 W DAT 0x20 ' '
+t_wall=1793483902.297 t=408192196 W DAT 0x50 'P'
+t_wall=1793483902.298 t=408193479 W DAT 0x6F 'o'
+t_wall=1793483902.301 t=408196924 W DAT 0x70 'p'
+t_wall=1793483902.302 t=408198188 W DAT 0x20 ' '
+t_wall=1793483902.304 t=408199545 W DAT 0x47 'G'
+t_wall=1793483902.305 t=408200864 W DAT 0x72 'r'
+t_wall=1793483902.306 t=408202184 W DAT 0x61 'a'
+t_wall=1793483902.308 t=408203540 W DAT 0x6E 'n'
+t_wall=1793483902.310 t=408206096 W DAT 0x64 'd'
+t_wall=1793483902.312 t=408207544 W CMD 0x0C [DISP_CTRL disp=1 cur=0 blink=0]
+t_wall=1793483903.384 # ALIVE us=409279819 ring_depth=0 drops=0
+t_wall=1793483905.384 # ALIVE us=411279879 ring_depth=0 drops=0
+t_wall=1793483907.384 # ALIVE us=413279937 ring_depth=0 drops=0
+t_wall=1793483909.384 # ALIVE us=415279991 ring_depth=0 drops=0
+t_wall=1793483911.384 # ALIVE us=417280042 ring_depth=0 drops=0
+t_wall=1793483913.384 # ALIVE us=419280094 ring_depth=0 drops=0
+t_wall=1793483915.384 # ALIVE us=421280147 ring_depth=0 drops=0
+t_wall=1793483917.384 # ALIVE us=423280202 ring_depth=0 drops=0
+t_wall=1793483919.384 # ALIVE us=425280256 ring_depth=0 drops=0
+t_wall=1793483921.384 # ALIVE us=427280309 ring_depth=0 drops=0
+t_wall=1793483923.384 # ALIVE us=429280361 ring_depth=0 drops=0
+t_wall=1793483925.384 # ALIVE us=431280411 ring_depth=0 drops=0
+t_wall=1793483927.383 # ALIVE us=433280463 ring_depth=0 drops=0
+t_wall=1793483929.384 # ALIVE us=435280516 ring_depth=0 drops=0
+t_wall=1793483931.383 # ALIVE us=437280566 ring_depth=0 drops=0
+t_wall=1793483933.383 # ALIVE us=439280620 ring_depth=0 drops=0
+t_wall=1793483935.384 # ALIVE us=441280675 ring_depth=0 drops=0
+t_wall=1793483937.383 # ALIVE us=443280728 ring_depth=0 drops=0
+t_wall=1793483939.383 # ALIVE us=445280782 ring_depth=0 drops=0
+t_wall=1793483941.383 # ALIVE us=447280835 ring_depth=0 drops=0
+t_wall=1793483943.383 # ALIVE us=449280886 ring_depth=0 drops=0
+t_wall=1793483945.383 # ALIVE us=451280940 ring_depth=0 drops=0
+t_wall=1793483947.383 # ALIVE us=453280992 ring_depth=0 drops=0
+t_wall=1793483949.383 # ALIVE us=455281047 ring_depth=0 drops=0
+t_wall=1793483951.383 # ALIVE us=457281100 ring_depth=0 drops=0
+t_wall=1793483953.383 # ALIVE us=459281151 ring_depth=0 drops=0
+t_wall=1793483955.383 # ALIVE us=461281205 ring_depth=0 drops=0
+t_wall=1793483957.384 # ALIVE us=463281262 ring_depth=0 drops=0
+t_wall=1793483959.383 # ALIVE us=465281315 ring_depth=0 drops=0
+t_wall=1793483961.383 # ALIVE us=467281366 ring_depth=0 drops=0
+t_wall=1793483963.383 # ALIVE us=469281419 ring_depth=0 drops=0
+t_wall=1793483965.383 # ALIVE us=471281473 ring_depth=0 drops=0
+t_wall=1793483967.383 # ALIVE us=473281527 ring_depth=0 drops=0
+t_wall=1793483969.383 # ALIVE us=475281580 ring_depth=0 drops=0
+t_wall=1793483971.383 # ALIVE us=477281633 ring_depth=0 drops=0
+t_wall=1793483973.383 # ALIVE us=479281686 ring_depth=0 drops=0
+t_wall=1793483975.383 # ALIVE us=481281740 ring_depth=0 drops=0
+t_wall=1793483977.383 # ALIVE us=483281793 ring_depth=0 drops=0
+t_wall=1793483979.383 # ALIVE us=485281846 ring_depth=0 drops=0
+t_wall=1793483981.383 # ALIVE us=487281898 ring_depth=0 drops=0
+t_wall=1793483983.383 # ALIVE us=489281953 ring_depth=0 drops=0
+t_wall=1793483985.383 # ALIVE us=491282006 ring_depth=0 drops=0
+t_wall=1793483987.382 # ALIVE us=493282057 ring_depth=0 drops=0
+t_wall=1793483989.383 # ALIVE us=495282112 ring_depth=0 drops=0
+t_wall=1793483991.383 # ALIVE us=497282164 ring_depth=0 drops=0
+t_wall=1793483993.382 # ALIVE us=499282219 ring_depth=0 drops=0
+t_wall=1793483995.382 # ALIVE us=501282273 ring_depth=0 drops=0
+t_wall=1793483997.383 # ALIVE us=503282325 ring_depth=0 drops=0
+t_wall=1793483999.383 # ALIVE us=505282378 ring_depth=0 drops=0
+t_wall=1793484001.383 # ALIVE us=507282431 ring_depth=0 drops=0
+t_wall=1793484003.382 # ALIVE us=509282485 ring_depth=0 drops=0
+t_wall=1793484005.383 # ALIVE us=511282538 ring_depth=0 drops=0
+t_wall=1793484007.383 # ALIVE us=513282591 ring_depth=0 drops=0
+t_wall=1793484009.382 # ALIVE us=515282643 ring_depth=0 drops=0
+t_wall=1793484011.383 # ALIVE us=517282697 ring_depth=0 drops=0
+t_wall=1793484013.382 # ALIVE us=519282751 ring_depth=0 drops=0
+t_wall=1793484015.382 # ALIVE us=521282803 ring_depth=0 drops=0
+t_wall=1793484017.382 # ALIVE us=523282856 ring_depth=0 drops=0
+t_wall=1793484019.382 # ALIVE us=525282910 ring_depth=0 drops=0
+t_wall=1793484021.382 # ALIVE us=527282961 ring_depth=0 drops=0
+t_wall=1793484023.382 # ALIVE us=529283013 ring_depth=0 drops=0
+t_wall=1793484025.382 # ALIVE us=531283067 ring_depth=0 drops=0
+t_wall=1793484027.382 # ALIVE us=533283119 ring_depth=0 drops=0
+t_wall=1793484029.382 # ALIVE us=535283172 ring_depth=0 drops=0
+t_wall=1793484031.382 # ALIVE us=537283225 ring_depth=0 drops=0
+t_wall=1793484033.382 # ALIVE us=539283280 ring_depth=0 drops=0
+t_wall=1793484035.382 # ALIVE us=541283333 ring_depth=0 drops=0
+t_wall=1793484037.382 # ALIVE us=543283385 ring_depth=0 drops=0
+t_wall=1793484039.382 # ALIVE us=545283437 ring_depth=0 drops=0
+t_wall=1793484041.382 # ALIVE us=547283487 ring_depth=0 drops=0
+t_wall=1793484043.382 # ALIVE us=549283541 ring_depth=0 drops=0
+t_wall=1793484045.382 # ALIVE us=551283594 ring_depth=0 drops=0
+t_wall=1793484047.382 # ALIVE us=553283645 ring_depth=0 drops=0
+t_wall=1793484049.382 # ALIVE us=555283698 ring_depth=0 drops=0
+t_wall=1793484051.381 # ALIVE us=557283752 ring_depth=0 drops=0
+t_wall=1793484053.381 # ALIVE us=559283804 ring_depth=0 drops=0
+t_wall=1793484055.381 # ALIVE us=561283856 ring_depth=0 drops=0
+t_wall=1793484057.382 # ALIVE us=563283910 ring_depth=0 drops=0
+t_wall=1793484059.381 # ALIVE us=565283962 ring_depth=0 drops=0
+t_wall=1793484061.381 # ALIVE us=567284016 ring_depth=0 drops=0
+t_wall=1793484063.381 # ALIVE us=569284070 ring_depth=0 drops=0
+t_wall=1793484065.381 # ALIVE us=571284124 ring_depth=0 drops=0
+t_wall=1793484067.381 # ALIVE us=573284178 ring_depth=0 drops=0
+t_wall=1793484069.381 # ALIVE us=575284231 ring_depth=0 drops=0
+t_wall=1793484071.381 # ALIVE us=577284285 ring_depth=0 drops=0
+t_wall=1793484073.381 # ALIVE us=579284336 ring_depth=0 drops=0
+t_wall=1793484075.381 # ALIVE us=581284389 ring_depth=0 drops=0
+t_wall=1793484077.381 # ALIVE us=583284442 ring_depth=0 drops=0
+t_wall=1793484079.381 # ALIVE us=585284495 ring_depth=0 drops=0
+t_wall=1793484081.381 # ALIVE us=587284550 ring_depth=0 drops=0
+t_wall=1793484083.381 # ALIVE us=589284601 ring_depth=0 drops=0
+t_wall=1793484085.381 # ALIVE us=591284655 ring_depth=0 drops=0
+t_wall=1793484087.381 # ALIVE us=593284710 ring_depth=0 drops=0
+t_wall=1793484089.381 # ALIVE us=595284762 ring_depth=0 drops=0
+t_wall=1793484091.381 # ALIVE us=597284817 ring_depth=0 drops=0
+t_wall=1793484093.381 # ALIVE us=599284870 ring_depth=0 drops=0
+t_wall=1793484095.381 # ALIVE us=601284924 ring_depth=0 drops=0
+t_wall=1793484097.381 # ALIVE us=603284979 ring_depth=0 drops=0
+t_wall=1793484099.381 # ALIVE us=605285034 ring_depth=0 drops=0
+t_wall=1793484101.381 # ALIVE us=607285085 ring_depth=0 drops=0
+t_wall=1793484103.381 # ALIVE us=609285137 ring_depth=0 drops=0
+t_wall=1793484105.381 # ALIVE us=611285192 ring_depth=0 drops=0
+t_wall=1793484107.381 # ALIVE us=613285245 ring_depth=0 drops=0
+t_wall=1793484109.380 # ALIVE us=615285299 ring_depth=0 drops=0
+t_wall=1793484111.381 # ALIVE us=617285354 ring_depth=0 drops=0
+t_wall=1793484113.381 # ALIVE us=619285407 ring_depth=0 drops=0
+t_wall=1793484115.380 # ALIVE us=621285461 ring_depth=0 drops=0
+t_wall=1793484117.381 # ALIVE us=623285516 ring_depth=0 drops=0
+t_wall=1793484119.381 # ALIVE us=625285569 ring_depth=0 drops=0
+t_wall=1793484121.380 # ALIVE us=627285624 ring_depth=0 drops=0
+t_wall=1793484123.380 # ALIVE us=629285678 ring_depth=0 drops=0
+t_wall=1793484125.380 # ALIVE us=631285732 ring_depth=0 drops=0
+t_wall=1793484127.380 # ALIVE us=633285786 ring_depth=0 drops=0
+t_wall=1793484129.380 # ALIVE us=635285838 ring_depth=0 drops=0
+t_wall=1793484131.380 # ALIVE us=637285890 ring_depth=0 drops=0
+t_wall=1793484133.380 # ALIVE us=639285943 ring_depth=0 drops=0
+t_wall=1793484135.381 # ALIVE us=641285995 ring_depth=0 drops=0
+t_wall=1793484137.381 # ALIVE us=643286049 ring_depth=0 drops=0
+t_wall=1793484139.380 # ALIVE us=645286103 ring_depth=0 drops=0
+t_wall=1793484141.380 # ALIVE us=647286157 ring_depth=0 drops=0
+t_wall=1793484143.380 # ALIVE us=649286210 ring_depth=0 drops=0
+t_wall=1793484145.380 # ALIVE us=651286264 ring_depth=0 drops=0
+t_wall=1793484147.380 # ALIVE us=653286316 ring_depth=0 drops=0
+t_wall=1793484149.380 # ALIVE us=655286368 ring_depth=0 drops=0
+t_wall=1793484151.380 # ALIVE us=657286421 ring_depth=0 drops=0
+t_wall=1793484153.380 # ALIVE us=659286474 ring_depth=0 drops=0
+t_wall=1793484155.380 # ALIVE us=661286525 ring_depth=0 drops=0
+t_wall=1793484157.380 # ALIVE us=663286578 ring_depth=0 drops=0
+t_wall=1793484159.380 # ALIVE us=665286632 ring_depth=0 drops=0
+t_wall=1793484161.380 # ALIVE us=667286686 ring_depth=0 drops=0
+t_wall=1793484163.380 # ALIVE us=669286737 ring_depth=0 drops=0
+t_wall=1793484165.380 # ALIVE us=671286792 ring_depth=0 drops=0
+t_wall=1793484167.380 # ALIVE us=673286844 ring_depth=0 drops=0
+t_wall=1793484169.380 # ALIVE us=675286897 ring_depth=0 drops=0
+t_wall=1793484171.379 # ALIVE us=677286952 ring_depth=0 drops=0
+t_wall=1793484173.379 # ALIVE us=679287006 ring_depth=0 drops=0
+t_wall=1793484175.380 # ALIVE us=681287057 ring_depth=0 drops=0
+t_wall=1793484177.379 # ALIVE us=683287111 ring_depth=0 drops=0
+t_wall=1793484179.379 # ALIVE us=685287164 ring_depth=0 drops=0
+t_wall=1793484181.379 # ALIVE us=687287215 ring_depth=0 drops=0
+t_wall=1793484183.379 # ALIVE us=689287269 ring_depth=0 drops=0
+t_wall=1793484185.379 # ALIVE us=691287322 ring_depth=0 drops=0
+t_wall=1793484187.379 # ALIVE us=693287376 ring_depth=0 drops=0
+t_wall=1793484189.379 # ALIVE us=695287432 ring_depth=0 drops=0
+t_wall=1793484191.379 # ALIVE us=697287485 ring_depth=0 drops=0
+t_wall=1793484193.379 # ALIVE us=699287537 ring_depth=0 drops=0
+t_wall=1793484195.379 # ALIVE us=701287590 ring_depth=0 drops=0
+t_wall=1793484197.379 # ALIVE us=703287645 ring_depth=0 drops=0
+t_wall=1793484199.379 # ALIVE us=705287700 ring_depth=0 drops=0
+t_wall=1793484201.379 # ALIVE us=707287753 ring_depth=0 drops=0
+t_wall=1793484203.379 # ALIVE us=709287807 ring_depth=0 drops=0
+t_wall=1793484205.379 # ALIVE us=711287861 ring_depth=0 drops=0
+t_wall=1793484207.379 # ALIVE us=713287917 ring_depth=0 drops=0
+t_wall=1793484209.379 # ALIVE us=715287970 ring_depth=0 drops=0
+t_wall=1793484211.379 # ALIVE us=717288022 ring_depth=0 drops=0
+t_wall=1793484213.379 # ALIVE us=719288076 ring_depth=0 drops=0
+t_wall=1793484215.379 # ALIVE us=721288131 ring_depth=0 drops=0
+t_wall=1793484217.379 # ALIVE us=723288182 ring_depth=0 drops=0
+t_wall=1793484219.379 # ALIVE us=725288233 ring_depth=0 drops=0
+t_wall=1793484221.379 # ALIVE us=727288288 ring_depth=0 drops=0
+t_wall=1793484223.379 # ALIVE us=729288343 ring_depth=0 drops=0
+t_wall=1793484225.379 # ALIVE us=731288397 ring_depth=0 drops=0
+t_wall=1793484227.379 # ALIVE us=733288450 ring_depth=0 drops=0
+t_wall=1793484229.379 # ALIVE us=735288502 ring_depth=0 drops=0
+t_wall=1793484231.379 # ALIVE us=737288555 ring_depth=0 drops=0
+t_wall=1793484233.378 # ALIVE us=739288608 ring_depth=0 drops=0
+t_wall=1793484235.378 # ALIVE us=741288660 ring_depth=0 drops=0
+t_wall=1793484237.378 # ALIVE us=743288712 ring_depth=0 drops=0
+t_wall=1793484239.378 # ALIVE us=745288765 ring_depth=0 drops=0
+t_wall=1793484241.378 # ALIVE us=747288819 ring_depth=0 drops=0
+t_wall=1793484243.378 # ALIVE us=749288871 ring_depth=0 drops=0
+t_wall=1793484245.378 # ALIVE us=751288924 ring_depth=0 drops=0
+t_wall=1793484247.378 # ALIVE us=753288978 ring_depth=0 drops=0
+t_wall=1793484249.378 # ALIVE us=755289033 ring_depth=0 drops=0
+t_wall=1793484251.378 # ALIVE us=757289087 ring_depth=0 drops=0
+t_wall=1793484253.378 # ALIVE us=759289139 ring_depth=0 drops=0
+t_wall=1793484255.378 # ALIVE us=761289192 ring_depth=0 drops=0
+t_wall=1793484257.378 # ALIVE us=763289246 ring_depth=0 drops=0
+t_wall=1793484259.378 # ALIVE us=765289299 ring_depth=0 drops=0
+t_wall=1793484261.378 # ALIVE us=767289354 ring_depth=0 drops=0
+t_wall=1793484263.378 # ALIVE us=769289408 ring_depth=0 drops=0
+t_wall=1793484265.378 # ALIVE us=771289460 ring_depth=0 drops=0
+t_wall=1793484267.379 # ALIVE us=773289512 ring_depth=0 drops=0
+t_wall=1793484269.378 # ALIVE us=775289564 ring_depth=0 drops=0
+t_wall=1793484271.378 # ALIVE us=777289619 ring_depth=0 drops=0
+t_wall=1793484273.378 # ALIVE us=779289672 ring_depth=0 drops=0
+t_wall=1793484275.378 # ALIVE us=781289725 ring_depth=0 drops=0
+t_wall=1793484277.378 # ALIVE us=783289777 ring_depth=0 drops=0
+t_wall=1793484279.378 # ALIVE us=785289831 ring_depth=0 drops=0
+t_wall=1793484281.378 # ALIVE us=787289886 ring_depth=0 drops=0
+t_wall=1793484283.378 # ALIVE us=789289938 ring_depth=0 drops=0
+t_wall=1793484285.378 # ALIVE us=791289993 ring_depth=0 drops=0
+t_wall=1793484287.379 # ALIVE us=793290048 ring_depth=0 drops=0
+t_wall=1793484289.378 # ALIVE us=795290101 ring_depth=0 drops=0
+t_wall=1793484291.378 # ALIVE us=797290155 ring_depth=0 drops=0
+t_wall=1793484293.378 # ALIVE us=799290207 ring_depth=0 drops=0
+t_wall=1793484295.377 # ALIVE us=801290261 ring_depth=0 drops=0
+t_wall=1793484297.377 # ALIVE us=803290313 ring_depth=0 drops=0
+t_wall=1793484299.377 # ALIVE us=805290365 ring_depth=0 drops=0
+t_wall=1793484301.378 # ALIVE us=807290419 ring_depth=0 drops=0
+t_wall=1793484303.377 # ALIVE us=809290472 ring_depth=0 drops=0
+t_wall=1793484305.377 # ALIVE us=811290525 ring_depth=0 drops=0
+t_wall=1793484307.377 # ALIVE us=813290577 ring_depth=0 drops=0
+t_wall=1793484309.378 # ALIVE us=815290629 ring_depth=0 drops=0
+t_wall=1793484311.377 # ALIVE us=817290680 ring_depth=0 drops=0
+t_wall=1793484313.378 # ALIVE us=819290733 ring_depth=0 drops=0
+t_wall=1793484315.377 # ALIVE us=821290783 ring_depth=0 drops=0
+t_wall=1793484317.377 # ALIVE us=823290838 ring_depth=0 drops=0
+t_wall=1793484319.377 # ALIVE us=825290893 ring_depth=0 drops=0
+t_wall=1793484321.377 # ALIVE us=827290945 ring_depth=0 drops=0
+t_wall=1793484323.377 # ALIVE us=829290999 ring_depth=0 drops=0
+t_wall=1793484325.377 # ALIVE us=831291052 ring_depth=0 drops=0
+t_wall=1793484327.377 # ALIVE us=833291107 ring_depth=0 drops=0
+t_wall=1793484329.378 # ALIVE us=835291160 ring_depth=0 drops=0
+t_wall=1793484331.377 # ALIVE us=837291214 ring_depth=0 drops=0
+t_wall=1793484333.377 # ALIVE us=839291269 ring_depth=0 drops=0
+t_wall=1793484335.377 # ALIVE us=841291323 ring_depth=0 drops=0
+t_wall=1793484337.377 # ALIVE us=843291378 ring_depth=0 drops=0
+t_wall=1793484339.377 # ALIVE us=845291430 ring_depth=0 drops=0
+t_wall=1793484341.377 # ALIVE us=847291484 ring_depth=0 drops=0
+t_wall=1793484343.377 # ALIVE us=849291539 ring_depth=0 drops=0
+t_wall=1793484345.377 # ALIVE us=851291591 ring_depth=0 drops=0
+t_wall=1793484347.377 # ALIVE us=853291644 ring_depth=0 drops=0
+t_wall=1793484349.377 # ALIVE us=855291696 ring_depth=0 drops=0
+t_wall=1793484351.376 # ALIVE us=857291749 ring_depth=0 drops=0
+t_wall=1793484353.377 # ALIVE us=859291802 ring_depth=0 drops=0
+t_wall=1793484355.376 # ALIVE us=861291857 ring_depth=0 drops=0
+t_wall=1793484357.376 # ALIVE us=863291909 ring_depth=0 drops=0
+t_wall=1793484359.376 # ALIVE us=865291962 ring_depth=0 drops=0
+t_wall=1793484361.377 # ALIVE us=867292017 ring_depth=0 drops=0
+t_wall=1793484363.376 # ALIVE us=869292068 ring_depth=0 drops=0
+t_wall=1793484365.376 # ALIVE us=871292122 ring_depth=0 drops=0
+t_wall=1793484367.376 # ALIVE us=873292172 ring_depth=0 drops=0
+t_wall=1793484369.377 # ALIVE us=875292226 ring_depth=0 drops=0
+t_wall=1793484371.376 # ALIVE us=877292277 ring_depth=0 drops=0
+t_wall=1793484373.376 # ALIVE us=879292332 ring_depth=0 drops=0
+t_wall=1793484375.376 # ALIVE us=881292385 ring_depth=0 drops=0
+t_wall=1793484377.376 # ALIVE us=883292438 ring_depth=0 drops=0
+t_wall=1793484379.376 # ALIVE us=885292492 ring_depth=0 drops=0
+t_wall=1793484381.376 # ALIVE us=887292546 ring_depth=0 drops=0
+t_wall=1793484383.376 # ALIVE us=889292598 ring_depth=0 drops=0
+t_wall=1793484385.376 # ALIVE us=891292653 ring_depth=0 drops=0
+t_wall=1793484387.376 # ALIVE us=893292705 ring_depth=0 drops=0
+t_wall=1793484389.376 # ALIVE us=895292757 ring_depth=0 drops=0
+t_wall=1793484391.376 # ALIVE us=897292810 ring_depth=0 drops=0
+t_wall=1793484393.376 # ALIVE us=899292864 ring_depth=0 drops=0
+t_wall=1793484395.376 # ALIVE us=901292916 ring_depth=0 drops=0
+t_wall=1793484397.376 # ALIVE us=903292972 ring_depth=0 drops=0
+t_wall=1793484399.376 # ALIVE us=905293027 ring_depth=0 drops=0
+t_wall=1793484401.376 # ALIVE us=907293082 ring_depth=0 drops=0
+t_wall=1793484403.376 # ALIVE us=909293135 ring_depth=0 drops=0
+t_wall=1793484405.376 # ALIVE us=911293188 ring_depth=0 drops=0
+t_wall=1793484407.376 # ALIVE us=913293242 ring_depth=0 drops=0
+t_wall=1793484409.376 # ALIVE us=915293294 ring_depth=0 drops=0
+t_wall=1793484411.375 # ALIVE us=917293346 ring_depth=0 drops=0
+t_wall=1793484413.376 # ALIVE us=919293401 ring_depth=0 drops=0
+t_wall=1793484415.376 # ALIVE us=921293454 ring_depth=0 drops=0
+t_wall=1793484417.376 # ALIVE us=923293507 ring_depth=0 drops=0
+t_wall=1793484419.375 # ALIVE us=925293561 ring_depth=0 drops=0
+t_wall=1793484421.375 # ALIVE us=927293615 ring_depth=0 drops=0
+t_wall=1793484423.375 # ALIVE us=929293669 ring_depth=0 drops=0
+t_wall=1793484425.375 # ALIVE us=931293722 ring_depth=0 drops=0
+t_wall=1793484427.375 # ALIVE us=933293776 ring_depth=0 drops=0
+t_wall=1793484429.375 # ALIVE us=935293830 ring_depth=0 drops=0
+t_wall=1793484431.375 # ALIVE us=937293881 ring_depth=0 drops=0
+t_wall=1793484433.375 # ALIVE us=939293934 ring_depth=0 drops=0
+t_wall=1793484435.375 # ALIVE us=941293986 ring_depth=0 drops=0
+t_wall=1793484437.375 # ALIVE us=943294038 ring_depth=0 drops=0
+t_wall=1793484439.375 # ALIVE us=945294090 ring_depth=0 drops=0
+t_wall=1793484441.375 # ALIVE us=947294142 ring_depth=0 drops=0
+t_wall=1793484443.376 # ALIVE us=949294196 ring_depth=0 drops=0
+t_wall=1793484445.375 # ALIVE us=951294250 ring_depth=0 drops=0
+t_wall=1793484447.375 # ALIVE us=953294302 ring_depth=0 drops=0
+t_wall=1793484449.375 # ALIVE us=955294354 ring_depth=0 drops=0
+t_wall=1793484451.375 # ALIVE us=957294408 ring_depth=0 drops=0
+t_wall=1793484453.375 # ALIVE us=959294462 ring_depth=0 drops=0
+t_wall=1793484455.375 # ALIVE us=961294516 ring_depth=0 drops=0
+t_wall=1793484457.375 # ALIVE us=963294569 ring_depth=0 drops=0
+t_wall=1793484459.375 # ALIVE us=965294620 ring_depth=0 drops=0
+t_wall=1793484461.375 # ALIVE us=967294672 ring_depth=0 drops=0
+t_wall=1793484463.375 # ALIVE us=969294727 ring_depth=0 drops=0
+t_wall=1793484465.375 # ALIVE us=971294780 ring_depth=0 drops=0
+t_wall=1793484467.375 # ALIVE us=973294832 ring_depth=0 drops=0
+t_wall=1793484469.375 # ALIVE us=975294884 ring_depth=0 drops=0
+t_wall=1793484471.374 # ALIVE us=977294938 ring_depth=0 drops=0
+t_wall=1793484473.375 # ALIVE us=979294992 ring_depth=0 drops=0
+t_wall=1793484475.374 # ALIVE us=981295044 ring_depth=0 drops=0
+t_wall=1793484477.374 # ALIVE us=983295095 ring_depth=0 drops=0
+t_wall=1793484479.374 # ALIVE us=985295146 ring_depth=0 drops=0
+t_wall=1793484481.374 # ALIVE us=987295197 ring_depth=0 drops=0
+t_wall=1793484483.374 # ALIVE us=989295251 ring_depth=0 drops=0
+t_wall=1793484485.375 # ALIVE us=991295304 ring_depth=0 drops=0
+t_wall=1793484487.374 # ALIVE us=993295357 ring_depth=0 drops=0
+t_wall=1793484489.374 # ALIVE us=995295412 ring_depth=0 drops=0
+t_wall=1793484491.374 # ALIVE us=997295465 ring_depth=0 drops=0
+t_wall=1793484493.374 # ALIVE us=999295520 ring_depth=0 drops=0
+t_wall=1793484495.374 # ALIVE us=1001295574 ring_depth=0 drops=0
+t_wall=1793484497.374 # ALIVE us=1003295629 ring_depth=0 drops=0
+t_wall=1793484499.374 # ALIVE us=1005295684 ring_depth=0 drops=0
+t_wall=1793484501.374 # ALIVE us=1007295738 ring_depth=0 drops=0
+t_wall=1793484503.374 # ALIVE us=1009295792 ring_depth=0 drops=0
+t_wall=1793484505.374 # ALIVE us=1011295845 ring_depth=0 drops=0
+t_wall=1793484507.374 # ALIVE us=1013295899 ring_depth=0 drops=0
+t_wall=1793484509.374 # ALIVE us=1015295953 ring_depth=0 drops=0
+t_wall=1793484511.374 # ALIVE us=1017296004 ring_depth=0 drops=0
+t_wall=1793484513.374 # ALIVE us=1019296056 ring_depth=0 drops=0
+t_wall=1793484515.374 # ALIVE us=1021296110 ring_depth=0 drops=0
+t_wall=1793484517.374 # ALIVE us=1023296164 ring_depth=0 drops=0
+t_wall=1793484519.374 # ALIVE us=1025296216 ring_depth=0 drops=0
+t_wall=1793484521.374 # ALIVE us=1027296269 ring_depth=0 drops=0
+t_wall=1793484523.374 # ALIVE us=1029296322 ring_depth=0 drops=0
+t_wall=1793484525.374 # ALIVE us=1031296375 ring_depth=0 drops=0
+t_wall=1793484527.373 # ALIVE us=1033296426 ring_depth=0 drops=0
+t_wall=1793484529.374 # ALIVE us=1035296479 ring_depth=0 drops=0
+t_wall=1793484531.374 # ALIVE us=1037296531 ring_depth=0 drops=0
+t_wall=1793484533.373 # ALIVE us=1039296584 ring_depth=0 drops=0
+t_wall=1793484535.373 # ALIVE us=1041296637 ring_depth=0 drops=0
+t_wall=1793484537.373 # ALIVE us=1043296691 ring_depth=0 drops=0
+t_wall=1793484539.373 # ALIVE us=1045296744 ring_depth=0 drops=0
+t_wall=1793484541.373 # ALIVE us=1047296798 ring_depth=0 drops=0
+t_wall=1793484543.373 # ALIVE us=1049296850 ring_depth=0 drops=0
+t_wall=1793484545.373 # ALIVE us=1051296903 ring_depth=0 drops=0
+t_wall=1793484547.373 # ALIVE us=1053296957 ring_depth=0 drops=0
+t_wall=1793484549.374 # ALIVE us=1055297009 ring_depth=0 drops=0
+t_wall=1793484551.373 # ALIVE us=1057297063 ring_depth=0 drops=0
+t_wall=1793484553.373 # ALIVE us=1059297115 ring_depth=0 drops=0
+t_wall=1793484555.373 # ALIVE us=1061297168 ring_depth=0 drops=0
+t_wall=1793484557.373 # ALIVE us=1063297220 ring_depth=0 drops=0
+t_wall=1793484559.373 # ALIVE us=1065297274 ring_depth=0 drops=0
+t_wall=1793484561.373 # ALIVE us=1067297325 ring_depth=0 drops=0
+t_wall=1793484563.373 # ALIVE us=1069297379 ring_depth=0 drops=0
+t_wall=1793484565.373 # ALIVE us=1071297431 ring_depth=0 drops=0
+t_wall=1793484567.373 # ALIVE us=1073297485 ring_depth=0 drops=0
+t_wall=1793484569.373 # ALIVE us=1075297539 ring_depth=0 drops=0
+t_wall=1793484571.373 # ALIVE us=1077297594 ring_depth=0 drops=0
+t_wall=1793484573.373 # ALIVE us=1079297646 ring_depth=0 drops=0
+t_wall=1793484575.373 # ALIVE us=1081297701 ring_depth=0 drops=0
+t_wall=1793484577.373 # ALIVE us=1083297755 ring_depth=0 drops=0
+t_wall=1793484579.373 # ALIVE us=1085297809 ring_depth=0 drops=0
+t_wall=1793484581.373 # ALIVE us=1087297862 ring_depth=0 drops=0
+t_wall=1793484583.373 # ALIVE us=1089297916 ring_depth=0 drops=0
+t_wall=1793484585.373 # ALIVE us=1091297970 ring_depth=0 drops=0
+t_wall=1793484587.373 # ALIVE us=1093298022 ring_depth=0 drops=0
+t_wall=1793484589.373 # ALIVE us=1095298076 ring_depth=0 drops=0
+t_wall=1793484591.372 # ALIVE us=1097298128 ring_depth=0 drops=0
+t_wall=1793484593.373 # ALIVE us=1099298181 ring_depth=0 drops=0
+t_wall=1793484595.372 # ALIVE us=1101298235 ring_depth=0 drops=0
+t_wall=1793484597.372 # ALIVE us=1103298289 ring_depth=0 drops=0
+t_wall=1793484599.372 # ALIVE us=1105298341 ring_depth=0 drops=0
+t_wall=1793484601.372 # ALIVE us=1107298394 ring_depth=0 drops=0
+t_wall=1793484603.372 # ALIVE us=1109298447 ring_depth=0 drops=0
+t_wall=1793484605.372 # ALIVE us=1111298501 ring_depth=0 drops=0
+t_wall=1793484607.373 # ALIVE us=1113298556 ring_depth=0 drops=0
+t_wall=1793484609.372 # ALIVE us=1115298611 ring_depth=0 drops=0
+t_wall=1793484611.372 # ALIVE us=1117298662 ring_depth=0 drops=0
+t_wall=1793484613.373 # ALIVE us=1119298717 ring_depth=0 drops=0
+t_wall=1793484615.372 # ALIVE us=1121298773 ring_depth=0 drops=0
+t_wall=1793484617.372 # ALIVE us=1123298825 ring_depth=0 drops=0
+t_wall=1793484619.372 # ALIVE us=1125298878 ring_depth=0 drops=0
+t_wall=1793484621.372 # ALIVE us=1127298931 ring_depth=0 drops=0
+t_wall=1793484623.372 # ALIVE us=1129298982 ring_depth=0 drops=0
+t_wall=1793484625.372 # ALIVE us=1131299037 ring_depth=0 drops=0
+t_wall=1793484627.372 # ALIVE us=1133299090 ring_depth=0 drops=0
+t_wall=1793484629.372 # ALIVE us=1135299144 ring_depth=0 drops=0
+t_wall=1793484631.372 # ALIVE us=1137299197 ring_depth=0 drops=0
+t_wall=1793484633.372 # ALIVE us=1139299251 ring_depth=0 drops=0
+t_wall=1793484635.372 # ALIVE us=1141299306 ring_depth=0 drops=0
+t_wall=1793484637.372 # ALIVE us=1143299360 ring_depth=0 drops=0
+t_wall=1793484639.372 # ALIVE us=1145299412 ring_depth=0 drops=0
+t_wall=1793484641.372 # ALIVE us=1147299466 ring_depth=0 drops=0
+t_wall=1793484643.372 # ALIVE us=1149299518 ring_depth=0 drops=0
+t_wall=1793484645.372 # ALIVE us=1151299573 ring_depth=0 drops=0
+t_wall=1793484647.372 # ALIVE us=1153299629 ring_depth=0 drops=0
+t_wall=1793484649.372 # ALIVE us=1155299684 ring_depth=0 drops=0
+t_wall=1793484651.372 # ALIVE us=1157299735 ring_depth=0 drops=0
+t_wall=1793484653.372 # ALIVE us=1159299788 ring_depth=0 drops=0
+t_wall=1793484655.371 # ALIVE us=1161299842 ring_depth=0 drops=0
+t_wall=1793484657.371 # ALIVE us=1163299896 ring_depth=0 drops=0
+t_wall=1793484659.371 # ALIVE us=1165299949 ring_depth=0 drops=0
+t_wall=1793484661.371 # ALIVE us=1167300004 ring_depth=0 drops=0
+t_wall=1793484663.371 # ALIVE us=1169300057 ring_depth=0 drops=0
+t_wall=1793484665.371 # ALIVE us=1171300110 ring_depth=0 drops=0
+t_wall=1793484667.371 # ALIVE us=1173300164 ring_depth=0 drops=0
+t_wall=1793484669.372 # ALIVE us=1175300219 ring_depth=0 drops=0
+t_wall=1793484671.371 # ALIVE us=1177300272 ring_depth=0 drops=0
+t_wall=1793484673.372 # ALIVE us=1179300326 ring_depth=0 drops=0
+t_wall=1793484675.371 # ALIVE us=1181300379 ring_depth=0 drops=0
+t_wall=1793484677.371 # ALIVE us=1183300434 ring_depth=0 drops=0
+t_wall=1793484679.371 # ALIVE us=1185300487 ring_depth=0 drops=0
+t_wall=1793484681.371 # ALIVE us=1187300541 ring_depth=0 drops=0
+t_wall=1793484683.371 # ALIVE us=1189300595 ring_depth=0 drops=0
+t_wall=1793484685.371 # ALIVE us=1191300647 ring_depth=0 drops=0
+t_wall=1793484687.371 # ALIVE us=1193300701 ring_depth=0 drops=0
+t_wall=1793484689.371 # ALIVE us=1195300756 ring_depth=0 drops=0
+t_wall=1793484691.371 # ALIVE us=1197300810 ring_depth=0 drops=0
+t_wall=1793484693.371 # ALIVE us=1199300862 ring_depth=0 drops=0
+t_wall=1793484695.371 # ALIVE us=1201300916 ring_depth=0 drops=0
+t_wall=1793484697.371 # ALIVE us=1203300970 ring_depth=0 drops=0
+t_wall=1793484699.371 # ALIVE us=1205301024 ring_depth=0 drops=0
+t_wall=1793484701.371 # ALIVE us=1207301078 ring_depth=0 drops=0
+t_wall=1793484703.371 # ALIVE us=1209301131 ring_depth=0 drops=0
+t_wall=1793484705.371 # ALIVE us=1211301185 ring_depth=0 drops=0
+t_wall=1793484707.371 # ALIVE us=1213301241 ring_depth=0 drops=0
+t_wall=1793484709.371 # ALIVE us=1215301296 ring_depth=0 drops=0
+t_wall=1793484711.370 # ALIVE us=1217301351 ring_depth=0 drops=0
+t_wall=1793484713.371 # ALIVE us=1219301408 ring_depth=0 drops=0
+t_wall=1793484715.371 # ALIVE us=1221301460 ring_depth=0 drops=0
+t_wall=1793484717.371 # ALIVE us=1223301514 ring_depth=0 drops=0
+t_wall=1793484719.371 # ALIVE us=1225301569 ring_depth=0 drops=0
+t_wall=1793484721.370 # ALIVE us=1227301624 ring_depth=0 drops=0
+t_wall=1793484723.371 # ALIVE us=1229301679 ring_depth=0 drops=0
+t_wall=1793484725.370 # ALIVE us=1231301732 ring_depth=0 drops=0
+t_wall=1793484727.370 # ALIVE us=1233301784 ring_depth=0 drops=0
+t_wall=1793484729.370 # ALIVE us=1235301838 ring_depth=0 drops=0
+t_wall=1793484731.370 # ALIVE us=1237301890 ring_depth=0 drops=0
+t_wall=1793484733.370 # ALIVE us=1239301943 ring_depth=0 drops=0
+t_wall=1793484735.370 # ALIVE us=1241301996 ring_depth=0 drops=0
+t_wall=1793484737.370 # ALIVE us=1243302050 ring_depth=0 drops=0
+t_wall=1793484739.370 # ALIVE us=1245302102 ring_depth=0 drops=0
+t_wall=1793484741.370 # ALIVE us=1247302156 ring_depth=0 drops=0
+t_wall=1793484743.370 # ALIVE us=1249302208 ring_depth=0 drops=0
+t_wall=1793484745.370 # ALIVE us=1251302262 ring_depth=0 drops=0
+t_wall=1793484747.371 # ALIVE us=1253302315 ring_depth=0 drops=0
+t_wall=1793484749.370 # ALIVE us=1255302368 ring_depth=0 drops=0
+t_wall=1793484751.370 # ALIVE us=1257302421 ring_depth=0 drops=0
+t_wall=1793484753.370 # ALIVE us=1259302474 ring_depth=0 drops=0
+t_wall=1793484755.370 # ALIVE us=1261302530 ring_depth=0 drops=0
+t_wall=1793484757.370 # ALIVE us=1263302585 ring_depth=0 drops=0
+t_wall=1793484759.370 # ALIVE us=1265302638 ring_depth=0 drops=0
+t_wall=1793484761.370 # ALIVE us=1267302693 ring_depth=0 drops=0
+t_wall=1793484763.370 # ALIVE us=1269302747 ring_depth=0 drops=0
+t_wall=1793484765.370 # ALIVE us=1271302801 ring_depth=0 drops=0
+t_wall=1793484767.370 # ALIVE us=1273302856 ring_depth=0 drops=0
+t_wall=1793484769.370 # ALIVE us=1275302910 ring_depth=0 drops=0
+t_wall=1793484771.370 # ALIVE us=1277302962 ring_depth=0 drops=0
+t_wall=1793484773.370 # ALIVE us=1279303016 ring_depth=0 drops=0
+t_wall=1793484775.369 # ALIVE us=1281303069 ring_depth=0 drops=0
+t_wall=1793484777.369 # ALIVE us=1283303123 ring_depth=0 drops=0
+t_wall=1793484779.369 # ALIVE us=1285303177 ring_depth=0 drops=0
+t_wall=1793484781.369 # ALIVE us=1287303230 ring_depth=0 drops=0
+t_wall=1793484783.369 # ALIVE us=1289303283 ring_depth=0 drops=0
+t_wall=1793484785.369 # ALIVE us=1291303334 ring_depth=0 drops=0
+t_wall=1793484787.369 # ALIVE us=1293303386 ring_depth=0 drops=0
+t_wall=1793484789.369 # ALIVE us=1295303439 ring_depth=0 drops=0
+t_wall=1793484791.369 # ALIVE us=1297303493 ring_depth=0 drops=0
+t_wall=1793484793.369 # ALIVE us=1299303547 ring_depth=0 drops=0
+t_wall=1793484795.369 # ALIVE us=1301303601 ring_depth=0 drops=0
+t_wall=1793484797.369 # ALIVE us=1303303656 ring_depth=0 drops=0
+t_wall=1793484799.369 # ALIVE us=1305303711 ring_depth=0 drops=0
+t_wall=1793484801.369 # ALIVE us=1307303765 ring_depth=0 drops=0
+t_wall=1793484803.369 # ALIVE us=1309303819 ring_depth=0 drops=0
+t_wall=1793484805.369 # ALIVE us=1311303874 ring_depth=0 drops=0
+t_wall=1793484807.369 # ALIVE us=1313303926 ring_depth=0 drops=0
+t_wall=1793484809.369 # ALIVE us=1315303980 ring_depth=0 drops=0
+t_wall=1793484811.369 # ALIVE us=1317304031 ring_depth=0 drops=0
+t_wall=1793484813.369 # ALIVE us=1319304084 ring_depth=0 drops=0
+t_wall=1793484815.369 # ALIVE us=1321304137 ring_depth=0 drops=0
+t_wall=1793484817.369 # ALIVE us=1323304192 ring_depth=0 drops=0
+t_wall=1793484819.369 # ALIVE us=1325304247 ring_depth=0 drops=0
+t_wall=1793484821.369 # ALIVE us=1327304301 ring_depth=0 drops=0
+t_wall=1793484823.369 # ALIVE us=1329304354 ring_depth=0 drops=0
+t_wall=1793484825.369 # ALIVE us=1331304405 ring_depth=0 drops=0
+t_wall=1793484827.369 # ALIVE us=1333304458 ring_depth=0 drops=0
+t_wall=1793484829.368 # ALIVE us=1335304512 ring_depth=0 drops=0
+t_wall=1793484831.369 # ALIVE us=1337304565 ring_depth=0 drops=0
+t_wall=1793484833.368 # ALIVE us=1339304617 ring_depth=0 drops=0
+t_wall=1793484835.368 # ALIVE us=1341304673 ring_depth=0 drops=0
+t_wall=1793484837.368 # ALIVE us=1343304725 ring_depth=0 drops=0
+t_wall=1793484839.368 # ALIVE us=1345304779 ring_depth=0 drops=0
+t_wall=1793484841.368 # ALIVE us=1347304833 ring_depth=0 drops=0
+t_wall=1793484843.369 # ALIVE us=1349304891 ring_depth=0 drops=0
+t_wall=1793484845.368 # ALIVE us=1351304947 ring_depth=0 drops=0
+t_wall=1793484847.368 # ALIVE us=1353305003 ring_depth=0 drops=0
+t_wall=1793484849.368 # ALIVE us=1355305054 ring_depth=0 drops=0
+t_wall=1793484851.368 # ALIVE us=1357305108 ring_depth=0 drops=0
+t_wall=1793484853.368 # ALIVE us=1359305161 ring_depth=0 drops=0
+t_wall=1793484855.368 # ALIVE us=1361305213 ring_depth=0 drops=0
+t_wall=1793484857.368 # ALIVE us=1363305266 ring_depth=0 drops=0
+t_wall=1793484859.368 # ALIVE us=1365305321 ring_depth=0 drops=0
+t_wall=1793484861.368 # ALIVE us=1367305375 ring_depth=0 drops=0
+t_wall=1793484863.368 # ALIVE us=1369305430 ring_depth=0 drops=0
+t_wall=1793484865.368 # ALIVE us=1371305484 ring_depth=0 drops=0
+t_wall=1793484867.368 # ALIVE us=1373305536 ring_depth=0 drops=0

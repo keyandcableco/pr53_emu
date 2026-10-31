@@ -171,23 +171,23 @@ BARGRAPH_ROW_TO_SEG = {
     # row 7 unused
 }
 
-# NUMBER decoders: each entry is a list of (char, col) or None for
-# [hundreds, tens, ones]. None means "not yet mapped, show as blank".
-# Ones digits identified for all 8 parts from bargraph_part_locate
-# campaign. Part 1 and Part 5 tens digits confirmed from tens_boundary
-# and 5step_walk campaigns respectively — both live in C4 with column
-# matching the ones-digit's approximate horizontal position. Parts 2-4
-# tens are HYPOTHESIZED to be in C4 c1/c2/c3 by symmetry (unverified);
-# Parts 6-8 tens location entirely unknown.
+# NUMBER decoders, per part: (hundreds, tens, ones, row order).
+# Parts 1-5 use the bargraph row order, and their hundreds place is a lone
+# "1": one bit, kept away from the digits in row 6 of C1 and C3, given here
+# as (char, row, col). Parts 6-8 sit in C2/C3, whose digits put d on row 7
+# like the tempo (ROW_TO_SEG), and have a full hundreds digit (char, col), so
+# a part that's switched off shows "---". Worked out from the volume sweeps in
+# captures/session_071830.log and the campaign log. Mirrors NUMBERS[] in
+# firmware/display/src/pr53_decode.c.
 BARGRAPH_NUMBER_MAP = {
-    0: [None, (4, 0), (5, 2)],   # Part 1: tens C4c0 CONFIRMED
-    1: [None, (4, 1), (5, 1)],   # Part 2: tens C4c1 CONFIRMED (sweep-window)
-    2: [None, (4, 2), (7, 4)],   # Part 3: tens C4c2 CONFIRMED (sweep-window)
-    3: [None, (4, 3), (7, 3)],   # Part 4: tens C4c3 CONFIRMED (sweep-window)
-    4: [None, (4, 4), (7, 2)],   # Part 5: tens C4c4 CONFIRMED
-    5: [None, None,   (3, 2)],   # Part 6: tens location unknown
-    6: [None, (2, 4), (3, 0)],   # Part 7: ones=C3c0, tens=C2c4 (confirmed, value walk to 10)
-    7: [(2, 2), (2, 3), (2, 1)],   # Part 8: hundreds=C2c2, tens=C2c3, ones=C2c1 (confirmed vs photo=127)
+    0: ((1, 6, 2), (4, 0), (5, 2), BARGRAPH_ROW_TO_SEG),   # Part 1 DRUMS
+    1: ((1, 6, 1), (4, 1), (5, 1), BARGRAPH_ROW_TO_SEG),   # Part 2 AC3
+    2: ((3, 6, 4), (4, 2), (7, 4), BARGRAPH_ROW_TO_SEG),   # Part 3 AC2
+    3: ((3, 6, 3), (4, 3), (7, 3), BARGRAPH_ROW_TO_SEG),   # Part 4 AC1
+    4: ((3, 6, 2), (4, 4), (7, 2), BARGRAPH_ROW_TO_SEG),   # Part 5 BASS
+    5: ((3, 4),    (3, 3), (3, 2), ROW_TO_SEG),            # Part 6 LEFT
+    6: ((2, 4),    (3, 0), (3, 1), ROW_TO_SEG),            # Part 7 R2
+    7: ((2, 2),    (2, 3), (2, 1), ROW_TO_SEG),            # Part 8 R1
 }
 
 # BAR-LEVEL decoders: 5-level "thermometer" meter per part. SOLVED from
@@ -195,17 +195,10 @@ BARGRAPH_NUMBER_MAP = {
 # fills bottom-up: level = number of lit rows in that column. Bottom bar
 # lights first, each higher bar adds one more row.
 #
-# Layout (parts 1-5 in C0 cols c0-c4; parts 7-8 in C7 c0-c1):
-#   Part 1 = C0 c0   Part 2 = C0 c1   Part 3 = C0 c2
-#   Part 4 = C0 c3   Part 5 = C0 c4   Part 7 = C7 c0   Part 8 = C7 c1
-# Parts 7 & 8 confirmed from a dedicated clean sweep (part 7 then 8,
-# separated in time): C7c0 swings while C7c1 is flat during the part-7
-# window, and vice-versa during part-8 — so C7c0=P7, C7c1=P8, unambiguous.
-# Both fill rows 7->2 bottom-up.
-#
-# Part 6 (LEFT) meter is NOT mapped: an earlier guess of C7c1 turned out to
-# be Part 8's column (proven by the isolated sweep above). Part 6's meter
-# never got a clean isolated window. Redo: sweep Part 6 alone.
+# Layout: parts 1-5 in C0 cols c0-c4 (rows 5->1), part 6 in C6 c4, parts
+# 7-8 in C7 c0-c1. Parts 6-8 fill rows 6->2; row 7 of those columns stays lit
+# whatever the level, even at 0, so it isn't a bar. A bar per ~23 of the
+# part's number, all five lit from about 115.
 #
 # Each entry is (char, [(row, col), ...]) for the level bits, bottom-to-top.
 BARGRAPH_LEVEL_MAP = {
@@ -214,9 +207,9 @@ BARGRAPH_LEVEL_MAP = {
     2: (0, [(5, 2), (4, 2), (3, 2), (2, 2), (1, 2)]),   # Part 3 AC2    C0 c2 (row7=baseline, excluded)
     3: (0, [(5, 3), (4, 3), (3, 3), (2, 3), (1, 3)]),   # Part 4 AC1    C0 c3
     4: (0, [(5, 4), (4, 4), (3, 4), (2, 4), (1, 4)]),   # Part 5 BASS   C0 c4 (row7=baseline, excluded)
-    5: (6, [(7, 4), (6, 4), (5, 4), (4, 4), (3, 4)]),   # Part 6 LEFT   C6 c4
-    6: (7, [(7, 0), (6, 0), (5, 0), (4, 0), (3, 0)]),   # Part 7 R2     C7 c0
-    7: (7, [(7, 1), (6, 1), (5, 1), (4, 1), (3, 1)]),   # Part 8 R1     C7 c1
+    5: (6, [(6, 4), (5, 4), (4, 4), (3, 4), (2, 4)]),   # Part 6 LEFT   C6 c4
+    6: (7, [(6, 0), (5, 0), (4, 0), (3, 0), (2, 0)]),   # Part 7 R2     C7 c0
+    7: (7, [(6, 1), (5, 1), (4, 1), (3, 1), (2, 1)]),   # Part 8 R1     C7 c1
 }
 
 
@@ -297,49 +290,25 @@ def decode_transpose_note(cgram):
     return letter + sharp
 
 
-def _decode_digit_segs(segs):
-    """Decode a set of lit segments to a digit char. Tries an exact
-    DIGIT_TABLE match first; if that fails, retries with segment 'd'
-    (the bottom bar) added. Some bargraph digit columns don't wire the
-    'd'/bottom segment — e.g. Part 7's ones digit (C3 c0) renders 2,3,5,
-    6,8,9 without their bottom bar. Adding 'd' recovers the standard
-    glyph without polluting the shared table (which would risk collisions
-    with the stylized hundreds glyphs)."""
-    segs = frozenset(segs)
-    d = DIGIT_TABLE.get(segs)
-    if d is not None:
-        return d
-    if 'd' not in segs:
-        d = DIGIT_TABLE.get(segs | {'d'})
-        if d is not None:
-            return d
-    return '?'
+def _digit_at(cgram, char, col, row_to_seg):
+    segs = frozenset(seg for row, seg in row_to_seg.items()
+                     if (cgram[char * 8 + row] >> (4 - col)) & 1)
+    return DIGIT_TABLE.get(segs, '?')
 
 
 def decode_bargraph_number(cgram, part_idx):
-    """Return decoded int for the specified bargraph's number, or None
-    if nothing decoded (all-blank or contains ?). Partial mappings show
-    only the mapped digits."""
+    """Return the part's number as an int, or None if it shows nothing,
+    "---" (part switched off) or anything that isn't a number."""
     m = BARGRAPH_NUMBER_MAP.get(part_idx)
     if m is None: return None
-    digits = []
-    for entry in m:
-        if entry is None:
-            digits.append(' ')
-            continue
-        char, col = entry
-        segs = set()
-        for row, seg in BARGRAPH_ROW_TO_SEG.items():
-            if (cgram[char * 8 + row] >> (4 - col)) & 1:
-                segs.add(seg)
-        digits.append(_decode_digit_segs(segs))
-    text = ''.join(digits).lstrip()
-    if not text or '?' in text:
-        return None
-    try:
-        return int(text)
-    except ValueError:
-        return None
+    hund, tens, ones, rows = m
+    if len(hund) == 3:
+        char, row, col = hund
+        h = '1' if (cgram[char * 8 + row] >> (4 - col)) & 1 else ' '
+    else:
+        h = _digit_at(cgram, *hund, rows)
+    text = (h + _digit_at(cgram, *tens, rows) + _digit_at(cgram, *ones, rows)).lstrip()
+    return int(text) if text and text.isdigit() else None
 
 
 def decode_bargraph_level(cgram, part_idx):
@@ -924,10 +893,8 @@ class App:
             num = decode_bargraph_number(cgram, part)
             if num is not None:
                 ntxt, on = f'{num:>3}', True
-            elif BARGRAPH_NUMBER_MAP.get(part) is None:
-                ntxt, on = '---', False
             else:
-                ntxt, on = '???', False
+                ntxt, on = '---', False
             self._seg_text(cx, top + meter_bars * (bh + gap) + 18, ntxt, 22,
                            anchor='center', spacing=2, on=on)
             # ---- down arrow ----

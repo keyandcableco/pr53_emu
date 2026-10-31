@@ -19,8 +19,8 @@ What the original display shows, as far as the decoders know so far:
 | Chord name (root, sharp/flat, type) | CGRAM segments | Root and flat/sharp: yes (C5 c0; accidental in C1 c0 rows 6-7). Type: not yet |
 | Rhythm number in the group (1, 2, 3 ...) | CGRAM segments | Found at C6 c0 on the RHYTHM screen, standard 7-segment; not drawn yet |
 | Transpose (note name, arrows) | CGRAM segments | Yes |
-| Eight part meters (bars) | CGRAM segments | Yes, except Part 6 |
-| Eight part numbers (3 digits) | CGRAM segments | Tens and ones; hundreds only on Part 8 |
+| Eight part meters (bars) | CGRAM segments | Yes |
+| Eight part numbers (3 digits) | CGRAM segments | Yes, hundreds included |
 | Two small 2-digit readouts left of the text lines | CGRAM segments | No |
 | Shaped labels and arrows (RIGHT, LEFT, RHYTHM, MIDI, MENU/PAGE, PROG ...) | CGRAM segments | Partly |
 
@@ -43,6 +43,22 @@ instead of mapped bit by bit:
   the tempo hundreds cell (C1 c0): row 7 alone is a flat, rows 6+7 a sharp.
   The piano spells black keys Db, Eb, F#, Ab, Bb. The chord clears a couple of
   seconds after the keys are released.
+- **The part numbers.** DRUMS to BASS (P1-P5) have tens and ones in C4 and
+  C5/C7 (rows 0-6 order), and their hundreds place is a lone "1": a single
+  bit away from the digits, row 6 of C1 (c2 = P1, c1 = P2) and of C3
+  (c4 = P3, c3 = P4, c2 = P5). LEFT, RIGHT 2 and RIGHT 1 (P6-P8) are three
+  full digits in C2/C3, which put segment d on row 7 like the tempo: P6
+  C3 c4/c3/c2, P7 C2 c4 + C3 c0/c1, P8 C2 c2/c3/c1. That full hundreds digit
+  is what lets them show "---" when switched off. The meters add a bar per
+  ~23 (five from about 115); P6-P8 fill rows 6 up to 2 of C6 c4 and C7 c0/c1,
+  and row 7 of those columns stays lit (likely their pointers). Found from the
+  "bargraph min max" volume sweeps in `captures/session_071830.log`, checked
+  against the photo of the original glass (118 113 113 113 118 113 100 127)
+  by `firmware/display/src/test_numbers.c`.
+- **Redraws take a few refreshes.** After a menu or the RHYTHM screen the
+  piano rewrites the custom characters over 3-6 refreshes, so for a moment
+  numbers can lack their leading digits and meters can be blank, on the
+  original glass too.
 - **The glass has screens.** The play screen shows the part meters and numbers
   (C0, C2-C7). Pressing a rhythm group briefly shows a RHYTHM screen (line 1
   "RHYTHM", line 2 the rhythm name, meters blank, the rhythm number in C6 c0).

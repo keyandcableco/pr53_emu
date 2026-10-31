@@ -23,13 +23,15 @@
 // ===========================================================================
 // 2. COLOR ORDER  — fixes the "green looks blue/grey" swap.
 // ===========================================================================
-// If colors look wrong (red<->blue swapped), flip this. Panels vary: some
-// want RGB, some BGR. On the carrier's HiLetgo panel (2026-10-31) the
-// yellow-green field showed as cyan with 0, i.e. red and blue swapped, so
-// this is 1. If colors STILL look swapped after flashing, change 0 <-> 1.
-//   0 = RGB order
-//   1 = BGR order
-#define THEME_BGR        1
+// The carrier's HiLetgo panel swaps red and blue AND ignores the BGR bit
+// below: a yellow-green field came out cyan with the bit clear and with it set
+// (2026-10-31, three flashes). So the swap is done in software instead.
+//   THEME_SWAP_RB  1 = swap red and blue before sending (this panel)
+//   THEME_BGR      the panel's own RGB/BGR bit (MADCTL), for panels that
+//                  honour it: 0 = RGB, 1 = BGR
+// If red and blue still look swapped, set THEME_SWAP_RB to 0.
+#define THEME_SWAP_RB    1
+#define THEME_BGR        0
 
 // ---- Pixel byte order ----
 // Some parallel ILI9486 boards latch the 16-bit pixel high-byte/low-byte
@@ -94,8 +96,12 @@
 //  don't need to touch anything past here)
 // ===========================================================================
 
-// RGB888 -> RGB565 packer, with optional byte swap (THEME_SWAP_BYTES).
+// RGB888 -> RGB565 packer, with the optional red/blue swap (THEME_SWAP_RB)
+// and byte swap (THEME_SWAP_BYTES).
 static inline uint16_t theme_rgb(uint8_t r, uint8_t g, uint8_t b) {
+#if THEME_SWAP_RB
+    uint8_t t = r; r = b; b = t;
+#endif
     uint16_t v = (uint16_t)(((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3));
 #if THEME_SWAP_BYTES
     v = (uint16_t)((v >> 8) | (v << 8));   // swap hi/lo byte
