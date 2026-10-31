@@ -107,10 +107,14 @@ int main(int argc, char **argv) {
 
     static Sweep w;
     if (replay(argv[1], on_sweep, &w) < 0) return 1;
-    // values each sweep passed through, either side of 100 (part, value)
+    // values each sweep passed through, either side of 100 (part, value).
+    // P7's hundreds digit (C2) isn't written until late in that capture, so
+    // its 114 and 118 read 14 and 18; with tens and ones swapped they'd read
+    // 41 and 81, which is what those two entries catch.
     static const int MUST[][2] = {
         {0, 101}, {0, 97}, {0, 0}, {0, 117}, {1, 101}, {1, 92}, {3, 101}, {3, 90},
         {4, 101}, {4, 91}, {5, 127}, {5, 102}, {5, 98}, {5, 0},
+        {6, 14}, {6, 18},
         {7, 127}, {7, 103}, {7, 99}, {7, 0}, {7, 100},
     };
     int missing = 0;
