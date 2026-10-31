@@ -562,6 +562,18 @@ class LiveState:
         self.updated = False
         self.event_count = 0
         self.last_event_time = 0.0
+        self.raw_log = None              # file for --raw-log, or None
+        self.raw_lock = threading.Lock()
+
+    def log_line(self, text):
+        # Same format as pr53_record.py, so pr53_session.py reads it.
+        if self.raw_log is None: return
+        with self.raw_lock:
+            self.raw_log.write(f't_wall={time.time():.3f} {text}\n')
+            self.raw_log.flush()
+
+    def note(self, text):
+        self.log_line(f'# NOTE {text}')
 
 
 LINE_RE = re.compile(
@@ -601,6 +613,7 @@ def serial_reader(state, port_getter, baud):
             for raw in ser:
                 try: line = raw.decode('utf-8', errors='replace').rstrip()
                 except Exception: continue
+                if line: state.log_line(line)
                 if not line or line.startswith('#'): continue
                 m = LINE_RE.match(line)
                 if not m: continue
@@ -821,6 +834,7 @@ class App:
         # Grab baseline now, walk into step 1.
         self.campaign = CAMPAIGNS[self.campaign_var.get()]
         self.step_idx = 0
+        self.state.note(f'campaign {self.campaign_var.get()} start (baseline)')
         with self.state.lock:
             self.baseline = (
                 int(self.state.last_event_time * 1000),
@@ -867,6 +881,7 @@ class App:
         self._render_diff(cga, cgb, off_mask, on_mask)
         # Pre-fill suggested label
         suggested = self.campaign['steps'][self.step_idx]['label']
+        self.state.note(f'capture step {self.step_idx + 1}: {suggested}')
         self.label_entry.delete(0, tk.END)
         self.label_entry.insert(0, suggested)
         self.save_btn.config(state='normal')
@@ -880,6 +895,9 @@ class App:
                 fg='#8f8')
 
     def _on_skip(self):
+        if self.campaign is not None and self.step_idx < len(self.campaign['steps']):
+            self.state.note(f'skipped step {self.step_idx + 1}: '
+                            f'{self.campaign["steps"][self.step_idx]["label"]}')
         self.step_idx += 1
         self.pending = None
         self.pending_diff = None
@@ -899,6 +917,7 @@ class App:
         mb, ddb, cgb = self.pending
         off_mask, on_mask = self.pending_diff
         self._append_to_mapping(label, off_mask, on_mask, ma, mb, dda, ddb)
+        self.state.note(f'saved step {self.step_idx + 1}: {label}')
         # Advance
         self.baseline = self.pending
         self.pending = None
@@ -1012,16 +1031,26 @@ def main():
     p.add_argument('--baud', type=int, default=115200)
     p.add_argument('--mapping', default='mapping.csv',
                    help='mapping.csv path (appended to)')
+    p.add_argument('--raw-log', default=None,
+                   help='also save the whole stream, with a # NOTE line per '
+                        'step, to this file (appended to; pr53_session.py reads it)')
+    p.add_argument('--campaign', choices=list(CAMPAIGNS), default=None,
+                   help='campaign to preselect')
     args = p.parse_args()
 
     state = LiveState()
+    if args.raw_log:
+        state.raw_log = open(args.raw_log, 'a')
     def port_getter(): return args.port or guess_port()
     reader = threading.Thread(target=serial_reader,
                               args=(state, port_getter, args.baud),
                               daemon=True)
     reader.start()
     root = tk.Tk()
-    App(root, state, args.mapping)
+    app = App(root, state, args.mapping)
+    if args.campaign:
+        app.campaign_var.set(args.campaign)
+        app._on_campaign_change()
     root.mainloop()
 
 
