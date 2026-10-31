@@ -19,12 +19,70 @@
 #include "pico/multicore.h"
 #include "hardware/pio.h"
 #include "hardware/gpio.h"
+#include "hardware/uart.h"
 
-#define PIN_DB4  4
-#define PIN_DB7  7
-#define PIN_RS   8
-#define PIN_RW   9
-#define PIN_CS  11
+#define PIN_DB4  0
+#define PIN_DB7  3
+#define PIN_RS   4
+#define PIN_RW   5
+// CS must sit at base+7 (=GP7): the capture PIO program has a hardcoded
+// "wait pin 7" that gates on CS relative to in_base (PIN_DB4). GP6 is left
+// unused so CS lands on GP7. Do NOT put CS on GP6 — the PIO would then wait
+// on the wrong (floating) pin and capture would stall.
+#define PIN_CS   7
+
+// --- Display link: forward each decoded access to the DISPLAY Pico ---
+// One-way UART display link (uart1 TX on GP8). Bus tap uses GP0-GP7.
+// Protocol matches the display side's bus_tap.c:
+//   byte0 = TAG (0x00 command / 0x01 data), byte1 = VALUE.
+#define DISP_UART   uart1
+// Display-link UART TX on GP8. Chosen so GP10-13 stay completely unused (less
+// perfboard routing). GP8 sits at the bottom of the capture block on the Zero's
+// right edge — adjacent to GP0-7, so the link jumper is short. GP8 is a valid
+// uart1 TX pin (uart0's TX pins would land on GP0/GP12, both of which we're
+// avoiding), hence DISP_UART = uart1. Capture uses GP0-5+GP7; GP6/GP9 unused.
+#define DISP_TX_PIN 8
+#define DISP_BAUD   1000000
+#define DISP_BAUD   1000000
+
+static void disp_uart_init(void) {
+    uart_init(DISP_UART, DISP_BAUD);
+    gpio_set_function(DISP_TX_PIN, GPIO_FUNC_UART);
+    uart_set_hw_flow(DISP_UART, false, false);
+    uart_set_format(DISP_UART, 8, 1, UART_PARITY_NONE);
+    uart_set_fifo_enabled(DISP_UART, true);
+}
+
+// NON-BLOCKING send. The old version used uart_putc_raw, which BLOCKS until
+// the TX FIFO has space — at 1 Mbaud that stalled the drain loop, delayed PIO
+// servicing, and scrambled nibble pairing (garbled capture, drops=0). Here we
+// only write when BOTH tag+value fit in the FIFO right now; otherwise we skip
+// this event on the display link. The USB capture log is unaffected either way.
+// A skipped event just means one missed display update, self-corrected on the
+// next DISP_CTRL commit — never corrupts the capture.
+static inline void disp_uart_send(uint8_t rs, uint8_t byte) {
+    // ATOMIC + NON-BLOCKING. This is the fix for the v16 garble: the old code
+    // used uart_putc_raw, which BLOCKS on a full TX FIFO, stalling the capture
+    // drain loop and scrambling nibble pairing (garbled stream, drops=0).
+    //
+    // Rule: only send when the TX FIFO is EMPTY. An empty 32-byte FIFO always
+    // has room for our 2 bytes, so both writes are instant (never block), and
+    // we never half-send a tag without its value (no receiver desync). If the
+    // FIFO isn't empty, we skip this event on the DISPLAY link entirely — the
+    // USB capture log is written separately and stays 100% complete. A skipped
+    // display event just means one dropped screen update; the display resyncs
+    // on the next DISP_CTRL (0x0C) commit, so nothing downstream corrupts.
+    //
+    // At 1 Mbaud, 2 bytes drain in ~20µs. HD44780 writes on this bus are ~40µs
+    // apart, so in practice the FIFO is empty on essentially every event and
+    // the display sees the full stream — but capture integrity no longer
+    // depends on that being true.
+    uart_hw_t *hw = uart_get_hw(DISP_UART);
+    if (!(hw->fr & (1u << 7))) return;   // UARTFR TXFE (bit7): 1 = FIFO empty.
+                                         // Not empty → skip, never block.
+    hw->dr = rs ? 0x01 : 0x00;           // TAG   — instant, room guaranteed
+    hw->dr = byte;                       // VALUE — instant, room guaranteed
+}
 
 #define RING_SLOTS 2048
 
@@ -211,7 +269,7 @@ int main(void) {
     for (int i = 0; i < 30 && !stdio_usb_connected(); i++)
         sleep_ms(100);
 
-    printf("\n# SX-PR53 bus dumper v15 (writes only, 2048 ring)\n");
+    printf("\n# SX-PR53 bus dumper v16 (v15 + UART display link on GP0)\n");
     printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
     printf("# ready — power-cycle piano now\n\n");
 
@@ -220,6 +278,15 @@ int main(void) {
 
     pio_capture_init();
     pio_read_response_init();
+    // Bring up the display link. IMPORTANT: your CMakeLists MUST have
+    //   pico_enable_stdio_uart(<target> 0)
+    // so stdio doesn't grab default UART pins. Capture now uses GP0/GP1
+    // (DB4/DB5), and the display link is uart1 on GP8 — keep uart-stdio OFF so
+    // nothing contends for those. Keep
+    //   pico_enable_stdio_usb(<target> 1)
+    // for your USB log. If uart-stdio is left on, console text could contend
+    // with capture pins or the protocol bytes and corrupt the display stream.
+    disp_uart_init();                 // bring up the display link
     pio_sm_put(pio1, pio_rd_sm, pack_ac(0));
 
     multicore_launch_core1(core1_entry);
@@ -236,6 +303,10 @@ int main(void) {
         uint32_t t = ring_tail;
         while (t != h) {
             byte_event_t *e = &event_ring[t % RING_SLOTS];
+            // Forward this access to the DISPLAY Pico. Fires for every event,
+            // independent of the logging branches below — the USB log is
+            // unchanged, so you keep the recorder workflow AND drive the LCD.
+            disp_uart_send(e->rs, e->byte);
             char buf[64];
             if (e->rs == 0) {
                 const char *ann = decode_cmd(e->byte, buf, sizeof(buf));

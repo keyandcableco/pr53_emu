@@ -1,16 +1,16 @@
-# CMakeLists.txt — RP2350 build for the PR53 display firmware.
+# Display firmware for the Pico 2: decodes the stream from the tap and draws
+# the PR53 glass on the HiLetgo 3.5" parallel panel.
 #
-# Usage:
-#   export PICO_SDK_PATH=~/pico-sdk
+#   export PICO_SDK_PATH=$HOME/pico-sdk     # or pass -DPICO_SDK_PATH=...
 #   mkdir build && cd build
 #   cmake -DPICO_BOARD=pico2 ..
-#   make
+#   make -j
 #
-# Produces pr53_fw.uf2 to drag onto the Pico 2.
+# Produces pr53_fw.uf2.
 
 cmake_minimum_required(VERSION 3.13)
 
-include($ENV{PICO_SDK_PATH}/pico_sdk_init.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/../pico_sdk_import.cmake)
 
 project(pr53_fw C CXX ASM)
 set(CMAKE_C_STANDARD 11)
@@ -24,7 +24,7 @@ add_executable(pr53_fw
     src/pr53_render.c
     src/pr53_font.c
     src/pr53_ili9486_par.c
-    src/bus_tap.c   # <-- TEMPORARY stub for first-light. Replace with your v15 PIO capture.
+    src/bus_tap.c   # UART receiver for the tap link (GP21)
 )
 
 target_compile_definitions(pr53_fw PRIVATE PICO_ON_DEVICE=1)
@@ -35,7 +35,6 @@ target_link_libraries(pr53_fw
     hardware_gpio
     hardware_sync
     hardware_uart
-    # hardware_pio   # <-- for your bus-tap PIO
 )
 
 pico_add_extra_outputs(pr53_fw)

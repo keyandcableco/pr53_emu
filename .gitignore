@@ -1,8 +1,33 @@
+# Firmware builds
 build/
+build-host/
 *.uf2
 *.elf
 *.bin
 *.hex
 *.dis
 *.map
+
+# Python
+__pycache__/
+*.pyc
+
+# KiCad local state and caches
+*.kicad_prl
+fp-info-cache
+*-backups/
+*.lck
+
 .vscode/
+
+# Tool output when run from the repo root (move keepers into captures/)
+/mapping.csv
+/tempo_learned.csv
+/session_*.log
+
+# KiCad and Freerouting leftovers
+_autosave-*
+*.bak
+*.dsn
+*.ses
+*.jar
