@@ -20,6 +20,7 @@ windowed ones also need tkinter.
 | `pr53_map.py` | Two-snapshot mapper: capture, press a button, capture again, label the changed bits, save to `mapping.csv`. | v13 CSV |
 | `pr53_tempo.py` | Learns the tempo digits empirically from `mapping.csv`. | v13 CSV |
 | `pr53_analyze.py` | Offline analyzer for v13 CSV captures (`--states`, `--diff`, `--raw`). | v13 CSV |
+| `pr53_campaign_report.py` | Replays a campaign log (`pr53_campaign.py --raw-log`): text and changed segment bits per step, and a table of every bit that varies across a run. | Campaign log |
 
 The `panel_*` campaigns in `pr53_campaign.py` cover every front-panel control,
 section by section (see `docs/front-panel.md`); `chord_roots_all12` and

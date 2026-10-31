@@ -16,7 +16,8 @@ What the original display shows, as far as the decoders know so far:
 |---|---|---|
 | Text line 1 and 2 (12 characters each): voice, rhythm, menu text | Character ROM | Yes, codes up to 0x7F. Codes above 0x7F (seen in the LCD test) have no glyphs yet |
 | Tempo (3 digits) | CGRAM segments | Yes |
-| Chord name (root, sharp/flat, type) | CGRAM segments | Partly: many chord symbols were never mapped |
+| Chord name (root, sharp/flat, type) | CGRAM segments | Root and flat/sharp: yes (C5 c0; accidental in C1 c0 rows 6-7). Type: not yet |
+| Rhythm number in the group (1, 2, 3 ...) | CGRAM segments | Found at C6 c0 on the RHYTHM screen, standard 7-segment; not drawn yet |
 | Transpose (note name, arrows) | CGRAM segments | Yes |
 | Eight part meters (bars) | CGRAM segments | Yes, except Part 6 |
 | Eight part numbers (3 digits) | CGRAM segments | Tens and ones; hundreds only on Part 8 |
@@ -26,6 +27,32 @@ What the original display shows, as far as the decoders know so far:
 The LCD test (`captures/lcd_test_mode_2026-10-31.log`) lit all 320 CGRAM
 bits: 8 custom characters of 8 rows x 5 columns, placed at positions 12-15 of
 each text line. Every one of those bits is a segment or label to account for.
+
+### How the glass is encoded
+
+What the captures so far show, and what lets most of the rest be inferred
+instead of mapped bit by bit:
+
+- **Each column of a custom character is one display cell.** Its rows are that
+  cell's segments, in a fixed order: for digits and letters, rows 0-6 are
+  a, b, f, g, c, e, d (the decoders' "bargraph" order; tempo uses rows 0-5 and
+  7). Row 7 is often a separate indicator.
+- **The chord root is one cell (C5 c0).** Letters are fixed segment sets:
+  C {a,f}, D {a,c,d,e,f}, E {a,b,f,g}, F {b,f,g}, G {a,d,e,f,g},
+  A {b,c,d,e,f,g}, B {a,b,c,d,f,g}. The accidental borrows the spare rows of
+  the tempo hundreds cell (C1 c0): row 7 alone is a flat, rows 6+7 a sharp.
+  The piano spells black keys Db, Eb, F#, Ab, Bb. The chord clears a couple of
+  seconds after the keys are released.
+- **The glass has screens.** The play screen shows the part meters and numbers
+  (C0, C2-C7). Pressing a rhythm group briefly shows a RHYTHM screen (line 1
+  "RHYTHM", line 2 the rhythm name, meters blank, the rhythm number in C6 c0).
+  Menus show the menu name on line 1, the first item on line 2, meters blank,
+  and the same few icon bits each time (C1 c3/c4 and row 6 of C2/C3): almost
+  certainly the MENU/PAGE box and its arrows.
+
+`tools/pr53_campaign_report.py` replays a campaign log and prints these
+per-step bit changes; the step-by-step results are in
+`captures/campaign_2026-10-31.log`.
 
 ## Controls
 

@@ -53,7 +53,8 @@ static char segs_to_letter(uint8_t s) {
         case (SA|SC|SD|SE|SF):                return 'D';
         case (SA|SB|SF|SG):                   return 'E';
         case (SB|SF|SG):                       return 'F';
-        case (SA|SC|SD|SE|SF|SG):             return 'G';
+        case (SA|SD|SE|SF|SG):                return 'G';  // measured 2026-10-31
+        case (SA|SC|SD|SE|SF|SG):             return 'G';  // earlier guess, kept
         case (SA|SB|SC|SD|SE|SF|SG):          return 'A';  // note: Python 'A' = b,c,d,e,f,g
         case (SB|SC|SD|SE|SF|SG):             return 'A';
         case (SA|SB|SC|SD|SE|SF):             return 'B';  // placeholder; see note
@@ -118,6 +119,9 @@ int pr53_decode_tempo(const uint8_t *cgram) {
     int val = 0, seen = 0;
     for (int col = 0; col < 3; col++) {
         uint8_t s = gather_segs(cgram, 1, col, TEMPO_ROW_SEG);
+        // Rows 6-7 of the hundreds column are the chord's flat/sharp, not
+        // tempo segments (row 7 maps to SD); hundreds is only ever 1 or 2.
+        if (col == 0) s &= (uint8_t)~SD;
         char c = segs_to_digit(s);
         if (c == ' ') continue;          // leading blank
         if (c < '0' || c > '9') return -1;
@@ -131,10 +135,14 @@ bool pr53_decode_chord(const uint8_t *cgram, char out[4]) {
     // chord root letter lives in C5 c0, bargraph row convention.
     uint8_t s = gather_segs(cgram, 5, 0, BAR_ROW_SEG);
     char c = segs_to_letter(s);
-    if (c == 0) { out[0] = 0; return false; }
-    out[0] = (c == ' ') ? 0 : c;
-    out[1] = 0;
-    return out[0] != 0;
+    if (c == 0 || c == ' ') { out[0] = 0; return false; }
+    out[0] = c;
+    // Accidental in the tempo hundreds column (C1 c0): row 7 alone is a flat,
+    // rows 6+7 a sharp. The piano spells Db, Eb, F#, Ab, Bb.
+    int r6 = cell_bit(cgram, 1, 6, 0), r7 = cell_bit(cgram, 1, 7, 0);
+    out[1] = (r6 && r7) ? '#' : r7 ? 'b' : 0;
+    out[2] = 0;
+    return true;
 }
 
 int pr53_decode_bargraph_number(const uint8_t *cgram, int part) {

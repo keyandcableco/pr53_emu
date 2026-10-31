@@ -136,6 +136,11 @@ def decode_tempo(cgram):
     for ch, col in TEMPO_DIGITS:
         segs = set()
         for row, seg in ROW_TO_SEG.items():
+            # Rows 6-7 of the hundreds column are the chord's flat/sharp
+            # (CHORD_ACCIDENTAL), not tempo segments; the hundreds digit is
+            # only ever 1 or 2, which fit in the rows above.
+            if (ch, col) == TEMPO_DIGITS[0] and row >= 6:
+                continue
             if (cgram[ch * 8 + row] >> (4 - col)) & 1:
                 segs.add(seg)
         chars.append(DIGIT_TABLE.get(frozenset(segs), '?'))
@@ -233,20 +238,32 @@ CHORD_LETTER_TABLE = {
     frozenset({'a', 'c', 'd', 'e', 'f'}):      'D',
     frozenset({'a', 'b', 'f', 'g'}):           'E',
     frozenset({'b', 'f', 'g'}):                'F',
-    frozenset({'a', 'c', 'd', 'e', 'f', 'g'}): 'G',
+    frozenset({'a', 'd', 'e', 'f', 'g'}):      'G',   # measured 2026-10-31
+    frozenset({'a', 'c', 'd', 'e', 'f', 'g'}): 'G',   # earlier guess, kept
     frozenset({'b', 'c', 'd', 'e', 'f', 'g'}): 'A',
     frozenset({'a', 'b', 'c', 'd', 'f', 'g'}): 'B',
 }
 
+# Chord accidental, in the tempo hundreds column (C1 c0): row 7 alone is a
+# flat, rows 6+7 a sharp. The piano spells black-key roots Db, Eb, F#, Ab, Bb
+# (captures/campaign_2026-10-31.log, chord_roots_all12).
+CHORD_ACCIDENTAL = (1, 0)   # (char, col)
+
 
 def decode_chord_letter(cgram):
-    """Return the currently displayed chord root letter, or None if
-    the pattern doesn't match a known letter."""
+    """Return the currently displayed chord root with its accidental
+    ("C", "Eb", "F#"), or None if the pattern doesn't match a known letter."""
     segs = set()
     for row, seg in BARGRAPH_ROW_TO_SEG.items():
         if (cgram[5 * 8 + row] >> (4 - 0)) & 1:
             segs.add(seg)
-    return CHORD_LETTER_TABLE.get(frozenset(segs))
+    letter = CHORD_LETTER_TABLE.get(frozenset(segs))
+    if not letter or not letter.strip():
+        return letter
+    ch, col = CHORD_ACCIDENTAL
+    r6 = (cgram[ch * 8 + 6] >> (4 - col)) & 1
+    r7 = (cgram[ch * 8 + 7] >> (4 - col)) & 1
+    return letter + ('#' if r6 and r7 else 'b' if r7 else '')
 
 
 # ---------- Transpose note-name decoder (C6 c3 + sharp at C2:r6:c3) ----------

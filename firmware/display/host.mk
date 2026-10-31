@@ -11,10 +11,14 @@ CC     = gcc
 CFLAGS = -DPICO_ON_DEVICE=0 -Isrc -Wall -Wextra -O2
 OUT    = build-host
 
-test: $(OUT)/testpipe
+test: $(OUT)/testpipe $(OUT)/testchords
 	./$(OUT)/testpipe ../../captures/session_092906.log
+	./$(OUT)/testchords ../../captures/campaign_2026-10-31.log
 
 $(OUT)/testpipe: src/test_pipeline.c src/pr53_decode.c | $(OUT)
+	$(CC) $(CFLAGS) $^ -o $@
+
+$(OUT)/testchords: src/test_chords.c src/pr53_decode.c | $(OUT)
 	$(CC) $(CFLAGS) $^ -o $@
 
 # Also compile render + font + ili stubs to catch build breakage.
