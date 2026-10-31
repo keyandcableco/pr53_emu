@@ -26,7 +26,7 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
 ## Architecture
 
     tap UART --> core0: bus_get_byte_timeout() -> hd44780_feed()
-                        on DISP_CTRL 0x0C, or 30 ms of quiet after writes
+                        on DISP_CTRL 0x0C, or 60 ms of quiet after writes
                         -> pr53_decode_all() -> state
                                                                    |
                                                        seqlock (lock-free)
@@ -35,9 +35,10 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
 
 - **Commit gating:** a frame is published on the piano's own DISP_CTRL (0x0C)
   command, so the screen shows settled frames, never half-written ones. Menus
-  are written without a DISP_CTRL afterwards, so writes followed by 30 ms of
-  quiet (`SETTLE_US` in `main.c`) are published too; the piano's own updates
-  have ~4 ms gaps, so that only fires once a burst is over.
+  are written without a DISP_CTRL afterwards, so writes followed by 60 ms of
+  quiet (`SETTLE_US` in `main.c`) are published too. Gaps inside one update
+  reach 30 ms and the piano refreshes every ~105 ms, so that fires once an
+  update is over and before the next tick.
 - **Layout:** follows the printed frame of the original glass: TEMPO, CHORD and
   PAGE/TRANSPOSE boxes on top, the two text lines in a big box, the part meters
   between two dotted rules. Numbers are 7-segment digits with faint ghost

@@ -21,9 +21,10 @@ extern bool bus_get_byte(uint8_t *out_byte, bool *out_is_data);
 extern bool bus_get_byte_timeout(uint8_t *out_byte, bool *out_is_data, uint32_t timeout_us);
 
 // If the piano writes and then goes quiet this long without a DISP_CTRL,
-// publish anyway. Its updates have ~4 ms gaps between CGRAM rows, so 30 ms
-// only fires once a burst is over.
-#define SETTLE_US 30000
+// publish anyway. In the 2026-10-31 captures, gaps inside one update reach
+// 30 ms and the piano's refresh tick is ~105 ms, so 60 ms fires once an update
+// is over and still well before the next tick.
+#define SETTLE_US 60000
 
 // ---- core1: render loop ----
 static void core1_main(void) {

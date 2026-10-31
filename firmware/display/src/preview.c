@@ -18,7 +18,7 @@
 
 // Same quiet-bus rule as main.c: writes not followed by a DISP_CTRL are
 // published once the bus has been quiet this long (tap timestamps, in us).
-#define SETTLE_US 30000
+#define SETTLE_US 60000
 
 static int parse_event(const char *ln, int *is_data, unsigned *byte, unsigned long *t_us) {
     if (!strstr(ln, " W ")) return 0;

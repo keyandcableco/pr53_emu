@@ -130,7 +130,8 @@ void render_static(void) {
     font_box(TEMPO_X, TOP_Y, TEMPO_W, TOP_H, COL_RULE);
     font_box(CHORD_X, TOP_Y, CHORD_W, TOP_H, COL_RULE);
     font_box(RIGHT_X, TOP_Y, RIGHT_W, HALF_H, COL_RULE);
-    font_box(RIGHT_X, TOP_Y + HALF_H, RIGHT_W, TOP_H - HALF_H, COL_RULE);
+    // lower box starts on the upper box's bottom line, so they share one rule
+    font_box(RIGHT_X, TOP_Y + HALF_H - 1, RIGHT_W, TOP_H - HALF_H + 1, COL_RULE);
     font_text(TEMPO_X + 6, TOP_Y + 5, "TEMPO", 1, COL_PRINT);
     font_text(CHORD_X + 6, TOP_Y + 5, "CHORD", 1, COL_PRINT);
     font_text(RIGHT_X + 6, TOP_Y + 5, "PAGE", 1, COL_PRINT);
