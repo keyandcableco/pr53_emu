@@ -36,7 +36,7 @@ piano CPU ── HD44780 bus (CN1) ──► carrier J1 ─ level shifters ─�
 
 | Path | What |
 |---|---|
-| [`firmware/tap/`](firmware/tap/) | Tap firmware (v16) for the RP2350-Zero: capture, read responses, USB log, display link |
+| [`firmware/tap/`](firmware/tap/) | Tap firmware (v17) for the RP2350-Zero: capture, read responses, USB log, display link |
 | [`firmware/display/`](firmware/display/) | Display firmware for the Pico 2: decoders, renderer, panel driver, host test |
 | [`tools/`](tools/) | Python: live display mock, recorder, offline analyzer, segment-mapping tools |
 | [`captures/`](captures/) | Bus recordings from the piano, including the host test's ground-truth frame |

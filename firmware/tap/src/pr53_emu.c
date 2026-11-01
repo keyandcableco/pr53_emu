@@ -1,4 +1,4 @@
-// pr53_emu.c v16 — HD44780 bus tap for the SX-PR53, with display link
+// pr53_emu.c v17 — HD44780 bus tap for the SX-PR53, with display link
 //
 // PIO0 captures every write (reads are skipped at the PIO) into a 2048-slot
 // ring. PIO1 answers every read with busy=0 and the address counter, so the
@@ -8,7 +8,11 @@
 // History: v14 dropped events during bursts and the decoded display went
 // garbled once a SET_CGRAM/SET_DDRAM byte was lost. v15 fixed that by
 // skipping reads at the PIO and quadrupling the ring. v16 adds the display
-// link. The USB log format is unchanged since v14.
+// link. v17 answers reads with the live address counter: v16 kept two answers
+// queued ahead, so every read got one computed a read or two earlier, and the
+// piano (which checks it) put off the rest of a line, sometimes for minutes.
+// v17 also starts answering reads before the wait for USB. The USB log
+// format is unchanged since v14.
 
 #include <stdio.h>
 #include <string.h>
@@ -131,7 +135,10 @@ static void pio_capture_init(void) {
     pio_sm_set_enabled(pio0, pio_cap_sm, true);
 }
 
-// === PIO1: Paired read response (unchanged) ===
+// === PIO1: Paired read response ===
+// Each paired read does one non-blocking pull: a queued answer if there is
+// one, else the last answer again (kept in X). Core 1 keeps at most one
+// answer queued, the live one (see set_read_answer).
 static void pio_read_response_init(void) {
     uint16_t prog[17] = {
         0x20A7, 0x2027, 0x00C4, 0x0000, 0x8080,
@@ -166,6 +173,13 @@ static inline uint32_t pack_ac(uint8_t ac_val) {
     uint8_t hi = (ac_val >> 4) & 0x07;
     uint8_t lo = ac_val & 0x0F;
     return (uint32_t)(lo << 4) | hi;
+}
+
+// Replace whatever answer is queued with this one, so the next read gets the
+// live address counter. PIO1's RX FIFO is unused, so clearing both is safe.
+static inline void set_read_answer(uint8_t ac_val) {
+    pio_sm_clear_fifos(pio1, pio_rd_sm);
+    pio_sm_put(pio1, pio_rd_sm, pack_ac(ac_val));
 }
 
 static void push_event(uint32_t us, uint8_t byte, uint8_t rs, uint8_t rw) {
@@ -215,6 +229,7 @@ static void __not_in_flash_func(core1_entry)(void) {
                 if (cg) ac = (ac + (inc ? 1 : -1)) & 0x3F;
                 else    ac = (ac + (inc ? 1 : -1)) & 0x7F;
             }
+            if (ac != current_ac) set_read_answer(ac);
             current_ac = ac;
 
             pending_nib = -1; pending_rs = -1;
@@ -262,13 +277,10 @@ static const char *decode_cmd(uint8_t b, char *buf, size_t bufsz) {
 
 int main(void) {
     stdio_init_all();
-    for (int i = 0; i < 30 && !stdio_usb_connected(); i++)
-        sleep_ms(100);
 
-    printf("\n# SX-PR53 bus dumper v16 (v15 + UART display link on GP8)\n");
-    printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
-    printf("# ready — power-cycle piano now\n\n");
-
+    // Answer the piano's reads and capture its writes straight away, before
+    // waiting for a USB host: a piano already running must not see its busy
+    // checks go unanswered. Writes before USB is up wait in the ring.
     current_ac = 0;
     ring_head = ring_tail = drop_count = 0;
 
@@ -283,18 +295,21 @@ int main(void) {
     // for your USB log. If uart-stdio is left on, console text could contend
     // with capture pins or the protocol bytes and corrupt the display stream.
     disp_uart_init();                 // bring up the display link
-    pio_sm_put(pio1, pio_rd_sm, pack_ac(0));
+    set_read_answer(0);
 
     multicore_launch_core1(core1_entry);
+
+    for (int i = 0; i < 30 && !stdio_usb_connected(); i++)
+        sleep_ms(100);
+
+    printf("\n# SX-PR53 bus dumper v17 (live address counter on reads)\n");
+    printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
+    printf("# ready — power-cycle piano now\n\n");
 
     absolute_time_t next_alive = make_timeout_time_ms(2000);
     uint32_t last_drops = 0;
 
     while (true) {
-        if (pio_sm_get_tx_fifo_level(pio1, pio_rd_sm) < 2) {
-            pio_sm_put(pio1, pio_rd_sm, pack_ac(current_ac));
-        }
-
         uint32_t h = ring_head;
         uint32_t t = ring_tail;
         while (t != h) {

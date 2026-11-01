@@ -1,4 +1,4 @@
-# Tap firmware (v16)
+# Tap firmware (v17)
 
 Runs on a Waveshare RP2350-Zero on the carrier board. It listens to the
 piano's HD44780 bus, answers the CPU's read cycles so it never stalls, logs
@@ -6,7 +6,10 @@ every write over USB, and forwards each write to the display Pico.
 
 - **PIO0** captures each write strobe (RS, R/W, DB4-DB7) into a 2048-slot
   ring buffer. Reads are skipped at the PIO.
-- **PIO1** answers every read with busy = 0 and the current address counter.
+- **PIO1** answers every read with busy = 0 and the live address counter.
+  The piano checks that address: v16 answered with one queued a read or two
+  earlier, and the piano then put off the rest of a line, sometimes for
+  minutes (a line stuck on "SX-PR53" after start-up, menus cut short).
 - **USB** carries a text log of every write (format below).
 - **UART** (one-way, to the display) carries every write as two bytes.
 
@@ -51,8 +54,8 @@ and the display catches up on the piano's next DISP_CTRL commit.
 Hold BOOT on the Zero while plugging in USB-C, then copy `build/pr53_emu.uf2`
 onto the RP2350 drive.
 
-## Known issues
+## Start-up
 
-- At start-up it waits up to 3 s for a USB host before starting the capture
-  and the read responder. Without USB, the piano's first busy checks go
-  unanswered for those 3 s. It should start the read responder first.
+It answers reads and captures writes as soon as it starts, then waits up to
+3 s for a USB host before logging. (v16 waited first, so a piano already
+running saw its busy checks go unanswered for those 3 s.)
