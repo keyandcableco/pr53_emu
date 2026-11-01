@@ -20,7 +20,7 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       test_pipeline.c         Host test: feeds a real capture through the decoder
       test_chords.c           Host test: replays the chord-root campaign
       test_numbers.c          Host test: part numbers and meters, from volume sweeps
-      test_menus.c            Host test: menu page readout, MENU/PAGE and arrows
+      test_menus.c            Host test: page and item readouts, MENU/PAGE, arrows, pointers
       preview.c               Host tool: draws a capture moment as an image
     CMakeLists.txt            Pico SDK build -> pr53_fw.uf2
     host.mk                   Build, test and preview on a PC
@@ -113,7 +113,8 @@ eight ways (see `src/colour_test.c`).
 
 ## Not decoded yet
 
-- The item number beside line 2 (the manual's "01" on a disk's file list).
+- The tens digit of the item number beside line 2 (needed past 9, e.g. a
+  disk's file list).
 - Chord types, the MIDI icon and most of the shaped labels on the glass.
   `docs/front-panel.md` lists what's known.
 

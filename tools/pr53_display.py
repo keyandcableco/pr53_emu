@@ -339,10 +339,35 @@ def decode_menu_page_flags(cgram):
             'up': lit(PAGE_UP_BIT), 'down': lit(PAGE_DOWN_BIT)}
 
 
+# Item number beside line 2: a rhythm's or voice's number in its group, a
+# disk's file number. Ones digit in C6 c0 (bargraph row order); the tens digit
+# hasn't lit in any capture, so it isn't mapped.
+ITEM_ONES_CELL = (6, 0)
+
+
+def decode_item_readout(cgram):
+    """Return the item number as ' 1'..' 9', or None when it's blank."""
+    d = _digit_at(cgram, *ITEM_ONES_CELL, BARGRAPH_ROW_TO_SEG)
+    return None if d in (' ', '?') else ' ' + d
+
+
 def decode_small_display(cgram, which):
-    """The two small readouts left of the text lines: the top one is the page
-    readout; the bottom one isn't mapped yet."""
-    return decode_page_readout(cgram) if which == 'top' else None
+    """The two small readouts left of the text lines: the menu page beside
+    line 1, the item number beside line 2."""
+    return decode_page_readout(cgram) if which == 'top' else decode_item_readout(cgram)
+
+
+# The pointer under each part: row 7 of its ones column (parts 1-5) or of its
+# meter column (parts 6-8). All lit on the play screen; in a menu, only under
+# the part whose buttons change the setting (LEFT through the Sound menu, as
+# the owner's manual shows on p. 21). (char, row, col) per part.
+PART_POINTER_BITS = [(5, 7, 2), (5, 7, 1), (7, 7, 4), (7, 7, 3), (7, 7, 2),
+                     (6, 7, 4), (7, 7, 0), (7, 7, 1)]
+
+
+def decode_part_pointer(cgram, part_idx):
+    ch, r, c = PART_POINTER_BITS[part_idx]
+    return bool((cgram[ch * 8 + r] >> (4 - c)) & 1)
 
 
 def decode_bargraph_level(cgram, part_idx):
@@ -932,7 +957,7 @@ class App:
                            anchor='center', spacing=2, on=on)
             # ---- down arrow ----
             self._seg_text(cx, top + meter_bars * (bh + gap) + 40, '\u25BC',
-                           14, anchor='center')
+                           14, anchor='center', on=decode_part_pointer(cgram, part))
             # ---- printed panel label (not an electrode) ----
             self._seg_text(cx, self.H - 14, PART_NAMES[part], 11,
                            anchor='center', bold=False, fill=GLASS_PRINT)

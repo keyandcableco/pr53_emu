@@ -36,6 +36,7 @@ void state_init(void) {
     g_state.line1[0] = 0;
     g_state.line2[0] = 0;
     g_state.page[0] = 0;
+    g_state.item[0] = 0;
     g_state.frame_serial = 0;
 }
 

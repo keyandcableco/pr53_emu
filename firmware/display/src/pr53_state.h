@@ -34,10 +34,12 @@ typedef struct {
     char     line1[PR53_TEXT_LEN + 1];  // voice name (DDRAM 0x00..0x0B)
     char     line2[PR53_TEXT_LEN + 1];  // rhythm name (DDRAM 0x40..0x4B)
     char     page[3];            // menu page readout beside line 1, e.g. "P1" ("" if none)
+    char     item[3];            // item number beside line 2, e.g. " 2" ("" if none)
 
     // --- BOTTOM zone: 8 bargraphs ---
     int16_t  part_value[PR53_NUM_PARTS];  // 0..127, or -1 if not decodable
     uint8_t  part_level[PR53_NUM_PARTS];  // meter fill 0..5
+    bool     pointer[PR53_NUM_PARTS];     // the pointer under each part
 
     // Split indicators (LEFT/RIGHT keyboard graphic), if you wire them later.
     bool     split_left;

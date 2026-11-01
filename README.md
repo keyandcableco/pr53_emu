@@ -24,8 +24,9 @@ piano CPU ── HD44780 bus (CN1) ──► carrier J1 ─ level shifters ─�
   RP2350s; the TFT draws the PR53 layout and shows the piano's text.
 - **Decoded:** the text lines, tempo, chord root with its flat/sharp,
   transpose, all eight part meters and numbers (hundreds included), and the
-  menu page readout with MENU, PAGE and the PAGE arrows.
-- **Not decoded yet:** chord types, the item number beside line 2, and many
+  menu page and item readouts with MENU, PAGE, the PAGE arrows and the
+  part pointers.
+- **Not decoded yet:** chord types, the item number's tens digit, and many
   of the shaped labels on the glass (MIDI and more).
   [`docs/front-panel.md`](docs/front-panel.md) tracks the front-panel decode.
 - **Carrier v2 works, with one change when you build it:** fit J2 on the

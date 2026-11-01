@@ -37,6 +37,7 @@
 #define LABEL_X    (M + 8)
 #define LINE1_Y    (TEXT_BOX_Y + 14)
 #define LINE2_Y    (TEXT_BOX_Y + 66)
+#define READOUT_X  (TEXT_X - 50)       // page / item readouts, just left of the text
 #define TEXT_SCALE 4                  // 5x7 font at x4: 24 px advance, 28 px tall
 #define TEXT_X     (ILI_W - M - 6 - 12 * 6 * TEXT_SCALE + TEXT_SCALE)
 
@@ -157,10 +158,10 @@ static void seg7_number(int x, int y, int n, int w, int h, int t, int gap, int s
 }
 
 // ========================= SCREEN STATE =========================
-// The glass shows the RIGHT 1 / RHYTHM labels and the part pointers on the
-// normal display, and hides them (with the meters) on RHYTHM and menu
-// screens. Until those segments are mapped, take "any part has a volume
-// shown" to mean the normal display.
+// The glass shows the RIGHT 1 / RHYTHM labels, and "---" for a muted part, on
+// the normal display, and hides them (with the meters) on RHYTHM and menu
+// screens. Until the label segments are mapped, take "any part has a volume
+// shown" to mean the normal display. (The pointers are decoded per part.)
 static bool normal_display(const DisplayState *s) {
     for (int p = 0; p < PR53_NUM_PARTS; p++)
         if (s->part_value[p] >= 0) return true;
@@ -220,13 +221,13 @@ static void draw_page_box(bool menu, bool page, bool up, bool down) {
     if (down) pointer(RIGHT_X + 64, TOP_Y + 22, 12, COL_SEG);
 }
 
-// The menu page readout ("P1") beside line 1, in 7-segment cells. It shares
-// the label area with RIGHT 1, so it's drawn on menu screens only.
-static void draw_page(const char *page) {
+// A two-cell 7-segment readout just left of a text line: the menu page
+// ("P1") beside line 1, the item number beside line 2.
+static void draw_readout(int y, const char *s) {
     int w = 14, h = 28, gap = 4, slant = 3;
-    clear_field(LABEL_X, LINE1_Y, 2 * w + gap + slant + 1, h);
-    for (int i = 0; i < 2 && page[i]; i++)
-        seg7(LABEL_X + i * (w + gap), LINE1_Y, w, h, 3, slant, page[i], false);
+    clear_field(READOUT_X, y, 2 * w + gap + slant + 1, h);
+    for (int i = 0; i < 2 && s[i]; i++)
+        seg7(READOUT_X + i * (w + gap), y, w, h, 3, slant, s[i], false);
 }
 
 static void draw_line(int y, const char *text) {
@@ -257,13 +258,13 @@ static void draw_meter(int part, int level) {
     }
 }
 
-static void draw_number(int part, int value, bool pointer_on) {
+static void draw_number(int part, int value, bool dashes, bool pointer_on) {
     int w = 12, gap = 4, slant = 3, total = 3 * w + 2 * gap + slant;
     int x = M + COL_W * part + (COL_W - total) / 2;
     // on the normal display a part without a readable volume shows "---",
     // as the glass does for a muted part
     seg7_number(x, NUM_Y, 3, w, 24, 3, gap, slant,
-                (value < 0 && pointer_on) ? -2 : value, false);
+                (value < 0 && dashes) ? -2 : value, false);
     int cx = M + COL_W * part + COL_W / 2;
     clear_field(cx - 9, PTR_Y, 18, 9);
     if (pointer_on) pointer(cx, PTR_Y, 16, COL_SEG);
@@ -285,8 +286,8 @@ void render_frame(const DisplayState *s) {
 
     // Text box
     if (first || normal != was_normal) draw_labels(normal);
-    if (!normal && (first || normal != was_normal || strcmp(s->page, last.page)))
-        draw_page(s->page);
+    if (first || strcmp(s->page, last.page)) draw_readout(LINE1_Y, s->page);
+    if (first || strcmp(s->item, last.item)) draw_readout(LINE2_Y, s->item);
     if (first || strcmp(s->line1, last.line1)) draw_line(LINE1_Y, s->line1);
     if (first || strcmp(s->line2, last.line2)) draw_line(LINE2_Y, s->line2);
 
@@ -294,8 +295,9 @@ void render_frame(const DisplayState *s) {
     for (int p = 0; p < PR53_NUM_PARTS; p++) {
         if (first || s->part_level[p] != last.part_level[p])
             draw_meter(p, s->part_level[p]);
-        if (first || s->part_value[p] != last.part_value[p] || normal != was_normal)
-            draw_number(p, s->part_value[p], normal);
+        if (first || s->part_value[p] != last.part_value[p] || normal != was_normal ||
+            s->pointer[p] != last.pointer[p])
+            draw_number(p, s->part_value[p], normal, s->pointer[p]);
     }
 
     last = *s;

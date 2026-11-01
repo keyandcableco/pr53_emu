@@ -289,6 +289,26 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
         out->page_down = cell_bit(cg, 3, 6, 1);
     }
 
+    // Item number beside line 2: a rhythm's or voice's number in its group, a
+    // disk's file number. Its ones digit is C6 c0, bargraph row order; the
+    // tens digit hasn't lit in any capture, so it isn't mapped.
+    {
+        char d = digit_at(cg, 6, 0, BAR_ROW_SEG);
+        memset(out->item, 0, sizeof(out->item));
+        if (d != ' ' && d != '?') { out->item[0] = ' '; out->item[1] = d; }
+    }
+
+    // The pointer under each part: row 7 of its ones column (DRUMS to BASS)
+    // or of its meter column (LEFT, RIGHT 2, RIGHT 1). All lit on the play
+    // screen; in a menu, only under the part whose buttons change the setting.
+    {
+        static const uint8_t PTR[PR53_NUM_PARTS][2] = {
+            {5, 2}, {5, 1}, {7, 4}, {7, 3}, {7, 2}, {6, 4}, {7, 0}, {7, 1},
+        };
+        for (int p = 0; p < PR53_NUM_PARTS; p++)
+            out->pointer[p] = cell_bit(cg, PTR[p][0], 7, PTR[p][1]);
+    }
+
     for (int p = 0; p < PR53_NUM_PARTS; p++) {
         int v = pr53_decode_bargraph_number(cg, p);
         out->part_value[p] = (int16_t)v;

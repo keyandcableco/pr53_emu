@@ -21,7 +21,7 @@ test: $(OUT)/testpipe $(OUT)/testchords $(OUT)/testnumbers $(OUT)/testmenus
 	./$(OUT)/testpipe ../../captures/session_092906.log
 	./$(OUT)/testchords ../../captures/campaign_2026-10-31.log ../../captures/session_064015.log
 	./$(OUT)/testnumbers ../../captures/session_071830.log ../../captures/campaign_2026-10-31.log
-	./$(OUT)/testmenus ../../captures/menus_2026-10-31.log
+	./$(OUT)/testmenus ../../captures/menus_2026-10-31.log ../../captures/restart_tap_v18_2026-10-31.log
 
 $(OUT)/testpipe: src/test_pipeline.c src/pr53_decode.c | $(OUT)
 	$(CC) $(CFLAGS) $^ -o $@

@@ -17,11 +17,12 @@ What the original display shows, as far as the decoders know so far:
 | Text line 1 and 2 (12 characters each): voice, rhythm, menu text | Character ROM | Yes, codes up to 0x7F. Codes above 0x7F (seen in the LCD test) have no glyphs yet |
 | Tempo (3 digits) | CGRAM segments | Yes |
 | Chord name (root, sharp/flat, type) | CGRAM segments | Root and flat/sharp: yes (C5 c0; accidental in C1 c0 rows 6-7). Type: not yet |
-| Rhythm number in the group (1, 2, 3 ...) | CGRAM segments | Found at C6 c0 on the RHYTHM screen, standard 7-segment; not drawn yet |
+| Rhythm or voice number in its group (1, 2, 3 ...) | CGRAM segments | Yes: the item readout beside line 2 (below) |
 | Transpose (note name, arrows) | CGRAM segments | Yes |
 | Eight part meters (bars) | CGRAM segments | Yes |
 | Eight part numbers (3 digits) | CGRAM segments | Yes, hundreds included |
-| Two small 2-digit readouts left of the text lines | CGRAM segments | Top one (menu page, "P1" to "P7"): yes. Bottom one (item number, "01"): not yet |
+| Two small 2-digit readouts left of the text lines | CGRAM segments | Top one (menu page, "P1" to "P7"): yes. Bottom one (item number): ones digit yes, tens digit not yet |
+| The pointer under each part | CGRAM segments | Yes |
 | Shaped labels and arrows (RIGHT, LEFT, RHYTHM, MIDI, MENU/PAGE, PROG ...) | CGRAM segments | MENU, PAGE and the PAGE arrows: yes. The rest: partly |
 
 The LCD test (`captures/lcd_test_mode_2026-10-31.log`) lit all 320 CGRAM
@@ -49,8 +50,15 @@ instead of mapped bit by bit:
   in the spare row 6 of C2/C3: up (a following page) C2 c1, down (a previous
   page) C3 c1, MENU C2 c4, PAGE C3 c0. PAGE without MENU shows on the
   sequencer's play screen. The owner's manual (p. 20) also shows an item
-  number ("01") beside line 2 on a disk's file list; that one isn't mapped.
-  From the Sound-menu walk in `captures/menus_2026-10-31.log`.
+  number ("01") beside line 2 on a disk's file list. That readout also shows a
+  rhythm's or voice's number in its group (Soul 1, Spanish Gtr 2): its ones
+  digit is C6 c0; the tens digit hasn't lit in any capture. From the
+  Sound-menu walk in `captures/menus_2026-10-31.log` and the voice and rhythm
+  presses in `captures/restart_tap_v18_2026-10-31.log`.
+- **The pointer under each part** is row 7 of its ones column (DRUMS to
+  BASS) or of its meter column (LEFT, RIGHT 2, RIGHT 1). All eight show on
+  the play screen; in a menu only the part whose buttons change the setting
+  (LEFT on every Sound-menu page, as on p. 21 of the owner's manual).
 - **The transpose key (C6 c3)** uses the chord's letter font, and its
   accidental works the same way: C2 r6 c3 alone is a flat, and with C6 c3
   r7 it's a sharp. The piano spells Db, Eb, F#, Ab, Bb, over G to F# (-5 to
