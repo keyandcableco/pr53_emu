@@ -167,9 +167,11 @@ static void pio_read_response_init(void) {
         gpio_pull_down(i);
     }
     pio_sm_init(pio1, pio_rd_sm, offset, &c);
+    // Queue the one answer before enabling: X isn't cleared at start, so a
+    // read could otherwise get whatever X held.
+    pio_sm_put(pio1, pio_rd_sm, 0);   // every read answers 0000, 0000
     pio_sm_set_enabled(pio1, pio_rd_sm, true);
 }
-
 
 static void push_event(uint32_t us, uint8_t byte, uint8_t rs, uint8_t rw) {
     uint32_t h = ring_head;
@@ -267,8 +269,6 @@ int main(void) {
     // for your USB log. If uart-stdio is left on, console text could contend
     // with capture pins or the protocol bytes and corrupt the display stream.
     disp_uart_init();                 // bring up the display link
-    pio_sm_put(pio1, pio_rd_sm, 0);   // every read answers 0000, 0000
-
     multicore_launch_core1(core1_entry);
 
     // No wait for a USB host: logging starts at once, and the banner is lost
