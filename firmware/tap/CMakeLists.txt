@@ -1,4 +1,4 @@
-# Tap firmware (v17) for the RP2350-Zero.
+# Tap firmware (v18) for the RP2350-Zero.
 #
 # Reads the piano's HD44780 bus, answers its read cycles, logs every write
 # over USB, and forwards each write to the display Pico over a one-way UART

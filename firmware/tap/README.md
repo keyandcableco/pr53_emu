@@ -1,4 +1,4 @@
-# Tap firmware (v17)
+# Tap firmware (v18)
 
 Runs on a Waveshare RP2350-Zero on the carrier board. It listens to the
 piano's HD44780 bus, answers the CPU's read cycles so it never stalls, logs
@@ -6,10 +6,13 @@ every write over USB, and forwards each write to the display Pico.
 
 - **PIO0** captures each write strobe (RS, R/W, DB4-DB7) into a 2048-slot
   ring buffer. Reads are skipped at the PIO.
-- **PIO1** answers every read with busy = 0 and the live address counter.
-  The piano checks that address: v16 answered with one queued a read or two
-  earlier, and the piano then put off the rest of a line, sometimes for
-  minutes (a line stuck on "SX-PR53" after start-up, menus cut short).
+- **PIO1** answers every read with all zeros: busy clear, address 0. Up to
+  v17 it sent busy = 0 plus the address counter, but the piano often takes
+  the low half of that answer as its busy flag (address bit 3 on DB7): about
+  half its data writes at addresses with bit 3 set waited out a 3.8 ms
+  timeout, and it ran out of time to finish text lines ("ConcertGran", line 2
+  left on "SX-PR53", "MEM&CONTRO"). Zeros read as not busy either way. The
+  piano has never been given a correct address and copes without one.
 - **USB** carries a text log of every write (format below).
 - **UART** (one-way, to the display) carries every write as two bytes.
 
@@ -56,7 +59,7 @@ onto the RP2350 drive.
 
 ## Start-up
 
-It answers reads, captures and forwards writes as soon as it starts. (v16
-first waited up to 3 s for a USB host, so a piano already running saw its
+It answers reads, captures and forwards writes as soon as it starts. (Up to
+v16 it first waited up to 3 s for a USB host, so a piano already running saw its
 busy checks go unanswered for that long.) The banner only reaches a host
 that's already listening.

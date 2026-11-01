@@ -1,18 +1,20 @@
-// pr53_emu.c v17 — HD44780 bus tap for the SX-PR53, with display link
+// pr53_emu.c v18 — HD44780 bus tap for the SX-PR53, with display link
 //
 // PIO0 captures every write (reads are skipped at the PIO) into a 2048-slot
-// ring. PIO1 answers every read with busy=0 and the address counter, so the
-// piano's CPU never stalls. Each write is logged over USB and forwarded to
+// ring. PIO1 answers every read with all zeros (busy clear), so the piano's
+// CPU never stalls. Each write is logged over USB and forwarded to
 // the display Pico over a one-way UART (uart1 TX on GP8, 1 Mbaud).
 //
 // History: v14 dropped events during bursts and the decoded display went
 // garbled once a SET_CGRAM/SET_DDRAM byte was lost. v15 fixed that by
 // skipping reads at the PIO and quadrupling the ring. v16 adds the display
-// link. v17 answers reads with the live address counter: v16 kept two answers
-// queued ahead, so every read got one computed a read or two earlier, and the
-// piano (which checks it) put off the rest of a line, sometimes for minutes.
-// v17 also starts at once instead of waiting up to 3 s for USB first. The
-// USB log format is unchanged since v14.
+// link. v17 starts at once instead of waiting up to 3 s for USB first. v18
+// answers every read with all zeros: v16/v17 answered busy=0 plus the address
+// counter, but the piano often reads the low half of that answer as its busy
+// flag (address bit 3 on DB7), waits 3.8 ms for it to clear, and runs out of
+// time to finish its text lines (seen: "ConcertGran", line 2 left on
+// "SX-PR53"). Zeros read as "not busy" whichever half it reads. The USB log
+// format is unchanged since v14.
 
 #include <stdio.h>
 #include <string.h>
@@ -100,7 +102,6 @@ static volatile uint32_t drop_count;
 
 static uint pio_cap_sm;
 static uint pio_rd_sm;
-static volatile uint8_t current_ac;
 
 // === PIO0: Skip reads, capture writes only (v13-style) ===
 //   0: wait 1 pin 7
@@ -137,8 +138,8 @@ static void pio_capture_init(void) {
 
 // === PIO1: Paired read response ===
 // Each paired read does one non-blocking pull: a queued answer if there is
-// one, else the last answer again (kept in X). Core 1 keeps at most one
-// answer queued, the live one (see set_read_answer).
+// one, else the last answer again (kept in X). main() queues a single zero,
+// so every nibble of every read is 0000.
 static void pio_read_response_init(void) {
     uint16_t prog[17] = {
         0x20A7, 0x2027, 0x00C4, 0x0000, 0x8080,
@@ -169,18 +170,6 @@ static void pio_read_response_init(void) {
     pio_sm_set_enabled(pio1, pio_rd_sm, true);
 }
 
-static inline uint32_t pack_ac(uint8_t ac_val) {
-    uint8_t hi = (ac_val >> 4) & 0x07;
-    uint8_t lo = ac_val & 0x0F;
-    return (uint32_t)(lo << 4) | hi;
-}
-
-// Replace whatever answer is queued with this one, so the next read gets the
-// live address counter. PIO1's RX FIFO is unused, so clearing both is safe.
-static inline void set_read_answer(uint8_t ac_val) {
-    pio_sm_clear_fifos(pio1, pio_rd_sm);
-    pio_sm_put(pio1, pio_rd_sm, pack_ac(ac_val));
-}
 
 static void push_event(uint32_t us, uint8_t byte, uint8_t rs, uint8_t rw) {
     uint32_t h = ring_head;
@@ -200,9 +189,6 @@ static void __not_in_flash_func(core1_entry)(void) {
     int pending_nib = -1;
     int pending_rs = -1;
     uint32_t pending_us = 0;
-    uint8_t ac = 0;
-    bool cg = false;
-    bool inc = true;
 
     while (true) {
         while (!pio_sm_is_rx_fifo_empty(pio0, pio_cap_sm)) {
@@ -219,18 +205,6 @@ static void __not_in_flash_func(core1_entry)(void) {
 
             uint8_t b = ((uint8_t)pending_nib << 4) | nib;
             push_event(pending_us, b, pending_rs, 0);
-
-            if (pending_rs == 0) {
-                if (b <= 0x03) { ac = 0; cg = false; }
-                else if ((b & 0xFC) == 0x04) inc = (b & 0x02) != 0;
-                else if ((b & 0xC0) == 0x40) { ac = b & 0x3F; cg = true; }
-                else if (b & 0x80) { ac = b & 0x7F; cg = false; }
-            } else {
-                if (cg) ac = (ac + (inc ? 1 : -1)) & 0x3F;
-                else    ac = (ac + (inc ? 1 : -1)) & 0x7F;
-            }
-            if (ac != current_ac) set_read_answer(ac);
-            current_ac = ac;
 
             pending_nib = -1; pending_rs = -1;
         }
@@ -280,7 +254,6 @@ int main(void) {
 
     // Answer the piano's reads and capture its writes straight away: a piano
     // already running must not see its busy checks go unanswered.
-    current_ac = 0;
     ring_head = ring_tail = drop_count = 0;
 
     pio_capture_init();
@@ -294,14 +267,14 @@ int main(void) {
     // for your USB log. If uart-stdio is left on, console text could contend
     // with capture pins or the protocol bytes and corrupt the display stream.
     disp_uart_init();                 // bring up the display link
-    set_read_answer(0);
+    pio_sm_put(pio1, pio_rd_sm, 0);   // every read answers 0000, 0000
 
     multicore_launch_core1(core1_entry);
 
     // No wait for a USB host: logging starts at once, and the banner is lost
     // if nothing is listening yet. The ring drains (and feeds the display)
     // from the start either way.
-    printf("\n# SX-PR53 bus dumper v17 (live address counter on reads)\n");
+    printf("\n# SX-PR53 bus dumper v18 (reads answered with zeros)\n");
     printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
     printf("# ready\n\n");
 
