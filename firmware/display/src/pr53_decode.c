@@ -276,7 +276,7 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
     // bargraph row order ("P1" to "P7" through the Sound menu). The MENU and
     // PAGE words and the PAGE arrows are single bits in the spare row 6 of
     // C2/C3: up (a following page) C2 c1, down (a previous page) C3 c1, MENU
-    // C2 c4, PAGE C3 c0. The readout beside line 2 isn't mapped yet.
+    // C2 c4, PAGE C3 c0. (The item readout beside line 2 follows.)
     {
         char a = digit_at(cg, 1, 3, BAR_ROW_SEG), b = digit_at(cg, 1, 4, BAR_ROW_SEG);
         if (a == '?') a = ' ';

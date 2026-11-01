@@ -316,8 +316,8 @@ def decode_bargraph_number(cgram, part_idx):
 # Beside line 1 on menu screens: two digit cells, C1 c3 and c4 (bargraph row
 # order), reading "P1" to "P7" through the Sound menu. MENU, PAGE and the PAGE
 # arrows are single bits in the spare row 6 of C2/C3. From the Sound-menu
-# walk in captures/menus_2026-10-31.log. The readout beside line 2 isn't
-# mapped yet. Mirrors pr53_decode_all() in firmware/display/src/pr53_decode.c.
+# walk in captures/menus_2026-10-31.log. The item readout beside line 2 is
+# below. Mirrors pr53_decode_all() in firmware/display/src/pr53_decode.c.
 PAGE_CELLS = [(1, 3), (1, 4)]
 MENU_WORD_BIT = (2, 6, 4)
 PAGE_WORD_BIT = (3, 6, 0)
@@ -865,9 +865,10 @@ class App:
                      for x in ddram[0x40:0x40 + 12])
 
         # --- Two small 2-digit displays in the left gutter ---
-        # (top one aligns with line 1, bottom with line 2). The top one is the
-        # menu page readout ("P1"); the bottom one isn't mapped yet and shows
-        # '--'. The gutter box makes their position explicit.
+        # (top one aligns with line 1, bottom with line 2): the menu page
+        # readout ("P1") and the item number (a rhythm's or voice's number in
+        # its group). Blank shows '--'. The gutter box makes their position
+        # explicit.
         for (sy, tag) in ((y1, 'top'), (y2, 'bot')):
             g.create_rectangle(self.SMALL_X, sy - 22,
                                self.SMALL_X + self.SMALL_W, sy + 6,
@@ -913,8 +914,8 @@ class App:
                       dash=(3, 4))
 
     def _small_display(self, cgram, which):
-        """Two small 2-digit 7-seg displays: the top one is the menu page
-        readout; '--' where nothing is decoded (the bottom one, for now)."""
+        """Two small 2-digit 7-seg displays: the menu page readout (top) and
+        the item number (bottom); '--' when blank."""
         fn = globals().get('decode_small_display')
         if fn is not None:
             try:
