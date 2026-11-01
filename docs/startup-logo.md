@@ -63,7 +63,7 @@ against the captures:
 |---|---|
 | Display and piano powered together | The display is ready about 0.5 s after power-up (panel reset and set-up), then shows the logo. The piano's first LCD write comes later (not measured; its blank period alone lasts 2.6 s). Logo until "ConcertGrand", or until "ALL INITIAL" after a factory reset. |
 | Piano restarts while the display stays on | This happens today: since IP101 is open, the carrier runs from USB, not the piano's 5 V (`hardware/carrier/README.md`). The glass shows the empty frame, then the logo comes back when "Technics" arrives and goes when it's replaced. Only the moment "Technics" arrives brings it back, so a "Technics" screen that outlasts the 30 s limit doesn't bring it back again. |
-| Display restarts mid-session (reflash, brown-out) | The logo stays up until the piano sends a frame with anything lit, then the glass. If the piano sits idle and sends nothing, the 30 s limit hands back, to the empty glass you'd get today. It never comes back on a blank frame: after a mid-session restart the decoder only knows what the piano has rewritten since, so blank-looking frames are normal then, and treating them as a start-up would make the logo flicker in and out. |
+| Display restarts mid-session (reflash, brown-out) | The logo stays up until the piano sends a frame with anything lit, then the glass. If a frame is already waiting when the panel comes up, the logo only flashes for a few tens of ms. If the piano sits idle and sends nothing, the 30 s limit hands back, to the empty glass you'd get today. It never comes back on a blank frame: after a mid-session restart the decoder only knows what the piano has rewritten since, so blank-looking frames are normal then, and treating them as a start-up would make the logo flicker in and out. |
 | LCD test mode (G4 + G5 at power-on) | The piano's first try in the capture set up the LCD and went quiet, so the 30 s limit hands back. Its segment test lights fields, which ends the logo at once. |
 | Older taps that cut text short ("ConcertGran" over "SX-PR53") | Hands back on the changed line 1. |
 | Real panel | **Not checked.** Needs a flash. |
@@ -95,8 +95,9 @@ outlines are thin; check it on the panel.
 **QR code.** `qrencode` makes it at build time for https://keyandcable.com
 (level M, 25 x 25 modules, 4 px each: 100 px, about 15 mm on the panel). It
 was checked with an independent decoder written for the purpose (format bits,
-unmasking, Reed-Solomon check): it reads `https://keyandcable.com`. The test
-also checks it isn't mirrored. The carrier board's silkscreen QR
+unmasking, Reed-Solomon check), run on the firmware's own bit table in the
+order `splash_draw()` draws it (row = y, bit = x): it reads
+`https://keyandcable.com`, so it isn't mirrored or transposed. The carrier board's silkscreen QR
 (`hardware/carrier/keyandcable_qr.txt`) decodes to the same URL. It uses level
 L and mask 0, which is why it differs from this one. **Not verified: scanning
 it on the real panel.** Dark segment green on the yellow-green field is about

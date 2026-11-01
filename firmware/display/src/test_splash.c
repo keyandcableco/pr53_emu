@@ -13,6 +13,7 @@
 //   display restarted mid-session hands back by the piano's first frame with
 //   text (or after 30 s, when the piano sends nothing but blank frames);
 // - the 30 s limit, and the generated logo and QR data.
+// With THEME_SPLASH 0 it checks instead that no logo ever shows.
 //
 // Build (host): see host.mk
 
@@ -22,6 +23,7 @@
 #include "pr53_decode.h"
 #include "pr53_splash.h"
 #include "pr53_logo.h"
+#include "pr53_theme.h"
 
 #define SETTLE_US 60000   // main.c's quiet-bus rule
 
@@ -149,6 +151,18 @@ int main(int argc, char **argv) {
                 px == PR53_LOGO_WIDTH * PR53_LOGO_HEIGHT && ink > 1000 && n >= 21 && n <= 32 &&
                 finder_at(0, 0) && finder_at(0, n - 7) && finder_at(n - 7, 0) &&
                 !finder_at(n - 7, n - 7));
+
+#if !THEME_SPLASH
+    // Switched off: no logo at power-up or anywhere in the captures.
+    Splash off;
+    int none = splash_start(&off, 0) == SPLASH_IDLE;
+    for (int k = 1; k < argc; k++) {
+        if (!replay(argv[k], 1, &tr)) return 1;
+        none &= !tr.shows && !tr.ends;
+    }
+    ok &= check("THEME_SPLASH 0: no logo at power-up or in any capture", none);
+    return ok ? 0 : 1;
+#endif
 
     // Powered together: logo through the start-up, glass on the play screen.
     if (!replay(argv[1], 1, &tr)) return 1;
