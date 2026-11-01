@@ -1,5 +1,6 @@
 // test_chords.c — host test: replay the chord-root campaign and check the
-// decoded chord and tempo at every saved step.
+// decoded chord and tempo at every saved step. With a second log (the
+// transpose sweep in session_064015), also check the transpose key.
 //
 // Reads a campaign raw log (pr53_campaign.py --raw-log). For each step saved
 // in the last chord_roots_all12 run, the frame committed when that step was
@@ -34,6 +35,50 @@ static int parse_event(const char *ln, int *is_data, unsigned *byte) {
     unsigned v; if (sscanf(hx, "0x%x", &v) != 1) return 0;
     *byte = v & 0xFF;
     return 1;
+}
+
+// Transpose sweep: every key the screen holds for 100 ms or more must be one
+// of the 12 the piano shows, spelled its way, and all 12 must appear. (In
+// between, for a few ms, the letter and accidental can disagree.)
+static const char *const KEYS[] = {"G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "F#"};
+#define NKEYS ((int)(sizeof(KEYS) / sizeof(KEYS[0])))
+
+static int key_index(const char *k) {
+    for (int i = 0; i < NKEYS; i++) if (!strcmp(k, KEYS[i])) return i;
+    return -1;
+}
+
+static int check_transpose(const char *path) {
+    FILE *f = fopen(path, "r");
+    if (!f) { printf("cannot open %s\n", path); return 0; }
+    HD44780 hw; hd44780_init(&hw);
+    DisplayState frame; memset(&frame, 0, sizeof(frame));
+    char held[4] = "", ln[512];
+    unsigned long since = 0;
+    int seen[NKEYS] = {0}, wrong = 0;
+    while (fgets(ln, sizeof(ln), f)) {
+        int isd = 0; unsigned b = 0;
+        const char *tp = strstr(ln, " t=");
+        unsigned long us = 0;
+        if (!tp || sscanf(tp + 3, "%lu", &us) != 1 || !parse_event(ln, &isd, &b)) continue;
+        if (!hd44780_feed(&hw, (uint8_t)b, isd != 0) || !hw.display_on) continue;
+        pr53_decode_all(&hw, &frame);
+        if (!strcmp(frame.transpose, held)) continue;
+        if (held[0] && us - since >= 100000) {
+            int i = key_index(held);
+            if (i < 0) { printf("  held \"%s\" for %lu ms\n", held, (us - since) / 1000); wrong++; }
+            else seen[i] = 1;
+        }
+        memcpy(held, frame.transpose, sizeof(held));
+        since = us;
+    }
+    fclose(f);
+    int missing = 0;
+    for (int i = 0; i < NKEYS; i++) if (!seen[i]) { printf("  never held %s\n", KEYS[i]); missing++; }
+    int ok = !wrong && !missing;
+    printf("CHECK transpose keys G to F#, spelled Db Eb F# Ab Bb (%d wrong): %s\n",
+           wrong, ok ? "PASS" : "FAIL");
+    return ok;
 }
 
 int main(int argc, char **argv) {
@@ -81,5 +126,7 @@ int main(int argc, char **argv) {
     for (int i = 0; i < checks; i++) printf("%s\n", lines[i]);
     printf("\nCHECK chord roots and tempo (%d steps): %s\n", checks,
            (checks == NSTEPS && !fails) ? "PASS" : "FAIL");
-    return (checks == NSTEPS && !fails) ? 0 : 1;
+    int ok = checks == NSTEPS && !fails;
+    if (argc > 2) ok &= check_transpose(argv[2]);
+    return ok ? 0 : 1;
 }

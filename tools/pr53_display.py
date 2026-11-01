@@ -260,17 +260,16 @@ def decode_chord_letter(cgram):
     return letter + ('#' if r6 and r7 else 'b' if r7 else '')
 
 
-# ---------- Transpose note-name decoder (C6 c3 + sharp at C2:r6:c3) ----------
+# ---------- Transpose key decoder (C6 c3, accidental at C2:r6:c3 + C6:r7:c3) ----------
 #
-# The TRANSPOSE box shows the target note name as you shift. From a clean
-# free-running session sweep, the note LETTER lives in C6 c3 and reuses
-# the SAME stylized letter font as the chord root display (CHORD_LETTER_
-# TABLE), read with the bargraph row convention. A separate sharp
-# indicator lives at C2:r6:c3 and toggles independently (ON for the black
-# keys: C#, D#, F#, G#, A#). Six of seven observed glyphs matched the
-# chord font exactly; the transpose readout and chord readout share a
-# font. Transpose is OFF / shows nothing (or "C"/zero) at no-shift.
-TRANSPOSE_SHARP_BIT = (2, 6, 3)   # C2:r6:c3
+# The TRANSPOSE readout shows the key you're transposed to. The LETTER lives
+# in C6 c3 and uses the chord root's letter font (CHORD_LETTER_TABLE, bargraph
+# row order). The accidental works like the chord's: C2:r6:c3 alone is a flat,
+# and with C6:r7:c3 it's a sharp. The piano spells Db, Eb, F#, Ab, Bb; the
+# range is G to F# (-5 to +6 semitones). From the up/down sweep in
+# captures/session_064015.log.
+TRANSPOSE_FLAT_BIT = (2, 6, 3)    # C2:r6:c3
+TRANSPOSE_SHARP_BIT = (6, 7, 3)   # C6:r7:c3, a sharp only with the flat bit
 
 
 def decode_transpose_note(cgram):
@@ -285,9 +284,9 @@ def decode_transpose_note(cgram):
     letter = CHORD_LETTER_TABLE.get(frozenset(segs))
     if letter is None or not letter.strip():
         return None
-    ch, r, c = TRANSPOSE_SHARP_BIT
-    sharp = '#' if (cgram[ch * 8 + r] >> (4 - c)) & 1 else ''
-    return letter + sharp
+    lit = lambda b: (cgram[b[0] * 8 + b[1]] >> (4 - b[2])) & 1
+    flat = lit(TRANSPOSE_FLAT_BIT)
+    return letter + ('#' if flat and lit(TRANSPOSE_SHARP_BIT) else 'b' if flat else '')
 
 
 def _digit_at(cgram, char, col, row_to_seg):

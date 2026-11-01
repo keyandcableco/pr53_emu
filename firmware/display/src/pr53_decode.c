@@ -254,13 +254,18 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
     char chord[4] = {0}; pr53_decode_chord(cg, chord);
     memcpy(out->chord, chord, sizeof(out->chord));
 
-    // Transpose: reuse chord-letter font at C6 c3 + sharp bit C2:r6:c3.
+    // Transpose key: the chord-letter font at C6 c3. Its accidental works like
+    // the chord's: C2 r6 c3 alone is a flat, and with C6 c3 r7 it's a sharp.
+    // The piano spells Db, Eb, F#, Ab, Bb (G to F#, -5 to +6 semitones).
     {
         uint8_t s = gather_segs(cg, 6, 3, BAR_ROW_SEG);
         char c = segs_to_letter(s);
-        out->transpose[0] = (c && c != ' ') ? c : 0;
-        out->transpose[1] = 0;
-        out->transpose_sharp = cell_bit(cg, 2, 6, 3);
+        bool flat = cell_bit(cg, 2, 6, 3), sharp = flat && cell_bit(cg, 6, 7, 3);
+        memset(out->transpose, 0, sizeof(out->transpose));
+        if (c && c != ' ') {
+            out->transpose[0] = c;
+            out->transpose[1] = sharp ? '#' : flat ? 'b' : 0;
+        }
     }
 
     copy_line(out->line1, st->ddram, 0x00);

@@ -26,8 +26,7 @@ typedef struct {
     // --- TOP zone ---
     int      tempo;              // 0..999, or -1 for blank/unknown
     char     chord[4];           // chord root letter(s), NUL-terminated ("" if none)
-    char     transpose[4];       // transpose note name, NUL-terminated ("" if none)
-    bool     transpose_sharp;    // sharp indicator in the transpose box
+    char     transpose[4];       // transpose key, e.g. "Bb", "F#" ("" if none)
 
     // --- MIDDLE zone ---
     char     line1[PR53_TEXT_LEN + 1];  // voice name (DDRAM 0x00..0x0B)

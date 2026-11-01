@@ -43,6 +43,10 @@ instead of mapped bit by bit:
   the tempo hundreds cell (C1 c0): row 7 alone is a flat, rows 6+7 a sharp.
   The piano spells black keys Db, Eb, F#, Ab, Bb. The chord clears a couple of
   seconds after the keys are released.
+- **The transpose key (C6 c3)** uses the chord's letter font, and its
+  accidental works the same way: C2 r6 c3 alone is a flat, and with C6 c3
+  r7 it's a sharp. The piano spells Db, Eb, F#, Ab, Bb, over G to F# (-5 to
+  +6 semitones). From the up/down sweep in `captures/session_064015.log`.
 - **The part numbers.** DRUMS to BASS (P1-P5) have tens and ones in C4 and
   C5/C7 (rows 0-6 order), and their hundreds place is a lone "1": a single
   bit away from the digits, row 6 of C1 (c2 = P1, c1 = P2) and of C3

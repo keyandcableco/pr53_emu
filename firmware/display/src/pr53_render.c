@@ -194,14 +194,13 @@ static void draw_chord(const char *chord) {
     if (chord[0]) font_text(CHORD_X + 14, TOP_Y + 14, chord, 6, COL_SEG);
 }
 
-static void draw_transpose(const char *note, bool sharp) {
+static void draw_transpose(const char *note) {
     // actual key at the right end of the CHORD box, "TRANSPOSE" beside it
     int kx = CHORD_X + CHORD_W - 66;
     clear_field(kx, TOP_Y + 2, 64, TOP_H - 4);
     clear_field(RIGHT_X + 2, TOP_Y + HALF_H + 1, RIGHT_W - 4, TOP_H - HALF_H - 3);
     if (!note[0]) return;
-    char buf[3] = { note[0], (char)(sharp ? '#' : 0), 0 };
-    font_text(kx + 4, TOP_Y + 20, buf, 5, COL_SEG);
+    font_text(kx + 4, TOP_Y + 20, note, 5, COL_SEG);
     font_text(RIGHT_X + 6, TOP_Y + HALF_H + 13, "TRANSPOSE", 1, COL_SEG);
 }
 
@@ -253,9 +252,8 @@ void render_frame(const DisplayState *s) {
     // Top row
     if (first || s->tempo != last.tempo) draw_tempo(s->tempo);
     if (first || strcmp(s->chord, last.chord)) draw_chord(s->chord);
-    if (first || strcmp(s->transpose, last.transpose) ||
-        s->transpose_sharp != last.transpose_sharp)
-        draw_transpose(s->transpose, s->transpose_sharp);
+    if (first || strcmp(s->transpose, last.transpose))
+        draw_transpose(s->transpose);
 
     // Text box
     if (first || normal != was_normal) draw_labels(normal);
