@@ -11,8 +11,8 @@
 // link. v17 answers reads with the live address counter: v16 kept two answers
 // queued ahead, so every read got one computed a read or two earlier, and the
 // piano (which checks it) put off the rest of a line, sometimes for minutes.
-// v17 also starts answering reads before the wait for USB. The USB log
-// format is unchanged since v14.
+// v17 also starts at once instead of waiting up to 3 s for USB first. The
+// USB log format is unchanged since v14.
 
 #include <stdio.h>
 #include <string.h>
@@ -278,9 +278,8 @@ static const char *decode_cmd(uint8_t b, char *buf, size_t bufsz) {
 int main(void) {
     stdio_init_all();
 
-    // Answer the piano's reads and capture its writes straight away, before
-    // waiting for a USB host: a piano already running must not see its busy
-    // checks go unanswered. Writes before USB is up wait in the ring.
+    // Answer the piano's reads and capture its writes straight away: a piano
+    // already running must not see its busy checks go unanswered.
     current_ac = 0;
     ring_head = ring_tail = drop_count = 0;
 
@@ -299,12 +298,12 @@ int main(void) {
 
     multicore_launch_core1(core1_entry);
 
-    for (int i = 0; i < 30 && !stdio_usb_connected(); i++)
-        sleep_ms(100);
-
+    // No wait for a USB host: logging starts at once, and the banner is lost
+    // if nothing is listening yet. The ring drains (and feeds the display)
+    // from the start either way.
     printf("\n# SX-PR53 bus dumper v17 (live address counter on reads)\n");
     printf("# format: t=<us> W CMD/DAT 0x<byte> [decoded]\n");
-    printf("# ready — power-cycle piano now\n\n");
+    printf("# ready\n\n");
 
     absolute_time_t next_alive = make_timeout_time_ms(2000);
     uint32_t last_drops = 0;

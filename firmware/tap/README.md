@@ -56,6 +56,7 @@ onto the RP2350 drive.
 
 ## Start-up
 
-It answers reads and captures writes as soon as it starts, then waits up to
-3 s for a USB host before logging. (v16 waited first, so a piano already
-running saw its busy checks go unanswered for those 3 s.)
+It answers reads, captures and forwards writes as soon as it starts. (v16
+first waited up to 3 s for a USB host, so a piano already running saw its
+busy checks go unanswered for that long.) The banner only reaches a host
+that's already listening.
