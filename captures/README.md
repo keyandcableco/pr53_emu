@@ -22,6 +22,8 @@ display showed).
 - `menus_2026-10-31.log` is the menu_page_arrows campaign walked through the
   Sound menu (P7 down to P1, then EXIT; the second run is the complete one).
   `firmware/display/src/test_menus.c` replays it.
+- `item_tens_2026-10-31.log` walks the GUITAR group's 20 voices up, partway
+  down and up again, for the item number's tens digit (C5 c4).
 - `restart_tap_v17_2026-10-31.log` and `restart_tap_v18_2026-10-31.log` are
   piano restarts recorded after flashing tap v17 and v18. With v17 the piano
   hit a 3.8 ms busy timeout before about half its data writes at addresses

@@ -113,8 +113,6 @@ eight ways (see `src/colour_test.c`).
 
 ## Not decoded yet
 
-- The tens digit of the item number beside line 2 (needed past 9, e.g. a
-  disk's file list).
 - Chord types, the MIDI icon and most of the shaped labels on the glass.
   `docs/front-panel.md` lists what's known.
 

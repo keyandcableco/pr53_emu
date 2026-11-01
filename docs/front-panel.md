@@ -21,7 +21,7 @@ What the original display shows, as far as the decoders know so far:
 | Transpose (note name, arrows) | CGRAM segments | Yes |
 | Eight part meters (bars) | CGRAM segments | Yes |
 | Eight part numbers (3 digits) | CGRAM segments | Yes, hundreds included |
-| Two small 2-digit readouts left of the text lines | CGRAM segments | Top one (menu page, "P1" to "P7"): yes. Bottom one (item number): ones digit yes, tens digit not yet |
+| Two small 2-digit readouts left of the text lines | CGRAM segments | Yes: menu page ("P1" to "P7") and item number (1 to 20 in the GUITAR group) |
 | The pointer under each part | CGRAM segments | Yes |
 | Shaped labels and arrows (RIGHT, LEFT, RHYTHM, MIDI, MENU/PAGE, PROG ...) | CGRAM segments | MENU, PAGE and the PAGE arrows: yes. The rest: partly |
 
@@ -51,10 +51,11 @@ instead of mapped bit by bit:
   page) C3 c1, MENU C2 c4, PAGE C3 c0. PAGE without MENU shows on the
   sequencer's play screen. The owner's manual (p. 20) also shows an item
   number ("01") beside line 2 on a disk's file list. That readout also shows a
-  rhythm's or voice's number in its group (Soul 1, Spanish Gtr 2): its ones
-  digit is C6 c0; the tens digit hasn't lit in any capture. From the
-  Sound-menu walk in `captures/menus_2026-10-31.log` and the voice and rhythm
-  presses in `captures/restart_tap_v18_2026-10-31.log`.
+  rhythm's or voice's number in its group (Soul 1, Spanish Gtr 2, the GUITAR
+  group 1 to 20): tens digit C5 c4, ones digit C6 c0. From the Sound-menu walk
+  in `captures/menus_2026-10-31.log`, the voice and rhythm presses in
+  `captures/restart_tap_v18_2026-10-31.log` and the GUITAR walk in
+  `captures/item_tens_2026-10-31.log`.
 - **The pointer under each part** is row 7 of its ones column (DRUMS to
   BASS) or of its meter column (LEFT, RIGHT 2, RIGHT 1). All eight show on
   the play screen; in a menu only the part whose buttons change the setting

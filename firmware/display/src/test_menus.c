@@ -10,10 +10,12 @@
 // pointer shows on Sound-menu pages (as on p. 21 of the owner's manual), all
 // eight on the play screen after EXIT.
 //
-// With a second log (restart_tap_v18_2026-10-31.log), also checks the item
-// number on rhythm and voice screens: Soul 1, Pop Grand 1, Classic Gtr 1,
-// Spanish Gtr 2. While a line is being rewritten the number can be blank, but
-// never another digit.
+// With more logs (restart_tap_v18 and item_tens), also checks the item number
+// on rhythm and voice screens: Soul 1, Pop Grand 1, Classic Gtr 1, Spanish
+// Gtr 2, and the GUITAR group past 9 (JazzGuitar 2 9, Bright Solid 10,
+// Country Gtr 19, NashvilleGtr 20). Only what the screen holds for 100 ms or
+// more counts: the piano redraws the number a moment before it rewrites the
+// name (and the tens digit before the ones), so in between they disagree.
 //
 // Build (host): see host.mk
 
@@ -47,37 +49,49 @@ static int parse_event(const char *ln, int *is_data, unsigned *byte) {
 
 static const char *skip_spaces(const char *s) { while (*s == ' ') s++; return s; }
 
-// Item numbers on rhythm and voice screens, decoding after every write.
-static int check_items(const char *path) {
+// Item numbers on rhythm and voice screens, decoding after every write and
+// judging each (name, number) the screen held for 100 ms or more.
+static int check_items(char *const *paths, int npaths) {
     static const struct { const char *line1, *line2, *item; } ITEMS[] = {
         {"RHYTHM", "Soul", " 1"}, {"RIGHT1", "Pop Grand", " 1"},
         {"RIGHT1", "Classic Gtr", " 1"}, {"RIGHT1", "Spanish Gtr", " 2"},
+        {"RIGHT1", "JazzGuitar 2", " 9"}, {"RIGHT1", "Bright Solid", "10"},
+        {"RIGHT1", "Country Gtr", "19"}, {"RIGHT1", "NashvilleGtr", "20"},
     };
     enum { N = sizeof(ITEMS) / sizeof(ITEMS[0]) };
-    FILE *f = fopen(path, "r");
-    if (!f) { printf("cannot open %s\n", path); return 0; }
-    HD44780 hw; hd44780_init(&hw);
-    DisplayState frame; memset(&frame, 0, sizeof(frame));
-    char ln[512];
     int seen[N] = {0}, wrong = 0;
+    for (int k = 0; k < npaths; k++) {
+    FILE *f = fopen(paths[k], "r");
+    if (!f) { printf("cannot open %s\n", paths[k]); return 0; }
+    HD44780 hw; hd44780_init(&hw);
+    DisplayState frame, held; memset(&frame, 0, sizeof(frame)); held = frame;
+    unsigned long since = 0;
+    char ln[512];
     while (fgets(ln, sizeof(ln), f)) {
         int isd = 0; unsigned b = 0;
-        if (!parse_event(ln, &isd, &b)) continue;
+        const char *tp = strstr(ln, " t=");
+        unsigned long us = 0;
+        if (!tp || sscanf(tp + 3, "%lu", &us) != 1 || !parse_event(ln, &isd, &b)) continue;
         hd44780_feed(&hw, (uint8_t)b, isd != 0);
         pr53_decode_all(&hw, &frame);
-        for (int i = 0; i < N; i++) {
-            if (strcmp(skip_spaces(frame.line1), ITEMS[i].line1) ||
-                strcmp(skip_spaces(frame.line2), ITEMS[i].line2)) continue;
-            if (!strcmp(frame.item, ITEMS[i].item)) seen[i] = 1;
-            else if (frame.item[0] && wrong++ < 5)
-                printf("  %s / %s showed item '%s'\n", ITEMS[i].line1, ITEMS[i].line2, frame.item);
+        if (!strcmp(frame.line1, held.line1) && !strcmp(frame.line2, held.line2) &&
+            !strcmp(frame.item, held.item)) continue;
+        for (int i = 0; i < N && us - since >= 100000; i++) {
+            if (strcmp(skip_spaces(held.line1), ITEMS[i].line1) ||
+                strcmp(skip_spaces(held.line2), ITEMS[i].line2)) continue;
+            if (!strcmp(held.item, ITEMS[i].item)) seen[i] = 1;
+            else if (held.item[0] && wrong++ < 5)
+                printf("  %s / %s held item '%s'\n", ITEMS[i].line1, ITEMS[i].line2, held.item);
         }
+        held = frame;
+        since = us;
     }
     fclose(f);
+    }
     int all = 1;
     for (int i = 0; i < N; i++) if (!seen[i]) { printf("  never saw %s / %s\n", ITEMS[i].line1, ITEMS[i].line2); all = 0; }
     int ok = all && !wrong;
-    printf("CHECK item number beside line 2 (Soul 1, Pop Grand 1, Classic Gtr 1, Spanish Gtr 2): %s\n",
+    printf("CHECK item number beside line 2 (8 voices and rhythms, 1 to 20): %s\n",
            ok ? "PASS" : "FAIL");
     return ok;
 }
@@ -133,6 +147,6 @@ int main(int argc, char **argv) {
     int ok = all && !fails;
     printf("CHECK menu page readout, MENU/PAGE, arrows and pointers (%d failed, all 5 steps seen: %s): %s\n",
            fails, all ? "yes" : "no", ok ? "PASS" : "FAIL");
-    if (argc > 2) ok &= check_items(argv[2]);
+    if (argc > 2) ok &= check_items(&argv[2], argc - 2);
     return ok ? 0 : 1;
 }

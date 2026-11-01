@@ -340,15 +340,16 @@ def decode_menu_page_flags(cgram):
 
 
 # Item number beside line 2: a rhythm's or voice's number in its group, a
-# disk's file number. Ones digit in C6 c0 (bargraph row order); the tens digit
-# hasn't lit in any capture, so it isn't mapped.
-ITEM_ONES_CELL = (6, 0)
+# disk's file number. Tens digit C5 c4, ones digit C6 c0 (bargraph row order);
+# the GUITAR group runs 1 to 20 (captures/item_tens_2026-10-31.log).
+ITEM_CELLS = [(5, 4), (6, 0)]   # tens, ones
 
 
 def decode_item_readout(cgram):
-    """Return the item number as ' 1'..' 9', or None when it's blank."""
-    d = _digit_at(cgram, *ITEM_ONES_CELL, BARGRAPH_ROW_TO_SEG)
-    return None if d in (' ', '?') else ' ' + d
+    """Return the item number as ' 1'..'99', or None when it's blank."""
+    text = ''.join(' ' if d == '?' else d for d in
+                   (_digit_at(cgram, ch, col, BARGRAPH_ROW_TO_SEG) for ch, col in ITEM_CELLS))
+    return text if text.strip() else None
 
 
 def decode_small_display(cgram, which):

@@ -290,12 +290,14 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
     }
 
     // Item number beside line 2: a rhythm's or voice's number in its group, a
-    // disk's file number. Its ones digit is C6 c0, bargraph row order; the
-    // tens digit hasn't lit in any capture, so it isn't mapped.
+    // disk's file number. Tens digit C5 c4, ones digit C6 c0, bargraph row
+    // order (the GUITAR group runs 1 to 20).
     {
-        char d = digit_at(cg, 6, 0, BAR_ROW_SEG);
+        char t = digit_at(cg, 5, 4, BAR_ROW_SEG), d = digit_at(cg, 6, 0, BAR_ROW_SEG);
+        if (t == '?') t = ' ';
+        if (d == '?') d = ' ';
         memset(out->item, 0, sizeof(out->item));
-        if (d != ' ' && d != '?') { out->item[0] = ' '; out->item[1] = d; }
+        if (t != ' ' || d != ' ') { out->item[0] = t; out->item[1] = d; }
     }
 
     // The pointer under each part: row 7 of its ones column (DRUMS to BASS)
