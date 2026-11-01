@@ -146,10 +146,11 @@ the HiLetgo panel. What it took:
   leaves DB3 open. Measured: pins 1, 7 and 8 are continuous with the ground foil.
 - **DB7 pull-down.** Each shifter module has its own 10k pull-up on the HV
   side, so R1 (10k) only holds DB7 at about half the 5V rail when nothing
-  drives it, not a clean low. It works because the tap is already running and
-  answering the piano's busy checks when the piano starts. Next revision: a
-  stronger R1 (or lift the module's DB7 pull-up), and in the tap firmware start the
-  read responder before the 3 s wait for USB.
+  drives it, not a clean low. It works because the tap answers every busy
+  check (from tap v18 with all zeros, so busy always reads clear; it also
+  starts answering at once instead of after a 3 s wait for USB). Next
+  revision: a stronger R1 (or lift the module's DB7 pull-up), so DB7 reads
+  low even if a read goes unanswered.
 - **First start with the front panel unpowered**, the piano wrote "ALL INITIAL"
   then "ConcertGrand", so it probably reset its settings to factory defaults
   (the August capture started on "Pop Grand").

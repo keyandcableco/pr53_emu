@@ -55,10 +55,11 @@ instead of mapped bit by bit:
   "bargraph min max" volume sweeps in `captures/session_071830.log`, checked
   against the photo of the original glass (118 113 113 113 118 113 100 127)
   by `firmware/display/src/test_numbers.c`.
-- **Redraws take a few refreshes.** After a menu or the RHYTHM screen the
-  piano rewrites the custom characters over 3-6 refreshes, so for a moment
-  numbers can lack their leading digits and meters can be blank, on the
-  original glass too.
+- **Redraws took a few refreshes** in the campaign log: after a menu or the
+  RHYTHM screen the piano rewrote the custom characters over 3-6 refreshes,
+  so for a moment numbers lacked their leading digits and meters were blank.
+  That log was made with tap v16, whose busy answers cost the piano 3.8 ms
+  timeouts on about half its writes; with v18 it may well redraw in one go.
 - **The glass has screens.** The play screen shows the part meters and numbers
   (C0, C2-C7). Pressing a rhythm group briefly shows a RHYTHM screen (line 1
   "RHYTHM", line 2 the rhythm name, meters blank, the rhythm number in C6 c0).

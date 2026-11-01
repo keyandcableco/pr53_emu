@@ -15,6 +15,16 @@ display showed).
   character set one code every ~3 s (reaching 0xAD). Sound buttons flashed
   "RIGHT1" plus the voice name and tempo "120"; 8 & 16 BEAT flashed a rhythm
   name. Raw tap log, no `# NOTE` lines.
+- `campaign_2026-10-31.log` is the front-panel decode: the guided campaigns
+  from `tools/pr53_campaign.py` (chord roots, panel sections, menus) with
+  their `# NOTE` capture/saved lines, then free play. The display firmware's
+  host tests replay it (`make -f host.mk test`). Recorded with tap v16.
+- `restart_tap_v17_2026-10-31.log` and `restart_tap_v18_2026-10-31.log` are
+  piano restarts recorded after flashing tap v17 and v18. With v17 the piano
+  hit a 3.8 ms busy timeout before about half its data writes at addresses
+  with bit 3 set and left every text line short ("Techni", "ConcertGran",
+  line 2 untouched); with v18 it hit none and went from "Technics / SX-PR53"
+  to "ConcertGrand / 8 Beat" in 3 s. See `firmware/tap/README.md`.
 - `session_092906.log` is the ground-truth frame the display firmware's host
   test runs against (`make -f host.mk test`, expects Part 8 = 127).
 - `capture.csv` is a sample in the older v13 multiplex-snapshot format, for
