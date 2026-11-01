@@ -56,6 +56,9 @@ void ili9488_init(void);
 void ili9488_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
 void ili9488_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
                        uint16_t color);
+// Writes n pixels of one colour into the window ili9488_set_window() opened,
+// carrying on from where the last write stopped (the splash's runs).
+void ili9488_push(uint16_t color, uint32_t n);
 void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
                   const uint16_t *pixels);
 

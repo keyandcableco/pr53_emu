@@ -7,6 +7,7 @@
 #include "pr53_state.h"
 #include "pr53_decode.h"
 #include "pr53_render.h"
+#include "pr53_splash.h"
 #include "pr53_ili9486_par.h"
 
 #if PICO_ON_DEVICE
@@ -27,19 +28,31 @@ extern bool bus_get_byte_timeout(uint8_t *out_byte, bool *out_is_data, uint32_t 
 #define SETTLE_US 60000
 
 // ---- core1: render loop ----
+static uint32_t now_ms(void) { return to_ms_since_boot(get_absolute_time()); }
+
 static void core1_main(void) {
     ili9488_init();
-    render_static();
+
+    // Start-up logo (pr53_splash.h) until the piano's play screen; core 0
+    // decodes as usual meanwhile.
+    Splash splash;
+    if (splash_start(&splash, now_ms()) == SPLASH_SHOW) splash_draw();
+    else render_static();
 
     DisplayState snap;
     uint32_t last_serial = 0xFFFFFFFF;
     for (;;) {
         state_read(&snap);
-        if (snap.frame_serial != last_serial) {
-            last_serial = snap.frame_serial;
-            render_frame(&snap);
-        } else {
-            sleep_us(500);   // nothing new; nap briefly
+        bool fresh = snap.frame_serial != last_serial;
+        last_serial = snap.frame_serial;
+        switch (splash_step(&splash, &snap, fresh, now_ms())) {
+        case SPLASH_SHOW: splash_draw(); break;
+        case SPLASH_END:  render_static(); render_frame(&snap); break;  // whole glass
+        case SPLASH_HOLD: sleep_us(500); break;
+        case SPLASH_IDLE:
+            if (fresh) render_frame(&snap);
+            else sleep_us(500);   // nothing new; nap briefly
+            break;
         }
     }
 }

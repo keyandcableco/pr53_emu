@@ -86,6 +86,18 @@
 //     PRINT 0x88 0x88 0x92 | RULE 0x28 0x28 0x30
 //
 // ===========================================================================
+// 4. START-UP SCREEN
+// ===========================================================================
+// The Key & Cable Co. logo with "Technics SX-PR53", "LCD replacement" and
+// keyandcable.com beside it, in place of the piano's own start-up screen
+// (src/pr53_splash.h). Drawn in the palette above: the logo's four shades
+// run from the field to the segment colour.
+//   THEME_SPLASH     0 = no start-up screen, straight to the glass layout
+//   THEME_SPLASH_QR  1 = a QR code for keyandcable.com above the address
+#define THEME_SPLASH     1
+#define THEME_SPLASH_QR  1
+
+// ===========================================================================
 // (below: machinery that turns the above into what the driver uses — you
 //  don't need to touch anything past here)
 // ===========================================================================
@@ -108,6 +120,12 @@ static inline uint16_t theme_rgb(uint8_t r, uint8_t g, uint8_t b) {
 #define THEME_COL_SEG_OFF  theme_rgb(THEME_SEGOFF_R, THEME_SEGOFF_G, THEME_SEGOFF_B)
 #define THEME_COL_PRINT    theme_rgb(THEME_PRINT_R,  THEME_PRINT_G,  THEME_PRINT_B)
 #define THEME_COL_RULE     theme_rgb(THEME_RULE_R,   THEME_RULE_G,   THEME_RULE_B)
+
+// Logo shade k (0-3): k/3 of the way from the field to the segment colour.
+#define THEME_MIX(f, s, k)  ((f) + ((s) - (f)) * (k) / 3)
+#define THEME_COL_LOGO(k)  theme_rgb(THEME_MIX(THEME_FIELD_R, THEME_SEG_R, k), \
+                                     THEME_MIX(THEME_FIELD_G, THEME_SEG_G, k), \
+                                     THEME_MIX(THEME_FIELD_B, THEME_SEG_B, k))
 
 // MADCTL byte computed from rotation + color order.
 // Rotation bits: MY=0x80, MX=0x40, MV=0x20. BGR=0x08.

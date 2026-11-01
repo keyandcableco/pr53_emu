@@ -22,6 +22,8 @@ add_executable(pr53_fw
     src/pr53_state.c
     src/pr53_decode.c
     src/pr53_render.c
+    src/pr53_splash.c   # start-up logo (THEME_SPLASH in pr53_theme.h)
+    src/pr53_logo.c     # its image data, generated: make -f host.mk logo
     src/pr53_font.c
     src/pr53_ili9486_par.c
     src/bus_tap.c   # UART receiver for the tap link (GP21)

@@ -108,13 +108,16 @@ void ili9488_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
     wr_cmd(0x2C);
 }
 
+void ili9488_push(uint16_t color, uint32_t n) {
+    gpio_put(PAR_PIN_RS, 1);
+    for (uint32_t i = 0; i < n; i++) { set_bus(color); pulse_wr(); }
+}
+
 void ili9488_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
                        uint16_t color) {
     if (!w || !h) return;
     ili9488_set_window(x, y, x + w - 1, y + h - 1);
-    gpio_put(PAR_PIN_RS, 1);
-    uint32_t n = (uint32_t)w * h;
-    for (uint32_t i = 0; i < n; i++) { set_bus(color); pulse_wr(); }
+    ili9488_push(color, (uint32_t)w * h);
 }
 
 void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
@@ -133,7 +136,21 @@ void ili9488_blit(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
 static uint16_t fb[ILI_H][ILI_W];
 
 void ili9488_init(void) {}
-void ili9488_set_window(uint16_t a,uint16_t b,uint16_t c,uint16_t d){(void)a;(void)b;(void)c;(void)d;}
+
+// The open window and where the next pushed pixel goes, as on the panel.
+static uint16_t win_x0, win_x1, win_y1, cur_x, cur_y;
+
+void ili9488_set_window(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
+    win_x0 = x0; win_x1 = x1; win_y1 = y1;
+    cur_x = x0; cur_y = y0;
+}
+
+void ili9488_push(uint16_t col, uint32_t n) {
+    for (; n && cur_y <= win_y1; n--) {
+        if (cur_x < ILI_W && cur_y < ILI_H) fb[cur_y][cur_x] = col;
+        if (++cur_x > win_x1) { cur_x = win_x0; cur_y++; }
+    }
+}
 
 void ili9488_fill_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t col) {
     for (int yy = y; yy < y + h && yy < ILI_H; yy++)

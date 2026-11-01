@@ -13,6 +13,8 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       pr53_decode.{h,c}       HD44780 emulation + segment decoders
       pr53_state.{h,c}        Shared display state, seqlock handoff between cores
       pr53_render.{h,c}       Three-zone renderer with per-field dirty tracking
+      pr53_splash.{h,c}       Start-up screen: when it shows and what it draws
+      pr53_logo.{h,c}         Its logo image and QR code (pr53_logo.c is generated)
       pr53_font.{h,c}         5x7 bitmap font + box/icon primitives
       pr53_ili9486_par.{h,c}  16-bit parallel bus driver (masked GPIO writes)
       pr53_theme.h            Rotation, colour order and the whole palette
@@ -21,7 +23,11 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       test_chords.c           Host test: replays the chord-root campaign
       test_numbers.c          Host test: part numbers and meters, from volume sweeps
       test_menus.c            Host test: page and item readouts, MENU/PAGE, arrows, pointers
+      test_splash.c           Host test: when the start-up screen shows and hands back
       preview.c               Host tool: draws a capture moment as an image
+    logo/
+      keyandcable_logo.svg    The Key & Cable Co. logo (from the website)
+      logo_to_c.py            Makes src/pr53_logo.c: make -f host.mk logo
     CMakeLists.txt            Pico SDK build -> pr53_fw.uf2
     host.mk                   Build, test and preview on a PC
 
@@ -49,6 +55,15 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
   normal display only, as on the glass. Transpose puts the actual key at the
   right end of the CHORD box and "TRANSPOSE" in the lower right box.
 - **Dirty tracking:** `render_frame()` repaints only the fields that changed.
+- **Start-up screen:** from power-up core 1 shows the Key & Cable Co. logo
+  with "Technics SX-PR53", "LCD replacement", a QR code and keyandcable.com,
+  and holds it through the piano's own start-up screens (blank, then
+  "Technics / SX-PR53"). The first other frame repaints the whole glass
+  (`render_static()`, then `render_frame()`). If the piano restarts while the
+  display stays on, it comes back in place of the "Technics" screen. A 30 s
+  limit covers a piano that never gets past its start-up. Core 0 decodes as
+  usual all along. `THEME_SPLASH 0` in `src/pr53_theme.h` turns it off;
+  `docs/startup-logo.md` has the design notes.
 - **Panel set-up happens once, at boot** (`ili9488_init()` on core 1, then
   `render_static()` paints the fixed layout). It includes the power, VCOM and
   gamma settings from MCUFRIEND_kbv's ILI9486 table; without them the panel's
@@ -104,6 +119,12 @@ the firmware would show for a capture moment, using the real render code, into
 line containing that text) and the capture with `LOG=...`:
 
     make -f host.mk preview NOTE="capture step 5: menus_sound_setting"
+
+A capture that starts with a piano start-up shows the start-up screen, since
+the preview takes the display as powered up at the log's first bus write. Pick
+a moment by tap time with `AT=` (seconds, the `t=` in the log):
+
+    make -f host.mk preview LOG=../../captures/restart_tap_v18_2026-10-31.log AT=52
 
 The preview shows true colours. This panel lights bus bits 0-4 as red, so
 `THEME_SWAP_RB` swaps red and blue in software. If colours ever look wrong
