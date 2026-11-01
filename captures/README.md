@@ -19,6 +19,9 @@ display showed).
   from `tools/pr53_campaign.py` (chord roots, panel sections, menus) with
   their `# NOTE` capture/saved lines, then free play. The display firmware's
   host tests replay it (`make -f host.mk test`). Recorded with tap v16.
+- `menus_2026-10-31.log` is the menu_page_arrows campaign walked through the
+  Sound menu (P7 down to P1, then EXIT; the second run is the complete one).
+  `firmware/display/src/test_menus.c` replays it.
 - `restart_tap_v17_2026-10-31.log` and `restart_tap_v18_2026-10-31.log` are
   piano restarts recorded after flashing tap v17 and v18. With v17 the piano
   hit a 3.8 ms busy timeout before about half its data writes at addresses

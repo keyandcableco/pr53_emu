@@ -41,6 +41,7 @@ static char segs_to_digit(uint8_t s) {
         case (SA|SB|SC|SF):                   return '7';
         case (SA|SB|SC|SD|SE|SF|SG):          return '8';
         case (SA|SB|SC|SD|SF|SG):             return '9';
+        case (SA|SB|SE|SF|SG):                return 'P';  // menu page readout
         default:                               return '?';
     }
 }
@@ -271,9 +272,22 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
     copy_line(out->line1, st->ddram, 0x00);
     copy_line(out->line2, st->ddram, 0x40);
 
-    // Small displays not yet mapped -> blank.
-    out->small_top = 0xFF;
-    out->small_bot = 0xFF;
+    // Menu page readout beside line 1: two digit cells, C1 c3 and c4 in the
+    // bargraph row order ("P1" to "P7" through the Sound menu). The MENU and
+    // PAGE words and the PAGE arrows are single bits in the spare row 6 of
+    // C2/C3: up (a following page) C2 c1, down (a previous page) C3 c1, MENU
+    // C2 c4, PAGE C3 c0. The readout beside line 2 isn't mapped yet.
+    {
+        char a = digit_at(cg, 1, 3, BAR_ROW_SEG), b = digit_at(cg, 1, 4, BAR_ROW_SEG);
+        if (a == '?') a = ' ';
+        if (b == '?') b = ' ';
+        memset(out->page, 0, sizeof(out->page));
+        if (a != ' ' || b != ' ') { out->page[0] = a; out->page[1] = b; }
+        out->menu_word = cell_bit(cg, 2, 6, 4);
+        out->page_word = cell_bit(cg, 3, 6, 0);
+        out->page_up   = cell_bit(cg, 2, 6, 1);
+        out->page_down = cell_bit(cg, 3, 6, 1);
+    }
 
     for (int p = 0; p < PR53_NUM_PARTS; p++) {
         int v = pr53_decode_bargraph_number(cg, p);

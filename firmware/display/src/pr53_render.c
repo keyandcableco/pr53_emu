@@ -79,6 +79,12 @@ static void pointer(int cx, int y, int w, uint16_t color) {
     }
 }
 
+// Upward pointer (the PAGE arrow for a following page), w wide, w/2 tall.
+static void pointer_up(int cx, int y, int w, uint16_t color) {
+    for (int r = 0; r < w / 2; r++)
+        ili9488_fill_rect(cx - r - 1, y + r, 2 * (r + 1), 1, color);
+}
+
 // Slanted 7-segment digit: a top, b top-right, c bottom-right, d bottom,
 // e bottom-left, f top-left, g middle. Each row shifts right as it rises, by
 // `slant` px over the digit's height. With `ghost` set, unlit segments show
@@ -98,6 +104,7 @@ static uint8_t seg_mask(char c) {
         case '8': return SA|SB|SC|SD|SE|SF|SG;
         case '9': return SA|SB|SC|SD|SF|SG;
         case '-': return SG;
+        case 'P': return SA|SB|SE|SF|SG;
         default:  return 0;
     }
 }
@@ -204,6 +211,24 @@ static void draw_transpose(const char *note) {
     font_text(RIGHT_X + 6, TOP_Y + HALF_H + 13, "TRANSPOSE", 1, COL_SEG);
 }
 
+// MENU and PAGE words with the PAGE arrows, in the top-right upper box
+static void draw_page_box(bool menu, bool page, bool up, bool down) {
+    clear_field(RIGHT_X + 2, TOP_Y + 2, RIGHT_W - 4, HALF_H - 4);
+    if (menu) font_text(RIGHT_X + 8, TOP_Y + 7, "MENU", 1, COL_SEG);
+    if (page) font_text(RIGHT_X + 8, TOP_Y + 21, "PAGE", 1, COL_SEG);
+    if (up)   pointer_up(RIGHT_X + 48, TOP_Y + 22, 12, COL_SEG);
+    if (down) pointer(RIGHT_X + 64, TOP_Y + 22, 12, COL_SEG);
+}
+
+// The menu page readout ("P1") beside line 1, in 7-segment cells. It shares
+// the label area with RIGHT 1, so it's drawn on menu screens only.
+static void draw_page(const char *page) {
+    int w = 14, h = 28, gap = 4, slant = 3;
+    clear_field(LABEL_X, LINE1_Y, 2 * w + gap + slant + 1, h);
+    for (int i = 0; i < 2 && page[i]; i++)
+        seg7(LABEL_X + i * (w + gap), LINE1_Y, w, h, 3, slant, page[i], false);
+}
+
 static void draw_line(int y, const char *text) {
     clear_field(TEXT_X, y, ILI_W - M - 4 - TEXT_X, 7 * TEXT_SCALE);
     // character positions as the piano wrote them (it pads with spaces)
@@ -254,9 +279,14 @@ void render_frame(const DisplayState *s) {
     if (first || strcmp(s->chord, last.chord)) draw_chord(s->chord);
     if (first || strcmp(s->transpose, last.transpose))
         draw_transpose(s->transpose);
+    if (first || s->menu_word != last.menu_word || s->page_word != last.page_word ||
+        s->page_up != last.page_up || s->page_down != last.page_down)
+        draw_page_box(s->menu_word, s->page_word, s->page_up, s->page_down);
 
     // Text box
     if (first || normal != was_normal) draw_labels(normal);
+    if (!normal && (first || normal != was_normal || strcmp(s->page, last.page)))
+        draw_page(s->page);
     if (first || strcmp(s->line1, last.line1)) draw_line(LINE1_Y, s->line1);
     if (first || strcmp(s->line2, last.line2)) draw_line(LINE2_Y, s->line2);
 

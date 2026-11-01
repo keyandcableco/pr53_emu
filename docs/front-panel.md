@@ -21,8 +21,8 @@ What the original display shows, as far as the decoders know so far:
 | Transpose (note name, arrows) | CGRAM segments | Yes |
 | Eight part meters (bars) | CGRAM segments | Yes |
 | Eight part numbers (3 digits) | CGRAM segments | Yes, hundreds included |
-| Two small 2-digit readouts left of the text lines | CGRAM segments | No |
-| Shaped labels and arrows (RIGHT, LEFT, RHYTHM, MIDI, MENU/PAGE, PROG ...) | CGRAM segments | Partly |
+| Two small 2-digit readouts left of the text lines | CGRAM segments | Top one (menu page, "P1" to "P7"): yes. Bottom one (item number, "01"): not yet |
+| Shaped labels and arrows (RIGHT, LEFT, RHYTHM, MIDI, MENU/PAGE, PROG ...) | CGRAM segments | MENU, PAGE and the PAGE arrows: yes. The rest: partly |
 
 The LCD test (`captures/lcd_test_mode_2026-10-31.log`) lit all 320 CGRAM
 bits: 8 custom characters of 8 rows x 5 columns, placed at positions 12-15 of
@@ -43,6 +43,14 @@ instead of mapped bit by bit:
   the tempo hundreds cell (C1 c0): row 7 alone is a flat, rows 6+7 a sharp.
   The piano spells black keys Db, Eb, F#, Ab, Bb. The chord clears a couple of
   seconds after the keys are released.
+- **Menu pages.** Beside line 1 a menu shows its page, "P1" to "P7" in the
+  Sound menu: two digit cells, C1 c3 (the "P") and C1 c4 (the digit), in the
+  rows 0-6 order. The MENU and PAGE words and the PAGE arrows are single bits
+  in the spare row 6 of C2/C3: up (a following page) C2 c1, down (a previous
+  page) C3 c1, MENU C2 c4, PAGE C3 c0. PAGE without MENU shows on the
+  sequencer's play screen. The owner's manual (p. 20) also shows an item
+  number ("01") beside line 2 on a disk's file list; that one isn't mapped.
+  From the Sound-menu walk in `captures/menus_2026-10-31.log`.
 - **The transpose key (C6 c3)** uses the chord's letter font, and its
   accidental works the same way: C2 r6 c3 alone is a flat, and with C6 c3
   r7 it's a sharp. The piano spells Db, Eb, F#, Ab, Bb, over G to F# (-5 to

@@ -20,6 +20,7 @@ parallel (8080-style) bus**. It's a C port of the Python decoders in
       test_pipeline.c         Host test: feeds a real capture through the decoder
       test_chords.c           Host test: replays the chord-root campaign
       test_numbers.c          Host test: part numbers and meters, from volume sweeps
+      test_menus.c            Host test: menu page readout, MENU/PAGE and arrows
       preview.c               Host tool: draws a capture moment as an image
     CMakeLists.txt            Pico SDK build -> pr53_fw.uf2
     host.mk                   Build, test and preview on a PC
@@ -112,10 +113,9 @@ eight ways (see `src/colour_test.c`).
 
 ## Not decoded yet
 
-- The two small 2-digit displays (`small_top`/`small_bot` in
-  `pr53_decode_all`) show "--".
-- Chord types, the PAGE/MENU PAGE arrows, the MIDI icon and most of the
-  shaped labels on the glass. `docs/front-panel.md` lists what's known.
+- The item number beside line 2 (the manual's "01" on a disk's file list).
+- Chord types, the MIDI icon and most of the shaped labels on the glass.
+  `docs/front-panel.md` lists what's known.
 
 When a field is mapped in Python (`tools/pr53_display.py`), mirror it in
 `pr53_decode.c`; `make -f host.mk test` replays real captures through both.

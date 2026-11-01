@@ -35,8 +35,7 @@ void state_init(void) {
     g_state.transpose[0] = 0;
     g_state.line1[0] = 0;
     g_state.line2[0] = 0;
-    g_state.small_top = 0xFF;
-    g_state.small_bot = 0xFF;
+    g_state.page[0] = 0;
     g_state.frame_serial = 0;
 }
 

@@ -27,12 +27,13 @@ typedef struct {
     int      tempo;              // 0..999, or -1 for blank/unknown
     char     chord[4];           // chord root letter(s), NUL-terminated ("" if none)
     char     transpose[4];       // transpose key, e.g. "Bb", "F#" ("" if none)
+    bool     menu_word, page_word;  // MENU and PAGE in the top-right box
+    bool     page_up, page_down;    // PAGE arrows: a following / a previous page
 
     // --- MIDDLE zone ---
     char     line1[PR53_TEXT_LEN + 1];  // voice name (DDRAM 0x00..0x0B)
     char     line2[PR53_TEXT_LEN + 1];  // rhythm name (DDRAM 0x40..0x4B)
-    uint8_t  small_top;          // left-gutter 2-digit display (top). 0xFF = blank
-    uint8_t  small_bot;          // left-gutter 2-digit display (bottom). 0xFF = blank
+    char     page[3];            // menu page readout beside line 1, e.g. "P1" ("" if none)
 
     // --- BOTTOM zone: 8 bargraphs ---
     int16_t  part_value[PR53_NUM_PARTS];  // 0..127, or -1 if not decodable

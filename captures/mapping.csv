@@ -2885,3 +2885,172 @@ C1:r5:c3,OFF,menus_exit,MEM&CONTRO  ,  Channel   ,ConcertGran ,  Channel   ,1470
 C2:r6:c1,OFF,menus_exit,MEM&CONTRO  ,  Channel   ,ConcertGran ,  Channel   ,1470596949,1470602077
 C2:r6:c4,OFF,menus_exit,MEM&CONTRO  ,  Channel   ,ConcertGran ,  Channel   ,1470596949,1470602077
 C3:r6:c0,OFF,menus_exit,MEM&CONTRO  ,  Channel   ,ConcertGran ,  Channel   ,1470596949,1470602077
+C1:r0:c4,ON,page_first,SOUND MENU  ,Part Setting,SOUND MENU  ,   Chorus   ,1488602737,1488624022
+C1:r2:c4,ON,page_first,SOUND MENU  ,Part Setting,SOUND MENU  ,   Chorus   ,1488602737,1488624022
+C3:r6:c1,ON,page_first,SOUND MENU  ,Part Setting,SOUND MENU  ,   Chorus   ,1488602737,1488624022
+C2:r6:c1,OFF,page_first,SOUND MENU  ,Part Setting,SOUND MENU  ,   Chorus   ,1488602737,1488624022
+C1:r3:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488624022,1488636273
+C1:r5:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488624022,1488636273
+C1:r6:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488624022,1488636273
+C2:r6:c1,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488624022,1488636273
+C1:r1:c4,OFF,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488624022,1488636273
+C1:r5:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Techni-Chord,1488636273,1488639395
+C1:r1:c4,ON,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C1:r0:c4,OFF,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C1:r2:c4,OFF,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C1:r3:c4,OFF,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C1:r6:c4,OFF,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C3:r6:c1,OFF,page_middle_again,SOUND MENU  ,Techni-Chord,SOUND MENU  ,Part Setting,1488639395,1488645684
+C1:r3:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488678509,1488680872
+C1:r5:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488678509,1488680872
+C1:r6:c4,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488678509,1488680872
+C2:r6:c1,ON,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488678509,1488680872
+C1:r1:c4,OFF,page_middle,SOUND MENU  ,   Chorus   ,SOUND MENU  ,   Reverb   ,1488678509,1488680872
+C1:r1:c4,ON,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r0:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r2:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r3:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r5:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r6:c4,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C3:r6:c1,OFF,page_last,SOUND MENU  ,   Reverb   ,SOUND MENU  ,Part Setting,1488680872,1488686490
+C1:r0:c4,ON,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C1:r3:c4,ON,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C1:r5:c4,ON,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C1:r6:c4,ON,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C3:r6:c1,ON,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C1:r4:c4,OFF,page_middle_again,SOUND MENU  ,Part Setting,SOUND MENU  ,Touch & Tune,1488686490,1488691796
+C0:r1:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r1:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r2:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r2:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r2:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r2:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r2:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r3:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r3:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r3:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r3:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r3:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r4:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r4:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r4:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r5:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r5:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r5:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r5:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r5:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C0:r7:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r6:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r6:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r7:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r0:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r0:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r1:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r1:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r1:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r1:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r2:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r3:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r4:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r5:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r7:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r7:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r0:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r1:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r1:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r1:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r1:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r1:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r2:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r2:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r3:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r4:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r4:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r4:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r5:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r6:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r6:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r6:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r7:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r0:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r1:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r1:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r1:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r1:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r1:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r3:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r4:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r4:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r5:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C4:r6:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r0:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r0:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r1:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r1:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r2:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r3:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r3:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r5:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r6:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r6:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r7:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r7:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C5:r7:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C6:r3:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C6:r4:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C6:r5:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C6:r6:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r0:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r0:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r0:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r1:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r1:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r1:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r2:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r2:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r3:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r3:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r3:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r3:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r4:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r4:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r4:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r4:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r4:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r5:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r5:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r5:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r6:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r6:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r6:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r6:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r6:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r7:c0,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r7:c1,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r7:c2,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r7:c3,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C7:r7:c4,ON,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r0:c3,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r0:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r1:c3,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r1:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r2:c3,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r3:c3,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r3:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r5:c3,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r5:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C1:r6:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r6:c1,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C2:r6:c4,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r6:c0,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026
+C3:r6:c1,OFF,page_exit,SOUND MENU  ,Touch & Tune,Piano&String,  8Bt Soul  ,1488691796,1488700026

@@ -125,6 +125,7 @@ DIGIT_TABLE = {
     frozenset('abcf'):   '7',
     frozenset('abcdefg'):'8',
     frozenset('abcdfg'): '9',
+    frozenset('abefg'):  'P',   # menu page readout ("P1")
 }
 
 TEMPO_DIGITS = [(1, 0), (1, 1), (1, 2)]   # (char, col) hundreds→ones
@@ -308,6 +309,40 @@ def decode_bargraph_number(cgram, part_idx):
         h = _digit_at(cgram, *hund, rows)
     text = (h + _digit_at(cgram, *tens, rows) + _digit_at(cgram, *ones, rows)).lstrip()
     return int(text) if text and text.isdigit() else None
+
+
+# ---------- Menu page readout and the MENU / PAGE box ----------
+#
+# Beside line 1 on menu screens: two digit cells, C1 c3 and c4 (bargraph row
+# order), reading "P1" to "P7" through the Sound menu. MENU, PAGE and the PAGE
+# arrows are single bits in the spare row 6 of C2/C3. From the Sound-menu
+# walk in captures/menus_2026-10-31.log. The readout beside line 2 isn't
+# mapped yet. Mirrors pr53_decode_all() in firmware/display/src/pr53_decode.c.
+PAGE_CELLS = [(1, 3), (1, 4)]
+MENU_WORD_BIT = (2, 6, 4)
+PAGE_WORD_BIT = (3, 6, 0)
+PAGE_UP_BIT = (2, 6, 1)      # a following page
+PAGE_DOWN_BIT = (3, 6, 1)    # a previous page
+
+
+def decode_page_readout(cgram):
+    """Return the page readout, e.g. 'P1', or None when it's blank."""
+    text = ''.join(' ' if d == '?' else d for d in
+                   (_digit_at(cgram, ch, col, BARGRAPH_ROW_TO_SEG) for ch, col in PAGE_CELLS))
+    return text if text.strip() else None
+
+
+def decode_menu_page_flags(cgram):
+    """Return the MENU and PAGE words and the PAGE arrows as booleans."""
+    lit = lambda b: bool((cgram[b[0] * 8 + b[1]] >> (4 - b[2])) & 1)
+    return {'menu': lit(MENU_WORD_BIT), 'page': lit(PAGE_WORD_BIT),
+            'up': lit(PAGE_UP_BIT), 'down': lit(PAGE_DOWN_BIT)}
+
+
+def decode_small_display(cgram, which):
+    """The two small readouts left of the text lines: the top one is the page
+    readout; the bottom one isn't mapped yet."""
+    return decode_page_readout(cgram) if which == 'top' else None
 
 
 def decode_bargraph_level(cgram, part_idx):
@@ -805,9 +840,9 @@ class App:
                      for x in ddram[0x40:0x40 + 12])
 
         # --- Two small 2-digit displays in the left gutter ---
-        # (top one aligns with line 1, bottom with line 2). Decoder not yet
-        # mapped in this build, so they show '--' until decode_small_display
-        # exists. The gutter box makes their position explicit.
+        # (top one aligns with line 1, bottom with line 2). The top one is the
+        # menu page readout ("P1"); the bottom one isn't mapped yet and shows
+        # '--'. The gutter box makes their position explicit.
         for (sy, tag) in ((y1, 'top'), (y2, 'bot')):
             g.create_rectangle(self.SMALL_X, sy - 22,
                                self.SMALL_X + self.SMALL_W, sy + 6,
@@ -853,9 +888,8 @@ class App:
                       dash=(3, 4))
 
     def _small_display(self, cgram, which):
-        """Two small 2-digit 7-seg displays (program/part numbers).
-        Not yet mapped in this build — returns '--'. When a decoder is
-        added, wire it here so the glass shows the live value."""
+        """Two small 2-digit 7-seg displays: the top one is the menu page
+        readout; '--' where nothing is decoded (the bottom one, for now)."""
         fn = globals().get('decode_small_display')
         if fn is not None:
             try:
