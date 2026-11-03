@@ -7,9 +7,12 @@
 // - display and piano powered together: the logo holds through the blank
 //   display and "Technics / SX-PR53" and hands back on the play screen, all
 //   fields loaded (restart_tap_v18), or on "ALL INITIAL" (startup);
-// - display left on while the piano restarts: the logo comes back for the
-//   "Technics" screen only, and hands back on the next screen;
-// - every other log: no logo except in place of a "Technics" screen, and a
+// - display left on while the piano restarts: the logo comes back from the
+//   piano's LCD set-up (its CLEAR) and hands back on the next real screen,
+//   the play screen or "ALL INITIAL" (startup);
+// - every other log: no logo except from a piano start-up or in place of a
+//   "Technics" screen, handing back on the next real screen, or on the 30 s
+//   limit only if the piano showed nothing (the LCD test's first try); and a
 //   display restarted mid-session hands back by the piano's first frame with
 //   text (or after 30 s, when the piano sends nothing but blank frames);
 // - the 30 s limit, and the generated logo and QR data.
@@ -59,14 +62,23 @@ typedef struct {
     DisplayState show[MAXEV], end[MAXEV];
     unsigned long end_ms[MAXEV];
     unsigned long text_ms;    // first frame with text other than "Technics" (0: none)
+    int show_restart[MAXEV];  // that SHOW came on a piano start-up (its CLEAR)
+    int end_capped[MAXEV];    // that END came from the 30 s limit
+    uint32_t last_starts;     // piano_starts of the last fresh frame
 } Trace;
 
 static void step(Trace *tr, Splash *sp, const DisplayState *s, int fresh, unsigned long ms) {
     if (fresh && !tr->text_ms && s->line1[0] && strcmp(trim(s->line1), "Technics"))
         tr->text_ms = ms;
+    int restarted = fresh && s->piano_starts != tr->last_starts;
+    if (fresh) tr->last_starts = s->piano_starts;
     SplashStep st = splash_step(sp, s, fresh, (uint32_t)ms);
-    if (st == SPLASH_SHOW && tr->shows < MAXEV) tr->show[tr->shows++] = *s;
+    if (st == SPLASH_SHOW && tr->shows < MAXEV) {
+        tr->show_restart[tr->shows] = restarted;
+        tr->show[tr->shows++] = *s;
+    }
     if (st == SPLASH_END && tr->ends < MAXEV) {
+        tr->end_capped[tr->ends] = !fresh;
         tr->end_ms[tr->ends] = ms;
         tr->end[tr->ends++] = *s;
         tr->capped += !fresh;
@@ -105,6 +117,11 @@ static int replay(const char *path, int power_up, Trace *tr) {
     }
     fclose(f);
     return 1;
+}
+
+// Nothing on the glass: the piano set up its LCD and sent no screen.
+static int nothing_shown(const DisplayState *s) {
+    return !s->line1[0] && !s->line2[0] && s->tempo < 0;
 }
 
 static int all_parts(const DisplayState *s) {
@@ -179,34 +196,39 @@ int main(int argc, char **argv) {
                 tr.ends == 1 && !tr.shows && !tr.capped &&
                 !strcmp(tr.end[0].line1, "ALL INITIAL"));
 
-    // Display left on: the logo only stands in for the "Technics" screen.
+    // Display left on: the logo comes back from the piano's LCD set-up.
     if (!replay(argv[1], 0, &tr)) return 1;
-    ok &= check("piano restart, display on: logo for the Technics screen only",
-                tr.shows == 1 && tr.ends == 1 && !tr.capped &&
-                is_boot_text(&tr.show[0]) && !strcmp(tr.end[0].line1, "ConcertGrand"));
+    ok &= check("piano restart, display on: logo from its LCD set-up to the play screen",
+                tr.shows == 1 && tr.ends == 1 && !tr.capped && tr.show_restart[0] &&
+                !strcmp(tr.end[0].line1, "ConcertGrand"));
+    if (!replay(argv[2], 0, &tr)) return 1;
+    ok &= check("piano restart into ALL INITIAL, display on: logo until ALL INITIAL",
+                tr.shows == 1 && tr.ends == 1 && !tr.capped && tr.show_restart[0] &&
+                !strcmp(tr.end[0].line1, "ALL INITIAL"));
 
     // Every log, display left on and display restarted at the log's start.
     int bad = 0, shows = 0, empty = 0;
     for (int k = 1; k < argc; k++) {
         if (!replay(argv[k], 0, &tr)) return 1;
         if (!tr.writes) { empty++; continue; }
-        int good = tr.ends == tr.shows && !tr.capped;
+        int good = tr.ends == tr.shows;
         for (int i = 0; i < tr.shows; i++)
-            good &= is_boot_text(&tr.show[i]) && past_boot(&tr.end[i]);
+            good &= (tr.show_restart[i] || is_boot_text(&tr.show[i])) &&
+                    (tr.end_capped[i] ? nothing_shown(&tr.end[i]) : past_boot(&tr.end[i]));
         shows += tr.shows;
         Trace up;
         if (!replay(argv[k], 1, &up)) return 1;
         good &= up.ends >= 1 && past_boot(&up.end[0]) &&
                 (!up.text_ms || up.end_ms[0] <= up.text_ms);
         if (!good || tr.shows || up.capped)
-            printf("  %s: %d logos in place of Technics; from power-up, hands back %s on '%s'%s\n",
+            printf("  %s: %d logos on piano start-ups; from power-up, hands back %s on '%s'%s\n",
                    argv[k], tr.shows, up.capped ? "after 30 s" : "on a frame",
                    up.ends ? up.end[0].line1 : "(never)", good ? "" : "  FAIL");
         bad += !good;
     }
-    printf("  %d logs (%d without bus writes), %d Technics screens replaced\n",
+    printf("  %d logs (%d without bus writes), %d piano start-ups shown with the logo\n",
            argc - 1, empty, shows);
-    ok &= check("all logs: logo only for Technics, never past the first frame with text",
+    ok &= check("all logs: logo only on piano start-ups, never past the first frame with text",
                 !bad);
 
     // The time limit, with nothing from the piano or only its start-up text.

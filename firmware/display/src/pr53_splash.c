@@ -43,6 +43,7 @@ static bool blank(const DisplayState *s) {
 SplashStep splash_start(Splash *sp, uint32_t now_ms) {
     sp->on = THEME_SPLASH;
     sp->boot_text = false;
+    sp->starts = 0;
     sp->since_ms = now_ms;
     return sp->on ? SPLASH_SHOW : SPLASH_IDLE;
 }
@@ -50,19 +51,28 @@ SplashStep splash_start(Splash *sp, uint32_t now_ms) {
 SplashStep splash_step(Splash *sp, const DisplayState *s, bool fresh,
                        uint32_t now_ms) {
     bool was_boot_text = sp->boot_text;
-    if (fresh) sp->boot_text = boot_text(s);
+    // The piano started up: its LCD set-up sent a CLEAR. That frame still
+    // shows the old tempo and meters (CLEAR wipes only the text); the piano
+    // blanks them a few ms later, before its next frame.
+    bool restarted = fresh && s->piano_starts != sp->starts;
+    if (fresh) {
+        sp->boot_text = boot_text(s);
+        sp->starts = s->piano_starts;
+    }
     if (sp->on) {
+        if (restarted) sp->since_ms = now_ms;   // started again under the logo
         // Hand back on the first frame that isn't a start-up screen.
-        if ((fresh && !sp->boot_text && !blank(s)) ||
+        if ((fresh && !restarted && !sp->boot_text && !blank(s)) ||
             now_ms - sp->since_ms >= SPLASH_MAX_MS) {
             sp->on = false;
             return SPLASH_END;
         }
         return SPLASH_HOLD;
     }
-    // The piano restarted but the display didn't: the logo stands in for the
-    // "Technics" screen. Only on its arrival, so a long one isn't redrawn.
-    if (THEME_SPLASH && fresh && sp->boot_text && !was_boot_text) {
+    // The piano restarted but the display didn't: the logo comes back from
+    // its LCD set-up, or from its "Technics" screen if that CLEAR was lost.
+    // Only on their arrival, so a long "Technics" screen isn't redrawn.
+    if (THEME_SPLASH && fresh && (restarted || (sp->boot_text && !was_boot_text))) {
         sp->on = true;
         sp->since_ms = now_ms;
         return SPLASH_SHOW;

@@ -202,6 +202,7 @@ static bool apply_cmd(HD44780 *st, uint8_t b) {
     if (b == 0x01) {
         memset(st->ddram, 0x20, sizeof(st->ddram));
         st->ac = 0; st->in_cgram = false;
+        st->clears++;
     } else if (b <= 0x03) {
         st->ac = 0; st->in_cgram = false;
     } else if ((b & 0xFC) == 0x04) {
@@ -320,4 +321,6 @@ void pr53_decode_all(const HD44780 *st, DisplayState *out) {
     // Split indicators (RIGHT=C0:r7:c4, LEFT=C1:r7:c4)
     out->split_right = cell_bit(cg, 0, 7, 4);
     out->split_left  = cell_bit(cg, 1, 7, 4);
+
+    out->piano_starts = st->clears;
 }

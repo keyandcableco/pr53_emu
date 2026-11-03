@@ -21,6 +21,8 @@ typedef struct {
     bool    entry_inc;
     bool    hi_nibble_valid;
     uint8_t hi_nibble;   // latched high nibble awaiting its low half
+    uint32_t clears;     // CLEAR commands seen: the piano sends one only when it
+                         // starts up, as part of setting up its LCD
 } HD44780;
 
 void hd44780_init(HD44780 *st);

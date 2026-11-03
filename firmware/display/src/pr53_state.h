@@ -45,6 +45,7 @@ typedef struct {
     bool     split_left;
     bool     split_right;
 
+    uint32_t piano_starts;       // piano start-ups seen (its LCD set-up's CLEAR)
     uint32_t frame_serial;       // bumped every commit; render skips if unchanged
 } DisplayState;
 

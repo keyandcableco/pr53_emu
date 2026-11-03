@@ -8,9 +8,12 @@
 // v18 restart capture, 12 s in one earlier one). The first other frame (the
 // play screen, or "ALL INITIAL" after a factory reset) hands the screen back
 // to the glass layout, repainted in full. If the piano restarts while the
-// display stays powered (the carrier on USB), the logo comes back in place of
-// its "Technics" screen. Nothing here touches decoding: core 1 just chooses
-// between the logo and the glass. THEME_SPLASH in pr53_theme.h turns it off.
+// display stays powered (the carrier on USB), the logo comes back the moment
+// the piano sets up its LCD (its CLEAR, sent only at start-up), so it shows on
+// every restart, "ALL INITIAL" ones included; its "Technics" screen brings it
+// back too, in case that CLEAR was lost on the link. Nothing here touches
+// decoding: core 1 just chooses between the logo and the glass. THEME_SPLASH
+// in pr53_theme.h turns it off.
 
 #ifndef PR53_SPLASH_H
 #define PR53_SPLASH_H
@@ -26,6 +29,7 @@
 typedef struct {
     bool     on;          // the logo is on the screen
     bool     boot_text;   // the last frame showed "Technics / SX-PR53"
+    uint32_t starts;      // the last frame's piano_starts
     uint32_t since_ms;    // when the logo went up
 } Splash;
 
